@@ -15,9 +15,8 @@
 ## Setup
 - Ruby 3.2.2
 - Rails 7.0.7.2
-- Faraday gem for API requests
+- Faraday gem to interact with APIs
 - JSONAPI Serializer gem for formatting JSON responses
-- Faker gem for generating fake data
 - SimpleCov gem for code coverage tracking
 - ShouldaMatchers gem for testing assertions
 - VCR / Webmock to stub HTTP requests in tests to simulate API interactions
