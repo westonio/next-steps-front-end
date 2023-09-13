@@ -1,0 +1,11 @@
+// Custom bootstrap variables must be set or imported *before* bootstrap.
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+#app-topper h1, #app-topper h3 {
+	display: inline-block;
+}
+#app-topper h3 {
+	margin-left: 30px;
+	font-style: italic;
+}
