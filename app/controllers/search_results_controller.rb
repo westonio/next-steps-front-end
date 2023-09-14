@@ -4,11 +4,12 @@ class SearchResultsController < ApplicationController
     begin
       location_added?
       at_least_one_checked?
-
     rescue StandardError => e
       redirect_to root_path
       flash[:danger] = e.message
     end
+    @results = SearchFacade.new(params)
+    require 'pry'; binding.pry
   end
 
   private
