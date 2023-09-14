@@ -1,6 +1,7 @@
 # Next Steps - Project README
 # Front-End
 
+Link to [Next Steps Website](https://next-steps-front-end-4778e35e4143.herokuapp.com/)
 ## Table of Contents
 
 1. [Project Description](#project-description)
@@ -15,14 +16,17 @@
 ## Setup
 - Ruby 3.2.2
 - Rails 7.0.7.2
-- Faraday gem to interact with APIs
-- SimpleCov gem for code coverage tracking
-- ShouldaMatchers gem for testing assertions
-- VCR / Webmock to stub HTTP requests in tests to simulate API interactions
+- [Faraday](https://github.com/lostisland/faraday) gem to interact with APIs
+- [JSONAPI Serializer](https://github.com/jsonapi-serializer/jsonapi-serializer) gem for formatting JSON responses
+- [SimpleCov](https://github.com/simplecov-ruby/simplecov) gem for code coverage tracking
+- [ShouldaMatchers](https://github.com/thoughtbot/shoulda-matchers) gem for testing assertions
+- [VCR](https://github.com/vcr/vcr) / [Webmock](https://github.com/bblimke/webmock) to stub HTTP requests in tests to simulate API interactions
 
 ## Project Description
 
-Next Step is full-stack project that leverages the [211 API](https://apiportal.211.org) along with geolocation to assist individuals in finding community resources in their vicinity.  This repository contains the front-end portion of the project which utlizes the [API](https://github.com/westonio/next-steps-back-end) provided by the back-end repository.
+**Next Steps** is full-stack project that leverages the [211 API](https://apiportal.211.org) along with geolocation to assist individuals in finding community resources in their vicinity.  We thought it was particularly important to create search options catored to persons who may not have the ability to navigate existing resources.  This repository contains the front-end portion of the project which utlizes the [API](https://github.com/westonio/next-steps-back-end) provided by the back-end repository.
+
+This project has been deployed using [Heroku](https://id.heroku.com/login), and [Circle CI](https://circleci.com/) was used for Continuous Integration.
 
 ### Inspiration
 The project draws inspiration from various areas, serving as a tool to support:
@@ -38,7 +42,7 @@ This tool is designed to assist a wide range of professionals, including crisis 
 
 *"Right now, I have a list of 12 different links that I use when I research options for my clients.  I would love to have an app that has everything in one place"* - anonomous case manager
 
-*"It is challening for people with mental health struggles to have the wherewithal to search for internet for resources they need, let alone come up with the 'next step' on their to do list.  This kind of help is great for them."* - anonomous social worker
+*"It is challening for people with mental health struggles to have the wherewithal to search the internet for resources they need, let alone come up with the 'next step' on their to do list.  This kind of help is great for them."* - anonomous social worker
 
 *"The hardest part of my job is to find housing for people who have criminal backgrounds.  If there was a way for housing providers to add their listings, I would be grateful"* - housing specialist
 
@@ -53,6 +57,7 @@ This tool is designed to assist a wide range of professionals, including crisis 
 *“I have PTSD and will not go to shelters, I live in my car, it's -2 deg outside, where can I park?”* => List of safe lots and emergency shelter options
 
 ## Features
+![](2023-09-14-10-49-13.png)
 ### User-Friendly Resource Access
 - Users of the app can access community resources anonymously.
 - Pre-built search queries are available to streamline the resource-finding process.
@@ -70,14 +75,15 @@ This project is the front-end user experience that utilzes an API endpoint to cr
 
 ### Future Iterations
 
-- Scale: Utlize cloud storage to store data for Providers and resources.  
-- Utilze Open AI API for generating motivational statements based on user's identified needs.
-- Create more endpoints for specialized searches.  
+- Scale: Utlize cloud storage to store data for Providers and resource list saved by user.  
+- Utilze [Open AI API](https://openai.com/blog/openai-api) for generating motivational statements based on user's identified needs.
+- Create additional pre-built search options that make finding resources easy and convenient.
+- Provider dashboard and Admin functionality.
 
 ### Contributors
 
-- [Allen Russell](allenrusselldev@gmail.com) - GitHub: @garussell
-- [Weston Schutt](wtschutt@gmail.com)        - GitHub: @westonio
-- [Kaina Cockett](kainacockett@gmail.com)    - GitHub: @kcockett
-- [Zanna Fitch](zannafitch2004@gmail.com)    - GitHub: @z-fitch
-- [Jorja Flemming](aset284@gmail.com)        - GitHub: @jorjaf
+- [Allen Russell](allenrusselldev@gmail.com) - GitHub: [@garussell](https://github.com/garussell)
+- [Weston Schutt](wtschutt@gmail.com)        - GitHub: [@westonio](https://github.com/westonio)
+- [Kaina Cockett](kainacockett@gmail.com)    - GitHub: [@kcockett](https://github.com/kcockett)
+- [Zanna Fitch](zannafitch2004@gmail.com)    - GitHub: [@z-fitch](https://github.com/z-fitch)
+- [Jorja Flemming](aset284@gmail.com)        - GitHub: [@jorjaf](https://github.com/jorjaf)
