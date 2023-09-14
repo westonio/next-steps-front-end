@@ -10,13 +10,12 @@
 5. [Features](#features)
 6. [Usage](#usage)
 7. [Future Iterations](#future-iterations)
-8. [Contact](#contact)
+8. [Contributors](#contributors)
 
 ## Setup
 - Ruby 3.2.2
 - Rails 7.0.7.2
 - Faraday gem to interact with APIs
-- JSONAPI Serializer gem for formatting JSON responses
 - SimpleCov gem for code coverage tracking
 - ShouldaMatchers gem for testing assertions
 - VCR / Webmock to stub HTTP requests in tests to simulate API interactions
@@ -39,7 +38,7 @@ This tool is designed to assist a wide range of professionals, including crisis 
 
 *"Right now, I have a list of 12 different links that I use when I research options for my clients.  I would love to have an app that has everything in one place"* - anonomous case manager
 
-*"It is challening for people with mental health struggles to have the wherewithal to search for internet for resources they need, let alone come up with the 'next step' on their to do list.  This help is a great idea for them."* - anonomous social worker
+*"It is challening for people with mental health struggles to have the wherewithal to search for internet for resources they need, let alone come up with the 'next step' on their to do list.  This kind of help is great for them."* - anonomous social worker
 
 *"The hardest part of my job is to find housing for people who have criminal backgrounds.  If there was a way for housing providers to add their listings, I would be grateful"* - housing specialist
 
@@ -67,15 +66,15 @@ This tool is designed to assist a wide range of professionals, including crisis 
 
 ## Usage
 
-This project is the front-end user experience that utilzes API endpoints that create convienient search options for individuals we serve.
+This project is the front-end user experience that utilzes an API endpoint to create convienient search options for individuals we serve.  The endpoint takes in two parameters, "keyword" and "location".  We proivde the user with some keywords built in, such as "basic needs", "shelters", "medical care", "mental health care", and others.  They can select keywords from our provided options, or utilize the search bar to search their own keyword(s).
 
 ### Future Iterations
 
 - Scale: Utlize cloud storage to store data for Providers and resources.  
 - Utilze Open AI API for generating motivational statements based on user's identified needs.
-- Create more endpoints for specialized searches.
+- Create more endpoints for specialized searches.  
 
-### Contact
+### Contributors
 
 - [Allen Russell](allenrusselldev@gmail.com) - GitHub: @garussell
 - [Weston Schutt](wtschutt@gmail.com)        - GitHub: @westonio
