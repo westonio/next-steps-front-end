@@ -6,7 +6,9 @@ version: 2.1
 # See: https://circleci.com/docs/orb-intro/
 orbs:
   node: circleci/node@5.0.0 # Needed for javascript runtime
-  heroku: circleci/heroku@1.0.1 # Use the Heroku orb in your config
+  heroku: circleci/heroku@1.2.6 # Use the Heroku orb in your config
+
+
 
 # Define a job to be invoked later in a workflow.
 # See: https://circleci.com/docs/configuration-reference/#jobs
@@ -54,11 +56,19 @@ jobs: # a collection of steps
       - store_test_results: # Upload test results for display in Test Summary: https://circleci.com/docs/2.0/collect-test-data/
           path: test_results
       # See https://circleci.com/docs/2.0/deployment-integrations/ for example deploy configs
+  deploy: # this can be any name you choose
+    executor: heroku/default
+    steps:
+      - attach_workspace:
+          at: ~/project
+      - heroku/deploy-via-git:
+          force: true
 workflows:
   build-test-deploy:
     jobs:
       - build-and-test
-      - heroku/deploy-via-git: # Use the pre-configured job, deploy-via-git
+      - heroku/deploy-via-git: 
+          force: true # Use the pre-configured job, deploy-via-git
           requires:
             - build-and-test
           post-steps:
