@@ -9,7 +9,7 @@ class SearchResultsController < ApplicationController
       flash[:danger] = e.message
     end
     @results = SearchFacade.new(params)
-    require 'pry'; binding.pry
+
   end
 
   private

@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe 'Welcome Page', type: :feature do
+RSpec.describe 'Welcome Page', :vcr do
   describe 'when I visit the welcome page "/" ' do
     before :each do
       visit root_path
