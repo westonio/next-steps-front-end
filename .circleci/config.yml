@@ -60,7 +60,7 @@ jobs: # a collection of steps
     executor: heroku/default
     steps:
       - attach_workspace:
-          at: ~/project
+          at: ~/turing/3mod/project/next-steps-front-end
       - heroku/deploy-via-git:
           force: true
 workflows:
