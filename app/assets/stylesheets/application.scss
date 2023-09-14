@@ -1,0 +1,43 @@
+// Custom bootstrap variables must be set or imported *before* bootstrap.
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+body {
+	background-color: #ededeb;
+}
+
+#app-topper h1, #app-topper h3 {
+	display: inline-block;
+	margin-left: 30px;
+}
+#app-topper h3, .select-urgent-services h4 {
+	font-style: italic;
+}
+
+.alert {
+	width: fit-content;
+	margin-left: 60px;
+}
+
+.select-urgent-services {
+	margin: 50px 0 0 50px;
+	color: white;
+	width: fit-content;
+	padding: 20px;
+	border: solid 3px rgb(188, 4, 4);
+	border-radius: 20px;
+	background-color: rgb(213, 0, 0);
+}
+
+.select-urgent-services p {
+	margin-top: 20px;
+}
+
+.select-urgent-services h4 {
+	margin-bottom: 20px;
+
+}
+
+#urgent-button {
+	color: black;
+}

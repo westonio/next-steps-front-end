@@ -1,0 +1,53 @@
+<div id="app-topper">
+  <h1>Next Steps</h1>
+  <h3>Help is near!</h3>
+  <nav class="navbar ">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+		        <span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
+          </button>
+        </div>
+
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav">
+            <li class="active"><%= link_to 'Home', root_path %></li>
+          </ul> 
+          
+          <ul class="nav navbar-nav navbar-right">
+            <li><%= link_to 'Create user account', register_user_path %></li>
+            <li><%= link_to 'Create provider account', register_provider_path %></li>
+            <li><%= link_to 'Sign in', signin_path %></li>
+          </ul>            
+        </div>  
+      </div>  
+    </nav>
+  </div>
+
+  <div class="select-urgent-services">
+    <h4>I need urgent help now!</h4>
+    
+    <%= form_with url: search_results_path, method: :get, local: true do |form| %>
+      <%= form.label :location, 'Enter your City, State, and/or Zip Code' %><br/>
+      <%= form.text_field :location, size: "50" %> 
+      <br/>
+      <p>What do you need most help with today? (Check all that apply):</p>
+      
+      <%= form.check_box :medical_care %>
+      <%= form.label :medical_care, 'Medical Care' %>
+      <br/>
+      <%= form.check_box :crisis_hotline %>
+      <%= form.label :crisis_hotline, 'Crisis Hotline' %>
+      <br/>
+      <%= form.check_box :shelter_tonight %>
+      <%= form.label :shelter_tonight, 'Shelter for Tonight' %>
+      <br/>
+      <%= form.check_box :food %>
+      <%= form.label :food, 'Food' %>
+      <br/>
+      <%= form.check_box :substance_use %>
+      <%= form.label :substance_use, 'Substance Use' %>
+      <br/>
+      <%= form.submit 'Get Help!', id: "urgent-button" %>
+    <% end %>
+  </div>
