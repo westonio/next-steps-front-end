@@ -9,7 +9,6 @@ class SearchResultsController < ApplicationController
       flash[:danger] = e.message
     end
     @results = SearchFacade.new(params)
-
   end
 
   private

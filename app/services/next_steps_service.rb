@@ -9,7 +9,6 @@ class NextStepsService
     response = conn.get(url)
     return JSON.parse(response.body, symbolize_names: true)[:data]&.map do |data|
       FilteredResults.new(data, @keyword) 
-      require 'pry';binding.pry
     end
   end
 

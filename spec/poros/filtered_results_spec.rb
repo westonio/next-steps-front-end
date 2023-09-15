@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 RSpec.describe FilteredResults do
-  it "returns data and keyword" do
+  it "returns FilteredResults object with expected attributes" do
     data = {:id=>"211lemoyne-61545",
       :type=>"data",
       :attributes=>
@@ -12,10 +12,10 @@ RSpec.describe FilteredResults do
         :state=>"VA",
         :lat=>"38.944657",
         :lon=>"-77.314382",
-        :description=>"Provides the most up-to-date information about Sjogren's syndrome to patients and healthcare providers."}}
-
+        :description=>"Provides the most up-to-date information about Sjogren's syndrome to patients and healthcare providers."
+      }
+    }
     keyword = "healthcare"
-
     filtered_results = FilteredResults.new(data, keyword)
 
     expect(filtered_results).to be_a(FilteredResults)
