@@ -3,7 +3,7 @@ class SearchFacade
 
   def initialize(params)
     @location = params[:location]
-    @medical_care = get_results("healthcare") if params[:medical_care] == "1"
+    @medical_care = get_results("urgent+care") if params[:medical_care] == "1"
     @crisis_hotline = get_results("crisis+hotline") if params[:crisis_hotline] == "1"
     @shelter_tonight = get_results("shelter+tonight") if params[:shelter_tonight] == "1"
     @food = get_results("food") if params[:food] == "1"

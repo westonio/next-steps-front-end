@@ -14,7 +14,7 @@ RSpec.describe "SearchFacade", type: :service do
       
       expect(facade.medical_care).to be_an(Array)
       expect(facade.medical_care.first).to be_a(FilteredResults)
-      expect(facade.medical_care.first.category).to eq("healthcare")
+      expect(facade.medical_care.first.category).to eq("urgent+care")
       expect(facade.medical_care.first.city).to be_a(String)
       
       expect(facade.crisis_hotline).to be nil
@@ -51,7 +51,7 @@ RSpec.describe "SearchFacade", type: :service do
       
       expect(facade.medical_care).to be_an(Array)
       expect(facade.medical_care.first).to be_a(FilteredResults)
-      expect(facade.medical_care.first.category).to eq("healthcare")
+      expect(facade.medical_care.first.category).to eq("urgent+care")
       expect(facade.medical_care.first.city).to be_a(String)
 
       expect(facade.food).to be_an(Array)

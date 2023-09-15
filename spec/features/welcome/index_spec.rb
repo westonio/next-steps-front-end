@@ -102,6 +102,7 @@ RSpec.describe 'Welcome Page', :vcr do
           check('Food')
           click_button('Get Help!')
         end
+        save_and_open_page
 
         expect(current_path).to eq(search_results_path)
         expect(page).to have_content("Medical Care results")
