@@ -1,4 +1,4 @@
-// Geolocation
+
 document.addEventListener('DOMContentLoaded', function() {
   const options = {
     enableHighAccuracy: true,
@@ -8,6 +8,23 @@ document.addEventListener('DOMContentLoaded', function() {
 
   function success(pos) {
     const crd = pos.coords;
+
+    // Reverse Geocoding using Leaflet
+    const latlng = L.latLng(crd.latitude, crd.longitude);
+
+    L.Control.Geocoder.nominatim().reverse(latlng, 100000000, function(results) {
+      if (results && results.length > 0) {
+     
+        const address = results[0].name;
+
+        const locationField = document.getElementById('location');
+        if (locationField) {
+          locationField.value = address;
+        }
+      } else {
+        console.error('No results found');
+      }
+    });
 
     console.log("Your current position is:");
     console.log(`Latitude : ${crd.latitude}`);
@@ -21,3 +38,4 @@ document.addEventListener('DOMContentLoaded', function() {
 
   navigator.geolocation.getCurrentPosition(success, error, options);
 });
+

@@ -39,7 +39,6 @@ RSpec.describe 'Welcome Page', :vcr do
       it 'Has a field to enter location" ' do 
         within('div.select-urgent-services') do
           expect(page).to have_field('Enter your City, State, and/or Zip Code')
-          # TODO: Need to add geolocation services to automatically find their location
         end
       end
 
