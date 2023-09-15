@@ -93,5 +93,23 @@ RSpec.describe 'Welcome Page', :vcr do
         end
       end
     end
+
+    describe "Will return search results based on selected categories" do
+      it "If Medical Care is selected, that category will be displayed" do
+        within('div.select-urgent-services') do
+          fill_in 'Enter your City, State, and/or Zip Code', with: 'Denver, Colorado'
+          check('Medical Care')
+          check('Food')
+          click_button('Get Help!')
+        end
+
+        expect(current_path).to eq(search_results_path)
+        expect(page).to have_content("Medical Care results")
+        expect(page).to_not have_content("Crisis Hotline results")
+        expect(page).to_not have_content("Shelter for Tonight results")
+        expect(page).to have_content("Food results")
+        expect(page).to_not have_content("Substance Use results")
+      end
+    end
   end
 end
