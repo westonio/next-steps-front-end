@@ -1,4 +1,3 @@
-
 document.addEventListener('DOMContentLoaded', function() {
   const options = {
     enableHighAccuracy: true,
@@ -7,11 +6,10 @@ document.addEventListener('DOMContentLoaded', function() {
   };
 
   const geolocationButton = document.getElementById('geolocation-button');
-  if (geolocationButton) {
-    geolocationButton.addEventListener('click', function() {
+    geolocationButton.addEventListener('click', (event) => {
+      event.preventDefault()
       navigator.geolocation.getCurrentPosition(success, error, options);
     });
-  }
 
   function success(pos) {
     const crd = pos.coords;
@@ -42,7 +40,5 @@ document.addEventListener('DOMContentLoaded', function() {
   function error(err) {
     console.warn(`ERROR(${err.code}): ${err.message}`);
   }
-
-  navigator.geolocation.getCurrentPosition(success, error, options);
 });
 

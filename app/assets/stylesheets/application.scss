@@ -29,7 +29,7 @@ body {
 	background-color: rgb(213, 0, 0);
 }
 
-#location {
+#location, #urgent-button {
 	color: black;
 }
 
@@ -39,9 +39,21 @@ body {
 
 .select-urgent-services h4 {
 	margin-bottom: 20px;
-
 }
 
-#urgent-button {
+#geolocation-button {
+	display: inline-block;
+	padding: 5px;
+	width: fit-content;
+	border-radius: 10px;
+	margin-left: 5px;
+}
+
+#geolocation-button:hover {
+	background-color: rgb(164, 164, 167);
 	color: black;
+}
+
+.display-flex {
+	display: flex;
 }
