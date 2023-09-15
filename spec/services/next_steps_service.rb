@@ -3,7 +3,7 @@ require "rails_helper"
 RSpec.describe "NextStepsService", type: :service do
   describe "pass a keyword and location", :vcr do
     it "should return a FilteredResults object with expected attributes" do
-      keyword = "healthcare"
+      keyword = "urgent+care"
       location = "denver"
       response = NextStepsService.search(keyword, location)
 

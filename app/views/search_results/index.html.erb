@@ -1,10 +1,10 @@
 <h2>Search Results</h2>
-<% if @results.medical_care %>
-  <h3>Medical Care results</h3>
+<% if @results.urgent_care %>
+  <h3>Urgent Care results</h3>
   <p>See more results</p>
   <table>
     <tr>
-      <% @results.medical_care[0..2].each do |provider| %>
+      <% @results.urgent_care[0..2].each do |provider| %>
         <td style = "width: 33%; vertical-align: top; padding: 5px;" >
           <b>Provider name:</b> <%= provider.provider_name %><br />
           <b>Address:</b> <%= provider.street %><br />

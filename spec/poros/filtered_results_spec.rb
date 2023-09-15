@@ -5,22 +5,22 @@ RSpec.describe FilteredResults do
     data = {:id=>"211lemoyne-61545",
       :type=>"data",
       :attributes=>
-      {:category=>"healthcare",
+      {:category=>"urgent+care",
         :provider_name=>"INFORMATION ON SJOGREN'S SYNDROME",
         :street=>"10701 Parkridge Boulevard, Suite 170",
         :city=>"Reston",
         :state=>"VA",
         :lat=>"38.944657",
         :lon=>"-77.314382",
-        :description=>"Provides the most up-to-date information about Sjogren's syndrome to patients and healthcare providers."
+        :description=>"Provides the most up-to-date information about Sjogren's syndrome to patients and urgent+care providers."
       }
     }
-    keyword = "healthcare"
+    keyword = "urgent+care"
     filtered_results = FilteredResults.new(data, keyword)
 
     expect(filtered_results).to be_a(FilteredResults)
     expect(filtered_results.id).to eq("211lemoyne-61545")
-    expect(filtered_results.category).to eq("healthcare")
+    expect(filtered_results.category).to eq("urgent+care")
     expect(filtered_results.provider_name).to eq("INFORMATION ON SJOGREN'S SYNDROME")
     expect(filtered_results.street).to eq("10701 Parkridge Boulevard, Suite 170")
     expect(filtered_results.city).to eq("Reston")
