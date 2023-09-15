@@ -4,6 +4,7 @@
 
 body {
 	background-color: #ededeb;
+	margin: 10px 30px;
 }
 
 #app-topper h1, #app-topper h3 {
@@ -44,4 +45,23 @@ body {
 
 #urgent-button {
 	color: black;
+}
+
+.results-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.result-item {
+  width: calc(33.33% - 20px); /* 20px is the combined margin and border width */
+  padding: 10px;
+  margin: 10px;
+  border: 1px solid #ccc;
+}
+
+@media (max-width: 768px) {
+  .result-item {
+    width: 100%; /* On narrow screens, make each item take up the full width */
+  }
 }
