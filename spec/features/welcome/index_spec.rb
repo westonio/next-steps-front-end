@@ -42,6 +42,14 @@ RSpec.describe 'Welcome Page', :vcr do
         end
       end
 
+      it "uses JavaScript geolocation to auto-populate the location text_field", js: true do
+        # page.execute_script("navigator.geolocation.getCurrentPosition")
+        
+        # within('div.select-urgent-services') do
+        #   expect(page).to have_field('Enter your City, State, and/or Zip Code', with: 'San Francisco, CA')
+        # end
+      end
+
       it 'has a checkbox for: Urgent Care, Crisis Hotline, Shelter For Tonight, Food, and Susbstance Use' do
         within('div.select-urgent-services') do
           expect(page).to have_content('What do you need most help with today? (Check all that apply):')

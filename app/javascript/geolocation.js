@@ -6,6 +6,13 @@ document.addEventListener('DOMContentLoaded', function() {
     maximumAge: 0,
   };
 
+  const geolocationButton = document.getElementById('geolocation-button');
+  if (geolocationButton) {
+    geolocationButton.addEventListener('click', function() {
+      navigator.geolocation.getCurrentPosition(success, error, options);
+    });
+  }
+
   function success(pos) {
     const crd = pos.coords;
 
