@@ -10,5 +10,5 @@ Rails.application.routes.draw do
 
   # Search
   resources :search_results, only: [:index, :show]
-
+  resources :search_resources, only: [:index]
 end

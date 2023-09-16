@@ -1,4 +1,6 @@
 <%= javascript_include_tag "geolocation.js" %>
+<%= javascript_include_tag "concurrent_location_entry.js" %>
+
 <!-- Leaflet library -->
 <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
 <!-- Leaflet Geocoder -->
@@ -13,7 +15,7 @@
     <%= form_with url: search_results_path, method: :get, local: true do |form| %>
       <%= form.label :location, 'Enter your City, State, and/or Zip Code' %><br/>
       <div class="display-flex">
-        <%= form.text_field :location, size: "40" %> 
+        <%= form.text_field :location, size: "40", id: "location" %> 
       
         <div class="geolocation-button">
           <button id="geolocation-button"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
@@ -66,6 +68,21 @@
       <br/>
   
       <%= form.submit 'Get Help!', id: "get-help-button" %>
+    </div>
+  <% end %>
+</div>
+
+<div class="search-bar">
+  <h3 class="search-section-label">Find Other Resources:</h3>
+  <%= form_with url: search_resources_path, method: :get, local: true do |form| %>
+    <div class="input-group">
+
+      <%= form.text_field :search, placeholder: "Enter your search here", id: "form-control" %>
+      <%= form.hidden_field :hidden_location, id: "hidden-location" %>
+
+      <span class="input-group-btn">
+        <button class="btn btn-primary" type="submit">Search</button>
+      </span>
     </div>
   <% end %>
 </div>

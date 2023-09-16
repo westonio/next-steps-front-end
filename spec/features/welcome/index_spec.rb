@@ -197,5 +197,17 @@ RSpec.describe 'Welcome Page', :vcr do
         expect(page).to_not have_content("Group Help results")
       end
     end
+
+    # Search Bar
+    describe "search bar" do
+      it "has a search bar for general search" do
+        within('div.search-bar') do
+          expect(page).to have_content("Find Other Resources:")
+          expect(page).to have_field("search")
+          expect(page).to have_field(placeholder: "Enter your search here")
+          expect(page).to have_button("Search")
+        end
+      end
+    end
   end
 end

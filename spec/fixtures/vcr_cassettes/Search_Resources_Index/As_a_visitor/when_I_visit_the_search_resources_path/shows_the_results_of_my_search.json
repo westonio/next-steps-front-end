@@ -1,0 +1,172 @@
+{
+  "http_interactions": [
+    {
+      "request": {
+        "method": "get",
+        "uri": "https://ancient-reaches-38594-79ad833137d5.herokuapp.com/api/v0/search?keyword=&location=",
+        "body": {
+          "encoding": "US-ASCII",
+          "string": ""
+        },
+        "headers": {
+          "User-Agent": [
+            "Faraday v2.7.11"
+          ],
+          "Accept-Encoding": [
+            "gzip;q=1.0,deflate;q=0.6,identity;q=0.3"
+          ],
+          "Accept": [
+            "*/*"
+          ]
+        }
+      },
+      "response": {
+        "status": {
+          "code": 400,
+          "message": "Bad Request"
+        },
+        "headers": {
+          "Server": [
+            "Cowboy"
+          ],
+          "Date": [
+            "Sat, 16 Sep 2023 23:16:46 GMT"
+          ],
+          "Connection": [
+            "keep-alive"
+          ],
+          "X-Frame-Options": [
+            "SAMEORIGIN"
+          ],
+          "X-Xss-Protection": [
+            "0"
+          ],
+          "X-Content-Type-Options": [
+            "nosniff"
+          ],
+          "X-Download-Options": [
+            "noopen"
+          ],
+          "X-Permitted-Cross-Domain-Policies": [
+            "none"
+          ],
+          "Referrer-Policy": [
+            "strict-origin-when-cross-origin"
+          ],
+          "Content-Type": [
+            "application/json; charset=utf-8"
+          ],
+          "Vary": [
+            "Accept"
+          ],
+          "Cache-Control": [
+            "no-cache"
+          ],
+          "X-Request-Id": [
+            "2aef7b61-855c-4637-b77a-f17c1f23584e"
+          ],
+          "X-Runtime": [
+            "0.211823"
+          ],
+          "Transfer-Encoding": [
+            "chunked"
+          ],
+          "Via": [
+            "1.1 vegur"
+          ]
+        },
+        "body": {
+          "encoding": "UTF-8",
+          "string": "{\"errors\":[{\"detail\":\"Invalid Parameters\"}]}"
+        }
+      },
+      "recorded_at": "Sat, 16 Sep 2023 23:16:46 GMT"
+    },
+    {
+      "request": {
+        "method": "get",
+        "uri": "https://ancient-reaches-38594-79ad833137d5.herokuapp.com/api/v0/search?keyword=family&location=denver",
+        "body": {
+          "encoding": "US-ASCII",
+          "string": ""
+        },
+        "headers": {
+          "User-Agent": [
+            "Faraday v2.7.11"
+          ],
+          "Accept-Encoding": [
+            "gzip;q=1.0,deflate;q=0.6,identity;q=0.3"
+          ],
+          "Accept": [
+            "*/*"
+          ]
+        }
+      },
+      "response": {
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "headers": {
+          "Server": [
+            "Cowboy"
+          ],
+          "Date": [
+            "Sat, 16 Sep 2023 23:21:02 GMT"
+          ],
+          "Connection": [
+            "keep-alive"
+          ],
+          "X-Frame-Options": [
+            "SAMEORIGIN"
+          ],
+          "X-Xss-Protection": [
+            "0"
+          ],
+          "X-Content-Type-Options": [
+            "nosniff"
+          ],
+          "X-Download-Options": [
+            "noopen"
+          ],
+          "X-Permitted-Cross-Domain-Policies": [
+            "none"
+          ],
+          "Referrer-Policy": [
+            "strict-origin-when-cross-origin"
+          ],
+          "Content-Type": [
+            "application/json; charset=utf-8"
+          ],
+          "Vary": [
+            "Accept"
+          ],
+          "Etag": [
+            "W/\"6c1befdbea922f1b7c5fa36ccef2da7b\""
+          ],
+          "Cache-Control": [
+            "max-age=0, private, must-revalidate"
+          ],
+          "X-Request-Id": [
+            "7e03391b-8752-4a9c-9c16-153399c514fc"
+          ],
+          "X-Runtime": [
+            "0.423056"
+          ],
+          "Transfer-Encoding": [
+            "chunked"
+          ],
+          "Via": [
+            "1.1 vegur"
+          ]
+        },
+        "body": {
+          "encoding": "UTF-8",
+          "string": "{\"data\":[{\"id\":\"211colorad-a0h4T000002tzlHQAQ\",\"type\":\"filtered_provider\",\"attributes\":{\"category\":\"family\",\"provider_name\":\"FAMILY SUPPORT\",\"street\":\"11177 W 8th Ave\",\"city\":\"Lakewood\",\"state\":\"CO\",\"lat\":\"39.729830\",\"lon\":\"-105.122882\",\"description\":\"Provides funding to address disability related needs, as well as:InformationSupportResource coordination\"}},{\"id\":\"211colorad-a0h4T0000017Iu2QAE\",\"type\":\"filtered_provider\",\"attributes\":{\"category\":\"family\",\"provider_name\":\"CHILD \\u0026 FAMILY THERAPY\",\"street\":\"363 S Harlan St\",\"city\":\"Lakewood\",\"state\":\"CO\",\"lat\":\"39.710060\",\"lon\":\"-105.063340\",\"description\":\"Provides individual, couples, and family therapy in-home to persons referred by their local county Department of Human Services. Services are provided by clinicians with the goal of:Keeping families together whenever possibleEnsuring child safety and well-beingHelping families gain stability\"}},{\"id\":\"211colorad-a0h4T0000017LQ5QAM\",\"type\":\"filtered_provider\",\"attributes\":{\"category\":\"family\",\"provider_name\":\"ADOPTIVE FAMILY SUPPORT\",\"street\":\"1035 Osage St\",\"city\":\"Denver\",\"state\":\"CO\",\"lat\":\"39.733110\",\"lon\":\"-105.005770\",\"description\":\"Provides support, services, and guidance to adoptive families experiencing the unique challenges and issues related to adoption. Services include:Assessments and evaluationParenting educationFamily counselingSupport groups for youthSupport referrals\"}},{\"id\":\"211colorad-a0h4T000002u0eYQAQ\",\"type\":\"filtered_provider\",\"attributes\":{\"category\":\"family\",\"provider_name\":\"FAMILY CAREGIVER SUBSIDY\",\"street\":\"9197 W 6th Ave\",\"city\":\"Lakewood\",\"state\":\"CO\",\"lat\":\"39.724993\",\"lon\":\"-105.100127\",\"description\":\"Offers financial assistance to individuals interested in becoming a Certified Nurse Aide (CNA) in order to assist a family member who needs care.\"}},{\"id\":\"211colorad-a0h4T0000017LiVQAU\",\"type\":\"filtered_provider\",\"attributes\":{\"category\":\"family\",\"provider_name\":\"SUPPORT FOR SURVIVORS OF ABUSE\",\"street\":\"11100 W 8th Ave\",\"city\":\"Lakewood\",\"state\":\"CO\",\"lat\":\"39.728300\",\"lon\":\"-105.122100\",\"description\":\"Provides coordinated services for survivors of abuse and connects individuals and families to community partners who offer comprehensive legal, emotional, and critical support.\"}},{\"id\":\"211colorad-a0h4T000002tzkVQAQ\",\"type\":\"filtered_provider\",\"attributes\":{\"category\":\"family\",\"provider_name\":\"COMMUNITY-BASED SERVICES\",\"street\":\"1501 Albion St\",\"city\":\"Denver\",\"state\":\"CO\",\"lat\":\"39.740278\",\"lon\":\"-104.938944\",\"description\":\"Provides trauma-informed behavioral health interventions, skill building psychoeducation and resources to families through a team approach that includes a primary therapist, behavior coach, and case manager.\\r\\nIncludes the following programs:Intensive In-Home Therapy serves youth (aged 6 - 17) who have mental health issues that interfere with functioning at home, school, or in the community.Early Childhood CBS Program is an extension of IIH dedicated to infants and toddlers (aged 0 - 5) and their caregivers who are experiencing a variety of issues related to this sensitive stage of development.\"}},{\"id\":\"211colorad-a0h4T000003fW3LQAU\",\"type\":\"filtered_provider\",\"attributes\":{\"category\":\"family\",\"provider_name\":\"FOSTER CARE RECRUITMENT \\u0026 PLACEMENT\",\"street\":\"2821 South Parker Rd\",\"city\":\"Aurora\",\"state\":\"CO\",\"lat\":\"39.665770\",\"lon\":\"-104.860480\",\"description\":\"Provides: Foster care recruitment and placement servicesFoster care family supportive servicesLicensing supportOngoing parenting classes\"}},{\"id\":\"211colorad-a0h4T000003faKbQAI\",\"type\":\"filtered_provider\",\"attributes\":{\"category\":\"family\",\"provider_name\":\"FAMILY MEDICINE\",\"street\":\"12600 E Albrook Dr\",\"city\":\"Denver\",\"state\":\"CO\",\"lat\":\"39.781091\",\"lon\":\"-104.843940\",\"description\":\"Offers primary care services for the entire family, including:Family planningObstetricsWellness checks for children\"}},{\"id\":\"211colorad-a0h4T000003faKaQAI\",\"type\":\"filtered_provider\",\"attributes\":{\"category\":\"family\",\"provider_name\":\"FAMILY MEDICINE\",\"street\":\"1001 Yosemite St\",\"city\":\"Denver\",\"state\":\"CO\",\"lat\":\"39.731955\",\"lon\":\"-104.884775\",\"description\":\"Offers primary care services for the entire family, including:Family planningObstetricsWellness checks for children\"}},{\"id\":\"211colorad-a0h4T000003faKfQAI\",\"type\":\"filtered_provider\",\"attributes\":{\"category\":\"family\",\"provider_name\":\"FAMILY MEDICINE\",\"street\":\"4995 E 33rd Ave\",\"city\":\"Denver\",\"state\":\"CO\",\"lat\":\"39.764063\",\"lon\":\"-104.929874\",\"description\":\"Offers primary care services for the entire family, including:Family planningObstetricsWellness checks for children\"}}]}"
+        }
+      },
+      "recorded_at": "Sat, 16 Sep 2023 23:21:02 GMT"
+    }
+  ],
+  "recorded_with": "VCR 6.2.0"
+}

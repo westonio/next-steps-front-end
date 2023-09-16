@@ -10,10 +10,11 @@ class SearchFacade
               :housing,
               :addiction_management,
               :employment,
-              :group_therapy
+              :group_therapy,
+              :general_search
 
   def initialize(params)
-    @location = params[:location]
+    @location = params[:location] || params[:hidden_location]
     @urgent_care = get_results("urgent+care") if params[:urgent_care] == "1"
     @crisis_hotline = get_results("crisis+hotline") if params[:crisis_hotline] == "1"
     @shelter_tonight = get_results("shelter") if params[:shelter_tonight] == "1"
@@ -25,6 +26,7 @@ class SearchFacade
     @addiction_management = get_results("addiction") if params[:addiction_management] == "1"
     @employment = get_results("employment") if params[:employment] == "1"
     @group_therapy = get_results("group+therapy") if params[:group_therapy] == "1"
+    @general_search = get_results(params[:search])
   end
 
   def get_results(keyword)

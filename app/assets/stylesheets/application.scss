@@ -104,3 +104,28 @@ body {
 	display: flex;
 	margin: 10px 0 0 50px;
 }
+
+.search-bar {
+	margin-bottom: 50px;
+	margin-left: 50px;
+}
+
+.input-group {
+	display: flex;
+	margin: 10px;
+}
+
+.btn-primary {
+	background-color: rgb(110, 141, 195);
+	width: 100px;
+	box-shadow: 3px 3px 6px black;
+}
+
+#form-control {
+	width: 33%;
+	padding: 5px;
+}
+
+.search-section-label {
+	padding: 10px;
+}

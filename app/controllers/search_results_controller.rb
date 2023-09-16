@@ -13,7 +13,6 @@ class SearchResultsController < ApplicationController
   end
   
   def show
-    # @search_results in a View page
     @results = SearchFacade.new(params)
     @category = params[:id]
   end

@@ -80,101 +80,89 @@
 <% if @results.medicaid %>
   <h3>Medicaid results</h3>
   <p>See more results</p>
-  <table>
-    <tr>
-      <% @results.medicaid[0..2].each do |provider| %>
-        <td style = "width: 33%; vertical-align: top; padding: 5px;" >
-          <b>Provider name:</b> <%= provider.provider_name %><br />
-          <b>Address:</b> <%= provider.street %><br />
-          <b>City:</b> <%= provider.city %><br />
-          <b>Description:</b> <%= provider.description[0,100] %>...
-        </td>
-      <% end %>
-    </tr>
-  </table>
+  <div class="results-container">
+    <% @results.medicaid[0..2].each do |provider| %>
+      <div class="result-item">
+        <b>Provider name:</b> <%= provider.provider_name %><br>
+        <b>Address:</b> <%= provider.street %><br>
+        <b>City:</b> <%= provider.city %><br>
+        <b>Description:</b> <%= provider.description[0, 100] %>...
+      </div>
+    <% end %>
+  </div>
 <% end %>
 
 <% if @results.mental_health_care %>
   <h3>Mental Health Care results</h3>
   <p>See more results</p>
-  <table>
-    <tr>
-      <% @results.mental_health_care[0..2].each do |provider| %>
-        <td style = "width: 33%; vertical-align: top; padding: 5px;" >
-          <b>Provider name:</b> <%= provider.provider_name %><br />
-          <b>Address:</b> <%= provider.street %><br />
-          <b>City:</b> <%= provider.city %><br />
-          <b>Description:</b> <%= provider.description[0,100] %>...
-        </td>
-      <% end %>
-    </tr>
-  </table>
+  <div class="results-container">
+    <% @results.mental_health_care[0..2].each do |provider| %>
+      <div class="result-item">
+        <b>Provider name:</b> <%= provider.provider_name %><br>
+        <b>Address:</b> <%= provider.street %><br>
+        <b>City:</b> <%= provider.city %><br>
+        <b>Description:</b> <%= provider.description[0, 100] %>...
+      </div>
+    <% end %>
+  </div>
 <% end %>
 
 <% if @results.housing %>
   <h3>Housing results</h3>
   <p>See more results</p>
-  <table>
-    <tr>
-      <% @results.housing[0..2].each do |provider| %>
-        <td style = "width: 33%; vertical-align: top; padding: 5px;" >
-          <b>Provider name:</b> <%= provider.provider_name %><br />
-          <b>Address:</b> <%= provider.street %><br />
-          <b>City:</b> <%= provider.city %><br />
-          <b>Description:</b> <%= provider.description[0,100] %>...
-        </td>
-      <% end %>
-    </tr>
-  </table>
+ <div class="results-container">
+    <% @results.housing[0..2].each do |provider| %>
+      <div class="result-item">
+        <b>Provider name:</b> <%= provider.provider_name %><br>
+        <b>Address:</b> <%= provider.street %><br>
+        <b>City:</b> <%= provider.city %><br>
+        <b>Description:</b> <%= provider.description[0, 100] %>...
+      </div>
+    <% end %>
+  </div>
 <% end %>
 
 <% if @results.addiction_management %>
   <h3>Addiction Management results</h3>
   <p>See more results</p>
-  <table>
-    <tr>
-      <% @results.addiction_management[0..2].each do |provider| %>
-        <td style = "width: 33%; vertical-align: top; padding: 5px;" >
-          <b>Provider name:</b> <%= provider.provider_name %><br />
-          <b>Address:</b> <%= provider.street %><br />
-          <b>City:</b> <%= provider.city %><br />
-          <b>Description:</b> <%= provider.description[0,100] %>...
-        </td>
-      <% end %>
-    </tr>
-  </table>
+<div class="results-container">
+    <% @results.addiction_management[0..2].each do |provider| %>
+      <div class="result-item">
+        <b>Provider name:</b> <%= provider.provider_name %><br>
+        <b>Address:</b> <%= provider.street %><br>
+        <b>City:</b> <%= provider.city %><br>
+        <b>Description:</b> <%= provider.description[0, 100] %>...
+      </div>
+    <% end %>
+  </div>
 <% end %>
 
 <% if @results.employment %>
   <h3>Employment results</h3>
   <p>See more results</p>
-  <table>
-    <tr>
-      <% @results.employment[0..2].each do |provider| %>
-        <td style = "width: 33%; vertical-align: top; padding: 5px;" >
-          <b>Provider name:</b> <%= provider.provider_name %><br />
-          <b>Address:</b> <%= provider.street %><br />
-          <b>City:</b> <%= provider.city %><br />
-          <b>Description:</b> <%= provider.description[0,100] %>...
-        </td>
-      <% end %>
-    </tr>
-  </table>
+  <div class="results-container">
+    <% @results.employment[0..2].each do |provider| %>
+      <div class="result-item">
+        <b>Provider name:</b> <%= provider.provider_name %><br>
+        <b>Address:</b> <%= provider.street %><br>
+        <b>City:</b> <%= provider.city %><br>
+        <b>Description:</b> <%= provider.description[0, 100] %>...
+      </div>
+    <% end %>
+  </div>
 <% end %>
 
 <% if @results.group_therapy %>
   <h3>Group Help results</h3>
   <p>See more results</p>
-  <table>
-    <tr>
-      <% @results.group_therapy[0..2].each do |provider| %>
-        <td style = "width: 33%; vertical-align: top; padding: 5px;" >
-          <b>Provider name:</b> <%= provider.provider_name %><br />
-          <b>Address:</b> <%= provider.street %><br />
-          <b>City:</b> <%= provider.city %><br />
-          <b>Description:</b> <%= provider.description[0,100] %>...
-        </td>
-      <% end %>
-    </tr>
-  </table>
+<div class="results-container">
+    <% @results.group_therapy[0..2].each do |provider| %>
+      <div class="result-item">
+        <b>Provider name:</b> <%= provider.provider_name %><br>
+        <b>Address:</b> <%= provider.street %><br>
+        <b>City:</b> <%= provider.city %><br>
+        <b>Description:</b> <%= provider.description[0, 100] %>...
+      </div>
+    <% end %>
+  </div>
 <% end %>
