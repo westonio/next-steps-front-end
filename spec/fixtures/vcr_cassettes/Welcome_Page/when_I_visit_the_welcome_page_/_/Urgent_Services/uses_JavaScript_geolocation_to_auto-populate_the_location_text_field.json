@@ -42510,6 +42510,329 @@
         }
       },
       "recorded_at": "Fri, 15 Sep 2023 20:38:29 GMT"
+    },
+    {
+      "request": {
+        "method": "get",
+        "uri": "http://127.0.0.1:64404/__identify__",
+        "body": {
+          "encoding": "US-ASCII",
+          "string": ""
+        },
+        "headers": {
+          "Accept-Encoding": [
+            "gzip;q=1.0,deflate;q=0.6,identity;q=0.3"
+          ],
+          "Accept": [
+            "*/*"
+          ],
+          "User-Agent": [
+            "Ruby"
+          ]
+        }
+      },
+      "response": {
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "headers": {
+          "Content-Length": [
+            "5"
+          ]
+        },
+        "body": {
+          "encoding": "UTF-8",
+          "string": "17440"
+        }
+      },
+      "recorded_at": "Fri, 15 Sep 2023 23:26:22 GMT"
+    },
+    {
+      "request": {
+        "method": "get",
+        "uri": "http://127.0.0.1:53487/__identify__",
+        "body": {
+          "encoding": "US-ASCII",
+          "string": ""
+        },
+        "headers": {
+          "Accept-Encoding": [
+            "gzip;q=1.0,deflate;q=0.6,identity;q=0.3"
+          ],
+          "Accept": [
+            "*/*"
+          ],
+          "User-Agent": [
+            "Ruby"
+          ]
+        }
+      },
+      "response": {
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "headers": {
+          "Content-Length": [
+            "5"
+          ]
+        },
+        "body": {
+          "encoding": "UTF-8",
+          "string": "17440"
+        }
+      },
+      "recorded_at": "Fri, 15 Sep 2023 23:48:21 GMT"
+    },
+    {
+      "request": {
+        "method": "post",
+        "uri": "http://127.0.0.1:4444/session/42e9cfbb-e0ed-4c77-880e-8aa86b527241/element/c84cef35-ef67-46b6-b9cd-941f4d659977/click",
+        "body": {
+          "encoding": "UTF-8",
+          "string": "{}"
+        },
+        "headers": {
+          "Accept": [
+            "application/json"
+          ],
+          "Content-Type": [
+            "application/json; charset=UTF-8"
+          ],
+          "User-Agent": [
+            "selenium/4.12.0 (ruby macosx)"
+          ],
+          "Content-Length": [
+            "2"
+          ],
+          "Accept-Encoding": [
+            "gzip;q=1.0,deflate;q=0.6,identity;q=0.3"
+          ]
+        }
+      },
+      "response": {
+        "status": {
+          "code": 404,
+          "message": "Not Found"
+        },
+        "headers": {
+          "Content-Type": [
+            "application/json; charset=utf-8"
+          ],
+          "Cache-Control": [
+            "no-cache"
+          ],
+          "Content-Length": [
+            "123"
+          ],
+          "Date": [
+            "Fri, 15 Sep 2023 23:48:21 GMT"
+          ]
+        },
+        "body": {
+          "encoding": "UTF-8",
+          "string": "{\"value\":{\"error\":\"invalid session id\",\"message\":\"Tried to run command without establishing a connection\",\"stacktrace\":\"\"}}"
+        }
+      },
+      "recorded_at": "Fri, 15 Sep 2023 23:48:21 GMT"
+    },
+    {
+      "request": {
+        "method": "get",
+        "uri": "http://127.0.0.1:57432/__identify__",
+        "body": {
+          "encoding": "US-ASCII",
+          "string": ""
+        },
+        "headers": {
+          "Accept-Encoding": [
+            "gzip;q=1.0,deflate;q=0.6,identity;q=0.3"
+          ],
+          "Accept": [
+            "*/*"
+          ],
+          "User-Agent": [
+            "Ruby"
+          ]
+        }
+      },
+      "response": {
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "headers": {
+          "Content-Length": [
+            "5"
+          ]
+        },
+        "body": {
+          "encoding": "UTF-8",
+          "string": "17460"
+        }
+      },
+      "recorded_at": "Sat, 16 Sep 2023 00:04:32 GMT"
+    },
+    {
+      "request": {
+        "method": "get",
+        "uri": "http://127.0.0.1:57752/__identify__",
+        "body": {
+          "encoding": "US-ASCII",
+          "string": ""
+        },
+        "headers": {
+          "Accept-Encoding": [
+            "gzip;q=1.0,deflate;q=0.6,identity;q=0.3"
+          ],
+          "Accept": [
+            "*/*"
+          ],
+          "User-Agent": [
+            "Ruby"
+          ]
+        }
+      },
+      "response": {
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "headers": {
+          "Content-Length": [
+            "5"
+          ]
+        },
+        "body": {
+          "encoding": "UTF-8",
+          "string": "17460"
+        }
+      },
+      "recorded_at": "Sat, 16 Sep 2023 00:05:49 GMT"
+    },
+    {
+      "request": {
+        "method": "post",
+        "uri": "http://127.0.0.1:9515/session/a0c973a849a12878c2fea9fbe4ae9f99/element/AEBC58281BABC005542A9893699C9535_element_30/click",
+        "body": {
+          "encoding": "UTF-8",
+          "string": "{}"
+        },
+        "headers": {
+          "Accept": [
+            "application/json"
+          ],
+          "Content-Type": [
+            "application/json; charset=UTF-8"
+          ],
+          "User-Agent": [
+            "selenium/4.12.0 (ruby macosx)"
+          ],
+          "Content-Length": [
+            "2"
+          ],
+          "Accept-Encoding": [
+            "gzip;q=1.0,deflate;q=0.6,identity;q=0.3"
+          ]
+        }
+      },
+      "response": {
+        "status": {
+          "code": 404,
+          "message": "Not Found"
+        },
+        "headers": {
+          "Content-Length": [
+            "1231"
+          ],
+          "Content-Type": [
+            "application/json; charset=utf-8"
+          ],
+          "Cache-Control": [
+            "no-cache"
+          ]
+        },
+        "body": {
+          "encoding": "UTF-8",
+          "string": "{\"value\":{\"error\":\"invalid session id\",\"message\":\"invalid session id\",\"stacktrace\":\"0   chromedriver                        0x000000010323265c chromedriver + 4318812\\n1   chromedriver                        0x000000010322ad00 chromedriver + 4287744\\n2   chromedriver                        0x0000000102e5c644 chromedriver + 296516\\n3   chromedriver                        0x0000000102e8d940 chromedriver + 497984\\n4   chromedriver                        0x0000000102eb763c chromedriver + 669244\\n5   chromedriver                        0x0000000102eb6cb4 chromedriver + 666804\\n6   chromedriver                        0x0000000102e2a0c0 chromedriver + 90304\\n7   chromedriver                        0x00000001031f2c40 chromedriver + 4058176\\n8   chromedriver                        0x00000001031f7160 chromedriver + 4075872\\n9   chromedriver                        0x00000001031bae68 chromedriver + 3829352\\n10  chromedriver                        0x00000001031f7c4c chromedriver + 4078668\\n11  chromedriver                        0x00000001031cff08 chromedriver + 3915528\\n12  chromedriver                        0x0000000102e28ad8 chromedriver + 84696\\n13  dyld                                0x000000018cd87f28 start + 2236\\n\"}}"
+        }
+      },
+      "recorded_at": "Sat, 16 Sep 2023 00:05:50 GMT"
+    },
+    {
+      "request": {
+        "method": "get",
+        "uri": "http://127.0.0.1:57919/__identify__",
+        "body": {
+          "encoding": "US-ASCII",
+          "string": ""
+        },
+        "headers": {
+          "Accept-Encoding": [
+            "gzip;q=1.0,deflate;q=0.6,identity;q=0.3"
+          ],
+          "Accept": [
+            "*/*"
+          ],
+          "User-Agent": [
+            "Ruby"
+          ]
+        }
+      },
+      "response": {
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "headers": {
+          "Content-Length": [
+            "5"
+          ]
+        },
+        "body": {
+          "encoding": "UTF-8",
+          "string": "17460"
+        }
+      },
+      "recorded_at": "Sat, 16 Sep 2023 00:06:28 GMT"
+    },
+    {
+      "request": {
+        "method": "get",
+        "uri": "http://127.0.0.1:57979/__identify__",
+        "body": {
+          "encoding": "US-ASCII",
+          "string": ""
+        },
+        "headers": {
+          "Accept-Encoding": [
+            "gzip;q=1.0,deflate;q=0.6,identity;q=0.3"
+          ],
+          "Accept": [
+            "*/*"
+          ],
+          "User-Agent": [
+            "Ruby"
+          ]
+        }
+      },
+      "response": {
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "headers": {
+          "Content-Length": [
+            "5"
+          ]
+        },
+        "body": {
+          "encoding": "UTF-8",
+          "string": "17460"
+        }
+      },
+      "recorded_at": "Sat, 16 Sep 2023 00:06:41 GMT"
     }
   ],
   "recorded_with": "VCR 6.2.0"

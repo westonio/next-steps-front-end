@@ -65,7 +65,6 @@ group :development, :test do
   gem "launchy"
   gem "webmock"
   gem "vcr"
-  gem 'selenium-webdriver'
 end
 
 group :development do

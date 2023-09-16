@@ -45,13 +45,16 @@ body {
 	display: inline-block;
 	padding: 5px;
 	width: fit-content;
-	border-radius: 10px;
-	margin-left: 5px;
+	border-radius: 5px;
+	margin-left: 10px;
+	background-color: rgb(110, 141, 195);
+	box-shadow: 3px 3px 6px black;
 }
 
 #geolocation-button:hover {
 	background-color: rgb(164, 164, 167);
 	color: black;
+	transition: opacity 0.3s;
 }
 
 .display-flex {
