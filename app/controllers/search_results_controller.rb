@@ -1,4 +1,6 @@
 class SearchResultsController < ApplicationController
+
+  before_action :search_results, only: [:index, :show]
   
   def index
     begin
@@ -11,6 +13,10 @@ class SearchResultsController < ApplicationController
     @results = search_results
   end
 
+  def show
+    # @search_results in a View page
+  end
+
   private
   def location_added?
     raise "Please enter your city, state, and/or zip code" unless !params[:location].blank?
@@ -18,5 +24,9 @@ class SearchResultsController < ApplicationController
 
   def at_least_one_checked?
     raise "Please select at least one service" unless params[:urgent_care] == "1" || params[:crisis_hotline] == "1" || params[:shelter_tonight] == "1" || params[:food] == "1" || params[:substance_use] == "1"
+  end
+  
+  def search_results
+    @_search_results ||= SearchFacade.new(params)
   end
 end

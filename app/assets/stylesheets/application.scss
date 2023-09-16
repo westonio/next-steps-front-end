@@ -2,6 +2,9 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+$transition-collapse:         height .35s ease;
+$transition-collapse-width:   width .35s ease;
+
 body {
 	background-color: #ededeb;
 	margin: 10px 30px;
