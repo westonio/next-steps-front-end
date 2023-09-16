@@ -6,7 +6,7 @@ Link to [Next Steps Website](https://next-steps-front-end-4778e35e4143.herokuapp
 
 1. [Project Description](#project-description)
 2. [Inspiration](#inspiration)
-3. [Testamonials](#testamonials)
+3. [Testimonials](#testimonials)
 4. [Case Studies](#case-studies)
 5. [Features](#features)
 6. [Usage](#usage)
@@ -17,14 +17,13 @@ Link to [Next Steps Website](https://next-steps-front-end-4778e35e4143.herokuapp
 - Ruby 3.2.2
 - Rails 7.0.7.2
 - [Faraday](https://github.com/lostisland/faraday) gem to interact with APIs
-- [JSONAPI Serializer](https://github.com/jsonapi-serializer/jsonapi-serializer) gem for formatting JSON responses
 - [SimpleCov](https://github.com/simplecov-ruby/simplecov) gem for code coverage tracking
 - [ShouldaMatchers](https://github.com/thoughtbot/shoulda-matchers) gem for testing assertions
 - [VCR](https://github.com/vcr/vcr) / [Webmock](https://github.com/bblimke/webmock) to stub HTTP requests in tests to simulate API interactions
 
 ## Project Description
 
-**Next Steps** is full-stack project that leverages the [211 API](https://apiportal.211.org) along with geolocation to assist individuals in finding community resources in their vicinity.  We thought it was particularly important to create search options catored to persons who may not have the ability to navigate existing resources.  This repository contains the front-end portion of the project which utlizes the [API](https://github.com/westonio/next-steps-back-end) provided by the back-end repository.
+**Next Steps** is full-stack project that leverages the [211 API](https://apiportal.211.org) along with geolocation to assist individuals in finding community resources in their vicinity.  We thought it was particularly important to create search options catered to persons who may not have the ability to navigate existing resources.  This repository contains the front-end portion of the project which utilizes the [API](https://github.com/westonio/next-steps-back-end) provided by the back-end repository.
 
 This project has been deployed using [Heroku](https://id.heroku.com/login), and [Circle CI](https://circleci.com/) was used for Continuous Integration.
 
@@ -40,9 +39,9 @@ This tool is designed to assist a wide range of professionals, including crisis 
 
 ### Testimonials
 
-*"Right now, I have a list of 12 different links that I use when I research options for my clients.  I would love to have an app that has everything in one place"* - anonomous case manager
+*"Right now, I have a list of 12 different links that I use when I research options for my clients.  I would love to have an app that has everything in one place"* - anonymous case manager
 
-*"It is challening for people with mental health struggles to have the wherewithal to search the internet for resources they need, let alone come up with the 'next step' on their to do list.  This kind of help is great for them."* - anonomous social worker
+*"It is challenging for people with mental health struggles to have the wherewithal to search the internet for resources they need, let alone come up with the 'next step' on their to do list.  This kind of help is great for them."* - anonymous social worker
 
 *"The hardest part of my job is to find housing for people who have criminal backgrounds.  If there was a way for housing providers to add their listings, I would be grateful"* - housing specialist
 
@@ -71,12 +70,12 @@ This tool is designed to assist a wide range of professionals, including crisis 
 
 ## Usage
 
-This project is the front-end user experience that utilzes an API endpoint to create convienient search options for individuals we serve.  The endpoint takes in two parameters, "keyword" and "location".  We proivde the user with some keywords built in, such as "basic needs", "shelters", "medical care", "mental health care", and others.  They can select keywords from our provided options, or utilize the search bar to search their own keyword(s).
+This project is the front-end user experience that utilizes an API endpoint to create convenient search options for individuals we serve.  The endpoint takes in two parameters, "keyword" and "location".  We provide the user with some keywords built in, such as "basic needs", "shelters", "medical care", "mental health care", and others.  They can select keywords from our provided options, or utilize the search bar to search their own keyword(s).
 
 ### Future Iterations
 
-- Scale: Utlize cloud storage to store data for Providers and resource list saved by user.  
-- Utilze [Open AI API](https://openai.com/blog/openai-api) for generating motivational statements based on user's identified needs.
+- Scale: Utilize cloud storage to store data for Providers and resource list saved by user.  
+- Utilize [Open AI API](https://openai.com/blog/openai-api) for generating motivational statements based on user's identified needs.
 - Create additional pre-built search options that make finding resources easy and convenient.
 - Provider dashboard and Admin functionality.
 
@@ -85,5 +84,5 @@ This project is the front-end user experience that utilzes an API endpoint to cr
 - [Allen Russell](allenrusselldev@gmail.com) - GitHub: [@garussell](https://github.com/garussell)
 - [Weston Schutt](wtschutt@gmail.com)        - GitHub: [@westonio](https://github.com/westonio)
 - [Kaina Cockett](kainacockett@gmail.com)    - GitHub: [@kcockett](https://github.com/kcockett)
-- [Zanna Fitch](zannafitch2004@gmail.com)    - GitHub: [@z-fitch](https://github.com/z-fitch)
+- [Zanna Fitch](zannafitch@gmail.com)    - GitHub: [@z-fitch](https://github.com/z-fitch)
 - [Jorja Flemming](aset284@gmail.com)        - GitHub: [@jorjaf](https://github.com/jorjaf)
