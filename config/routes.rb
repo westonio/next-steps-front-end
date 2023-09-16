@@ -11,4 +11,7 @@ Rails.application.routes.draw do
   # Search
   resources :search_results, only: [:index, :show]
 
+  # Providers
+  resources :providers, only: [:show]
+
 end
