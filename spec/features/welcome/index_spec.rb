@@ -124,5 +124,86 @@ RSpec.describe 'Welcome Page', :vcr do
         expect(page).to have_selector(".motivational-sentence")
       end
     end
+
+    # Non-Urgent Resources Section
+    describe "non-urgent services" do
+      it "has a section that says 'I would like assistance with:'" do
+        within('div.select-non-urgent-services') do
+          expect(page).to have_content("I would like assistance with:")
+        end
+      end
+
+      it 'has a checkbox for: Medicaid, Mental health care, Housing, Food Banks, Addiction Management, Employment, and Group Help' do
+        within('div.select-non-urgent-services') do
+          expect(page).to have_content('What do you need long-term support with? (Check all that apply):')
+          expect(page).to have_field('Medicaid', checked: false)
+          expect(page).to have_field('Mental Health Care', checked: false)
+          expect(page).to have_field('Housing', checked: false)
+          expect(page).to have_field('Food Banks', checked: false)
+          expect(page).to have_field('Addiction Management', checked: false)
+          expect(page).to have_field('Employment', checked: false)
+          expect(page).to have_field('Group Help', checked: false)
+        end
+      end
+
+      xit 'has a button "Get Support"' do
+        within('div.select-non-urgent-services') do
+          expect(page).to have_button('Get Support!')
+        end
+      end
+        
+      context 'using the form' do
+        xit 'shows error if no location information is provided' do
+          within('div.select-non-urgent-services') do
+            check('Medicaid')
+            click_button('Get Support!')
+          end
+          
+          expect(page).to have_content('Please enter your city, state, and/or zip code')
+        end
+          
+        xit 'shows error if no service is selected' do
+          within('div.select-non-urgent-services') do
+            fill_in 'Enter your City, State, and/or Zip Code', with: 'Denver, Colorado'
+            click_button('Get Support!')
+          end
+          
+          expect(page).to have_content('Please select at least one service')
+        end
+          
+        xit 'redirects to the search results page if at least one service is selected' do
+          within('div.select-non-urgent-services') do
+            fill_in 'Enter your City, State, and/or Zip Code', with: 'Denver, Colorado'
+            check('Medicaid')
+            
+            expect(page.has_checked_field?('Medicaid')).to eq(true)
+            
+            click_button('Get Support!')
+            
+            expect(current_path).to eq(search_results_path)
+          end
+        end
+      end
+    end
+
+    describe "Will return search results based on selected categories" do
+      xit "If Medicaid is selected, that category will be displayed" do
+        within('div.select-non-urgent-services') do
+          fill_in 'Enter your City, State, and/or Zip Code', with: 'Denver, Colorado'
+          check('Medicaid')
+          check('Housing')
+          click_button('Get Support!')
+        end
+        
+        expect(current_path).to eq(search_results_path)
+        expect(page).to have_content("Medicaid results")
+        expect(page).to_not have_content("Mental Health Care results")
+        expect(page).to have_content("Housing results")
+        expect(page).to_not have_content("Food Banks results")
+        expect(page).to_not have_content("Addiction Management results")
+        expect(page).to_not have_content("Employment results")
+        expect(page).to_not have_content("Group Help results")
+      end
+    end
   end
 end
