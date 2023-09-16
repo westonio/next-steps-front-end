@@ -13,8 +13,11 @@ RSpec.describe "Category Show", :vcr do
         end
         expect(current_path).to eq(search_results_path)
         click_link("See more results")
-        save_and_open_page
-        expect(current_path).to eq(search_results_path("Urgent Care"))
+        expect(current_path).to eq("/search_results/Urgent%20Care")
+
+        result_items = page.all('.result-item')
+        expect(result_items.count).to be > 3
+        
       end
     end
   end

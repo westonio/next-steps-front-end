@@ -1,7 +1,5 @@
 class SearchResultsController < ApplicationController
 
-  before_action :search_results, only: [:index, :show]
-  
   def index
     begin
       location_added?
@@ -10,12 +8,14 @@ class SearchResultsController < ApplicationController
       redirect_to root_path
       flash[:danger] = e.message
     end
-    @results = search_results
+    @results = SearchFacade.new(params)
+    @location = params[:location]
   end
-
+  
   def show
     # @search_results in a View page
-    require 'pry'; binding.pry
+    @results = SearchFacade.new(params)
+    @category = params[:id]
   end
 
   private
@@ -25,9 +25,5 @@ class SearchResultsController < ApplicationController
 
   def at_least_one_checked?
     raise "Please select at least one service" unless params[:urgent_care] == "1" || params[:crisis_hotline] == "1" || params[:shelter_tonight] == "1" || params[:food] == "1" || params[:substance_use] == "1"
-  end
-  
-  def search_results
-    @_search_results ||= SearchFacade.new(params)
   end
 end
