@@ -121,7 +121,7 @@ RSpec.describe 'Welcome Page', :vcr do
 
     describe "motivational sentences" do
       it "displays a motivational sentence on the page at random" do
-        expect(page).to have_field("")
+        expect(page).to have_selector(".motivational-sentence")
       end
     end
   end
