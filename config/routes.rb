@@ -11,4 +11,7 @@ Rails.application.routes.draw do
   # Search
   resources :search_results, only: :index
 
+  # User features
+  resources :users, only: [:index, :new]
+
 end
