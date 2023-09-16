@@ -33,6 +33,21 @@ body {
 	color: black;
 }
 
+#urgent-button {
+	padding: 10px 20px;
+	border-radius: 5px;
+	margin-right: 30px;
+	background-color: rgb(21, 220, 48);
+	box-shadow: 3px 3px 6px black;
+	float:right;
+}
+
+#urgent-button:hover {
+	background-color: rgb(164, 164, 167);
+	color: black;
+	transition: opacity 0.3s;
+}
+
 .select-urgent-services p {
 	margin-top: 20px;
 }
@@ -66,4 +81,22 @@ body {
 	font-style: italic;
 	display: flex;
 	margin: 10px 0 0 50px;
+}
+
+.select-non-urgent-services {
+	margin: 50px 0 0 50px;
+	color: white;
+	width: fit-content;
+	padding: 20px;
+	border: solid 3px rgb(110, 141, 195);
+	border-radius: 20px;
+	background-color: rgb(110, 141, 195);
+}
+
+.select-non-urgent-services p {
+	margin-top: 20px;
+}
+
+.select-non-urgent-services h4 {
+	margin-bottom: 20px;
 }
