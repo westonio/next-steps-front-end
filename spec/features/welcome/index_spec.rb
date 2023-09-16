@@ -113,11 +113,15 @@ RSpec.describe 'Welcome Page', :vcr do
     
     describe "geolocation" do
       it "uses JavaScript geolocation to auto-populate the location text_field" do
-        visit root_path
-
         within('div.select-urgent-services') do
           expect(page).to have_button("Find Location")
         end
+      end
+    end
+
+    describe "motivational sentences" do
+      it "displays a motivational sentence on the page at random" do
+        expect(page).to have_selector(".motivational-sentence")
       end
     end
   end
