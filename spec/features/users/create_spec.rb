@@ -28,7 +28,7 @@ RSpec.describe 'User Registration page', :vcr do
         fill_in "password_verify", with: "my_password"
         click_button "Create Account"
 
-        expect(current_path).to eq(user_path)
+        expect(page).to have_content("User Dashboard")
       end
 
       it "SAD PATH:  If I fail to fill in a username , I remain on the same page and see an error message, 'Invalid entries, please try again'" do
