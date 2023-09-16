@@ -14,7 +14,7 @@ RSpec.describe "Category Show", :vcr do
         expect(current_path).to eq(search_results_path)
         click_link("See more results")
         save_and_open_page
-        expect(current_path).to eq(search_results_path('Urgent Care'))
+        expect(current_path).to eq(search_results_path("Urgent Care"))
       end
     end
   end

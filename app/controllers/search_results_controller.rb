@@ -15,6 +15,7 @@ class SearchResultsController < ApplicationController
 
   def show
     # @search_results in a View page
+    require 'pry'; binding.pry
   end
 
   private

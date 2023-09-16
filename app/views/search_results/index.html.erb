@@ -1,7 +1,7 @@
 <h2>Search Results</h2>
 <% if @results.urgent_care %>
   <h3>Urgent Care results</h3>
-  <p>See more results</p>
+  <p><%= link_to "See more results", search_result_path(id: "Urgent Care") %></p>
   <div class="results-container">
     <% @results.urgent_care[0..2].each do |provider| %>
       <div class="result-item">
