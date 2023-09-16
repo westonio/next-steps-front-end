@@ -39,7 +39,6 @@ RSpec.describe 'Welcome Page', :vcr do
       it 'Has a field to enter location" ' do 
         within('div.select-urgent-services') do
           expect(page).to have_field('Enter your City, State, and/or Zip Code')
-          # TODO: Need to add geolocation services to automatically find their location
         end
       end
 
@@ -53,13 +52,13 @@ RSpec.describe 'Welcome Page', :vcr do
           expect(page).to have_field('Substance Use', checked: false)
         end
       end
-
+        
       it 'has a button "Get Urgent Services"' do
         within('div.select-urgent-services') do
           expect(page).to have_button('Get Help!')
         end
       end
-
+        
       context 'using the form' do
         it 'shows error if no location information is provided' do
           within('div.select-urgent-services') do
@@ -69,16 +68,16 @@ RSpec.describe 'Welcome Page', :vcr do
           
           expect(page).to have_content('Please enter your city, state, and/or zip code')
         end
-
+          
         it 'shows error if no service is selected' do
           within('div.select-urgent-services') do
             fill_in 'Enter your City, State, and/or Zip Code', with: 'Denver, Colorado'
             click_button('Get Help!')
           end
-            
+          
           expect(page).to have_content('Please select at least one service')
         end
-
+          
         it 'redirects to the search results page if at least one service is selected' do
           within('div.select-urgent-services') do
             fill_in 'Enter your City, State, and/or Zip Code', with: 'Denver, Colorado'
@@ -91,6 +90,38 @@ RSpec.describe 'Welcome Page', :vcr do
             expect(current_path).to eq(search_results_path)
           end
         end
+      end
+    end
+
+    describe "Will return search results based on selected categories" do
+      it "If Urgent Care is selected, that category will be displayed" do
+        within('div.select-urgent-services') do
+          fill_in 'Enter your City, State, and/or Zip Code', with: 'Denver, Colorado'
+          check('Urgent Care')
+          check('Food')
+          click_button('Get Help!')
+        end
+        
+        expect(current_path).to eq(search_results_path)
+        expect(page).to have_content("Urgent Care results")
+        expect(page).to_not have_content("Crisis Hotline results")
+        expect(page).to_not have_content("Shelter for Tonight results")
+        expect(page).to have_content("Food results")
+        expect(page).to_not have_content("Substance Use results")
+      end
+    end
+    
+    describe "geolocation" do
+      it "uses JavaScript geolocation to auto-populate the location text_field" do
+        within('div.select-urgent-services') do
+          expect(page).to have_button("Find Location")
+        end
+      end
+    end
+
+    describe "motivational sentences" do
+      it "displays a motivational sentence on the page at random" do
+        expect(page).to have_selector(".motivational-sentence")
       end
     end
   end

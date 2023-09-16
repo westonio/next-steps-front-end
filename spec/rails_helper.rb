@@ -69,6 +69,7 @@ RSpec.configure do |config|
     config.hook_into :webmock
     config.configure_rspec_metadata!
     config.default_cassette_options = { serialize_with: :json, record: :new_episodes }
+    config.allow_http_connections_when_no_cassette = true
   end
 
   Shoulda::Matchers.configure do |config|
