@@ -41,34 +41,33 @@
       <%= form.check_box :substance_use %>
       <%= form.label :substance_use, 'Substance Use' %>
       <br/>
-  </div>
-  <br/>
-  <br/>
-  <div class="select-non-urgent-services">
-    <h4>I would like assistance with:</h4>
-    
-      <p>What do you need long-term support with? (Check all that apply):</p>
+      </div>
+
+      <div class="select-non-urgent-services">
+        <h4>I would like assistance with:</h4>
       
-      <%= form.check_box :medicaid %>
-      <%= form.label :medicaid, 'Medicaid' %>
-      <br/>
-      <%= form.check_box :mental_health_care %>
-      <%= form.label :mental_health_care, 'Mental Health Care' %>
-      <br/>
-      <%= form.check_box :housing %>
-      <%= form.label :housing, 'Housing' %>
-      <br/>
-      <%= form.check_box :addiction_management %>
-      <%= form.label :addiction_management, 'Addiction Management' %>
-      <br/>
-      <%= form.check_box :employment %>
-      <%= form.label :employment, 'Employment' %>
-      <br/>
-      <%= form.check_box :group_thearpy %>
-      <%= form.label :group_thearpy, 'Group Help' %>
-      <br/>
-  
-      <%= form.submit 'Get Help!', id: "urgent-button" %>
+        <p>What do you need long-term support with? (Check all that apply):</p>
+        
+        <%= form.check_box :medicaid %>
+        <%= form.label :medicaid, 'Medicaid' %>
+        <br/>
+        <%= form.check_box :mental_health_care %>
+        <%= form.label :mental_health_care, 'Mental Health Care' %>
+        <br/>
+        <%= form.check_box :housing %>
+        <%= form.label :housing, 'Housing' %>
+        <br/>
+        <%= form.check_box :addiction_management %>
+        <%= form.label :addiction_management, 'Addiction Management' %>
+        <br/>
+        <%= form.check_box :employment %>
+        <%= form.label :employment, 'Employment' %>
+        <br/>
+        <%= form.check_box :group_thearpy %>
+        <%= form.label :group_thearpy, 'Group Help' %>
+        <br/>
+    
+        <%= form.submit 'Get Help!', id: "urgent-button" %>
+      </div>
     <% end %>
-  </div>
 </div>

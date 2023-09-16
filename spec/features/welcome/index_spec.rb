@@ -54,41 +54,40 @@ RSpec.describe 'Welcome Page', :vcr do
       end
         
       it 'has a button "Get Urgent Services"' do
-        within('div.select-urgent-services') do
-          expect(page).to have_button('Get Help!')
-        end
+        expect(page).to have_button('Get Help!')
       end
         
       context 'using the form' do
         it 'shows error if no location information is provided' do
-          within('div.select-urgent-services') do
-            check('Urgent Care')
+          within('div.select-non-urgent-services') do
+            check('Medicaid')
+            expect(page).to have_checked_field('Medicaid')
             click_button('Get Help!')
           end
-          
-          expect(page).to have_content('Please enter your city, state, and/or zip code')
+
+          expect(page).to have_text('Please enter your city, state, and/or zip code')
         end
           
         it 'shows error if no service is selected' do
           within('div.select-urgent-services') do
             fill_in 'Enter your City, State, and/or Zip Code', with: 'Denver, Colorado'
-            click_button('Get Help!')
           end
           
+          click_button('Get Help!')
           expect(page).to have_content('Please select at least one service')
         end
           
         it 'redirects to the search results page if at least one service is selected' do
-          within('div.select-urgent-services') do
+          # within('div.select-urgent-services') do
             fill_in 'Enter your City, State, and/or Zip Code', with: 'Denver, Colorado'
             check('Urgent Care')
             
             expect(page.has_checked_field?('Urgent Care')).to eq(true)
             
             click_button('Get Help!')
-            
+           
             expect(current_path).to eq(search_results_path)
-          end
+          # end
         end
       end
     end
@@ -187,7 +186,7 @@ RSpec.describe 'Welcome Page', :vcr do
     end
 
     describe "Will return search results based on selected categories" do
-      xit "If Medicaid is selected, that category will be displayed" do
+      it "If Medicaid is selected, that category will be displayed" do
         within('div.select-non-urgent-services') do
           fill_in 'Enter your City, State, and/or Zip Code', with: 'Denver, Colorado'
           check('Medicaid')
