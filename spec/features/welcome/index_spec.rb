@@ -146,39 +146,39 @@ RSpec.describe 'Welcome Page', :vcr do
         end
       end
 
-      xit 'has a button "Get Support"' do
+      it 'has a button "Get Support"' do
         within('div.select-non-urgent-services') do
-          expect(page).to have_button('Get Support!')
+          expect(page).to have_button('Get Support')
         end
       end
         
       context 'using the form' do
-        xit 'shows error if no location information is provided' do
+        it 'shows error if no location information is provided' do
           within('div.select-non-urgent-services') do
             check('Medicaid')
-            click_button('Get Support!')
+            click_button('Get Support')
           end
           
           expect(page).to have_content('Please enter your city, state, and/or zip code')
         end
           
-        xit 'shows error if no service is selected' do
+        it 'shows error if no service is selected' do
           within('div.select-non-urgent-services') do
             fill_in 'Enter your City, State, and/or Zip Code', with: 'Denver, Colorado'
-            click_button('Get Support!')
+            click_button('Get Support')
           end
           
           expect(page).to have_content('Please select at least one service')
         end
           
-        xit 'redirects to the search results page if at least one service is selected' do
+        it 'redirects to the search results page if at least one service is selected' do
           within('div.select-non-urgent-services') do
             fill_in 'Enter your City, State, and/or Zip Code', with: 'Denver, Colorado'
             check('Medicaid')
             
             expect(page.has_checked_field?('Medicaid')).to eq(true)
             
-            click_button('Get Support!')
+            click_button('Get Support')
             
             expect(current_path).to eq(search_results_path)
           end
@@ -192,7 +192,7 @@ RSpec.describe 'Welcome Page', :vcr do
           fill_in 'Enter your City, State, and/or Zip Code', with: 'Denver, Colorado'
           check('Medicaid')
           check('Housing')
-          click_button('Get Support!')
+          click_button('Get Support')
         end
         
         expect(current_path).to eq(search_results_path)
