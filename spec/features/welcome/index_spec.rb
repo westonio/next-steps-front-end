@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe 'Welcome Page', type: :feature do
+RSpec.describe 'Welcome Page', :vcr do
   describe 'when I visit the welcome page "/" ' do
     before :each do
       visit root_path
@@ -43,10 +43,10 @@ RSpec.describe 'Welcome Page', type: :feature do
         end
       end
 
-      it 'has a checkbox for: Medical Care, Crisis Hotline, Shelter For Tonight, Food, and Susbstance Use' do
+      it 'has a checkbox for: Urgent Care, Crisis Hotline, Shelter For Tonight, Food, and Susbstance Use' do
         within('div.select-urgent-services') do
           expect(page).to have_content('What do you need most help with today? (Check all that apply):')
-          expect(page).to have_field('Medical Care', checked: false)
+          expect(page).to have_field('Urgent Care', checked: false)
           expect(page).to have_field('Crisis Hotline', checked: false)
           expect(page).to have_field('Shelter for Tonight', checked: false)
           expect(page).to have_field('Food', checked: false)
@@ -63,7 +63,7 @@ RSpec.describe 'Welcome Page', type: :feature do
       context 'using the form' do
         it 'shows error if no location information is provided' do
           within('div.select-urgent-services') do
-            check('Medical Care')
+            check('Urgent Care')
             click_button('Get Help!')
           end
           
@@ -82,15 +82,33 @@ RSpec.describe 'Welcome Page', type: :feature do
         it 'redirects to the search results page if at least one service is selected' do
           within('div.select-urgent-services') do
             fill_in 'Enter your City, State, and/or Zip Code', with: 'Denver, Colorado'
-            check('Medical Care')
+            check('Urgent Care')
             
-            expect(page.has_checked_field?('Medical Care')).to eq(true)
+            expect(page.has_checked_field?('Urgent Care')).to eq(true)
             
             click_button('Get Help!')
             
             expect(current_path).to eq(search_results_path)
           end
         end
+      end
+    end
+
+    describe "Will return search results based on selected categories" do
+      it "If Urgent Care is selected, that category will be displayed" do
+        within('div.select-urgent-services') do
+          fill_in 'Enter your City, State, and/or Zip Code', with: 'Denver, Colorado'
+          check('Urgent Care')
+          check('Food')
+          click_button('Get Help!')
+        end
+
+        expect(current_path).to eq(search_results_path)
+        expect(page).to have_content("Urgent Care results")
+        expect(page).to_not have_content("Crisis Hotline results")
+        expect(page).to_not have_content("Shelter for Tonight results")
+        expect(page).to have_content("Food results")
+        expect(page).to_not have_content("Substance Use results")
       end
     end
   end

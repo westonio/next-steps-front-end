@@ -4,11 +4,11 @@ class SearchResultsController < ApplicationController
     begin
       location_added?
       at_least_one_checked?
-
     rescue StandardError => e
       redirect_to root_path
       flash[:danger] = e.message
     end
+    @results = search_results
   end
 
   private
@@ -17,6 +17,6 @@ class SearchResultsController < ApplicationController
   end
 
   def at_least_one_checked?
-    raise "Please select at least one service" unless params[:medical_care] == "1" || params[:crisis_hotline] == "1" || params[:shelter_tonight] == "1" || params[:food] == "1" || params[:substance_use] == "1"
+    raise "Please select at least one service" unless params[:urgent_care] == "1" || params[:crisis_hotline] == "1" || params[:shelter_tonight] == "1" || params[:food] == "1" || params[:substance_use] == "1"
   end
 end
