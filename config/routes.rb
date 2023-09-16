@@ -9,6 +9,6 @@ Rails.application.routes.draw do
   get '/signin', to: 'session#new'
 
   # Search
-  resources :search_results, only: :index
+  resources :search_results, only: [:index, :show]
 
 end

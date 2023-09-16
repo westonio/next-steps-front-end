@@ -1,0 +1,2569 @@
+{
+  "http_interactions": [
+    {
+      "request": {
+        "method": "post",
+        "uri": "http://127.0.0.1:4444/session/42e9cfbb-e0ed-4c77-880e-8aa86b527241/url",
+        "body": {
+          "encoding": "UTF-8",
+          "string": "{\"url\":\"http://127.0.0.1:64404/\"}"
+        },
+        "headers": {
+          "Accept": [
+            "application/json"
+          ],
+          "Content-Type": [
+            "application/json; charset=UTF-8"
+          ],
+          "User-Agent": [
+            "selenium/4.12.0 (ruby macosx)"
+          ],
+          "Content-Length": [
+            "33"
+          ],
+          "Accept-Encoding": [
+            "gzip;q=1.0,deflate;q=0.6,identity;q=0.3"
+          ]
+        }
+      },
+      "response": {
+        "status": {
+          "code": 404,
+          "message": "Not Found"
+        },
+        "headers": {
+          "Content-Type": [
+            "application/json; charset=utf-8"
+          ],
+          "Cache-Control": [
+            "no-cache"
+          ],
+          "Content-Length": [
+            "123"
+          ],
+          "Date": [
+            "Fri, 15 Sep 2023 23:26:25 GMT"
+          ]
+        },
+        "body": {
+          "encoding": "UTF-8",
+          "string": "{\"value\":{\"error\":\"invalid session id\",\"message\":\"Tried to run command without establishing a connection\",\"stacktrace\":\"\"}}"
+        }
+      },
+      "recorded_at": "Fri, 15 Sep 2023 23:26:25 GMT"
+    },
+    {
+      "request": {
+        "method": "get",
+        "uri": "http://127.0.0.1:58590/__identify__",
+        "body": {
+          "encoding": "US-ASCII",
+          "string": ""
+        },
+        "headers": {
+          "Accept-Encoding": [
+            "gzip;q=1.0,deflate;q=0.6,identity;q=0.3"
+          ],
+          "Accept": [
+            "*/*"
+          ],
+          "User-Agent": [
+            "Ruby"
+          ]
+        }
+      },
+      "response": {
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "headers": {
+          "Content-Length": [
+            "5"
+          ]
+        },
+        "body": {
+          "encoding": "UTF-8",
+          "string": "17440"
+        }
+      },
+      "recorded_at": "Sat, 16 Sep 2023 00:09:10 GMT"
+    },
+    {
+      "request": {
+        "method": "post",
+        "uri": "http://127.0.0.1:9515/session",
+        "body": {
+          "encoding": "UTF-8",
+          "string": "{\"capabilities\":{\"alwaysMatch\":{\"browserName\":\"chrome\",\"goog:chromeOptions\":{\"binary\":\"/Applications/Google Chrome.app/Contents/MacOS/Google Chrome\"}}}}"
+        },
+        "headers": {
+          "Accept": [
+            "application/json"
+          ],
+          "Content-Type": [
+            "application/json; charset=UTF-8"
+          ],
+          "User-Agent": [
+            "selenium/4.12.0 (ruby macosx)"
+          ],
+          "Content-Length": [
+            "152"
+          ],
+          "Accept-Encoding": [
+            "gzip;q=1.0,deflate;q=0.6,identity;q=0.3"
+          ]
+        }
+      },
+      "response": {
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "headers": {
+          "Content-Length": [
+            "896"
+          ],
+          "Content-Type": [
+            "application/json; charset=utf-8"
+          ],
+          "Cache-Control": [
+            "no-cache"
+          ]
+        },
+        "body": {
+          "encoding": "UTF-8",
+          "string": "{\"value\":{\"capabilities\":{\"acceptInsecureCerts\":false,\"browserName\":\"chrome\",\"browserVersion\":\"116.0.5845.187\",\"chrome\":{\"chromedriverVersion\":\"116.0.5845.96 (1a391816688002153ef791ffe60d9e899a71a037-refs/branch-heads/5845@{#1382})\",\"userDataDir\":\"/var/folders/gm/rw83h4z15fl8v9767w0183gw0000gn/T/.org.chromium.Chromium.NJ55ef\"},\"fedcm:accounts\":true,\"goog:chromeOptions\":{\"debuggerAddress\":\"localhost:58601\"},\"networkConnectionEnabled\":false,\"pageLoadStrategy\":\"normal\",\"platformName\":\"mac os x\",\"proxy\":{},\"setWindowRect\":true,\"strictFileInteractability\":false,\"timeouts\":{\"implicit\":0,\"pageLoad\":300000,\"script\":30000},\"unhandledPromptBehavior\":\"dismiss and notify\",\"webauthn:extension:credBlob\":true,\"webauthn:extension:largeBlob\":true,\"webauthn:extension:minPinLength\":true,\"webauthn:extension:prf\":true,\"webauthn:virtualAuthenticators\":true},\"sessionId\":\"8cee6721db4efc81dff751d08a720647\"}}"
+        }
+      },
+      "recorded_at": "Sat, 16 Sep 2023 00:09:12 GMT"
+    },
+    {
+      "request": {
+        "method": "post",
+        "uri": "http://127.0.0.1:9515/session/8cee6721db4efc81dff751d08a720647/url",
+        "body": {
+          "encoding": "UTF-8",
+          "string": "{\"url\":\"http://127.0.0.1:58590/\"}"
+        },
+        "headers": {
+          "Accept": [
+            "application/json"
+          ],
+          "Content-Type": [
+            "application/json; charset=UTF-8"
+          ],
+          "User-Agent": [
+            "selenium/4.12.0 (ruby macosx)"
+          ],
+          "Content-Length": [
+            "33"
+          ],
+          "Accept-Encoding": [
+            "gzip;q=1.0,deflate;q=0.6,identity;q=0.3"
+          ]
+        }
+      },
+      "response": {
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "headers": {
+          "Content-Length": [
+            "14"
+          ],
+          "Content-Type": [
+            "application/json; charset=utf-8"
+          ],
+          "Cache-Control": [
+            "no-cache"
+          ]
+        },
+        "body": {
+          "encoding": "UTF-8",
+          "string": "{\"value\":null}"
+        }
+      },
+      "recorded_at": "Sat, 16 Sep 2023 00:09:13 GMT"
+    },
+    {
+      "request": {
+        "method": "post",
+        "uri": "http://127.0.0.1:9515/session/8cee6721db4efc81dff751d08a720647/elements",
+        "body": {
+          "encoding": "UTF-8",
+          "string": "{\"using\":\"css selector\",\"value\":\"div.select-urgent-services\"}"
+        },
+        "headers": {
+          "Accept": [
+            "application/json"
+          ],
+          "Content-Type": [
+            "application/json; charset=UTF-8"
+          ],
+          "User-Agent": [
+            "selenium/4.12.0 (ruby macosx)"
+          ],
+          "Content-Length": [
+            "61"
+          ],
+          "Accept-Encoding": [
+            "gzip;q=1.0,deflate;q=0.6,identity;q=0.3"
+          ]
+        }
+      },
+      "response": {
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "headers": {
+          "Content-Length": [
+            "97"
+          ],
+          "Content-Type": [
+            "application/json; charset=utf-8"
+          ],
+          "Cache-Control": [
+            "no-cache"
+          ]
+        },
+        "body": {
+          "encoding": "UTF-8",
+          "string": "{\"value\":[{\"element-6066-11e4-a52e-4f735466cecf\":\"BEBB88567AD605309366F9FA0EBD623D_element_24\"}]}"
+        }
+      },
+      "recorded_at": "Sat, 16 Sep 2023 00:09:13 GMT"
+    },
+    {
+      "request": {
+        "method": "post",
+        "uri": "http://127.0.0.1:9515/session/8cee6721db4efc81dff751d08a720647/execute/sync",
+        "body": {
+          "encoding": "UTF-8",
+          "string": "{\"script\":\"/* isDisplayed */return ((function(){function d(t,e,n){function r(t){var e=x(t);if(0<e.height&&0<e.width)return!0;if(\\\"PATH\\\"==t.tagName.toUpperCase()&&(0<e.height||0<e.width)){var n=window.getComputedStyle(t)[\\\"stroke-width\\\"];return!!n&&0<parseInt(n,10)}return\\\"hidden\\\"!=window.getComputedStyle(t).overflow&&Array.prototype.slice.call(t.childNodes).some(function(t){return t.nodeType==Node.TEXT_NODE||t.nodeType==Node.ELEMENT_NODE&&r(t)})}function i(t){return C(t)==T.HIDDEN&&Array.prototype.slice.call(t.childNodes).every(function(t){return t.nodeType!=Node.ELEMENT_NODE||i(t)||!r(t)})}var o=t.tagName.toUpperCase();if(\\\"BODY\\\"==o)return!0;if(\\\"OPTION\\\"==o||\\\"OPTGROUP\\\"==o){var a=c(t,function(t){return\\\"SELECT\\\"==t.tagName.toUpperCase()});return!!a&&d(a,!0,n)}var u=s(t);if(u)return!!u.image&&0<u.rect.width&&0<u.rect.height&&d(u.image,e,n);if(\\\"INPUT\\\"==o&&\\\"hidden\\\"==t.type.toLowerCase())return!1;if(\\\"NOSCRIPT\\\"==o)return!1;var l=window.getComputedStyle(t).visibility;return\\\"collapse\\\"!=l&&\\\"hidden\\\"!=l&&(!!n(t)&&(!(!e&&0==f(t))&&(!!r(t)&&!i(t))))}function E(t){var e=x(t);return{left:e.left,right:e.left+e.width,top:e.top,bottom:e.top+e.height}}function D(t){return t.parentElement}function C(t){function e(t){function e(t){if(t==u)return!0;var e=window.getComputedStyle(t),n=e.display;return 0!=n.indexOf(\\\"inline\\\")&&\\\"contents\\\"!=n&&(\\\"absolute\\\"!=r||\\\"static\\\"!=e.position)}var r=window.getComputedStyle(t).position;if(\\\"fixed\\\"==r)return i=!0,t==u?null:u;for(var n=D(t);n&&!e(n);)n=D(n);return n}function n(t){var e=t;if(\\\"visible\\\"==d)if(t==u&&l)e=l;else if(t==l)return{x:\\\"visible\\\",y:\\\"visible\\\"};var n=window.getComputedStyle(e),r={x:n[\\\"overflow-x\\\"],y:n[\\\"overflow-y\\\"]};return t==u&&(r.x=\\\"visible\\\"==r.x?\\\"auto\\\":r.x,r.y=\\\"visible\\\"==r.y?\\\"auto\\\":r.y),r}function r(t){return t==u?{x:window.scrollX,y:window.scrollY}:{x:t.scrollLeft,y:t.scrollTop}}for(var i,o=E(t),a=t.ownerDocument,u=a.documentElement,l=a.body,d=window.getComputedStyle(u).overflow,f=e(t);f;f=e(f)){var h=n(f);if(\\\"visible\\\"!=h.x||\\\"visible\\\"!=h.y){var s=x(f);if(0==s.width||0==s.height)return T.HIDDEN;var p=o.right<s.left,c=o.bottom<s.top;if(p&&\\\"hidden\\\"==h.x||c&&\\\"hidden\\\"==h.y)return T.HIDDEN;if(p&&\\\"visible\\\"!=h.x||c&&\\\"visible\\\"!=h.y){var v=r(f),g=o.right<s.left-v.x,w=o.bottom<s.top-v.y;return g&&\\\"visible\\\"!=h.x||w&&\\\"visible\\\"!=h.x?T.HIDDEN:C(f)==T.HIDDEN?T.HIDDEN:T.SCROLL}var N=o.left>=s.left+s.width,m=o.top>=s.top+s.height;if(N&&\\\"hidden\\\"==h.x||m&&\\\"hidden\\\"==h.y)return T.HIDDEN;if(N&&\\\"visible\\\"!=h.x||m&&\\\"visible\\\"!=h.y){if(i){var y=r(f);if(o.left>=u.scrollWidth-y.x||o.right>=u.scrollHeight-y.y)return T.HIDDEN}return C(f)==T.HIDDEN?T.HIDDEN:T.SCROLL}}}return T.NONE}function o(t){var e=t.document.documentElement;return{width:e.clientWidth,height:e.clientHeight}}function p(t,e,n,r){return{left:t,top:e,width:n,height:r}}function x(t){var e,n=s(t);if(n)return n.rect;if(\\\"HTML\\\"==t.tagName.toUpperCase()){t.ownerDocument;var r=o(window);return p(0,0,r.width,r.height)}try{e=t.getBoundingClientRect()}catch(i){return p(0,0,0,0)}return p(e.left,e.top,e.right-e.left,e.bottom-e.top)}function f(t){var e=1,n=window.getComputedStyle(t).opacity;n&&(e=Number(n));var r=D(t);return r&&r.nodeType==Node.ELEMENT_NODE&&(e*=f(r)),e}function h(t){var e=t.shape.toLowerCase(),n=t.coords.split(\\\",\\\");if(\\\"rect\\\"==e&&4==n.length){var r=n[0],i=n[1];return p(r,i,n[2]-r,n[3]-i)}if(\\\"circle\\\"==e&&3==n.length){var o=n[0],a=n[1],u=n[2];return p(o-u,a-u,2*u,2*u)}if(\\\"poly\\\"==e&&2<n.length){for(var l=n[0],d=n[1],f=l,h=d,s=2;s+1<n.length;s+=2)l=Math.min(l,n[s]),f=Math.max(f,n[s]),d=Math.min(d,n[s+1]),h=Math.max(h,n[s+1]);return p(l,d,f-l,h-d)}return p(0,0,0,0)}function s(t){var e=t.tagName.toUpperCase(),n=\\\"MAP\\\"==e;if(!n&&\\\"AREA\\\"!=e)return null;var r=n?t:\\\"MAP\\\"==D(t).tagName.toUpperCase()?D(t):null,i=null,o=null;if(r&&r.name&&((i=r.ownerDocument.querySelector(\\\"*[usemap='#\\\"+r.name+\\\"']\\\"))&&(o=x(i),!n&&\\\"default\\\"!=t.shape.toLowerCase()))){var a=h(t),u=Math.min(Math.max(a.left,0),o.width),l=Math.min(Math.max(a.top,0),o.height),d=Math.min(a.width,o.width-u),f=Math.min(a.height,o.height-l);o=p(u+o.left,l+o.top,d,f)}return{image:i,rect:o||p(0,0,0,0)}}function c(t,e){for(t&&(t=D(t));t;){if(e(t))return t;t=D(t)}return null}function r(t){var e=t.parentNode;if(e&&e.shadowRoot&&t.assignedSlot!==undefined)return t.assignedSlot?t.assignedSlot.parentNode:null;if(t.getDestinationInsertionPoints){var n=t.getDestinationInsertionPoints();if(0<n.length)return n[n.length-1]}return e}var T={NONE:\\\"none\\\",HIDDEN:\\\"hidden\\\",SCROLL:\\\"scroll\\\"};return function i(t,e){function n(t){if(\\\"none\\\"==window.getComputedStyle(t).display)return!1;var e=r(t);if(\\\"function\\\"==typeof ShadowRoot&&e instanceof ShadowRoot){if(e.host.shadowRoot!==e)return!1;e=e.host}return!(!e||e.nodeType!=Node.DOCUMENT_NODE&&e.nodeType!=Node.DOCUMENT_FRAGMENT_NODE)||!(e&&e.tagName&&\\\"DETAILS\\\"==e.tagName.toUpperCase()&&!e.open&&\\\"SUMMARY\\\"!=t.tagName)&&(e&&n(e))}return d(t,!!e,n)}})()).apply(null, arguments)\",\"args\":[{\"element-6066-11e4-a52e-4f735466cecf\":\"BEBB88567AD605309366F9FA0EBD623D_element_24\"}]}"
+        },
+        "headers": {
+          "Accept": [
+            "application/json"
+          ],
+          "Content-Type": [
+            "application/json; charset=UTF-8"
+          ],
+          "User-Agent": [
+            "selenium/4.12.0 (ruby macosx)"
+          ],
+          "Content-Length": [
+            "5091"
+          ],
+          "Accept-Encoding": [
+            "gzip;q=1.0,deflate;q=0.6,identity;q=0.3"
+          ]
+        }
+      },
+      "response": {
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "headers": {
+          "Content-Length": [
+            "14"
+          ],
+          "Content-Type": [
+            "application/json; charset=utf-8"
+          ],
+          "Cache-Control": [
+            "no-cache"
+          ]
+        },
+        "body": {
+          "encoding": "UTF-8",
+          "string": "{\"value\":true}"
+        }
+      },
+      "recorded_at": "Sat, 16 Sep 2023 00:09:13 GMT"
+    },
+    {
+      "request": {
+        "method": "get",
+        "uri": "http://127.0.0.1:9515/session/8cee6721db4efc81dff751d08a720647/element/BEBB88567AD605309366F9FA0EBD623D_element_24/text",
+        "body": {
+          "encoding": "US-ASCII",
+          "string": ""
+        },
+        "headers": {
+          "Accept": [
+            "application/json"
+          ],
+          "Content-Type": [
+            "application/json; charset=UTF-8"
+          ],
+          "User-Agent": [
+            "selenium/4.12.0 (ruby macosx)"
+          ],
+          "Cache-Control": [
+            "no-cache"
+          ],
+          "Accept-Encoding": [
+            "gzip;q=1.0,deflate;q=0.6,identity;q=0.3"
+          ]
+        }
+      },
+      "response": {
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "headers": {
+          "Content-Length": [
+            "228"
+          ],
+          "Content-Type": [
+            "application/json; charset=utf-8"
+          ],
+          "Cache-Control": [
+            "no-cache"
+          ]
+        },
+        "body": {
+          "encoding": "UTF-8",
+          "string": "{\"value\":\"I need urgent help now!\\nEnter your City, State, and/or Zip Code\\nFind Location\\n\\nWhat do you need most help with today? (Check all that apply):\\nUrgent Care\\nCrisis Hotline\\nShelter for Tonight\\nFood\\nSubstance Use\"}"
+        }
+      },
+      "recorded_at": "Sat, 16 Sep 2023 00:09:13 GMT"
+    },
+    {
+      "request": {
+        "method": "post",
+        "uri": "http://127.0.0.1:9515/session/8cee6721db4efc81dff751d08a720647/element/BEBB88567AD605309366F9FA0EBD623D_element_24/elements",
+        "body": {
+          "encoding": "UTF-8",
+          "string": "{\"using\":\"xpath\",\"value\":\".//*[self::input | self::textarea | self::select][not((((./@type = 'submit') or (./@type = 'image')) or (./@type = 'hidden')))][((((./@id = 'Urgent Care') or (./@name = 'Urgent Care')) or (./@placeholder = 'Urgent Care')) or (./@id = //label[contains(normalize-space(string(.)), 'Urgent Care')]/@for))] | .//label[contains(normalize-space(string(.)), 'Urgent Care')]//.//*[self::input | self::textarea | self::select][not((((./@type = 'submit') or (./@type = 'image')) or (./@type = 'hidden')))]\"}"
+        },
+        "headers": {
+          "Accept": [
+            "application/json"
+          ],
+          "Content-Type": [
+            "application/json; charset=UTF-8"
+          ],
+          "User-Agent": [
+            "selenium/4.12.0 (ruby macosx)"
+          ],
+          "Content-Length": [
+            "523"
+          ],
+          "Accept-Encoding": [
+            "gzip;q=1.0,deflate;q=0.6,identity;q=0.3"
+          ]
+        }
+      },
+      "response": {
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "headers": {
+          "Content-Length": [
+            "97"
+          ],
+          "Content-Type": [
+            "application/json; charset=utf-8"
+          ],
+          "Cache-Control": [
+            "no-cache"
+          ]
+        },
+        "body": {
+          "encoding": "UTF-8",
+          "string": "{\"value\":[{\"element-6066-11e4-a52e-4f735466cecf\":\"BEBB88567AD605309366F9FA0EBD623D_element_25\"}]}"
+        }
+      },
+      "recorded_at": "Sat, 16 Sep 2023 00:09:13 GMT"
+    },
+    {
+      "request": {
+        "method": "post",
+        "uri": "http://127.0.0.1:9515/session/8cee6721db4efc81dff751d08a720647/execute/sync",
+        "body": {
+          "encoding": "UTF-8",
+          "string": "{\"script\":\"/* isDisplayed */return ((function(){function d(t,e,n){function r(t){var e=x(t);if(0<e.height&&0<e.width)return!0;if(\\\"PATH\\\"==t.tagName.toUpperCase()&&(0<e.height||0<e.width)){var n=window.getComputedStyle(t)[\\\"stroke-width\\\"];return!!n&&0<parseInt(n,10)}return\\\"hidden\\\"!=window.getComputedStyle(t).overflow&&Array.prototype.slice.call(t.childNodes).some(function(t){return t.nodeType==Node.TEXT_NODE||t.nodeType==Node.ELEMENT_NODE&&r(t)})}function i(t){return C(t)==T.HIDDEN&&Array.prototype.slice.call(t.childNodes).every(function(t){return t.nodeType!=Node.ELEMENT_NODE||i(t)||!r(t)})}var o=t.tagName.toUpperCase();if(\\\"BODY\\\"==o)return!0;if(\\\"OPTION\\\"==o||\\\"OPTGROUP\\\"==o){var a=c(t,function(t){return\\\"SELECT\\\"==t.tagName.toUpperCase()});return!!a&&d(a,!0,n)}var u=s(t);if(u)return!!u.image&&0<u.rect.width&&0<u.rect.height&&d(u.image,e,n);if(\\\"INPUT\\\"==o&&\\\"hidden\\\"==t.type.toLowerCase())return!1;if(\\\"NOSCRIPT\\\"==o)return!1;var l=window.getComputedStyle(t).visibility;return\\\"collapse\\\"!=l&&\\\"hidden\\\"!=l&&(!!n(t)&&(!(!e&&0==f(t))&&(!!r(t)&&!i(t))))}function E(t){var e=x(t);return{left:e.left,right:e.left+e.width,top:e.top,bottom:e.top+e.height}}function D(t){return t.parentElement}function C(t){function e(t){function e(t){if(t==u)return!0;var e=window.getComputedStyle(t),n=e.display;return 0!=n.indexOf(\\\"inline\\\")&&\\\"contents\\\"!=n&&(\\\"absolute\\\"!=r||\\\"static\\\"!=e.position)}var r=window.getComputedStyle(t).position;if(\\\"fixed\\\"==r)return i=!0,t==u?null:u;for(var n=D(t);n&&!e(n);)n=D(n);return n}function n(t){var e=t;if(\\\"visible\\\"==d)if(t==u&&l)e=l;else if(t==l)return{x:\\\"visible\\\",y:\\\"visible\\\"};var n=window.getComputedStyle(e),r={x:n[\\\"overflow-x\\\"],y:n[\\\"overflow-y\\\"]};return t==u&&(r.x=\\\"visible\\\"==r.x?\\\"auto\\\":r.x,r.y=\\\"visible\\\"==r.y?\\\"auto\\\":r.y),r}function r(t){return t==u?{x:window.scrollX,y:window.scrollY}:{x:t.scrollLeft,y:t.scrollTop}}for(var i,o=E(t),a=t.ownerDocument,u=a.documentElement,l=a.body,d=window.getComputedStyle(u).overflow,f=e(t);f;f=e(f)){var h=n(f);if(\\\"visible\\\"!=h.x||\\\"visible\\\"!=h.y){var s=x(f);if(0==s.width||0==s.height)return T.HIDDEN;var p=o.right<s.left,c=o.bottom<s.top;if(p&&\\\"hidden\\\"==h.x||c&&\\\"hidden\\\"==h.y)return T.HIDDEN;if(p&&\\\"visible\\\"!=h.x||c&&\\\"visible\\\"!=h.y){var v=r(f),g=o.right<s.left-v.x,w=o.bottom<s.top-v.y;return g&&\\\"visible\\\"!=h.x||w&&\\\"visible\\\"!=h.x?T.HIDDEN:C(f)==T.HIDDEN?T.HIDDEN:T.SCROLL}var N=o.left>=s.left+s.width,m=o.top>=s.top+s.height;if(N&&\\\"hidden\\\"==h.x||m&&\\\"hidden\\\"==h.y)return T.HIDDEN;if(N&&\\\"visible\\\"!=h.x||m&&\\\"visible\\\"!=h.y){if(i){var y=r(f);if(o.left>=u.scrollWidth-y.x||o.right>=u.scrollHeight-y.y)return T.HIDDEN}return C(f)==T.HIDDEN?T.HIDDEN:T.SCROLL}}}return T.NONE}function o(t){var e=t.document.documentElement;return{width:e.clientWidth,height:e.clientHeight}}function p(t,e,n,r){return{left:t,top:e,width:n,height:r}}function x(t){var e,n=s(t);if(n)return n.rect;if(\\\"HTML\\\"==t.tagName.toUpperCase()){t.ownerDocument;var r=o(window);return p(0,0,r.width,r.height)}try{e=t.getBoundingClientRect()}catch(i){return p(0,0,0,0)}return p(e.left,e.top,e.right-e.left,e.bottom-e.top)}function f(t){var e=1,n=window.getComputedStyle(t).opacity;n&&(e=Number(n));var r=D(t);return r&&r.nodeType==Node.ELEMENT_NODE&&(e*=f(r)),e}function h(t){var e=t.shape.toLowerCase(),n=t.coords.split(\\\",\\\");if(\\\"rect\\\"==e&&4==n.length){var r=n[0],i=n[1];return p(r,i,n[2]-r,n[3]-i)}if(\\\"circle\\\"==e&&3==n.length){var o=n[0],a=n[1],u=n[2];return p(o-u,a-u,2*u,2*u)}if(\\\"poly\\\"==e&&2<n.length){for(var l=n[0],d=n[1],f=l,h=d,s=2;s+1<n.length;s+=2)l=Math.min(l,n[s]),f=Math.max(f,n[s]),d=Math.min(d,n[s+1]),h=Math.max(h,n[s+1]);return p(l,d,f-l,h-d)}return p(0,0,0,0)}function s(t){var e=t.tagName.toUpperCase(),n=\\\"MAP\\\"==e;if(!n&&\\\"AREA\\\"!=e)return null;var r=n?t:\\\"MAP\\\"==D(t).tagName.toUpperCase()?D(t):null,i=null,o=null;if(r&&r.name&&((i=r.ownerDocument.querySelector(\\\"*[usemap='#\\\"+r.name+\\\"']\\\"))&&(o=x(i),!n&&\\\"default\\\"!=t.shape.toLowerCase()))){var a=h(t),u=Math.min(Math.max(a.left,0),o.width),l=Math.min(Math.max(a.top,0),o.height),d=Math.min(a.width,o.width-u),f=Math.min(a.height,o.height-l);o=p(u+o.left,l+o.top,d,f)}return{image:i,rect:o||p(0,0,0,0)}}function c(t,e){for(t&&(t=D(t));t;){if(e(t))return t;t=D(t)}return null}function r(t){var e=t.parentNode;if(e&&e.shadowRoot&&t.assignedSlot!==undefined)return t.assignedSlot?t.assignedSlot.parentNode:null;if(t.getDestinationInsertionPoints){var n=t.getDestinationInsertionPoints();if(0<n.length)return n[n.length-1]}return e}var T={NONE:\\\"none\\\",HIDDEN:\\\"hidden\\\",SCROLL:\\\"scroll\\\"};return function i(t,e){function n(t){if(\\\"none\\\"==window.getComputedStyle(t).display)return!1;var e=r(t);if(\\\"function\\\"==typeof ShadowRoot&&e instanceof ShadowRoot){if(e.host.shadowRoot!==e)return!1;e=e.host}return!(!e||e.nodeType!=Node.DOCUMENT_NODE&&e.nodeType!=Node.DOCUMENT_FRAGMENT_NODE)||!(e&&e.tagName&&\\\"DETAILS\\\"==e.tagName.toUpperCase()&&!e.open&&\\\"SUMMARY\\\"!=t.tagName)&&(e&&n(e))}return d(t,!!e,n)}})()).apply(null, arguments)\",\"args\":[{\"element-6066-11e4-a52e-4f735466cecf\":\"BEBB88567AD605309366F9FA0EBD623D_element_25\"}]}"
+        },
+        "headers": {
+          "Accept": [
+            "application/json"
+          ],
+          "Content-Type": [
+            "application/json; charset=UTF-8"
+          ],
+          "User-Agent": [
+            "selenium/4.12.0 (ruby macosx)"
+          ],
+          "Content-Length": [
+            "5091"
+          ],
+          "Accept-Encoding": [
+            "gzip;q=1.0,deflate;q=0.6,identity;q=0.3"
+          ]
+        }
+      },
+      "response": {
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "headers": {
+          "Content-Length": [
+            "14"
+          ],
+          "Content-Type": [
+            "application/json; charset=utf-8"
+          ],
+          "Cache-Control": [
+            "no-cache"
+          ]
+        },
+        "body": {
+          "encoding": "UTF-8",
+          "string": "{\"value\":true}"
+        }
+      },
+      "recorded_at": "Sat, 16 Sep 2023 00:09:13 GMT"
+    },
+    {
+      "request": {
+        "method": "get",
+        "uri": "http://127.0.0.1:9515/session/8cee6721db4efc81dff751d08a720647/element/BEBB88567AD605309366F9FA0EBD623D_element_25/selected",
+        "body": {
+          "encoding": "US-ASCII",
+          "string": ""
+        },
+        "headers": {
+          "Accept": [
+            "application/json"
+          ],
+          "Content-Type": [
+            "application/json; charset=UTF-8"
+          ],
+          "User-Agent": [
+            "selenium/4.12.0 (ruby macosx)"
+          ],
+          "Cache-Control": [
+            "no-cache"
+          ],
+          "Accept-Encoding": [
+            "gzip;q=1.0,deflate;q=0.6,identity;q=0.3"
+          ]
+        }
+      },
+      "response": {
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "headers": {
+          "Content-Length": [
+            "15"
+          ],
+          "Content-Type": [
+            "application/json; charset=utf-8"
+          ],
+          "Cache-Control": [
+            "no-cache"
+          ]
+        },
+        "body": {
+          "encoding": "UTF-8",
+          "string": "{\"value\":false}"
+        }
+      },
+      "recorded_at": "Sat, 16 Sep 2023 00:09:13 GMT"
+    },
+    {
+      "request": {
+        "method": "post",
+        "uri": "http://127.0.0.1:9515/session/8cee6721db4efc81dff751d08a720647/execute/sync",
+        "body": {
+          "encoding": "UTF-8",
+          "string": "{\"script\":\"return arguments[0].matches(':disabled, select:disabled *')\",\"args\":[{\"element-6066-11e4-a52e-4f735466cecf\":\"BEBB88567AD605309366F9FA0EBD623D_element_25\"}]}"
+        },
+        "headers": {
+          "Accept": [
+            "application/json"
+          ],
+          "Content-Type": [
+            "application/json; charset=UTF-8"
+          ],
+          "User-Agent": [
+            "selenium/4.12.0 (ruby macosx)"
+          ],
+          "Content-Length": [
+            "167"
+          ],
+          "Accept-Encoding": [
+            "gzip;q=1.0,deflate;q=0.6,identity;q=0.3"
+          ]
+        }
+      },
+      "response": {
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "headers": {
+          "Content-Length": [
+            "15"
+          ],
+          "Content-Type": [
+            "application/json; charset=utf-8"
+          ],
+          "Cache-Control": [
+            "no-cache"
+          ]
+        },
+        "body": {
+          "encoding": "UTF-8",
+          "string": "{\"value\":false}"
+        }
+      },
+      "recorded_at": "Sat, 16 Sep 2023 00:09:13 GMT"
+    },
+    {
+      "request": {
+        "method": "post",
+        "uri": "http://127.0.0.1:9515/session/8cee6721db4efc81dff751d08a720647/element/BEBB88567AD605309366F9FA0EBD623D_element_24/elements",
+        "body": {
+          "encoding": "UTF-8",
+          "string": "{\"using\":\"xpath\",\"value\":\".//*[self::input | self::textarea | self::select][not((((./@type = 'submit') or (./@type = 'image')) or (./@type = 'hidden')))][((((./@id = 'Crisis Hotline') or (./@name = 'Crisis Hotline')) or (./@placeholder = 'Crisis Hotline')) or (./@id = //label[contains(normalize-space(string(.)), 'Crisis Hotline')]/@for))] | .//label[contains(normalize-space(string(.)), 'Crisis Hotline')]//.//*[self::input | self::textarea | self::select][not((((./@type = 'submit') or (./@type = 'image')) or (./@type = 'hidden')))]\"}"
+        },
+        "headers": {
+          "Accept": [
+            "application/json"
+          ],
+          "Content-Type": [
+            "application/json; charset=UTF-8"
+          ],
+          "User-Agent": [
+            "selenium/4.12.0 (ruby macosx)"
+          ],
+          "Content-Length": [
+            "538"
+          ],
+          "Accept-Encoding": [
+            "gzip;q=1.0,deflate;q=0.6,identity;q=0.3"
+          ]
+        }
+      },
+      "response": {
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "headers": {
+          "Content-Length": [
+            "97"
+          ],
+          "Content-Type": [
+            "application/json; charset=utf-8"
+          ],
+          "Cache-Control": [
+            "no-cache"
+          ]
+        },
+        "body": {
+          "encoding": "UTF-8",
+          "string": "{\"value\":[{\"element-6066-11e4-a52e-4f735466cecf\":\"BEBB88567AD605309366F9FA0EBD623D_element_26\"}]}"
+        }
+      },
+      "recorded_at": "Sat, 16 Sep 2023 00:09:13 GMT"
+    },
+    {
+      "request": {
+        "method": "post",
+        "uri": "http://127.0.0.1:9515/session/8cee6721db4efc81dff751d08a720647/execute/sync",
+        "body": {
+          "encoding": "UTF-8",
+          "string": "{\"script\":\"/* isDisplayed */return ((function(){function d(t,e,n){function r(t){var e=x(t);if(0<e.height&&0<e.width)return!0;if(\\\"PATH\\\"==t.tagName.toUpperCase()&&(0<e.height||0<e.width)){var n=window.getComputedStyle(t)[\\\"stroke-width\\\"];return!!n&&0<parseInt(n,10)}return\\\"hidden\\\"!=window.getComputedStyle(t).overflow&&Array.prototype.slice.call(t.childNodes).some(function(t){return t.nodeType==Node.TEXT_NODE||t.nodeType==Node.ELEMENT_NODE&&r(t)})}function i(t){return C(t)==T.HIDDEN&&Array.prototype.slice.call(t.childNodes).every(function(t){return t.nodeType!=Node.ELEMENT_NODE||i(t)||!r(t)})}var o=t.tagName.toUpperCase();if(\\\"BODY\\\"==o)return!0;if(\\\"OPTION\\\"==o||\\\"OPTGROUP\\\"==o){var a=c(t,function(t){return\\\"SELECT\\\"==t.tagName.toUpperCase()});return!!a&&d(a,!0,n)}var u=s(t);if(u)return!!u.image&&0<u.rect.width&&0<u.rect.height&&d(u.image,e,n);if(\\\"INPUT\\\"==o&&\\\"hidden\\\"==t.type.toLowerCase())return!1;if(\\\"NOSCRIPT\\\"==o)return!1;var l=window.getComputedStyle(t).visibility;return\\\"collapse\\\"!=l&&\\\"hidden\\\"!=l&&(!!n(t)&&(!(!e&&0==f(t))&&(!!r(t)&&!i(t))))}function E(t){var e=x(t);return{left:e.left,right:e.left+e.width,top:e.top,bottom:e.top+e.height}}function D(t){return t.parentElement}function C(t){function e(t){function e(t){if(t==u)return!0;var e=window.getComputedStyle(t),n=e.display;return 0!=n.indexOf(\\\"inline\\\")&&\\\"contents\\\"!=n&&(\\\"absolute\\\"!=r||\\\"static\\\"!=e.position)}var r=window.getComputedStyle(t).position;if(\\\"fixed\\\"==r)return i=!0,t==u?null:u;for(var n=D(t);n&&!e(n);)n=D(n);return n}function n(t){var e=t;if(\\\"visible\\\"==d)if(t==u&&l)e=l;else if(t==l)return{x:\\\"visible\\\",y:\\\"visible\\\"};var n=window.getComputedStyle(e),r={x:n[\\\"overflow-x\\\"],y:n[\\\"overflow-y\\\"]};return t==u&&(r.x=\\\"visible\\\"==r.x?\\\"auto\\\":r.x,r.y=\\\"visible\\\"==r.y?\\\"auto\\\":r.y),r}function r(t){return t==u?{x:window.scrollX,y:window.scrollY}:{x:t.scrollLeft,y:t.scrollTop}}for(var i,o=E(t),a=t.ownerDocument,u=a.documentElement,l=a.body,d=window.getComputedStyle(u).overflow,f=e(t);f;f=e(f)){var h=n(f);if(\\\"visible\\\"!=h.x||\\\"visible\\\"!=h.y){var s=x(f);if(0==s.width||0==s.height)return T.HIDDEN;var p=o.right<s.left,c=o.bottom<s.top;if(p&&\\\"hidden\\\"==h.x||c&&\\\"hidden\\\"==h.y)return T.HIDDEN;if(p&&\\\"visible\\\"!=h.x||c&&\\\"visible\\\"!=h.y){var v=r(f),g=o.right<s.left-v.x,w=o.bottom<s.top-v.y;return g&&\\\"visible\\\"!=h.x||w&&\\\"visible\\\"!=h.x?T.HIDDEN:C(f)==T.HIDDEN?T.HIDDEN:T.SCROLL}var N=o.left>=s.left+s.width,m=o.top>=s.top+s.height;if(N&&\\\"hidden\\\"==h.x||m&&\\\"hidden\\\"==h.y)return T.HIDDEN;if(N&&\\\"visible\\\"!=h.x||m&&\\\"visible\\\"!=h.y){if(i){var y=r(f);if(o.left>=u.scrollWidth-y.x||o.right>=u.scrollHeight-y.y)return T.HIDDEN}return C(f)==T.HIDDEN?T.HIDDEN:T.SCROLL}}}return T.NONE}function o(t){var e=t.document.documentElement;return{width:e.clientWidth,height:e.clientHeight}}function p(t,e,n,r){return{left:t,top:e,width:n,height:r}}function x(t){var e,n=s(t);if(n)return n.rect;if(\\\"HTML\\\"==t.tagName.toUpperCase()){t.ownerDocument;var r=o(window);return p(0,0,r.width,r.height)}try{e=t.getBoundingClientRect()}catch(i){return p(0,0,0,0)}return p(e.left,e.top,e.right-e.left,e.bottom-e.top)}function f(t){var e=1,n=window.getComputedStyle(t).opacity;n&&(e=Number(n));var r=D(t);return r&&r.nodeType==Node.ELEMENT_NODE&&(e*=f(r)),e}function h(t){var e=t.shape.toLowerCase(),n=t.coords.split(\\\",\\\");if(\\\"rect\\\"==e&&4==n.length){var r=n[0],i=n[1];return p(r,i,n[2]-r,n[3]-i)}if(\\\"circle\\\"==e&&3==n.length){var o=n[0],a=n[1],u=n[2];return p(o-u,a-u,2*u,2*u)}if(\\\"poly\\\"==e&&2<n.length){for(var l=n[0],d=n[1],f=l,h=d,s=2;s+1<n.length;s+=2)l=Math.min(l,n[s]),f=Math.max(f,n[s]),d=Math.min(d,n[s+1]),h=Math.max(h,n[s+1]);return p(l,d,f-l,h-d)}return p(0,0,0,0)}function s(t){var e=t.tagName.toUpperCase(),n=\\\"MAP\\\"==e;if(!n&&\\\"AREA\\\"!=e)return null;var r=n?t:\\\"MAP\\\"==D(t).tagName.toUpperCase()?D(t):null,i=null,o=null;if(r&&r.name&&((i=r.ownerDocument.querySelector(\\\"*[usemap='#\\\"+r.name+\\\"']\\\"))&&(o=x(i),!n&&\\\"default\\\"!=t.shape.toLowerCase()))){var a=h(t),u=Math.min(Math.max(a.left,0),o.width),l=Math.min(Math.max(a.top,0),o.height),d=Math.min(a.width,o.width-u),f=Math.min(a.height,o.height-l);o=p(u+o.left,l+o.top,d,f)}return{image:i,rect:o||p(0,0,0,0)}}function c(t,e){for(t&&(t=D(t));t;){if(e(t))return t;t=D(t)}return null}function r(t){var e=t.parentNode;if(e&&e.shadowRoot&&t.assignedSlot!==undefined)return t.assignedSlot?t.assignedSlot.parentNode:null;if(t.getDestinationInsertionPoints){var n=t.getDestinationInsertionPoints();if(0<n.length)return n[n.length-1]}return e}var T={NONE:\\\"none\\\",HIDDEN:\\\"hidden\\\",SCROLL:\\\"scroll\\\"};return function i(t,e){function n(t){if(\\\"none\\\"==window.getComputedStyle(t).display)return!1;var e=r(t);if(\\\"function\\\"==typeof ShadowRoot&&e instanceof ShadowRoot){if(e.host.shadowRoot!==e)return!1;e=e.host}return!(!e||e.nodeType!=Node.DOCUMENT_NODE&&e.nodeType!=Node.DOCUMENT_FRAGMENT_NODE)||!(e&&e.tagName&&\\\"DETAILS\\\"==e.tagName.toUpperCase()&&!e.open&&\\\"SUMMARY\\\"!=t.tagName)&&(e&&n(e))}return d(t,!!e,n)}})()).apply(null, arguments)\",\"args\":[{\"element-6066-11e4-a52e-4f735466cecf\":\"BEBB88567AD605309366F9FA0EBD623D_element_26\"}]}"
+        },
+        "headers": {
+          "Accept": [
+            "application/json"
+          ],
+          "Content-Type": [
+            "application/json; charset=UTF-8"
+          ],
+          "User-Agent": [
+            "selenium/4.12.0 (ruby macosx)"
+          ],
+          "Content-Length": [
+            "5091"
+          ],
+          "Accept-Encoding": [
+            "gzip;q=1.0,deflate;q=0.6,identity;q=0.3"
+          ]
+        }
+      },
+      "response": {
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "headers": {
+          "Content-Length": [
+            "14"
+          ],
+          "Content-Type": [
+            "application/json; charset=utf-8"
+          ],
+          "Cache-Control": [
+            "no-cache"
+          ]
+        },
+        "body": {
+          "encoding": "UTF-8",
+          "string": "{\"value\":true}"
+        }
+      },
+      "recorded_at": "Sat, 16 Sep 2023 00:09:13 GMT"
+    },
+    {
+      "request": {
+        "method": "get",
+        "uri": "http://127.0.0.1:9515/session/8cee6721db4efc81dff751d08a720647/element/BEBB88567AD605309366F9FA0EBD623D_element_26/selected",
+        "body": {
+          "encoding": "US-ASCII",
+          "string": ""
+        },
+        "headers": {
+          "Accept": [
+            "application/json"
+          ],
+          "Content-Type": [
+            "application/json; charset=UTF-8"
+          ],
+          "User-Agent": [
+            "selenium/4.12.0 (ruby macosx)"
+          ],
+          "Cache-Control": [
+            "no-cache"
+          ],
+          "Accept-Encoding": [
+            "gzip;q=1.0,deflate;q=0.6,identity;q=0.3"
+          ]
+        }
+      },
+      "response": {
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "headers": {
+          "Content-Length": [
+            "15"
+          ],
+          "Content-Type": [
+            "application/json; charset=utf-8"
+          ],
+          "Cache-Control": [
+            "no-cache"
+          ]
+        },
+        "body": {
+          "encoding": "UTF-8",
+          "string": "{\"value\":false}"
+        }
+      },
+      "recorded_at": "Sat, 16 Sep 2023 00:09:13 GMT"
+    },
+    {
+      "request": {
+        "method": "post",
+        "uri": "http://127.0.0.1:9515/session/8cee6721db4efc81dff751d08a720647/execute/sync",
+        "body": {
+          "encoding": "UTF-8",
+          "string": "{\"script\":\"return arguments[0].matches(':disabled, select:disabled *')\",\"args\":[{\"element-6066-11e4-a52e-4f735466cecf\":\"BEBB88567AD605309366F9FA0EBD623D_element_26\"}]}"
+        },
+        "headers": {
+          "Accept": [
+            "application/json"
+          ],
+          "Content-Type": [
+            "application/json; charset=UTF-8"
+          ],
+          "User-Agent": [
+            "selenium/4.12.0 (ruby macosx)"
+          ],
+          "Content-Length": [
+            "167"
+          ],
+          "Accept-Encoding": [
+            "gzip;q=1.0,deflate;q=0.6,identity;q=0.3"
+          ]
+        }
+      },
+      "response": {
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "headers": {
+          "Content-Length": [
+            "15"
+          ],
+          "Content-Type": [
+            "application/json; charset=utf-8"
+          ],
+          "Cache-Control": [
+            "no-cache"
+          ]
+        },
+        "body": {
+          "encoding": "UTF-8",
+          "string": "{\"value\":false}"
+        }
+      },
+      "recorded_at": "Sat, 16 Sep 2023 00:09:13 GMT"
+    },
+    {
+      "request": {
+        "method": "post",
+        "uri": "http://127.0.0.1:9515/session/8cee6721db4efc81dff751d08a720647/element/BEBB88567AD605309366F9FA0EBD623D_element_24/elements",
+        "body": {
+          "encoding": "UTF-8",
+          "string": "{\"using\":\"xpath\",\"value\":\".//*[self::input | self::textarea | self::select][not((((./@type = 'submit') or (./@type = 'image')) or (./@type = 'hidden')))][((((./@id = 'Shelter for Tonight') or (./@name = 'Shelter for Tonight')) or (./@placeholder = 'Shelter for Tonight')) or (./@id = //label[contains(normalize-space(string(.)), 'Shelter for Tonight')]/@for))] | .//label[contains(normalize-space(string(.)), 'Shelter for Tonight')]//.//*[self::input | self::textarea | self::select][not((((./@type = 'submit') or (./@type = 'image')) or (./@type = 'hidden')))]\"}"
+        },
+        "headers": {
+          "Accept": [
+            "application/json"
+          ],
+          "Content-Type": [
+            "application/json; charset=UTF-8"
+          ],
+          "User-Agent": [
+            "selenium/4.12.0 (ruby macosx)"
+          ],
+          "Content-Length": [
+            "563"
+          ],
+          "Accept-Encoding": [
+            "gzip;q=1.0,deflate;q=0.6,identity;q=0.3"
+          ]
+        }
+      },
+      "response": {
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "headers": {
+          "Content-Length": [
+            "97"
+          ],
+          "Content-Type": [
+            "application/json; charset=utf-8"
+          ],
+          "Cache-Control": [
+            "no-cache"
+          ]
+        },
+        "body": {
+          "encoding": "UTF-8",
+          "string": "{\"value\":[{\"element-6066-11e4-a52e-4f735466cecf\":\"BEBB88567AD605309366F9FA0EBD623D_element_27\"}]}"
+        }
+      },
+      "recorded_at": "Sat, 16 Sep 2023 00:09:13 GMT"
+    },
+    {
+      "request": {
+        "method": "post",
+        "uri": "http://127.0.0.1:9515/session/8cee6721db4efc81dff751d08a720647/execute/sync",
+        "body": {
+          "encoding": "UTF-8",
+          "string": "{\"script\":\"/* isDisplayed */return ((function(){function d(t,e,n){function r(t){var e=x(t);if(0<e.height&&0<e.width)return!0;if(\\\"PATH\\\"==t.tagName.toUpperCase()&&(0<e.height||0<e.width)){var n=window.getComputedStyle(t)[\\\"stroke-width\\\"];return!!n&&0<parseInt(n,10)}return\\\"hidden\\\"!=window.getComputedStyle(t).overflow&&Array.prototype.slice.call(t.childNodes).some(function(t){return t.nodeType==Node.TEXT_NODE||t.nodeType==Node.ELEMENT_NODE&&r(t)})}function i(t){return C(t)==T.HIDDEN&&Array.prototype.slice.call(t.childNodes).every(function(t){return t.nodeType!=Node.ELEMENT_NODE||i(t)||!r(t)})}var o=t.tagName.toUpperCase();if(\\\"BODY\\\"==o)return!0;if(\\\"OPTION\\\"==o||\\\"OPTGROUP\\\"==o){var a=c(t,function(t){return\\\"SELECT\\\"==t.tagName.toUpperCase()});return!!a&&d(a,!0,n)}var u=s(t);if(u)return!!u.image&&0<u.rect.width&&0<u.rect.height&&d(u.image,e,n);if(\\\"INPUT\\\"==o&&\\\"hidden\\\"==t.type.toLowerCase())return!1;if(\\\"NOSCRIPT\\\"==o)return!1;var l=window.getComputedStyle(t).visibility;return\\\"collapse\\\"!=l&&\\\"hidden\\\"!=l&&(!!n(t)&&(!(!e&&0==f(t))&&(!!r(t)&&!i(t))))}function E(t){var e=x(t);return{left:e.left,right:e.left+e.width,top:e.top,bottom:e.top+e.height}}function D(t){return t.parentElement}function C(t){function e(t){function e(t){if(t==u)return!0;var e=window.getComputedStyle(t),n=e.display;return 0!=n.indexOf(\\\"inline\\\")&&\\\"contents\\\"!=n&&(\\\"absolute\\\"!=r||\\\"static\\\"!=e.position)}var r=window.getComputedStyle(t).position;if(\\\"fixed\\\"==r)return i=!0,t==u?null:u;for(var n=D(t);n&&!e(n);)n=D(n);return n}function n(t){var e=t;if(\\\"visible\\\"==d)if(t==u&&l)e=l;else if(t==l)return{x:\\\"visible\\\",y:\\\"visible\\\"};var n=window.getComputedStyle(e),r={x:n[\\\"overflow-x\\\"],y:n[\\\"overflow-y\\\"]};return t==u&&(r.x=\\\"visible\\\"==r.x?\\\"auto\\\":r.x,r.y=\\\"visible\\\"==r.y?\\\"auto\\\":r.y),r}function r(t){return t==u?{x:window.scrollX,y:window.scrollY}:{x:t.scrollLeft,y:t.scrollTop}}for(var i,o=E(t),a=t.ownerDocument,u=a.documentElement,l=a.body,d=window.getComputedStyle(u).overflow,f=e(t);f;f=e(f)){var h=n(f);if(\\\"visible\\\"!=h.x||\\\"visible\\\"!=h.y){var s=x(f);if(0==s.width||0==s.height)return T.HIDDEN;var p=o.right<s.left,c=o.bottom<s.top;if(p&&\\\"hidden\\\"==h.x||c&&\\\"hidden\\\"==h.y)return T.HIDDEN;if(p&&\\\"visible\\\"!=h.x||c&&\\\"visible\\\"!=h.y){var v=r(f),g=o.right<s.left-v.x,w=o.bottom<s.top-v.y;return g&&\\\"visible\\\"!=h.x||w&&\\\"visible\\\"!=h.x?T.HIDDEN:C(f)==T.HIDDEN?T.HIDDEN:T.SCROLL}var N=o.left>=s.left+s.width,m=o.top>=s.top+s.height;if(N&&\\\"hidden\\\"==h.x||m&&\\\"hidden\\\"==h.y)return T.HIDDEN;if(N&&\\\"visible\\\"!=h.x||m&&\\\"visible\\\"!=h.y){if(i){var y=r(f);if(o.left>=u.scrollWidth-y.x||o.right>=u.scrollHeight-y.y)return T.HIDDEN}return C(f)==T.HIDDEN?T.HIDDEN:T.SCROLL}}}return T.NONE}function o(t){var e=t.document.documentElement;return{width:e.clientWidth,height:e.clientHeight}}function p(t,e,n,r){return{left:t,top:e,width:n,height:r}}function x(t){var e,n=s(t);if(n)return n.rect;if(\\\"HTML\\\"==t.tagName.toUpperCase()){t.ownerDocument;var r=o(window);return p(0,0,r.width,r.height)}try{e=t.getBoundingClientRect()}catch(i){return p(0,0,0,0)}return p(e.left,e.top,e.right-e.left,e.bottom-e.top)}function f(t){var e=1,n=window.getComputedStyle(t).opacity;n&&(e=Number(n));var r=D(t);return r&&r.nodeType==Node.ELEMENT_NODE&&(e*=f(r)),e}function h(t){var e=t.shape.toLowerCase(),n=t.coords.split(\\\",\\\");if(\\\"rect\\\"==e&&4==n.length){var r=n[0],i=n[1];return p(r,i,n[2]-r,n[3]-i)}if(\\\"circle\\\"==e&&3==n.length){var o=n[0],a=n[1],u=n[2];return p(o-u,a-u,2*u,2*u)}if(\\\"poly\\\"==e&&2<n.length){for(var l=n[0],d=n[1],f=l,h=d,s=2;s+1<n.length;s+=2)l=Math.min(l,n[s]),f=Math.max(f,n[s]),d=Math.min(d,n[s+1]),h=Math.max(h,n[s+1]);return p(l,d,f-l,h-d)}return p(0,0,0,0)}function s(t){var e=t.tagName.toUpperCase(),n=\\\"MAP\\\"==e;if(!n&&\\\"AREA\\\"!=e)return null;var r=n?t:\\\"MAP\\\"==D(t).tagName.toUpperCase()?D(t):null,i=null,o=null;if(r&&r.name&&((i=r.ownerDocument.querySelector(\\\"*[usemap='#\\\"+r.name+\\\"']\\\"))&&(o=x(i),!n&&\\\"default\\\"!=t.shape.toLowerCase()))){var a=h(t),u=Math.min(Math.max(a.left,0),o.width),l=Math.min(Math.max(a.top,0),o.height),d=Math.min(a.width,o.width-u),f=Math.min(a.height,o.height-l);o=p(u+o.left,l+o.top,d,f)}return{image:i,rect:o||p(0,0,0,0)}}function c(t,e){for(t&&(t=D(t));t;){if(e(t))return t;t=D(t)}return null}function r(t){var e=t.parentNode;if(e&&e.shadowRoot&&t.assignedSlot!==undefined)return t.assignedSlot?t.assignedSlot.parentNode:null;if(t.getDestinationInsertionPoints){var n=t.getDestinationInsertionPoints();if(0<n.length)return n[n.length-1]}return e}var T={NONE:\\\"none\\\",HIDDEN:\\\"hidden\\\",SCROLL:\\\"scroll\\\"};return function i(t,e){function n(t){if(\\\"none\\\"==window.getComputedStyle(t).display)return!1;var e=r(t);if(\\\"function\\\"==typeof ShadowRoot&&e instanceof ShadowRoot){if(e.host.shadowRoot!==e)return!1;e=e.host}return!(!e||e.nodeType!=Node.DOCUMENT_NODE&&e.nodeType!=Node.DOCUMENT_FRAGMENT_NODE)||!(e&&e.tagName&&\\\"DETAILS\\\"==e.tagName.toUpperCase()&&!e.open&&\\\"SUMMARY\\\"!=t.tagName)&&(e&&n(e))}return d(t,!!e,n)}})()).apply(null, arguments)\",\"args\":[{\"element-6066-11e4-a52e-4f735466cecf\":\"BEBB88567AD605309366F9FA0EBD623D_element_27\"}]}"
+        },
+        "headers": {
+          "Accept": [
+            "application/json"
+          ],
+          "Content-Type": [
+            "application/json; charset=UTF-8"
+          ],
+          "User-Agent": [
+            "selenium/4.12.0 (ruby macosx)"
+          ],
+          "Content-Length": [
+            "5091"
+          ],
+          "Accept-Encoding": [
+            "gzip;q=1.0,deflate;q=0.6,identity;q=0.3"
+          ]
+        }
+      },
+      "response": {
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "headers": {
+          "Content-Length": [
+            "14"
+          ],
+          "Content-Type": [
+            "application/json; charset=utf-8"
+          ],
+          "Cache-Control": [
+            "no-cache"
+          ]
+        },
+        "body": {
+          "encoding": "UTF-8",
+          "string": "{\"value\":true}"
+        }
+      },
+      "recorded_at": "Sat, 16 Sep 2023 00:09:13 GMT"
+    },
+    {
+      "request": {
+        "method": "get",
+        "uri": "http://127.0.0.1:9515/session/8cee6721db4efc81dff751d08a720647/element/BEBB88567AD605309366F9FA0EBD623D_element_27/selected",
+        "body": {
+          "encoding": "US-ASCII",
+          "string": ""
+        },
+        "headers": {
+          "Accept": [
+            "application/json"
+          ],
+          "Content-Type": [
+            "application/json; charset=UTF-8"
+          ],
+          "User-Agent": [
+            "selenium/4.12.0 (ruby macosx)"
+          ],
+          "Cache-Control": [
+            "no-cache"
+          ],
+          "Accept-Encoding": [
+            "gzip;q=1.0,deflate;q=0.6,identity;q=0.3"
+          ]
+        }
+      },
+      "response": {
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "headers": {
+          "Content-Length": [
+            "15"
+          ],
+          "Content-Type": [
+            "application/json; charset=utf-8"
+          ],
+          "Cache-Control": [
+            "no-cache"
+          ]
+        },
+        "body": {
+          "encoding": "UTF-8",
+          "string": "{\"value\":false}"
+        }
+      },
+      "recorded_at": "Sat, 16 Sep 2023 00:09:13 GMT"
+    },
+    {
+      "request": {
+        "method": "post",
+        "uri": "http://127.0.0.1:9515/session/8cee6721db4efc81dff751d08a720647/execute/sync",
+        "body": {
+          "encoding": "UTF-8",
+          "string": "{\"script\":\"return arguments[0].matches(':disabled, select:disabled *')\",\"args\":[{\"element-6066-11e4-a52e-4f735466cecf\":\"BEBB88567AD605309366F9FA0EBD623D_element_27\"}]}"
+        },
+        "headers": {
+          "Accept": [
+            "application/json"
+          ],
+          "Content-Type": [
+            "application/json; charset=UTF-8"
+          ],
+          "User-Agent": [
+            "selenium/4.12.0 (ruby macosx)"
+          ],
+          "Content-Length": [
+            "167"
+          ],
+          "Accept-Encoding": [
+            "gzip;q=1.0,deflate;q=0.6,identity;q=0.3"
+          ]
+        }
+      },
+      "response": {
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "headers": {
+          "Content-Length": [
+            "15"
+          ],
+          "Content-Type": [
+            "application/json; charset=utf-8"
+          ],
+          "Cache-Control": [
+            "no-cache"
+          ]
+        },
+        "body": {
+          "encoding": "UTF-8",
+          "string": "{\"value\":false}"
+        }
+      },
+      "recorded_at": "Sat, 16 Sep 2023 00:09:13 GMT"
+    },
+    {
+      "request": {
+        "method": "post",
+        "uri": "http://127.0.0.1:9515/session/8cee6721db4efc81dff751d08a720647/element/BEBB88567AD605309366F9FA0EBD623D_element_24/elements",
+        "body": {
+          "encoding": "UTF-8",
+          "string": "{\"using\":\"xpath\",\"value\":\".//*[self::input | self::textarea | self::select][not((((./@type = 'submit') or (./@type = 'image')) or (./@type = 'hidden')))][((((./@id = 'Food') or (./@name = 'Food')) or (./@placeholder = 'Food')) or (./@id = //label[contains(normalize-space(string(.)), 'Food')]/@for))] | .//label[contains(normalize-space(string(.)), 'Food')]//.//*[self::input | self::textarea | self::select][not((((./@type = 'submit') or (./@type = 'image')) or (./@type = 'hidden')))]\"}"
+        },
+        "headers": {
+          "Accept": [
+            "application/json"
+          ],
+          "Content-Type": [
+            "application/json; charset=UTF-8"
+          ],
+          "User-Agent": [
+            "selenium/4.12.0 (ruby macosx)"
+          ],
+          "Content-Length": [
+            "488"
+          ],
+          "Accept-Encoding": [
+            "gzip;q=1.0,deflate;q=0.6,identity;q=0.3"
+          ]
+        }
+      },
+      "response": {
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "headers": {
+          "Content-Length": [
+            "97"
+          ],
+          "Content-Type": [
+            "application/json; charset=utf-8"
+          ],
+          "Cache-Control": [
+            "no-cache"
+          ]
+        },
+        "body": {
+          "encoding": "UTF-8",
+          "string": "{\"value\":[{\"element-6066-11e4-a52e-4f735466cecf\":\"BEBB88567AD605309366F9FA0EBD623D_element_28\"}]}"
+        }
+      },
+      "recorded_at": "Sat, 16 Sep 2023 00:09:13 GMT"
+    },
+    {
+      "request": {
+        "method": "post",
+        "uri": "http://127.0.0.1:9515/session/8cee6721db4efc81dff751d08a720647/execute/sync",
+        "body": {
+          "encoding": "UTF-8",
+          "string": "{\"script\":\"/* isDisplayed */return ((function(){function d(t,e,n){function r(t){var e=x(t);if(0<e.height&&0<e.width)return!0;if(\\\"PATH\\\"==t.tagName.toUpperCase()&&(0<e.height||0<e.width)){var n=window.getComputedStyle(t)[\\\"stroke-width\\\"];return!!n&&0<parseInt(n,10)}return\\\"hidden\\\"!=window.getComputedStyle(t).overflow&&Array.prototype.slice.call(t.childNodes).some(function(t){return t.nodeType==Node.TEXT_NODE||t.nodeType==Node.ELEMENT_NODE&&r(t)})}function i(t){return C(t)==T.HIDDEN&&Array.prototype.slice.call(t.childNodes).every(function(t){return t.nodeType!=Node.ELEMENT_NODE||i(t)||!r(t)})}var o=t.tagName.toUpperCase();if(\\\"BODY\\\"==o)return!0;if(\\\"OPTION\\\"==o||\\\"OPTGROUP\\\"==o){var a=c(t,function(t){return\\\"SELECT\\\"==t.tagName.toUpperCase()});return!!a&&d(a,!0,n)}var u=s(t);if(u)return!!u.image&&0<u.rect.width&&0<u.rect.height&&d(u.image,e,n);if(\\\"INPUT\\\"==o&&\\\"hidden\\\"==t.type.toLowerCase())return!1;if(\\\"NOSCRIPT\\\"==o)return!1;var l=window.getComputedStyle(t).visibility;return\\\"collapse\\\"!=l&&\\\"hidden\\\"!=l&&(!!n(t)&&(!(!e&&0==f(t))&&(!!r(t)&&!i(t))))}function E(t){var e=x(t);return{left:e.left,right:e.left+e.width,top:e.top,bottom:e.top+e.height}}function D(t){return t.parentElement}function C(t){function e(t){function e(t){if(t==u)return!0;var e=window.getComputedStyle(t),n=e.display;return 0!=n.indexOf(\\\"inline\\\")&&\\\"contents\\\"!=n&&(\\\"absolute\\\"!=r||\\\"static\\\"!=e.position)}var r=window.getComputedStyle(t).position;if(\\\"fixed\\\"==r)return i=!0,t==u?null:u;for(var n=D(t);n&&!e(n);)n=D(n);return n}function n(t){var e=t;if(\\\"visible\\\"==d)if(t==u&&l)e=l;else if(t==l)return{x:\\\"visible\\\",y:\\\"visible\\\"};var n=window.getComputedStyle(e),r={x:n[\\\"overflow-x\\\"],y:n[\\\"overflow-y\\\"]};return t==u&&(r.x=\\\"visible\\\"==r.x?\\\"auto\\\":r.x,r.y=\\\"visible\\\"==r.y?\\\"auto\\\":r.y),r}function r(t){return t==u?{x:window.scrollX,y:window.scrollY}:{x:t.scrollLeft,y:t.scrollTop}}for(var i,o=E(t),a=t.ownerDocument,u=a.documentElement,l=a.body,d=window.getComputedStyle(u).overflow,f=e(t);f;f=e(f)){var h=n(f);if(\\\"visible\\\"!=h.x||\\\"visible\\\"!=h.y){var s=x(f);if(0==s.width||0==s.height)return T.HIDDEN;var p=o.right<s.left,c=o.bottom<s.top;if(p&&\\\"hidden\\\"==h.x||c&&\\\"hidden\\\"==h.y)return T.HIDDEN;if(p&&\\\"visible\\\"!=h.x||c&&\\\"visible\\\"!=h.y){var v=r(f),g=o.right<s.left-v.x,w=o.bottom<s.top-v.y;return g&&\\\"visible\\\"!=h.x||w&&\\\"visible\\\"!=h.x?T.HIDDEN:C(f)==T.HIDDEN?T.HIDDEN:T.SCROLL}var N=o.left>=s.left+s.width,m=o.top>=s.top+s.height;if(N&&\\\"hidden\\\"==h.x||m&&\\\"hidden\\\"==h.y)return T.HIDDEN;if(N&&\\\"visible\\\"!=h.x||m&&\\\"visible\\\"!=h.y){if(i){var y=r(f);if(o.left>=u.scrollWidth-y.x||o.right>=u.scrollHeight-y.y)return T.HIDDEN}return C(f)==T.HIDDEN?T.HIDDEN:T.SCROLL}}}return T.NONE}function o(t){var e=t.document.documentElement;return{width:e.clientWidth,height:e.clientHeight}}function p(t,e,n,r){return{left:t,top:e,width:n,height:r}}function x(t){var e,n=s(t);if(n)return n.rect;if(\\\"HTML\\\"==t.tagName.toUpperCase()){t.ownerDocument;var r=o(window);return p(0,0,r.width,r.height)}try{e=t.getBoundingClientRect()}catch(i){return p(0,0,0,0)}return p(e.left,e.top,e.right-e.left,e.bottom-e.top)}function f(t){var e=1,n=window.getComputedStyle(t).opacity;n&&(e=Number(n));var r=D(t);return r&&r.nodeType==Node.ELEMENT_NODE&&(e*=f(r)),e}function h(t){var e=t.shape.toLowerCase(),n=t.coords.split(\\\",\\\");if(\\\"rect\\\"==e&&4==n.length){var r=n[0],i=n[1];return p(r,i,n[2]-r,n[3]-i)}if(\\\"circle\\\"==e&&3==n.length){var o=n[0],a=n[1],u=n[2];return p(o-u,a-u,2*u,2*u)}if(\\\"poly\\\"==e&&2<n.length){for(var l=n[0],d=n[1],f=l,h=d,s=2;s+1<n.length;s+=2)l=Math.min(l,n[s]),f=Math.max(f,n[s]),d=Math.min(d,n[s+1]),h=Math.max(h,n[s+1]);return p(l,d,f-l,h-d)}return p(0,0,0,0)}function s(t){var e=t.tagName.toUpperCase(),n=\\\"MAP\\\"==e;if(!n&&\\\"AREA\\\"!=e)return null;var r=n?t:\\\"MAP\\\"==D(t).tagName.toUpperCase()?D(t):null,i=null,o=null;if(r&&r.name&&((i=r.ownerDocument.querySelector(\\\"*[usemap='#\\\"+r.name+\\\"']\\\"))&&(o=x(i),!n&&\\\"default\\\"!=t.shape.toLowerCase()))){var a=h(t),u=Math.min(Math.max(a.left,0),o.width),l=Math.min(Math.max(a.top,0),o.height),d=Math.min(a.width,o.width-u),f=Math.min(a.height,o.height-l);o=p(u+o.left,l+o.top,d,f)}return{image:i,rect:o||p(0,0,0,0)}}function c(t,e){for(t&&(t=D(t));t;){if(e(t))return t;t=D(t)}return null}function r(t){var e=t.parentNode;if(e&&e.shadowRoot&&t.assignedSlot!==undefined)return t.assignedSlot?t.assignedSlot.parentNode:null;if(t.getDestinationInsertionPoints){var n=t.getDestinationInsertionPoints();if(0<n.length)return n[n.length-1]}return e}var T={NONE:\\\"none\\\",HIDDEN:\\\"hidden\\\",SCROLL:\\\"scroll\\\"};return function i(t,e){function n(t){if(\\\"none\\\"==window.getComputedStyle(t).display)return!1;var e=r(t);if(\\\"function\\\"==typeof ShadowRoot&&e instanceof ShadowRoot){if(e.host.shadowRoot!==e)return!1;e=e.host}return!(!e||e.nodeType!=Node.DOCUMENT_NODE&&e.nodeType!=Node.DOCUMENT_FRAGMENT_NODE)||!(e&&e.tagName&&\\\"DETAILS\\\"==e.tagName.toUpperCase()&&!e.open&&\\\"SUMMARY\\\"!=t.tagName)&&(e&&n(e))}return d(t,!!e,n)}})()).apply(null, arguments)\",\"args\":[{\"element-6066-11e4-a52e-4f735466cecf\":\"BEBB88567AD605309366F9FA0EBD623D_element_28\"}]}"
+        },
+        "headers": {
+          "Accept": [
+            "application/json"
+          ],
+          "Content-Type": [
+            "application/json; charset=UTF-8"
+          ],
+          "User-Agent": [
+            "selenium/4.12.0 (ruby macosx)"
+          ],
+          "Content-Length": [
+            "5091"
+          ],
+          "Accept-Encoding": [
+            "gzip;q=1.0,deflate;q=0.6,identity;q=0.3"
+          ]
+        }
+      },
+      "response": {
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "headers": {
+          "Content-Length": [
+            "14"
+          ],
+          "Content-Type": [
+            "application/json; charset=utf-8"
+          ],
+          "Cache-Control": [
+            "no-cache"
+          ]
+        },
+        "body": {
+          "encoding": "UTF-8",
+          "string": "{\"value\":true}"
+        }
+      },
+      "recorded_at": "Sat, 16 Sep 2023 00:09:13 GMT"
+    },
+    {
+      "request": {
+        "method": "get",
+        "uri": "http://127.0.0.1:9515/session/8cee6721db4efc81dff751d08a720647/element/BEBB88567AD605309366F9FA0EBD623D_element_28/selected",
+        "body": {
+          "encoding": "US-ASCII",
+          "string": ""
+        },
+        "headers": {
+          "Accept": [
+            "application/json"
+          ],
+          "Content-Type": [
+            "application/json; charset=UTF-8"
+          ],
+          "User-Agent": [
+            "selenium/4.12.0 (ruby macosx)"
+          ],
+          "Cache-Control": [
+            "no-cache"
+          ],
+          "Accept-Encoding": [
+            "gzip;q=1.0,deflate;q=0.6,identity;q=0.3"
+          ]
+        }
+      },
+      "response": {
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "headers": {
+          "Content-Length": [
+            "15"
+          ],
+          "Content-Type": [
+            "application/json; charset=utf-8"
+          ],
+          "Cache-Control": [
+            "no-cache"
+          ]
+        },
+        "body": {
+          "encoding": "UTF-8",
+          "string": "{\"value\":false}"
+        }
+      },
+      "recorded_at": "Sat, 16 Sep 2023 00:09:13 GMT"
+    },
+    {
+      "request": {
+        "method": "post",
+        "uri": "http://127.0.0.1:9515/session/8cee6721db4efc81dff751d08a720647/execute/sync",
+        "body": {
+          "encoding": "UTF-8",
+          "string": "{\"script\":\"return arguments[0].matches(':disabled, select:disabled *')\",\"args\":[{\"element-6066-11e4-a52e-4f735466cecf\":\"BEBB88567AD605309366F9FA0EBD623D_element_28\"}]}"
+        },
+        "headers": {
+          "Accept": [
+            "application/json"
+          ],
+          "Content-Type": [
+            "application/json; charset=UTF-8"
+          ],
+          "User-Agent": [
+            "selenium/4.12.0 (ruby macosx)"
+          ],
+          "Content-Length": [
+            "167"
+          ],
+          "Accept-Encoding": [
+            "gzip;q=1.0,deflate;q=0.6,identity;q=0.3"
+          ]
+        }
+      },
+      "response": {
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "headers": {
+          "Content-Length": [
+            "15"
+          ],
+          "Content-Type": [
+            "application/json; charset=utf-8"
+          ],
+          "Cache-Control": [
+            "no-cache"
+          ]
+        },
+        "body": {
+          "encoding": "UTF-8",
+          "string": "{\"value\":false}"
+        }
+      },
+      "recorded_at": "Sat, 16 Sep 2023 00:09:13 GMT"
+    },
+    {
+      "request": {
+        "method": "post",
+        "uri": "http://127.0.0.1:9515/session/8cee6721db4efc81dff751d08a720647/element/BEBB88567AD605309366F9FA0EBD623D_element_24/elements",
+        "body": {
+          "encoding": "UTF-8",
+          "string": "{\"using\":\"xpath\",\"value\":\".//*[self::input | self::textarea | self::select][not((((./@type = 'submit') or (./@type = 'image')) or (./@type = 'hidden')))][((((./@id = 'Substance Use') or (./@name = 'Substance Use')) or (./@placeholder = 'Substance Use')) or (./@id = //label[contains(normalize-space(string(.)), 'Substance Use')]/@for))] | .//label[contains(normalize-space(string(.)), 'Substance Use')]//.//*[self::input | self::textarea | self::select][not((((./@type = 'submit') or (./@type = 'image')) or (./@type = 'hidden')))]\"}"
+        },
+        "headers": {
+          "Accept": [
+            "application/json"
+          ],
+          "Content-Type": [
+            "application/json; charset=UTF-8"
+          ],
+          "User-Agent": [
+            "selenium/4.12.0 (ruby macosx)"
+          ],
+          "Content-Length": [
+            "533"
+          ],
+          "Accept-Encoding": [
+            "gzip;q=1.0,deflate;q=0.6,identity;q=0.3"
+          ]
+        }
+      },
+      "response": {
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "headers": {
+          "Content-Length": [
+            "97"
+          ],
+          "Content-Type": [
+            "application/json; charset=utf-8"
+          ],
+          "Cache-Control": [
+            "no-cache"
+          ]
+        },
+        "body": {
+          "encoding": "UTF-8",
+          "string": "{\"value\":[{\"element-6066-11e4-a52e-4f735466cecf\":\"BEBB88567AD605309366F9FA0EBD623D_element_29\"}]}"
+        }
+      },
+      "recorded_at": "Sat, 16 Sep 2023 00:09:13 GMT"
+    },
+    {
+      "request": {
+        "method": "post",
+        "uri": "http://127.0.0.1:9515/session/8cee6721db4efc81dff751d08a720647/execute/sync",
+        "body": {
+          "encoding": "UTF-8",
+          "string": "{\"script\":\"/* isDisplayed */return ((function(){function d(t,e,n){function r(t){var e=x(t);if(0<e.height&&0<e.width)return!0;if(\\\"PATH\\\"==t.tagName.toUpperCase()&&(0<e.height||0<e.width)){var n=window.getComputedStyle(t)[\\\"stroke-width\\\"];return!!n&&0<parseInt(n,10)}return\\\"hidden\\\"!=window.getComputedStyle(t).overflow&&Array.prototype.slice.call(t.childNodes).some(function(t){return t.nodeType==Node.TEXT_NODE||t.nodeType==Node.ELEMENT_NODE&&r(t)})}function i(t){return C(t)==T.HIDDEN&&Array.prototype.slice.call(t.childNodes).every(function(t){return t.nodeType!=Node.ELEMENT_NODE||i(t)||!r(t)})}var o=t.tagName.toUpperCase();if(\\\"BODY\\\"==o)return!0;if(\\\"OPTION\\\"==o||\\\"OPTGROUP\\\"==o){var a=c(t,function(t){return\\\"SELECT\\\"==t.tagName.toUpperCase()});return!!a&&d(a,!0,n)}var u=s(t);if(u)return!!u.image&&0<u.rect.width&&0<u.rect.height&&d(u.image,e,n);if(\\\"INPUT\\\"==o&&\\\"hidden\\\"==t.type.toLowerCase())return!1;if(\\\"NOSCRIPT\\\"==o)return!1;var l=window.getComputedStyle(t).visibility;return\\\"collapse\\\"!=l&&\\\"hidden\\\"!=l&&(!!n(t)&&(!(!e&&0==f(t))&&(!!r(t)&&!i(t))))}function E(t){var e=x(t);return{left:e.left,right:e.left+e.width,top:e.top,bottom:e.top+e.height}}function D(t){return t.parentElement}function C(t){function e(t){function e(t){if(t==u)return!0;var e=window.getComputedStyle(t),n=e.display;return 0!=n.indexOf(\\\"inline\\\")&&\\\"contents\\\"!=n&&(\\\"absolute\\\"!=r||\\\"static\\\"!=e.position)}var r=window.getComputedStyle(t).position;if(\\\"fixed\\\"==r)return i=!0,t==u?null:u;for(var n=D(t);n&&!e(n);)n=D(n);return n}function n(t){var e=t;if(\\\"visible\\\"==d)if(t==u&&l)e=l;else if(t==l)return{x:\\\"visible\\\",y:\\\"visible\\\"};var n=window.getComputedStyle(e),r={x:n[\\\"overflow-x\\\"],y:n[\\\"overflow-y\\\"]};return t==u&&(r.x=\\\"visible\\\"==r.x?\\\"auto\\\":r.x,r.y=\\\"visible\\\"==r.y?\\\"auto\\\":r.y),r}function r(t){return t==u?{x:window.scrollX,y:window.scrollY}:{x:t.scrollLeft,y:t.scrollTop}}for(var i,o=E(t),a=t.ownerDocument,u=a.documentElement,l=a.body,d=window.getComputedStyle(u).overflow,f=e(t);f;f=e(f)){var h=n(f);if(\\\"visible\\\"!=h.x||\\\"visible\\\"!=h.y){var s=x(f);if(0==s.width||0==s.height)return T.HIDDEN;var p=o.right<s.left,c=o.bottom<s.top;if(p&&\\\"hidden\\\"==h.x||c&&\\\"hidden\\\"==h.y)return T.HIDDEN;if(p&&\\\"visible\\\"!=h.x||c&&\\\"visible\\\"!=h.y){var v=r(f),g=o.right<s.left-v.x,w=o.bottom<s.top-v.y;return g&&\\\"visible\\\"!=h.x||w&&\\\"visible\\\"!=h.x?T.HIDDEN:C(f)==T.HIDDEN?T.HIDDEN:T.SCROLL}var N=o.left>=s.left+s.width,m=o.top>=s.top+s.height;if(N&&\\\"hidden\\\"==h.x||m&&\\\"hidden\\\"==h.y)return T.HIDDEN;if(N&&\\\"visible\\\"!=h.x||m&&\\\"visible\\\"!=h.y){if(i){var y=r(f);if(o.left>=u.scrollWidth-y.x||o.right>=u.scrollHeight-y.y)return T.HIDDEN}return C(f)==T.HIDDEN?T.HIDDEN:T.SCROLL}}}return T.NONE}function o(t){var e=t.document.documentElement;return{width:e.clientWidth,height:e.clientHeight}}function p(t,e,n,r){return{left:t,top:e,width:n,height:r}}function x(t){var e,n=s(t);if(n)return n.rect;if(\\\"HTML\\\"==t.tagName.toUpperCase()){t.ownerDocument;var r=o(window);return p(0,0,r.width,r.height)}try{e=t.getBoundingClientRect()}catch(i){return p(0,0,0,0)}return p(e.left,e.top,e.right-e.left,e.bottom-e.top)}function f(t){var e=1,n=window.getComputedStyle(t).opacity;n&&(e=Number(n));var r=D(t);return r&&r.nodeType==Node.ELEMENT_NODE&&(e*=f(r)),e}function h(t){var e=t.shape.toLowerCase(),n=t.coords.split(\\\",\\\");if(\\\"rect\\\"==e&&4==n.length){var r=n[0],i=n[1];return p(r,i,n[2]-r,n[3]-i)}if(\\\"circle\\\"==e&&3==n.length){var o=n[0],a=n[1],u=n[2];return p(o-u,a-u,2*u,2*u)}if(\\\"poly\\\"==e&&2<n.length){for(var l=n[0],d=n[1],f=l,h=d,s=2;s+1<n.length;s+=2)l=Math.min(l,n[s]),f=Math.max(f,n[s]),d=Math.min(d,n[s+1]),h=Math.max(h,n[s+1]);return p(l,d,f-l,h-d)}return p(0,0,0,0)}function s(t){var e=t.tagName.toUpperCase(),n=\\\"MAP\\\"==e;if(!n&&\\\"AREA\\\"!=e)return null;var r=n?t:\\\"MAP\\\"==D(t).tagName.toUpperCase()?D(t):null,i=null,o=null;if(r&&r.name&&((i=r.ownerDocument.querySelector(\\\"*[usemap='#\\\"+r.name+\\\"']\\\"))&&(o=x(i),!n&&\\\"default\\\"!=t.shape.toLowerCase()))){var a=h(t),u=Math.min(Math.max(a.left,0),o.width),l=Math.min(Math.max(a.top,0),o.height),d=Math.min(a.width,o.width-u),f=Math.min(a.height,o.height-l);o=p(u+o.left,l+o.top,d,f)}return{image:i,rect:o||p(0,0,0,0)}}function c(t,e){for(t&&(t=D(t));t;){if(e(t))return t;t=D(t)}return null}function r(t){var e=t.parentNode;if(e&&e.shadowRoot&&t.assignedSlot!==undefined)return t.assignedSlot?t.assignedSlot.parentNode:null;if(t.getDestinationInsertionPoints){var n=t.getDestinationInsertionPoints();if(0<n.length)return n[n.length-1]}return e}var T={NONE:\\\"none\\\",HIDDEN:\\\"hidden\\\",SCROLL:\\\"scroll\\\"};return function i(t,e){function n(t){if(\\\"none\\\"==window.getComputedStyle(t).display)return!1;var e=r(t);if(\\\"function\\\"==typeof ShadowRoot&&e instanceof ShadowRoot){if(e.host.shadowRoot!==e)return!1;e=e.host}return!(!e||e.nodeType!=Node.DOCUMENT_NODE&&e.nodeType!=Node.DOCUMENT_FRAGMENT_NODE)||!(e&&e.tagName&&\\\"DETAILS\\\"==e.tagName.toUpperCase()&&!e.open&&\\\"SUMMARY\\\"!=t.tagName)&&(e&&n(e))}return d(t,!!e,n)}})()).apply(null, arguments)\",\"args\":[{\"element-6066-11e4-a52e-4f735466cecf\":\"BEBB88567AD605309366F9FA0EBD623D_element_29\"}]}"
+        },
+        "headers": {
+          "Accept": [
+            "application/json"
+          ],
+          "Content-Type": [
+            "application/json; charset=UTF-8"
+          ],
+          "User-Agent": [
+            "selenium/4.12.0 (ruby macosx)"
+          ],
+          "Content-Length": [
+            "5091"
+          ],
+          "Accept-Encoding": [
+            "gzip;q=1.0,deflate;q=0.6,identity;q=0.3"
+          ]
+        }
+      },
+      "response": {
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "headers": {
+          "Content-Length": [
+            "14"
+          ],
+          "Content-Type": [
+            "application/json; charset=utf-8"
+          ],
+          "Cache-Control": [
+            "no-cache"
+          ]
+        },
+        "body": {
+          "encoding": "UTF-8",
+          "string": "{\"value\":true}"
+        }
+      },
+      "recorded_at": "Sat, 16 Sep 2023 00:09:13 GMT"
+    },
+    {
+      "request": {
+        "method": "get",
+        "uri": "http://127.0.0.1:9515/session/8cee6721db4efc81dff751d08a720647/element/BEBB88567AD605309366F9FA0EBD623D_element_29/selected",
+        "body": {
+          "encoding": "US-ASCII",
+          "string": ""
+        },
+        "headers": {
+          "Accept": [
+            "application/json"
+          ],
+          "Content-Type": [
+            "application/json; charset=UTF-8"
+          ],
+          "User-Agent": [
+            "selenium/4.12.0 (ruby macosx)"
+          ],
+          "Cache-Control": [
+            "no-cache"
+          ],
+          "Accept-Encoding": [
+            "gzip;q=1.0,deflate;q=0.6,identity;q=0.3"
+          ]
+        }
+      },
+      "response": {
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "headers": {
+          "Content-Length": [
+            "15"
+          ],
+          "Content-Type": [
+            "application/json; charset=utf-8"
+          ],
+          "Cache-Control": [
+            "no-cache"
+          ]
+        },
+        "body": {
+          "encoding": "UTF-8",
+          "string": "{\"value\":false}"
+        }
+      },
+      "recorded_at": "Sat, 16 Sep 2023 00:09:13 GMT"
+    },
+    {
+      "request": {
+        "method": "post",
+        "uri": "http://127.0.0.1:9515/session/8cee6721db4efc81dff751d08a720647/execute/sync",
+        "body": {
+          "encoding": "UTF-8",
+          "string": "{\"script\":\"return arguments[0].matches(':disabled, select:disabled *')\",\"args\":[{\"element-6066-11e4-a52e-4f735466cecf\":\"BEBB88567AD605309366F9FA0EBD623D_element_29\"}]}"
+        },
+        "headers": {
+          "Accept": [
+            "application/json"
+          ],
+          "Content-Type": [
+            "application/json; charset=UTF-8"
+          ],
+          "User-Agent": [
+            "selenium/4.12.0 (ruby macosx)"
+          ],
+          "Content-Length": [
+            "167"
+          ],
+          "Accept-Encoding": [
+            "gzip;q=1.0,deflate;q=0.6,identity;q=0.3"
+          ]
+        }
+      },
+      "response": {
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "headers": {
+          "Content-Length": [
+            "15"
+          ],
+          "Content-Type": [
+            "application/json; charset=utf-8"
+          ],
+          "Cache-Control": [
+            "no-cache"
+          ]
+        },
+        "body": {
+          "encoding": "UTF-8",
+          "string": "{\"value\":false}"
+        }
+      },
+      "recorded_at": "Sat, 16 Sep 2023 00:09:13 GMT"
+    },
+    {
+      "request": {
+        "method": "get",
+        "uri": "http://127.0.0.1:58759/__identify__",
+        "body": {
+          "encoding": "US-ASCII",
+          "string": ""
+        },
+        "headers": {
+          "Accept-Encoding": [
+            "gzip;q=1.0,deflate;q=0.6,identity;q=0.3"
+          ],
+          "Accept": [
+            "*/*"
+          ],
+          "User-Agent": [
+            "Ruby"
+          ]
+        }
+      },
+      "response": {
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "headers": {
+          "Content-Length": [
+            "5"
+          ]
+        },
+        "body": {
+          "encoding": "UTF-8",
+          "string": "17460"
+        }
+      },
+      "recorded_at": "Sat, 16 Sep 2023 00:09:46 GMT"
+    },
+    {
+      "request": {
+        "method": "get",
+        "uri": "http://127.0.0.1:58800/__identify__",
+        "body": {
+          "encoding": "US-ASCII",
+          "string": ""
+        },
+        "headers": {
+          "Accept-Encoding": [
+            "gzip;q=1.0,deflate;q=0.6,identity;q=0.3"
+          ],
+          "Accept": [
+            "*/*"
+          ],
+          "User-Agent": [
+            "Ruby"
+          ]
+        }
+      },
+      "response": {
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "headers": {
+          "Content-Length": [
+            "5"
+          ]
+        },
+        "body": {
+          "encoding": "UTF-8",
+          "string": "17460"
+        }
+      },
+      "recorded_at": "Sat, 16 Sep 2023 00:09:54 GMT"
+    },
+    {
+      "request": {
+        "method": "post",
+        "uri": "http://127.0.0.1:9516/session/8778b28e69ebd3212dee4126bd13ad90/url",
+        "body": {
+          "encoding": "UTF-8",
+          "string": "{\"url\":\"http://127.0.0.1:59774/\"}"
+        },
+        "headers": {
+          "Accept": [
+            "application/json"
+          ],
+          "Content-Type": [
+            "application/json; charset=UTF-8"
+          ],
+          "User-Agent": [
+            "selenium/4.12.0 (ruby macosx)"
+          ],
+          "Content-Length": [
+            "33"
+          ],
+          "Accept-Encoding": [
+            "gzip;q=1.0,deflate;q=0.6,identity;q=0.3"
+          ]
+        }
+      },
+      "response": {
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "headers": {
+          "Content-Length": [
+            "14"
+          ],
+          "Content-Type": [
+            "application/json; charset=utf-8"
+          ],
+          "Cache-Control": [
+            "no-cache"
+          ]
+        },
+        "body": {
+          "encoding": "UTF-8",
+          "string": "{\"value\":null}"
+        }
+      },
+      "recorded_at": "Sat, 16 Sep 2023 00:13:38 GMT"
+    },
+    {
+      "request": {
+        "method": "post",
+        "uri": "http://127.0.0.1:9516/session/8778b28e69ebd3212dee4126bd13ad90/elements",
+        "body": {
+          "encoding": "UTF-8",
+          "string": "{\"using\":\"css selector\",\"value\":\"div.select-urgent-services\"}"
+        },
+        "headers": {
+          "Accept": [
+            "application/json"
+          ],
+          "Content-Type": [
+            "application/json; charset=UTF-8"
+          ],
+          "User-Agent": [
+            "selenium/4.12.0 (ruby macosx)"
+          ],
+          "Content-Length": [
+            "61"
+          ],
+          "Accept-Encoding": [
+            "gzip;q=1.0,deflate;q=0.6,identity;q=0.3"
+          ]
+        }
+      },
+      "response": {
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "headers": {
+          "Content-Length": [
+            "98"
+          ],
+          "Content-Type": [
+            "application/json; charset=utf-8"
+          ],
+          "Cache-Control": [
+            "no-cache"
+          ]
+        },
+        "body": {
+          "encoding": "UTF-8",
+          "string": "{\"value\":[{\"element-6066-11e4-a52e-4f735466cecf\":\"91B2E3700095D0F2C3B648354D57EC2B_element_111\"}]}"
+        }
+      },
+      "recorded_at": "Sat, 16 Sep 2023 00:13:38 GMT"
+    },
+    {
+      "request": {
+        "method": "post",
+        "uri": "http://127.0.0.1:9516/session/8778b28e69ebd3212dee4126bd13ad90/execute/sync",
+        "body": {
+          "encoding": "UTF-8",
+          "string": "{\"script\":\"/* isDisplayed */return ((function(){function d(t,e,n){function r(t){var e=x(t);if(0<e.height&&0<e.width)return!0;if(\\\"PATH\\\"==t.tagName.toUpperCase()&&(0<e.height||0<e.width)){var n=window.getComputedStyle(t)[\\\"stroke-width\\\"];return!!n&&0<parseInt(n,10)}return\\\"hidden\\\"!=window.getComputedStyle(t).overflow&&Array.prototype.slice.call(t.childNodes).some(function(t){return t.nodeType==Node.TEXT_NODE||t.nodeType==Node.ELEMENT_NODE&&r(t)})}function i(t){return C(t)==T.HIDDEN&&Array.prototype.slice.call(t.childNodes).every(function(t){return t.nodeType!=Node.ELEMENT_NODE||i(t)||!r(t)})}var o=t.tagName.toUpperCase();if(\\\"BODY\\\"==o)return!0;if(\\\"OPTION\\\"==o||\\\"OPTGROUP\\\"==o){var a=c(t,function(t){return\\\"SELECT\\\"==t.tagName.toUpperCase()});return!!a&&d(a,!0,n)}var u=s(t);if(u)return!!u.image&&0<u.rect.width&&0<u.rect.height&&d(u.image,e,n);if(\\\"INPUT\\\"==o&&\\\"hidden\\\"==t.type.toLowerCase())return!1;if(\\\"NOSCRIPT\\\"==o)return!1;var l=window.getComputedStyle(t).visibility;return\\\"collapse\\\"!=l&&\\\"hidden\\\"!=l&&(!!n(t)&&(!(!e&&0==f(t))&&(!!r(t)&&!i(t))))}function E(t){var e=x(t);return{left:e.left,right:e.left+e.width,top:e.top,bottom:e.top+e.height}}function D(t){return t.parentElement}function C(t){function e(t){function e(t){if(t==u)return!0;var e=window.getComputedStyle(t),n=e.display;return 0!=n.indexOf(\\\"inline\\\")&&\\\"contents\\\"!=n&&(\\\"absolute\\\"!=r||\\\"static\\\"!=e.position)}var r=window.getComputedStyle(t).position;if(\\\"fixed\\\"==r)return i=!0,t==u?null:u;for(var n=D(t);n&&!e(n);)n=D(n);return n}function n(t){var e=t;if(\\\"visible\\\"==d)if(t==u&&l)e=l;else if(t==l)return{x:\\\"visible\\\",y:\\\"visible\\\"};var n=window.getComputedStyle(e),r={x:n[\\\"overflow-x\\\"],y:n[\\\"overflow-y\\\"]};return t==u&&(r.x=\\\"visible\\\"==r.x?\\\"auto\\\":r.x,r.y=\\\"visible\\\"==r.y?\\\"auto\\\":r.y),r}function r(t){return t==u?{x:window.scrollX,y:window.scrollY}:{x:t.scrollLeft,y:t.scrollTop}}for(var i,o=E(t),a=t.ownerDocument,u=a.documentElement,l=a.body,d=window.getComputedStyle(u).overflow,f=e(t);f;f=e(f)){var h=n(f);if(\\\"visible\\\"!=h.x||\\\"visible\\\"!=h.y){var s=x(f);if(0==s.width||0==s.height)return T.HIDDEN;var p=o.right<s.left,c=o.bottom<s.top;if(p&&\\\"hidden\\\"==h.x||c&&\\\"hidden\\\"==h.y)return T.HIDDEN;if(p&&\\\"visible\\\"!=h.x||c&&\\\"visible\\\"!=h.y){var v=r(f),g=o.right<s.left-v.x,w=o.bottom<s.top-v.y;return g&&\\\"visible\\\"!=h.x||w&&\\\"visible\\\"!=h.x?T.HIDDEN:C(f)==T.HIDDEN?T.HIDDEN:T.SCROLL}var N=o.left>=s.left+s.width,m=o.top>=s.top+s.height;if(N&&\\\"hidden\\\"==h.x||m&&\\\"hidden\\\"==h.y)return T.HIDDEN;if(N&&\\\"visible\\\"!=h.x||m&&\\\"visible\\\"!=h.y){if(i){var y=r(f);if(o.left>=u.scrollWidth-y.x||o.right>=u.scrollHeight-y.y)return T.HIDDEN}return C(f)==T.HIDDEN?T.HIDDEN:T.SCROLL}}}return T.NONE}function o(t){var e=t.document.documentElement;return{width:e.clientWidth,height:e.clientHeight}}function p(t,e,n,r){return{left:t,top:e,width:n,height:r}}function x(t){var e,n=s(t);if(n)return n.rect;if(\\\"HTML\\\"==t.tagName.toUpperCase()){t.ownerDocument;var r=o(window);return p(0,0,r.width,r.height)}try{e=t.getBoundingClientRect()}catch(i){return p(0,0,0,0)}return p(e.left,e.top,e.right-e.left,e.bottom-e.top)}function f(t){var e=1,n=window.getComputedStyle(t).opacity;n&&(e=Number(n));var r=D(t);return r&&r.nodeType==Node.ELEMENT_NODE&&(e*=f(r)),e}function h(t){var e=t.shape.toLowerCase(),n=t.coords.split(\\\",\\\");if(\\\"rect\\\"==e&&4==n.length){var r=n[0],i=n[1];return p(r,i,n[2]-r,n[3]-i)}if(\\\"circle\\\"==e&&3==n.length){var o=n[0],a=n[1],u=n[2];return p(o-u,a-u,2*u,2*u)}if(\\\"poly\\\"==e&&2<n.length){for(var l=n[0],d=n[1],f=l,h=d,s=2;s+1<n.length;s+=2)l=Math.min(l,n[s]),f=Math.max(f,n[s]),d=Math.min(d,n[s+1]),h=Math.max(h,n[s+1]);return p(l,d,f-l,h-d)}return p(0,0,0,0)}function s(t){var e=t.tagName.toUpperCase(),n=\\\"MAP\\\"==e;if(!n&&\\\"AREA\\\"!=e)return null;var r=n?t:\\\"MAP\\\"==D(t).tagName.toUpperCase()?D(t):null,i=null,o=null;if(r&&r.name&&((i=r.ownerDocument.querySelector(\\\"*[usemap='#\\\"+r.name+\\\"']\\\"))&&(o=x(i),!n&&\\\"default\\\"!=t.shape.toLowerCase()))){var a=h(t),u=Math.min(Math.max(a.left,0),o.width),l=Math.min(Math.max(a.top,0),o.height),d=Math.min(a.width,o.width-u),f=Math.min(a.height,o.height-l);o=p(u+o.left,l+o.top,d,f)}return{image:i,rect:o||p(0,0,0,0)}}function c(t,e){for(t&&(t=D(t));t;){if(e(t))return t;t=D(t)}return null}function r(t){var e=t.parentNode;if(e&&e.shadowRoot&&t.assignedSlot!==undefined)return t.assignedSlot?t.assignedSlot.parentNode:null;if(t.getDestinationInsertionPoints){var n=t.getDestinationInsertionPoints();if(0<n.length)return n[n.length-1]}return e}var T={NONE:\\\"none\\\",HIDDEN:\\\"hidden\\\",SCROLL:\\\"scroll\\\"};return function i(t,e){function n(t){if(\\\"none\\\"==window.getComputedStyle(t).display)return!1;var e=r(t);if(\\\"function\\\"==typeof ShadowRoot&&e instanceof ShadowRoot){if(e.host.shadowRoot!==e)return!1;e=e.host}return!(!e||e.nodeType!=Node.DOCUMENT_NODE&&e.nodeType!=Node.DOCUMENT_FRAGMENT_NODE)||!(e&&e.tagName&&\\\"DETAILS\\\"==e.tagName.toUpperCase()&&!e.open&&\\\"SUMMARY\\\"!=t.tagName)&&(e&&n(e))}return d(t,!!e,n)}})()).apply(null, arguments)\",\"args\":[{\"element-6066-11e4-a52e-4f735466cecf\":\"91B2E3700095D0F2C3B648354D57EC2B_element_111\"}]}"
+        },
+        "headers": {
+          "Accept": [
+            "application/json"
+          ],
+          "Content-Type": [
+            "application/json; charset=UTF-8"
+          ],
+          "User-Agent": [
+            "selenium/4.12.0 (ruby macosx)"
+          ],
+          "Content-Length": [
+            "5092"
+          ],
+          "Accept-Encoding": [
+            "gzip;q=1.0,deflate;q=0.6,identity;q=0.3"
+          ]
+        }
+      },
+      "response": {
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "headers": {
+          "Content-Length": [
+            "14"
+          ],
+          "Content-Type": [
+            "application/json; charset=utf-8"
+          ],
+          "Cache-Control": [
+            "no-cache"
+          ]
+        },
+        "body": {
+          "encoding": "UTF-8",
+          "string": "{\"value\":true}"
+        }
+      },
+      "recorded_at": "Sat, 16 Sep 2023 00:13:38 GMT"
+    },
+    {
+      "request": {
+        "method": "get",
+        "uri": "http://127.0.0.1:9516/session/8778b28e69ebd3212dee4126bd13ad90/element/91B2E3700095D0F2C3B648354D57EC2B_element_111/text",
+        "body": {
+          "encoding": "US-ASCII",
+          "string": ""
+        },
+        "headers": {
+          "Accept": [
+            "application/json"
+          ],
+          "Content-Type": [
+            "application/json; charset=UTF-8"
+          ],
+          "User-Agent": [
+            "selenium/4.12.0 (ruby macosx)"
+          ],
+          "Cache-Control": [
+            "no-cache"
+          ],
+          "Accept-Encoding": [
+            "gzip;q=1.0,deflate;q=0.6,identity;q=0.3"
+          ]
+        }
+      },
+      "response": {
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "headers": {
+          "Content-Length": [
+            "228"
+          ],
+          "Content-Type": [
+            "application/json; charset=utf-8"
+          ],
+          "Cache-Control": [
+            "no-cache"
+          ]
+        },
+        "body": {
+          "encoding": "UTF-8",
+          "string": "{\"value\":\"I need urgent help now!\\nEnter your City, State, and/or Zip Code\\nFind Location\\n\\nWhat do you need most help with today? (Check all that apply):\\nUrgent Care\\nCrisis Hotline\\nShelter for Tonight\\nFood\\nSubstance Use\"}"
+        }
+      },
+      "recorded_at": "Sat, 16 Sep 2023 00:13:38 GMT"
+    },
+    {
+      "request": {
+        "method": "post",
+        "uri": "http://127.0.0.1:9516/session/8778b28e69ebd3212dee4126bd13ad90/element/91B2E3700095D0F2C3B648354D57EC2B_element_111/elements",
+        "body": {
+          "encoding": "UTF-8",
+          "string": "{\"using\":\"xpath\",\"value\":\".//*[self::input | self::textarea | self::select][not((((./@type = 'submit') or (./@type = 'image')) or (./@type = 'hidden')))][((((./@id = 'Urgent Care') or (./@name = 'Urgent Care')) or (./@placeholder = 'Urgent Care')) or (./@id = //label[contains(normalize-space(string(.)), 'Urgent Care')]/@for))] | .//label[contains(normalize-space(string(.)), 'Urgent Care')]//.//*[self::input | self::textarea | self::select][not((((./@type = 'submit') or (./@type = 'image')) or (./@type = 'hidden')))]\"}"
+        },
+        "headers": {
+          "Accept": [
+            "application/json"
+          ],
+          "Content-Type": [
+            "application/json; charset=UTF-8"
+          ],
+          "User-Agent": [
+            "selenium/4.12.0 (ruby macosx)"
+          ],
+          "Content-Length": [
+            "523"
+          ],
+          "Accept-Encoding": [
+            "gzip;q=1.0,deflate;q=0.6,identity;q=0.3"
+          ]
+        }
+      },
+      "response": {
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "headers": {
+          "Content-Length": [
+            "98"
+          ],
+          "Content-Type": [
+            "application/json; charset=utf-8"
+          ],
+          "Cache-Control": [
+            "no-cache"
+          ]
+        },
+        "body": {
+          "encoding": "UTF-8",
+          "string": "{\"value\":[{\"element-6066-11e4-a52e-4f735466cecf\":\"91B2E3700095D0F2C3B648354D57EC2B_element_112\"}]}"
+        }
+      },
+      "recorded_at": "Sat, 16 Sep 2023 00:13:38 GMT"
+    },
+    {
+      "request": {
+        "method": "post",
+        "uri": "http://127.0.0.1:9516/session/8778b28e69ebd3212dee4126bd13ad90/execute/sync",
+        "body": {
+          "encoding": "UTF-8",
+          "string": "{\"script\":\"/* isDisplayed */return ((function(){function d(t,e,n){function r(t){var e=x(t);if(0<e.height&&0<e.width)return!0;if(\\\"PATH\\\"==t.tagName.toUpperCase()&&(0<e.height||0<e.width)){var n=window.getComputedStyle(t)[\\\"stroke-width\\\"];return!!n&&0<parseInt(n,10)}return\\\"hidden\\\"!=window.getComputedStyle(t).overflow&&Array.prototype.slice.call(t.childNodes).some(function(t){return t.nodeType==Node.TEXT_NODE||t.nodeType==Node.ELEMENT_NODE&&r(t)})}function i(t){return C(t)==T.HIDDEN&&Array.prototype.slice.call(t.childNodes).every(function(t){return t.nodeType!=Node.ELEMENT_NODE||i(t)||!r(t)})}var o=t.tagName.toUpperCase();if(\\\"BODY\\\"==o)return!0;if(\\\"OPTION\\\"==o||\\\"OPTGROUP\\\"==o){var a=c(t,function(t){return\\\"SELECT\\\"==t.tagName.toUpperCase()});return!!a&&d(a,!0,n)}var u=s(t);if(u)return!!u.image&&0<u.rect.width&&0<u.rect.height&&d(u.image,e,n);if(\\\"INPUT\\\"==o&&\\\"hidden\\\"==t.type.toLowerCase())return!1;if(\\\"NOSCRIPT\\\"==o)return!1;var l=window.getComputedStyle(t).visibility;return\\\"collapse\\\"!=l&&\\\"hidden\\\"!=l&&(!!n(t)&&(!(!e&&0==f(t))&&(!!r(t)&&!i(t))))}function E(t){var e=x(t);return{left:e.left,right:e.left+e.width,top:e.top,bottom:e.top+e.height}}function D(t){return t.parentElement}function C(t){function e(t){function e(t){if(t==u)return!0;var e=window.getComputedStyle(t),n=e.display;return 0!=n.indexOf(\\\"inline\\\")&&\\\"contents\\\"!=n&&(\\\"absolute\\\"!=r||\\\"static\\\"!=e.position)}var r=window.getComputedStyle(t).position;if(\\\"fixed\\\"==r)return i=!0,t==u?null:u;for(var n=D(t);n&&!e(n);)n=D(n);return n}function n(t){var e=t;if(\\\"visible\\\"==d)if(t==u&&l)e=l;else if(t==l)return{x:\\\"visible\\\",y:\\\"visible\\\"};var n=window.getComputedStyle(e),r={x:n[\\\"overflow-x\\\"],y:n[\\\"overflow-y\\\"]};return t==u&&(r.x=\\\"visible\\\"==r.x?\\\"auto\\\":r.x,r.y=\\\"visible\\\"==r.y?\\\"auto\\\":r.y),r}function r(t){return t==u?{x:window.scrollX,y:window.scrollY}:{x:t.scrollLeft,y:t.scrollTop}}for(var i,o=E(t),a=t.ownerDocument,u=a.documentElement,l=a.body,d=window.getComputedStyle(u).overflow,f=e(t);f;f=e(f)){var h=n(f);if(\\\"visible\\\"!=h.x||\\\"visible\\\"!=h.y){var s=x(f);if(0==s.width||0==s.height)return T.HIDDEN;var p=o.right<s.left,c=o.bottom<s.top;if(p&&\\\"hidden\\\"==h.x||c&&\\\"hidden\\\"==h.y)return T.HIDDEN;if(p&&\\\"visible\\\"!=h.x||c&&\\\"visible\\\"!=h.y){var v=r(f),g=o.right<s.left-v.x,w=o.bottom<s.top-v.y;return g&&\\\"visible\\\"!=h.x||w&&\\\"visible\\\"!=h.x?T.HIDDEN:C(f)==T.HIDDEN?T.HIDDEN:T.SCROLL}var N=o.left>=s.left+s.width,m=o.top>=s.top+s.height;if(N&&\\\"hidden\\\"==h.x||m&&\\\"hidden\\\"==h.y)return T.HIDDEN;if(N&&\\\"visible\\\"!=h.x||m&&\\\"visible\\\"!=h.y){if(i){var y=r(f);if(o.left>=u.scrollWidth-y.x||o.right>=u.scrollHeight-y.y)return T.HIDDEN}return C(f)==T.HIDDEN?T.HIDDEN:T.SCROLL}}}return T.NONE}function o(t){var e=t.document.documentElement;return{width:e.clientWidth,height:e.clientHeight}}function p(t,e,n,r){return{left:t,top:e,width:n,height:r}}function x(t){var e,n=s(t);if(n)return n.rect;if(\\\"HTML\\\"==t.tagName.toUpperCase()){t.ownerDocument;var r=o(window);return p(0,0,r.width,r.height)}try{e=t.getBoundingClientRect()}catch(i){return p(0,0,0,0)}return p(e.left,e.top,e.right-e.left,e.bottom-e.top)}function f(t){var e=1,n=window.getComputedStyle(t).opacity;n&&(e=Number(n));var r=D(t);return r&&r.nodeType==Node.ELEMENT_NODE&&(e*=f(r)),e}function h(t){var e=t.shape.toLowerCase(),n=t.coords.split(\\\",\\\");if(\\\"rect\\\"==e&&4==n.length){var r=n[0],i=n[1];return p(r,i,n[2]-r,n[3]-i)}if(\\\"circle\\\"==e&&3==n.length){var o=n[0],a=n[1],u=n[2];return p(o-u,a-u,2*u,2*u)}if(\\\"poly\\\"==e&&2<n.length){for(var l=n[0],d=n[1],f=l,h=d,s=2;s+1<n.length;s+=2)l=Math.min(l,n[s]),f=Math.max(f,n[s]),d=Math.min(d,n[s+1]),h=Math.max(h,n[s+1]);return p(l,d,f-l,h-d)}return p(0,0,0,0)}function s(t){var e=t.tagName.toUpperCase(),n=\\\"MAP\\\"==e;if(!n&&\\\"AREA\\\"!=e)return null;var r=n?t:\\\"MAP\\\"==D(t).tagName.toUpperCase()?D(t):null,i=null,o=null;if(r&&r.name&&((i=r.ownerDocument.querySelector(\\\"*[usemap='#\\\"+r.name+\\\"']\\\"))&&(o=x(i),!n&&\\\"default\\\"!=t.shape.toLowerCase()))){var a=h(t),u=Math.min(Math.max(a.left,0),o.width),l=Math.min(Math.max(a.top,0),o.height),d=Math.min(a.width,o.width-u),f=Math.min(a.height,o.height-l);o=p(u+o.left,l+o.top,d,f)}return{image:i,rect:o||p(0,0,0,0)}}function c(t,e){for(t&&(t=D(t));t;){if(e(t))return t;t=D(t)}return null}function r(t){var e=t.parentNode;if(e&&e.shadowRoot&&t.assignedSlot!==undefined)return t.assignedSlot?t.assignedSlot.parentNode:null;if(t.getDestinationInsertionPoints){var n=t.getDestinationInsertionPoints();if(0<n.length)return n[n.length-1]}return e}var T={NONE:\\\"none\\\",HIDDEN:\\\"hidden\\\",SCROLL:\\\"scroll\\\"};return function i(t,e){function n(t){if(\\\"none\\\"==window.getComputedStyle(t).display)return!1;var e=r(t);if(\\\"function\\\"==typeof ShadowRoot&&e instanceof ShadowRoot){if(e.host.shadowRoot!==e)return!1;e=e.host}return!(!e||e.nodeType!=Node.DOCUMENT_NODE&&e.nodeType!=Node.DOCUMENT_FRAGMENT_NODE)||!(e&&e.tagName&&\\\"DETAILS\\\"==e.tagName.toUpperCase()&&!e.open&&\\\"SUMMARY\\\"!=t.tagName)&&(e&&n(e))}return d(t,!!e,n)}})()).apply(null, arguments)\",\"args\":[{\"element-6066-11e4-a52e-4f735466cecf\":\"91B2E3700095D0F2C3B648354D57EC2B_element_112\"}]}"
+        },
+        "headers": {
+          "Accept": [
+            "application/json"
+          ],
+          "Content-Type": [
+            "application/json; charset=UTF-8"
+          ],
+          "User-Agent": [
+            "selenium/4.12.0 (ruby macosx)"
+          ],
+          "Content-Length": [
+            "5092"
+          ],
+          "Accept-Encoding": [
+            "gzip;q=1.0,deflate;q=0.6,identity;q=0.3"
+          ]
+        }
+      },
+      "response": {
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "headers": {
+          "Content-Length": [
+            "14"
+          ],
+          "Content-Type": [
+            "application/json; charset=utf-8"
+          ],
+          "Cache-Control": [
+            "no-cache"
+          ]
+        },
+        "body": {
+          "encoding": "UTF-8",
+          "string": "{\"value\":true}"
+        }
+      },
+      "recorded_at": "Sat, 16 Sep 2023 00:13:38 GMT"
+    },
+    {
+      "request": {
+        "method": "get",
+        "uri": "http://127.0.0.1:9516/session/8778b28e69ebd3212dee4126bd13ad90/element/91B2E3700095D0F2C3B648354D57EC2B_element_112/selected",
+        "body": {
+          "encoding": "US-ASCII",
+          "string": ""
+        },
+        "headers": {
+          "Accept": [
+            "application/json"
+          ],
+          "Content-Type": [
+            "application/json; charset=UTF-8"
+          ],
+          "User-Agent": [
+            "selenium/4.12.0 (ruby macosx)"
+          ],
+          "Cache-Control": [
+            "no-cache"
+          ],
+          "Accept-Encoding": [
+            "gzip;q=1.0,deflate;q=0.6,identity;q=0.3"
+          ]
+        }
+      },
+      "response": {
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "headers": {
+          "Content-Length": [
+            "15"
+          ],
+          "Content-Type": [
+            "application/json; charset=utf-8"
+          ],
+          "Cache-Control": [
+            "no-cache"
+          ]
+        },
+        "body": {
+          "encoding": "UTF-8",
+          "string": "{\"value\":false}"
+        }
+      },
+      "recorded_at": "Sat, 16 Sep 2023 00:13:38 GMT"
+    },
+    {
+      "request": {
+        "method": "post",
+        "uri": "http://127.0.0.1:9516/session/8778b28e69ebd3212dee4126bd13ad90/execute/sync",
+        "body": {
+          "encoding": "UTF-8",
+          "string": "{\"script\":\"return arguments[0].matches(':disabled, select:disabled *')\",\"args\":[{\"element-6066-11e4-a52e-4f735466cecf\":\"91B2E3700095D0F2C3B648354D57EC2B_element_112\"}]}"
+        },
+        "headers": {
+          "Accept": [
+            "application/json"
+          ],
+          "Content-Type": [
+            "application/json; charset=UTF-8"
+          ],
+          "User-Agent": [
+            "selenium/4.12.0 (ruby macosx)"
+          ],
+          "Content-Length": [
+            "168"
+          ],
+          "Accept-Encoding": [
+            "gzip;q=1.0,deflate;q=0.6,identity;q=0.3"
+          ]
+        }
+      },
+      "response": {
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "headers": {
+          "Content-Length": [
+            "15"
+          ],
+          "Content-Type": [
+            "application/json; charset=utf-8"
+          ],
+          "Cache-Control": [
+            "no-cache"
+          ]
+        },
+        "body": {
+          "encoding": "UTF-8",
+          "string": "{\"value\":false}"
+        }
+      },
+      "recorded_at": "Sat, 16 Sep 2023 00:13:38 GMT"
+    },
+    {
+      "request": {
+        "method": "post",
+        "uri": "http://127.0.0.1:9516/session/8778b28e69ebd3212dee4126bd13ad90/element/91B2E3700095D0F2C3B648354D57EC2B_element_111/elements",
+        "body": {
+          "encoding": "UTF-8",
+          "string": "{\"using\":\"xpath\",\"value\":\".//*[self::input | self::textarea | self::select][not((((./@type = 'submit') or (./@type = 'image')) or (./@type = 'hidden')))][((((./@id = 'Crisis Hotline') or (./@name = 'Crisis Hotline')) or (./@placeholder = 'Crisis Hotline')) or (./@id = //label[contains(normalize-space(string(.)), 'Crisis Hotline')]/@for))] | .//label[contains(normalize-space(string(.)), 'Crisis Hotline')]//.//*[self::input | self::textarea | self::select][not((((./@type = 'submit') or (./@type = 'image')) or (./@type = 'hidden')))]\"}"
+        },
+        "headers": {
+          "Accept": [
+            "application/json"
+          ],
+          "Content-Type": [
+            "application/json; charset=UTF-8"
+          ],
+          "User-Agent": [
+            "selenium/4.12.0 (ruby macosx)"
+          ],
+          "Content-Length": [
+            "538"
+          ],
+          "Accept-Encoding": [
+            "gzip;q=1.0,deflate;q=0.6,identity;q=0.3"
+          ]
+        }
+      },
+      "response": {
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "headers": {
+          "Content-Length": [
+            "98"
+          ],
+          "Content-Type": [
+            "application/json; charset=utf-8"
+          ],
+          "Cache-Control": [
+            "no-cache"
+          ]
+        },
+        "body": {
+          "encoding": "UTF-8",
+          "string": "{\"value\":[{\"element-6066-11e4-a52e-4f735466cecf\":\"91B2E3700095D0F2C3B648354D57EC2B_element_150\"}]}"
+        }
+      },
+      "recorded_at": "Sat, 16 Sep 2023 00:13:38 GMT"
+    },
+    {
+      "request": {
+        "method": "post",
+        "uri": "http://127.0.0.1:9516/session/8778b28e69ebd3212dee4126bd13ad90/execute/sync",
+        "body": {
+          "encoding": "UTF-8",
+          "string": "{\"script\":\"/* isDisplayed */return ((function(){function d(t,e,n){function r(t){var e=x(t);if(0<e.height&&0<e.width)return!0;if(\\\"PATH\\\"==t.tagName.toUpperCase()&&(0<e.height||0<e.width)){var n=window.getComputedStyle(t)[\\\"stroke-width\\\"];return!!n&&0<parseInt(n,10)}return\\\"hidden\\\"!=window.getComputedStyle(t).overflow&&Array.prototype.slice.call(t.childNodes).some(function(t){return t.nodeType==Node.TEXT_NODE||t.nodeType==Node.ELEMENT_NODE&&r(t)})}function i(t){return C(t)==T.HIDDEN&&Array.prototype.slice.call(t.childNodes).every(function(t){return t.nodeType!=Node.ELEMENT_NODE||i(t)||!r(t)})}var o=t.tagName.toUpperCase();if(\\\"BODY\\\"==o)return!0;if(\\\"OPTION\\\"==o||\\\"OPTGROUP\\\"==o){var a=c(t,function(t){return\\\"SELECT\\\"==t.tagName.toUpperCase()});return!!a&&d(a,!0,n)}var u=s(t);if(u)return!!u.image&&0<u.rect.width&&0<u.rect.height&&d(u.image,e,n);if(\\\"INPUT\\\"==o&&\\\"hidden\\\"==t.type.toLowerCase())return!1;if(\\\"NOSCRIPT\\\"==o)return!1;var l=window.getComputedStyle(t).visibility;return\\\"collapse\\\"!=l&&\\\"hidden\\\"!=l&&(!!n(t)&&(!(!e&&0==f(t))&&(!!r(t)&&!i(t))))}function E(t){var e=x(t);return{left:e.left,right:e.left+e.width,top:e.top,bottom:e.top+e.height}}function D(t){return t.parentElement}function C(t){function e(t){function e(t){if(t==u)return!0;var e=window.getComputedStyle(t),n=e.display;return 0!=n.indexOf(\\\"inline\\\")&&\\\"contents\\\"!=n&&(\\\"absolute\\\"!=r||\\\"static\\\"!=e.position)}var r=window.getComputedStyle(t).position;if(\\\"fixed\\\"==r)return i=!0,t==u?null:u;for(var n=D(t);n&&!e(n);)n=D(n);return n}function n(t){var e=t;if(\\\"visible\\\"==d)if(t==u&&l)e=l;else if(t==l)return{x:\\\"visible\\\",y:\\\"visible\\\"};var n=window.getComputedStyle(e),r={x:n[\\\"overflow-x\\\"],y:n[\\\"overflow-y\\\"]};return t==u&&(r.x=\\\"visible\\\"==r.x?\\\"auto\\\":r.x,r.y=\\\"visible\\\"==r.y?\\\"auto\\\":r.y),r}function r(t){return t==u?{x:window.scrollX,y:window.scrollY}:{x:t.scrollLeft,y:t.scrollTop}}for(var i,o=E(t),a=t.ownerDocument,u=a.documentElement,l=a.body,d=window.getComputedStyle(u).overflow,f=e(t);f;f=e(f)){var h=n(f);if(\\\"visible\\\"!=h.x||\\\"visible\\\"!=h.y){var s=x(f);if(0==s.width||0==s.height)return T.HIDDEN;var p=o.right<s.left,c=o.bottom<s.top;if(p&&\\\"hidden\\\"==h.x||c&&\\\"hidden\\\"==h.y)return T.HIDDEN;if(p&&\\\"visible\\\"!=h.x||c&&\\\"visible\\\"!=h.y){var v=r(f),g=o.right<s.left-v.x,w=o.bottom<s.top-v.y;return g&&\\\"visible\\\"!=h.x||w&&\\\"visible\\\"!=h.x?T.HIDDEN:C(f)==T.HIDDEN?T.HIDDEN:T.SCROLL}var N=o.left>=s.left+s.width,m=o.top>=s.top+s.height;if(N&&\\\"hidden\\\"==h.x||m&&\\\"hidden\\\"==h.y)return T.HIDDEN;if(N&&\\\"visible\\\"!=h.x||m&&\\\"visible\\\"!=h.y){if(i){var y=r(f);if(o.left>=u.scrollWidth-y.x||o.right>=u.scrollHeight-y.y)return T.HIDDEN}return C(f)==T.HIDDEN?T.HIDDEN:T.SCROLL}}}return T.NONE}function o(t){var e=t.document.documentElement;return{width:e.clientWidth,height:e.clientHeight}}function p(t,e,n,r){return{left:t,top:e,width:n,height:r}}function x(t){var e,n=s(t);if(n)return n.rect;if(\\\"HTML\\\"==t.tagName.toUpperCase()){t.ownerDocument;var r=o(window);return p(0,0,r.width,r.height)}try{e=t.getBoundingClientRect()}catch(i){return p(0,0,0,0)}return p(e.left,e.top,e.right-e.left,e.bottom-e.top)}function f(t){var e=1,n=window.getComputedStyle(t).opacity;n&&(e=Number(n));var r=D(t);return r&&r.nodeType==Node.ELEMENT_NODE&&(e*=f(r)),e}function h(t){var e=t.shape.toLowerCase(),n=t.coords.split(\\\",\\\");if(\\\"rect\\\"==e&&4==n.length){var r=n[0],i=n[1];return p(r,i,n[2]-r,n[3]-i)}if(\\\"circle\\\"==e&&3==n.length){var o=n[0],a=n[1],u=n[2];return p(o-u,a-u,2*u,2*u)}if(\\\"poly\\\"==e&&2<n.length){for(var l=n[0],d=n[1],f=l,h=d,s=2;s+1<n.length;s+=2)l=Math.min(l,n[s]),f=Math.max(f,n[s]),d=Math.min(d,n[s+1]),h=Math.max(h,n[s+1]);return p(l,d,f-l,h-d)}return p(0,0,0,0)}function s(t){var e=t.tagName.toUpperCase(),n=\\\"MAP\\\"==e;if(!n&&\\\"AREA\\\"!=e)return null;var r=n?t:\\\"MAP\\\"==D(t).tagName.toUpperCase()?D(t):null,i=null,o=null;if(r&&r.name&&((i=r.ownerDocument.querySelector(\\\"*[usemap='#\\\"+r.name+\\\"']\\\"))&&(o=x(i),!n&&\\\"default\\\"!=t.shape.toLowerCase()))){var a=h(t),u=Math.min(Math.max(a.left,0),o.width),l=Math.min(Math.max(a.top,0),o.height),d=Math.min(a.width,o.width-u),f=Math.min(a.height,o.height-l);o=p(u+o.left,l+o.top,d,f)}return{image:i,rect:o||p(0,0,0,0)}}function c(t,e){for(t&&(t=D(t));t;){if(e(t))return t;t=D(t)}return null}function r(t){var e=t.parentNode;if(e&&e.shadowRoot&&t.assignedSlot!==undefined)return t.assignedSlot?t.assignedSlot.parentNode:null;if(t.getDestinationInsertionPoints){var n=t.getDestinationInsertionPoints();if(0<n.length)return n[n.length-1]}return e}var T={NONE:\\\"none\\\",HIDDEN:\\\"hidden\\\",SCROLL:\\\"scroll\\\"};return function i(t,e){function n(t){if(\\\"none\\\"==window.getComputedStyle(t).display)return!1;var e=r(t);if(\\\"function\\\"==typeof ShadowRoot&&e instanceof ShadowRoot){if(e.host.shadowRoot!==e)return!1;e=e.host}return!(!e||e.nodeType!=Node.DOCUMENT_NODE&&e.nodeType!=Node.DOCUMENT_FRAGMENT_NODE)||!(e&&e.tagName&&\\\"DETAILS\\\"==e.tagName.toUpperCase()&&!e.open&&\\\"SUMMARY\\\"!=t.tagName)&&(e&&n(e))}return d(t,!!e,n)}})()).apply(null, arguments)\",\"args\":[{\"element-6066-11e4-a52e-4f735466cecf\":\"91B2E3700095D0F2C3B648354D57EC2B_element_150\"}]}"
+        },
+        "headers": {
+          "Accept": [
+            "application/json"
+          ],
+          "Content-Type": [
+            "application/json; charset=UTF-8"
+          ],
+          "User-Agent": [
+            "selenium/4.12.0 (ruby macosx)"
+          ],
+          "Content-Length": [
+            "5092"
+          ],
+          "Accept-Encoding": [
+            "gzip;q=1.0,deflate;q=0.6,identity;q=0.3"
+          ]
+        }
+      },
+      "response": {
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "headers": {
+          "Content-Length": [
+            "14"
+          ],
+          "Content-Type": [
+            "application/json; charset=utf-8"
+          ],
+          "Cache-Control": [
+            "no-cache"
+          ]
+        },
+        "body": {
+          "encoding": "UTF-8",
+          "string": "{\"value\":true}"
+        }
+      },
+      "recorded_at": "Sat, 16 Sep 2023 00:13:38 GMT"
+    },
+    {
+      "request": {
+        "method": "get",
+        "uri": "http://127.0.0.1:9516/session/8778b28e69ebd3212dee4126bd13ad90/element/91B2E3700095D0F2C3B648354D57EC2B_element_150/selected",
+        "body": {
+          "encoding": "US-ASCII",
+          "string": ""
+        },
+        "headers": {
+          "Accept": [
+            "application/json"
+          ],
+          "Content-Type": [
+            "application/json; charset=UTF-8"
+          ],
+          "User-Agent": [
+            "selenium/4.12.0 (ruby macosx)"
+          ],
+          "Cache-Control": [
+            "no-cache"
+          ],
+          "Accept-Encoding": [
+            "gzip;q=1.0,deflate;q=0.6,identity;q=0.3"
+          ]
+        }
+      },
+      "response": {
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "headers": {
+          "Content-Length": [
+            "15"
+          ],
+          "Content-Type": [
+            "application/json; charset=utf-8"
+          ],
+          "Cache-Control": [
+            "no-cache"
+          ]
+        },
+        "body": {
+          "encoding": "UTF-8",
+          "string": "{\"value\":false}"
+        }
+      },
+      "recorded_at": "Sat, 16 Sep 2023 00:13:38 GMT"
+    },
+    {
+      "request": {
+        "method": "post",
+        "uri": "http://127.0.0.1:9516/session/8778b28e69ebd3212dee4126bd13ad90/execute/sync",
+        "body": {
+          "encoding": "UTF-8",
+          "string": "{\"script\":\"return arguments[0].matches(':disabled, select:disabled *')\",\"args\":[{\"element-6066-11e4-a52e-4f735466cecf\":\"91B2E3700095D0F2C3B648354D57EC2B_element_150\"}]}"
+        },
+        "headers": {
+          "Accept": [
+            "application/json"
+          ],
+          "Content-Type": [
+            "application/json; charset=UTF-8"
+          ],
+          "User-Agent": [
+            "selenium/4.12.0 (ruby macosx)"
+          ],
+          "Content-Length": [
+            "168"
+          ],
+          "Accept-Encoding": [
+            "gzip;q=1.0,deflate;q=0.6,identity;q=0.3"
+          ]
+        }
+      },
+      "response": {
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "headers": {
+          "Content-Length": [
+            "15"
+          ],
+          "Content-Type": [
+            "application/json; charset=utf-8"
+          ],
+          "Cache-Control": [
+            "no-cache"
+          ]
+        },
+        "body": {
+          "encoding": "UTF-8",
+          "string": "{\"value\":false}"
+        }
+      },
+      "recorded_at": "Sat, 16 Sep 2023 00:13:38 GMT"
+    },
+    {
+      "request": {
+        "method": "post",
+        "uri": "http://127.0.0.1:9516/session/8778b28e69ebd3212dee4126bd13ad90/element/91B2E3700095D0F2C3B648354D57EC2B_element_111/elements",
+        "body": {
+          "encoding": "UTF-8",
+          "string": "{\"using\":\"xpath\",\"value\":\".//*[self::input | self::textarea | self::select][not((((./@type = 'submit') or (./@type = 'image')) or (./@type = 'hidden')))][((((./@id = 'Shelter for Tonight') or (./@name = 'Shelter for Tonight')) or (./@placeholder = 'Shelter for Tonight')) or (./@id = //label[contains(normalize-space(string(.)), 'Shelter for Tonight')]/@for))] | .//label[contains(normalize-space(string(.)), 'Shelter for Tonight')]//.//*[self::input | self::textarea | self::select][not((((./@type = 'submit') or (./@type = 'image')) or (./@type = 'hidden')))]\"}"
+        },
+        "headers": {
+          "Accept": [
+            "application/json"
+          ],
+          "Content-Type": [
+            "application/json; charset=UTF-8"
+          ],
+          "User-Agent": [
+            "selenium/4.12.0 (ruby macosx)"
+          ],
+          "Content-Length": [
+            "563"
+          ],
+          "Accept-Encoding": [
+            "gzip;q=1.0,deflate;q=0.6,identity;q=0.3"
+          ]
+        }
+      },
+      "response": {
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "headers": {
+          "Content-Length": [
+            "98"
+          ],
+          "Content-Type": [
+            "application/json; charset=utf-8"
+          ],
+          "Cache-Control": [
+            "no-cache"
+          ]
+        },
+        "body": {
+          "encoding": "UTF-8",
+          "string": "{\"value\":[{\"element-6066-11e4-a52e-4f735466cecf\":\"91B2E3700095D0F2C3B648354D57EC2B_element_152\"}]}"
+        }
+      },
+      "recorded_at": "Sat, 16 Sep 2023 00:13:38 GMT"
+    },
+    {
+      "request": {
+        "method": "post",
+        "uri": "http://127.0.0.1:9516/session/8778b28e69ebd3212dee4126bd13ad90/execute/sync",
+        "body": {
+          "encoding": "UTF-8",
+          "string": "{\"script\":\"/* isDisplayed */return ((function(){function d(t,e,n){function r(t){var e=x(t);if(0<e.height&&0<e.width)return!0;if(\\\"PATH\\\"==t.tagName.toUpperCase()&&(0<e.height||0<e.width)){var n=window.getComputedStyle(t)[\\\"stroke-width\\\"];return!!n&&0<parseInt(n,10)}return\\\"hidden\\\"!=window.getComputedStyle(t).overflow&&Array.prototype.slice.call(t.childNodes).some(function(t){return t.nodeType==Node.TEXT_NODE||t.nodeType==Node.ELEMENT_NODE&&r(t)})}function i(t){return C(t)==T.HIDDEN&&Array.prototype.slice.call(t.childNodes).every(function(t){return t.nodeType!=Node.ELEMENT_NODE||i(t)||!r(t)})}var o=t.tagName.toUpperCase();if(\\\"BODY\\\"==o)return!0;if(\\\"OPTION\\\"==o||\\\"OPTGROUP\\\"==o){var a=c(t,function(t){return\\\"SELECT\\\"==t.tagName.toUpperCase()});return!!a&&d(a,!0,n)}var u=s(t);if(u)return!!u.image&&0<u.rect.width&&0<u.rect.height&&d(u.image,e,n);if(\\\"INPUT\\\"==o&&\\\"hidden\\\"==t.type.toLowerCase())return!1;if(\\\"NOSCRIPT\\\"==o)return!1;var l=window.getComputedStyle(t).visibility;return\\\"collapse\\\"!=l&&\\\"hidden\\\"!=l&&(!!n(t)&&(!(!e&&0==f(t))&&(!!r(t)&&!i(t))))}function E(t){var e=x(t);return{left:e.left,right:e.left+e.width,top:e.top,bottom:e.top+e.height}}function D(t){return t.parentElement}function C(t){function e(t){function e(t){if(t==u)return!0;var e=window.getComputedStyle(t),n=e.display;return 0!=n.indexOf(\\\"inline\\\")&&\\\"contents\\\"!=n&&(\\\"absolute\\\"!=r||\\\"static\\\"!=e.position)}var r=window.getComputedStyle(t).position;if(\\\"fixed\\\"==r)return i=!0,t==u?null:u;for(var n=D(t);n&&!e(n);)n=D(n);return n}function n(t){var e=t;if(\\\"visible\\\"==d)if(t==u&&l)e=l;else if(t==l)return{x:\\\"visible\\\",y:\\\"visible\\\"};var n=window.getComputedStyle(e),r={x:n[\\\"overflow-x\\\"],y:n[\\\"overflow-y\\\"]};return t==u&&(r.x=\\\"visible\\\"==r.x?\\\"auto\\\":r.x,r.y=\\\"visible\\\"==r.y?\\\"auto\\\":r.y),r}function r(t){return t==u?{x:window.scrollX,y:window.scrollY}:{x:t.scrollLeft,y:t.scrollTop}}for(var i,o=E(t),a=t.ownerDocument,u=a.documentElement,l=a.body,d=window.getComputedStyle(u).overflow,f=e(t);f;f=e(f)){var h=n(f);if(\\\"visible\\\"!=h.x||\\\"visible\\\"!=h.y){var s=x(f);if(0==s.width||0==s.height)return T.HIDDEN;var p=o.right<s.left,c=o.bottom<s.top;if(p&&\\\"hidden\\\"==h.x||c&&\\\"hidden\\\"==h.y)return T.HIDDEN;if(p&&\\\"visible\\\"!=h.x||c&&\\\"visible\\\"!=h.y){var v=r(f),g=o.right<s.left-v.x,w=o.bottom<s.top-v.y;return g&&\\\"visible\\\"!=h.x||w&&\\\"visible\\\"!=h.x?T.HIDDEN:C(f)==T.HIDDEN?T.HIDDEN:T.SCROLL}var N=o.left>=s.left+s.width,m=o.top>=s.top+s.height;if(N&&\\\"hidden\\\"==h.x||m&&\\\"hidden\\\"==h.y)return T.HIDDEN;if(N&&\\\"visible\\\"!=h.x||m&&\\\"visible\\\"!=h.y){if(i){var y=r(f);if(o.left>=u.scrollWidth-y.x||o.right>=u.scrollHeight-y.y)return T.HIDDEN}return C(f)==T.HIDDEN?T.HIDDEN:T.SCROLL}}}return T.NONE}function o(t){var e=t.document.documentElement;return{width:e.clientWidth,height:e.clientHeight}}function p(t,e,n,r){return{left:t,top:e,width:n,height:r}}function x(t){var e,n=s(t);if(n)return n.rect;if(\\\"HTML\\\"==t.tagName.toUpperCase()){t.ownerDocument;var r=o(window);return p(0,0,r.width,r.height)}try{e=t.getBoundingClientRect()}catch(i){return p(0,0,0,0)}return p(e.left,e.top,e.right-e.left,e.bottom-e.top)}function f(t){var e=1,n=window.getComputedStyle(t).opacity;n&&(e=Number(n));var r=D(t);return r&&r.nodeType==Node.ELEMENT_NODE&&(e*=f(r)),e}function h(t){var e=t.shape.toLowerCase(),n=t.coords.split(\\\",\\\");if(\\\"rect\\\"==e&&4==n.length){var r=n[0],i=n[1];return p(r,i,n[2]-r,n[3]-i)}if(\\\"circle\\\"==e&&3==n.length){var o=n[0],a=n[1],u=n[2];return p(o-u,a-u,2*u,2*u)}if(\\\"poly\\\"==e&&2<n.length){for(var l=n[0],d=n[1],f=l,h=d,s=2;s+1<n.length;s+=2)l=Math.min(l,n[s]),f=Math.max(f,n[s]),d=Math.min(d,n[s+1]),h=Math.max(h,n[s+1]);return p(l,d,f-l,h-d)}return p(0,0,0,0)}function s(t){var e=t.tagName.toUpperCase(),n=\\\"MAP\\\"==e;if(!n&&\\\"AREA\\\"!=e)return null;var r=n?t:\\\"MAP\\\"==D(t).tagName.toUpperCase()?D(t):null,i=null,o=null;if(r&&r.name&&((i=r.ownerDocument.querySelector(\\\"*[usemap='#\\\"+r.name+\\\"']\\\"))&&(o=x(i),!n&&\\\"default\\\"!=t.shape.toLowerCase()))){var a=h(t),u=Math.min(Math.max(a.left,0),o.width),l=Math.min(Math.max(a.top,0),o.height),d=Math.min(a.width,o.width-u),f=Math.min(a.height,o.height-l);o=p(u+o.left,l+o.top,d,f)}return{image:i,rect:o||p(0,0,0,0)}}function c(t,e){for(t&&(t=D(t));t;){if(e(t))return t;t=D(t)}return null}function r(t){var e=t.parentNode;if(e&&e.shadowRoot&&t.assignedSlot!==undefined)return t.assignedSlot?t.assignedSlot.parentNode:null;if(t.getDestinationInsertionPoints){var n=t.getDestinationInsertionPoints();if(0<n.length)return n[n.length-1]}return e}var T={NONE:\\\"none\\\",HIDDEN:\\\"hidden\\\",SCROLL:\\\"scroll\\\"};return function i(t,e){function n(t){if(\\\"none\\\"==window.getComputedStyle(t).display)return!1;var e=r(t);if(\\\"function\\\"==typeof ShadowRoot&&e instanceof ShadowRoot){if(e.host.shadowRoot!==e)return!1;e=e.host}return!(!e||e.nodeType!=Node.DOCUMENT_NODE&&e.nodeType!=Node.DOCUMENT_FRAGMENT_NODE)||!(e&&e.tagName&&\\\"DETAILS\\\"==e.tagName.toUpperCase()&&!e.open&&\\\"SUMMARY\\\"!=t.tagName)&&(e&&n(e))}return d(t,!!e,n)}})()).apply(null, arguments)\",\"args\":[{\"element-6066-11e4-a52e-4f735466cecf\":\"91B2E3700095D0F2C3B648354D57EC2B_element_152\"}]}"
+        },
+        "headers": {
+          "Accept": [
+            "application/json"
+          ],
+          "Content-Type": [
+            "application/json; charset=UTF-8"
+          ],
+          "User-Agent": [
+            "selenium/4.12.0 (ruby macosx)"
+          ],
+          "Content-Length": [
+            "5092"
+          ],
+          "Accept-Encoding": [
+            "gzip;q=1.0,deflate;q=0.6,identity;q=0.3"
+          ]
+        }
+      },
+      "response": {
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "headers": {
+          "Content-Length": [
+            "14"
+          ],
+          "Content-Type": [
+            "application/json; charset=utf-8"
+          ],
+          "Cache-Control": [
+            "no-cache"
+          ]
+        },
+        "body": {
+          "encoding": "UTF-8",
+          "string": "{\"value\":true}"
+        }
+      },
+      "recorded_at": "Sat, 16 Sep 2023 00:13:38 GMT"
+    },
+    {
+      "request": {
+        "method": "get",
+        "uri": "http://127.0.0.1:9516/session/8778b28e69ebd3212dee4126bd13ad90/element/91B2E3700095D0F2C3B648354D57EC2B_element_152/selected",
+        "body": {
+          "encoding": "US-ASCII",
+          "string": ""
+        },
+        "headers": {
+          "Accept": [
+            "application/json"
+          ],
+          "Content-Type": [
+            "application/json; charset=UTF-8"
+          ],
+          "User-Agent": [
+            "selenium/4.12.0 (ruby macosx)"
+          ],
+          "Cache-Control": [
+            "no-cache"
+          ],
+          "Accept-Encoding": [
+            "gzip;q=1.0,deflate;q=0.6,identity;q=0.3"
+          ]
+        }
+      },
+      "response": {
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "headers": {
+          "Content-Length": [
+            "15"
+          ],
+          "Content-Type": [
+            "application/json; charset=utf-8"
+          ],
+          "Cache-Control": [
+            "no-cache"
+          ]
+        },
+        "body": {
+          "encoding": "UTF-8",
+          "string": "{\"value\":false}"
+        }
+      },
+      "recorded_at": "Sat, 16 Sep 2023 00:13:38 GMT"
+    },
+    {
+      "request": {
+        "method": "post",
+        "uri": "http://127.0.0.1:9516/session/8778b28e69ebd3212dee4126bd13ad90/execute/sync",
+        "body": {
+          "encoding": "UTF-8",
+          "string": "{\"script\":\"return arguments[0].matches(':disabled, select:disabled *')\",\"args\":[{\"element-6066-11e4-a52e-4f735466cecf\":\"91B2E3700095D0F2C3B648354D57EC2B_element_152\"}]}"
+        },
+        "headers": {
+          "Accept": [
+            "application/json"
+          ],
+          "Content-Type": [
+            "application/json; charset=UTF-8"
+          ],
+          "User-Agent": [
+            "selenium/4.12.0 (ruby macosx)"
+          ],
+          "Content-Length": [
+            "168"
+          ],
+          "Accept-Encoding": [
+            "gzip;q=1.0,deflate;q=0.6,identity;q=0.3"
+          ]
+        }
+      },
+      "response": {
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "headers": {
+          "Content-Length": [
+            "15"
+          ],
+          "Content-Type": [
+            "application/json; charset=utf-8"
+          ],
+          "Cache-Control": [
+            "no-cache"
+          ]
+        },
+        "body": {
+          "encoding": "UTF-8",
+          "string": "{\"value\":false}"
+        }
+      },
+      "recorded_at": "Sat, 16 Sep 2023 00:13:38 GMT"
+    },
+    {
+      "request": {
+        "method": "post",
+        "uri": "http://127.0.0.1:9516/session/8778b28e69ebd3212dee4126bd13ad90/element/91B2E3700095D0F2C3B648354D57EC2B_element_111/elements",
+        "body": {
+          "encoding": "UTF-8",
+          "string": "{\"using\":\"xpath\",\"value\":\".//*[self::input | self::textarea | self::select][not((((./@type = 'submit') or (./@type = 'image')) or (./@type = 'hidden')))][((((./@id = 'Food') or (./@name = 'Food')) or (./@placeholder = 'Food')) or (./@id = //label[contains(normalize-space(string(.)), 'Food')]/@for))] | .//label[contains(normalize-space(string(.)), 'Food')]//.//*[self::input | self::textarea | self::select][not((((./@type = 'submit') or (./@type = 'image')) or (./@type = 'hidden')))]\"}"
+        },
+        "headers": {
+          "Accept": [
+            "application/json"
+          ],
+          "Content-Type": [
+            "application/json; charset=UTF-8"
+          ],
+          "User-Agent": [
+            "selenium/4.12.0 (ruby macosx)"
+          ],
+          "Content-Length": [
+            "488"
+          ],
+          "Accept-Encoding": [
+            "gzip;q=1.0,deflate;q=0.6,identity;q=0.3"
+          ]
+        }
+      },
+      "response": {
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "headers": {
+          "Content-Length": [
+            "98"
+          ],
+          "Content-Type": [
+            "application/json; charset=utf-8"
+          ],
+          "Cache-Control": [
+            "no-cache"
+          ]
+        },
+        "body": {
+          "encoding": "UTF-8",
+          "string": "{\"value\":[{\"element-6066-11e4-a52e-4f735466cecf\":\"91B2E3700095D0F2C3B648354D57EC2B_element_154\"}]}"
+        }
+      },
+      "recorded_at": "Sat, 16 Sep 2023 00:13:38 GMT"
+    },
+    {
+      "request": {
+        "method": "post",
+        "uri": "http://127.0.0.1:9516/session/8778b28e69ebd3212dee4126bd13ad90/execute/sync",
+        "body": {
+          "encoding": "UTF-8",
+          "string": "{\"script\":\"/* isDisplayed */return ((function(){function d(t,e,n){function r(t){var e=x(t);if(0<e.height&&0<e.width)return!0;if(\\\"PATH\\\"==t.tagName.toUpperCase()&&(0<e.height||0<e.width)){var n=window.getComputedStyle(t)[\\\"stroke-width\\\"];return!!n&&0<parseInt(n,10)}return\\\"hidden\\\"!=window.getComputedStyle(t).overflow&&Array.prototype.slice.call(t.childNodes).some(function(t){return t.nodeType==Node.TEXT_NODE||t.nodeType==Node.ELEMENT_NODE&&r(t)})}function i(t){return C(t)==T.HIDDEN&&Array.prototype.slice.call(t.childNodes).every(function(t){return t.nodeType!=Node.ELEMENT_NODE||i(t)||!r(t)})}var o=t.tagName.toUpperCase();if(\\\"BODY\\\"==o)return!0;if(\\\"OPTION\\\"==o||\\\"OPTGROUP\\\"==o){var a=c(t,function(t){return\\\"SELECT\\\"==t.tagName.toUpperCase()});return!!a&&d(a,!0,n)}var u=s(t);if(u)return!!u.image&&0<u.rect.width&&0<u.rect.height&&d(u.image,e,n);if(\\\"INPUT\\\"==o&&\\\"hidden\\\"==t.type.toLowerCase())return!1;if(\\\"NOSCRIPT\\\"==o)return!1;var l=window.getComputedStyle(t).visibility;return\\\"collapse\\\"!=l&&\\\"hidden\\\"!=l&&(!!n(t)&&(!(!e&&0==f(t))&&(!!r(t)&&!i(t))))}function E(t){var e=x(t);return{left:e.left,right:e.left+e.width,top:e.top,bottom:e.top+e.height}}function D(t){return t.parentElement}function C(t){function e(t){function e(t){if(t==u)return!0;var e=window.getComputedStyle(t),n=e.display;return 0!=n.indexOf(\\\"inline\\\")&&\\\"contents\\\"!=n&&(\\\"absolute\\\"!=r||\\\"static\\\"!=e.position)}var r=window.getComputedStyle(t).position;if(\\\"fixed\\\"==r)return i=!0,t==u?null:u;for(var n=D(t);n&&!e(n);)n=D(n);return n}function n(t){var e=t;if(\\\"visible\\\"==d)if(t==u&&l)e=l;else if(t==l)return{x:\\\"visible\\\",y:\\\"visible\\\"};var n=window.getComputedStyle(e),r={x:n[\\\"overflow-x\\\"],y:n[\\\"overflow-y\\\"]};return t==u&&(r.x=\\\"visible\\\"==r.x?\\\"auto\\\":r.x,r.y=\\\"visible\\\"==r.y?\\\"auto\\\":r.y),r}function r(t){return t==u?{x:window.scrollX,y:window.scrollY}:{x:t.scrollLeft,y:t.scrollTop}}for(var i,o=E(t),a=t.ownerDocument,u=a.documentElement,l=a.body,d=window.getComputedStyle(u).overflow,f=e(t);f;f=e(f)){var h=n(f);if(\\\"visible\\\"!=h.x||\\\"visible\\\"!=h.y){var s=x(f);if(0==s.width||0==s.height)return T.HIDDEN;var p=o.right<s.left,c=o.bottom<s.top;if(p&&\\\"hidden\\\"==h.x||c&&\\\"hidden\\\"==h.y)return T.HIDDEN;if(p&&\\\"visible\\\"!=h.x||c&&\\\"visible\\\"!=h.y){var v=r(f),g=o.right<s.left-v.x,w=o.bottom<s.top-v.y;return g&&\\\"visible\\\"!=h.x||w&&\\\"visible\\\"!=h.x?T.HIDDEN:C(f)==T.HIDDEN?T.HIDDEN:T.SCROLL}var N=o.left>=s.left+s.width,m=o.top>=s.top+s.height;if(N&&\\\"hidden\\\"==h.x||m&&\\\"hidden\\\"==h.y)return T.HIDDEN;if(N&&\\\"visible\\\"!=h.x||m&&\\\"visible\\\"!=h.y){if(i){var y=r(f);if(o.left>=u.scrollWidth-y.x||o.right>=u.scrollHeight-y.y)return T.HIDDEN}return C(f)==T.HIDDEN?T.HIDDEN:T.SCROLL}}}return T.NONE}function o(t){var e=t.document.documentElement;return{width:e.clientWidth,height:e.clientHeight}}function p(t,e,n,r){return{left:t,top:e,width:n,height:r}}function x(t){var e,n=s(t);if(n)return n.rect;if(\\\"HTML\\\"==t.tagName.toUpperCase()){t.ownerDocument;var r=o(window);return p(0,0,r.width,r.height)}try{e=t.getBoundingClientRect()}catch(i){return p(0,0,0,0)}return p(e.left,e.top,e.right-e.left,e.bottom-e.top)}function f(t){var e=1,n=window.getComputedStyle(t).opacity;n&&(e=Number(n));var r=D(t);return r&&r.nodeType==Node.ELEMENT_NODE&&(e*=f(r)),e}function h(t){var e=t.shape.toLowerCase(),n=t.coords.split(\\\",\\\");if(\\\"rect\\\"==e&&4==n.length){var r=n[0],i=n[1];return p(r,i,n[2]-r,n[3]-i)}if(\\\"circle\\\"==e&&3==n.length){var o=n[0],a=n[1],u=n[2];return p(o-u,a-u,2*u,2*u)}if(\\\"poly\\\"==e&&2<n.length){for(var l=n[0],d=n[1],f=l,h=d,s=2;s+1<n.length;s+=2)l=Math.min(l,n[s]),f=Math.max(f,n[s]),d=Math.min(d,n[s+1]),h=Math.max(h,n[s+1]);return p(l,d,f-l,h-d)}return p(0,0,0,0)}function s(t){var e=t.tagName.toUpperCase(),n=\\\"MAP\\\"==e;if(!n&&\\\"AREA\\\"!=e)return null;var r=n?t:\\\"MAP\\\"==D(t).tagName.toUpperCase()?D(t):null,i=null,o=null;if(r&&r.name&&((i=r.ownerDocument.querySelector(\\\"*[usemap='#\\\"+r.name+\\\"']\\\"))&&(o=x(i),!n&&\\\"default\\\"!=t.shape.toLowerCase()))){var a=h(t),u=Math.min(Math.max(a.left,0),o.width),l=Math.min(Math.max(a.top,0),o.height),d=Math.min(a.width,o.width-u),f=Math.min(a.height,o.height-l);o=p(u+o.left,l+o.top,d,f)}return{image:i,rect:o||p(0,0,0,0)}}function c(t,e){for(t&&(t=D(t));t;){if(e(t))return t;t=D(t)}return null}function r(t){var e=t.parentNode;if(e&&e.shadowRoot&&t.assignedSlot!==undefined)return t.assignedSlot?t.assignedSlot.parentNode:null;if(t.getDestinationInsertionPoints){var n=t.getDestinationInsertionPoints();if(0<n.length)return n[n.length-1]}return e}var T={NONE:\\\"none\\\",HIDDEN:\\\"hidden\\\",SCROLL:\\\"scroll\\\"};return function i(t,e){function n(t){if(\\\"none\\\"==window.getComputedStyle(t).display)return!1;var e=r(t);if(\\\"function\\\"==typeof ShadowRoot&&e instanceof ShadowRoot){if(e.host.shadowRoot!==e)return!1;e=e.host}return!(!e||e.nodeType!=Node.DOCUMENT_NODE&&e.nodeType!=Node.DOCUMENT_FRAGMENT_NODE)||!(e&&e.tagName&&\\\"DETAILS\\\"==e.tagName.toUpperCase()&&!e.open&&\\\"SUMMARY\\\"!=t.tagName)&&(e&&n(e))}return d(t,!!e,n)}})()).apply(null, arguments)\",\"args\":[{\"element-6066-11e4-a52e-4f735466cecf\":\"91B2E3700095D0F2C3B648354D57EC2B_element_154\"}]}"
+        },
+        "headers": {
+          "Accept": [
+            "application/json"
+          ],
+          "Content-Type": [
+            "application/json; charset=UTF-8"
+          ],
+          "User-Agent": [
+            "selenium/4.12.0 (ruby macosx)"
+          ],
+          "Content-Length": [
+            "5092"
+          ],
+          "Accept-Encoding": [
+            "gzip;q=1.0,deflate;q=0.6,identity;q=0.3"
+          ]
+        }
+      },
+      "response": {
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "headers": {
+          "Content-Length": [
+            "14"
+          ],
+          "Content-Type": [
+            "application/json; charset=utf-8"
+          ],
+          "Cache-Control": [
+            "no-cache"
+          ]
+        },
+        "body": {
+          "encoding": "UTF-8",
+          "string": "{\"value\":true}"
+        }
+      },
+      "recorded_at": "Sat, 16 Sep 2023 00:13:38 GMT"
+    },
+    {
+      "request": {
+        "method": "get",
+        "uri": "http://127.0.0.1:9516/session/8778b28e69ebd3212dee4126bd13ad90/element/91B2E3700095D0F2C3B648354D57EC2B_element_154/selected",
+        "body": {
+          "encoding": "US-ASCII",
+          "string": ""
+        },
+        "headers": {
+          "Accept": [
+            "application/json"
+          ],
+          "Content-Type": [
+            "application/json; charset=UTF-8"
+          ],
+          "User-Agent": [
+            "selenium/4.12.0 (ruby macosx)"
+          ],
+          "Cache-Control": [
+            "no-cache"
+          ],
+          "Accept-Encoding": [
+            "gzip;q=1.0,deflate;q=0.6,identity;q=0.3"
+          ]
+        }
+      },
+      "response": {
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "headers": {
+          "Content-Length": [
+            "15"
+          ],
+          "Content-Type": [
+            "application/json; charset=utf-8"
+          ],
+          "Cache-Control": [
+            "no-cache"
+          ]
+        },
+        "body": {
+          "encoding": "UTF-8",
+          "string": "{\"value\":false}"
+        }
+      },
+      "recorded_at": "Sat, 16 Sep 2023 00:13:38 GMT"
+    },
+    {
+      "request": {
+        "method": "post",
+        "uri": "http://127.0.0.1:9516/session/8778b28e69ebd3212dee4126bd13ad90/execute/sync",
+        "body": {
+          "encoding": "UTF-8",
+          "string": "{\"script\":\"return arguments[0].matches(':disabled, select:disabled *')\",\"args\":[{\"element-6066-11e4-a52e-4f735466cecf\":\"91B2E3700095D0F2C3B648354D57EC2B_element_154\"}]}"
+        },
+        "headers": {
+          "Accept": [
+            "application/json"
+          ],
+          "Content-Type": [
+            "application/json; charset=UTF-8"
+          ],
+          "User-Agent": [
+            "selenium/4.12.0 (ruby macosx)"
+          ],
+          "Content-Length": [
+            "168"
+          ],
+          "Accept-Encoding": [
+            "gzip;q=1.0,deflate;q=0.6,identity;q=0.3"
+          ]
+        }
+      },
+      "response": {
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "headers": {
+          "Content-Length": [
+            "15"
+          ],
+          "Content-Type": [
+            "application/json; charset=utf-8"
+          ],
+          "Cache-Control": [
+            "no-cache"
+          ]
+        },
+        "body": {
+          "encoding": "UTF-8",
+          "string": "{\"value\":false}"
+        }
+      },
+      "recorded_at": "Sat, 16 Sep 2023 00:13:38 GMT"
+    },
+    {
+      "request": {
+        "method": "post",
+        "uri": "http://127.0.0.1:9516/session/8778b28e69ebd3212dee4126bd13ad90/element/91B2E3700095D0F2C3B648354D57EC2B_element_111/elements",
+        "body": {
+          "encoding": "UTF-8",
+          "string": "{\"using\":\"xpath\",\"value\":\".//*[self::input | self::textarea | self::select][not((((./@type = 'submit') or (./@type = 'image')) or (./@type = 'hidden')))][((((./@id = 'Substance Use') or (./@name = 'Substance Use')) or (./@placeholder = 'Substance Use')) or (./@id = //label[contains(normalize-space(string(.)), 'Substance Use')]/@for))] | .//label[contains(normalize-space(string(.)), 'Substance Use')]//.//*[self::input | self::textarea | self::select][not((((./@type = 'submit') or (./@type = 'image')) or (./@type = 'hidden')))]\"}"
+        },
+        "headers": {
+          "Accept": [
+            "application/json"
+          ],
+          "Content-Type": [
+            "application/json; charset=UTF-8"
+          ],
+          "User-Agent": [
+            "selenium/4.12.0 (ruby macosx)"
+          ],
+          "Content-Length": [
+            "533"
+          ],
+          "Accept-Encoding": [
+            "gzip;q=1.0,deflate;q=0.6,identity;q=0.3"
+          ]
+        }
+      },
+      "response": {
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "headers": {
+          "Content-Length": [
+            "98"
+          ],
+          "Content-Type": [
+            "application/json; charset=utf-8"
+          ],
+          "Cache-Control": [
+            "no-cache"
+          ]
+        },
+        "body": {
+          "encoding": "UTF-8",
+          "string": "{\"value\":[{\"element-6066-11e4-a52e-4f735466cecf\":\"91B2E3700095D0F2C3B648354D57EC2B_element_156\"}]}"
+        }
+      },
+      "recorded_at": "Sat, 16 Sep 2023 00:13:38 GMT"
+    },
+    {
+      "request": {
+        "method": "post",
+        "uri": "http://127.0.0.1:9516/session/8778b28e69ebd3212dee4126bd13ad90/execute/sync",
+        "body": {
+          "encoding": "UTF-8",
+          "string": "{\"script\":\"/* isDisplayed */return ((function(){function d(t,e,n){function r(t){var e=x(t);if(0<e.height&&0<e.width)return!0;if(\\\"PATH\\\"==t.tagName.toUpperCase()&&(0<e.height||0<e.width)){var n=window.getComputedStyle(t)[\\\"stroke-width\\\"];return!!n&&0<parseInt(n,10)}return\\\"hidden\\\"!=window.getComputedStyle(t).overflow&&Array.prototype.slice.call(t.childNodes).some(function(t){return t.nodeType==Node.TEXT_NODE||t.nodeType==Node.ELEMENT_NODE&&r(t)})}function i(t){return C(t)==T.HIDDEN&&Array.prototype.slice.call(t.childNodes).every(function(t){return t.nodeType!=Node.ELEMENT_NODE||i(t)||!r(t)})}var o=t.tagName.toUpperCase();if(\\\"BODY\\\"==o)return!0;if(\\\"OPTION\\\"==o||\\\"OPTGROUP\\\"==o){var a=c(t,function(t){return\\\"SELECT\\\"==t.tagName.toUpperCase()});return!!a&&d(a,!0,n)}var u=s(t);if(u)return!!u.image&&0<u.rect.width&&0<u.rect.height&&d(u.image,e,n);if(\\\"INPUT\\\"==o&&\\\"hidden\\\"==t.type.toLowerCase())return!1;if(\\\"NOSCRIPT\\\"==o)return!1;var l=window.getComputedStyle(t).visibility;return\\\"collapse\\\"!=l&&\\\"hidden\\\"!=l&&(!!n(t)&&(!(!e&&0==f(t))&&(!!r(t)&&!i(t))))}function E(t){var e=x(t);return{left:e.left,right:e.left+e.width,top:e.top,bottom:e.top+e.height}}function D(t){return t.parentElement}function C(t){function e(t){function e(t){if(t==u)return!0;var e=window.getComputedStyle(t),n=e.display;return 0!=n.indexOf(\\\"inline\\\")&&\\\"contents\\\"!=n&&(\\\"absolute\\\"!=r||\\\"static\\\"!=e.position)}var r=window.getComputedStyle(t).position;if(\\\"fixed\\\"==r)return i=!0,t==u?null:u;for(var n=D(t);n&&!e(n);)n=D(n);return n}function n(t){var e=t;if(\\\"visible\\\"==d)if(t==u&&l)e=l;else if(t==l)return{x:\\\"visible\\\",y:\\\"visible\\\"};var n=window.getComputedStyle(e),r={x:n[\\\"overflow-x\\\"],y:n[\\\"overflow-y\\\"]};return t==u&&(r.x=\\\"visible\\\"==r.x?\\\"auto\\\":r.x,r.y=\\\"visible\\\"==r.y?\\\"auto\\\":r.y),r}function r(t){return t==u?{x:window.scrollX,y:window.scrollY}:{x:t.scrollLeft,y:t.scrollTop}}for(var i,o=E(t),a=t.ownerDocument,u=a.documentElement,l=a.body,d=window.getComputedStyle(u).overflow,f=e(t);f;f=e(f)){var h=n(f);if(\\\"visible\\\"!=h.x||\\\"visible\\\"!=h.y){var s=x(f);if(0==s.width||0==s.height)return T.HIDDEN;var p=o.right<s.left,c=o.bottom<s.top;if(p&&\\\"hidden\\\"==h.x||c&&\\\"hidden\\\"==h.y)return T.HIDDEN;if(p&&\\\"visible\\\"!=h.x||c&&\\\"visible\\\"!=h.y){var v=r(f),g=o.right<s.left-v.x,w=o.bottom<s.top-v.y;return g&&\\\"visible\\\"!=h.x||w&&\\\"visible\\\"!=h.x?T.HIDDEN:C(f)==T.HIDDEN?T.HIDDEN:T.SCROLL}var N=o.left>=s.left+s.width,m=o.top>=s.top+s.height;if(N&&\\\"hidden\\\"==h.x||m&&\\\"hidden\\\"==h.y)return T.HIDDEN;if(N&&\\\"visible\\\"!=h.x||m&&\\\"visible\\\"!=h.y){if(i){var y=r(f);if(o.left>=u.scrollWidth-y.x||o.right>=u.scrollHeight-y.y)return T.HIDDEN}return C(f)==T.HIDDEN?T.HIDDEN:T.SCROLL}}}return T.NONE}function o(t){var e=t.document.documentElement;return{width:e.clientWidth,height:e.clientHeight}}function p(t,e,n,r){return{left:t,top:e,width:n,height:r}}function x(t){var e,n=s(t);if(n)return n.rect;if(\\\"HTML\\\"==t.tagName.toUpperCase()){t.ownerDocument;var r=o(window);return p(0,0,r.width,r.height)}try{e=t.getBoundingClientRect()}catch(i){return p(0,0,0,0)}return p(e.left,e.top,e.right-e.left,e.bottom-e.top)}function f(t){var e=1,n=window.getComputedStyle(t).opacity;n&&(e=Number(n));var r=D(t);return r&&r.nodeType==Node.ELEMENT_NODE&&(e*=f(r)),e}function h(t){var e=t.shape.toLowerCase(),n=t.coords.split(\\\",\\\");if(\\\"rect\\\"==e&&4==n.length){var r=n[0],i=n[1];return p(r,i,n[2]-r,n[3]-i)}if(\\\"circle\\\"==e&&3==n.length){var o=n[0],a=n[1],u=n[2];return p(o-u,a-u,2*u,2*u)}if(\\\"poly\\\"==e&&2<n.length){for(var l=n[0],d=n[1],f=l,h=d,s=2;s+1<n.length;s+=2)l=Math.min(l,n[s]),f=Math.max(f,n[s]),d=Math.min(d,n[s+1]),h=Math.max(h,n[s+1]);return p(l,d,f-l,h-d)}return p(0,0,0,0)}function s(t){var e=t.tagName.toUpperCase(),n=\\\"MAP\\\"==e;if(!n&&\\\"AREA\\\"!=e)return null;var r=n?t:\\\"MAP\\\"==D(t).tagName.toUpperCase()?D(t):null,i=null,o=null;if(r&&r.name&&((i=r.ownerDocument.querySelector(\\\"*[usemap='#\\\"+r.name+\\\"']\\\"))&&(o=x(i),!n&&\\\"default\\\"!=t.shape.toLowerCase()))){var a=h(t),u=Math.min(Math.max(a.left,0),o.width),l=Math.min(Math.max(a.top,0),o.height),d=Math.min(a.width,o.width-u),f=Math.min(a.height,o.height-l);o=p(u+o.left,l+o.top,d,f)}return{image:i,rect:o||p(0,0,0,0)}}function c(t,e){for(t&&(t=D(t));t;){if(e(t))return t;t=D(t)}return null}function r(t){var e=t.parentNode;if(e&&e.shadowRoot&&t.assignedSlot!==undefined)return t.assignedSlot?t.assignedSlot.parentNode:null;if(t.getDestinationInsertionPoints){var n=t.getDestinationInsertionPoints();if(0<n.length)return n[n.length-1]}return e}var T={NONE:\\\"none\\\",HIDDEN:\\\"hidden\\\",SCROLL:\\\"scroll\\\"};return function i(t,e){function n(t){if(\\\"none\\\"==window.getComputedStyle(t).display)return!1;var e=r(t);if(\\\"function\\\"==typeof ShadowRoot&&e instanceof ShadowRoot){if(e.host.shadowRoot!==e)return!1;e=e.host}return!(!e||e.nodeType!=Node.DOCUMENT_NODE&&e.nodeType!=Node.DOCUMENT_FRAGMENT_NODE)||!(e&&e.tagName&&\\\"DETAILS\\\"==e.tagName.toUpperCase()&&!e.open&&\\\"SUMMARY\\\"!=t.tagName)&&(e&&n(e))}return d(t,!!e,n)}})()).apply(null, arguments)\",\"args\":[{\"element-6066-11e4-a52e-4f735466cecf\":\"91B2E3700095D0F2C3B648354D57EC2B_element_156\"}]}"
+        },
+        "headers": {
+          "Accept": [
+            "application/json"
+          ],
+          "Content-Type": [
+            "application/json; charset=UTF-8"
+          ],
+          "User-Agent": [
+            "selenium/4.12.0 (ruby macosx)"
+          ],
+          "Content-Length": [
+            "5092"
+          ],
+          "Accept-Encoding": [
+            "gzip;q=1.0,deflate;q=0.6,identity;q=0.3"
+          ]
+        }
+      },
+      "response": {
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "headers": {
+          "Content-Length": [
+            "14"
+          ],
+          "Content-Type": [
+            "application/json; charset=utf-8"
+          ],
+          "Cache-Control": [
+            "no-cache"
+          ]
+        },
+        "body": {
+          "encoding": "UTF-8",
+          "string": "{\"value\":true}"
+        }
+      },
+      "recorded_at": "Sat, 16 Sep 2023 00:13:38 GMT"
+    },
+    {
+      "request": {
+        "method": "get",
+        "uri": "http://127.0.0.1:9516/session/8778b28e69ebd3212dee4126bd13ad90/element/91B2E3700095D0F2C3B648354D57EC2B_element_156/selected",
+        "body": {
+          "encoding": "US-ASCII",
+          "string": ""
+        },
+        "headers": {
+          "Accept": [
+            "application/json"
+          ],
+          "Content-Type": [
+            "application/json; charset=UTF-8"
+          ],
+          "User-Agent": [
+            "selenium/4.12.0 (ruby macosx)"
+          ],
+          "Cache-Control": [
+            "no-cache"
+          ],
+          "Accept-Encoding": [
+            "gzip;q=1.0,deflate;q=0.6,identity;q=0.3"
+          ]
+        }
+      },
+      "response": {
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "headers": {
+          "Content-Length": [
+            "15"
+          ],
+          "Content-Type": [
+            "application/json; charset=utf-8"
+          ],
+          "Cache-Control": [
+            "no-cache"
+          ]
+        },
+        "body": {
+          "encoding": "UTF-8",
+          "string": "{\"value\":false}"
+        }
+      },
+      "recorded_at": "Sat, 16 Sep 2023 00:13:38 GMT"
+    },
+    {
+      "request": {
+        "method": "post",
+        "uri": "http://127.0.0.1:9516/session/8778b28e69ebd3212dee4126bd13ad90/execute/sync",
+        "body": {
+          "encoding": "UTF-8",
+          "string": "{\"script\":\"return arguments[0].matches(':disabled, select:disabled *')\",\"args\":[{\"element-6066-11e4-a52e-4f735466cecf\":\"91B2E3700095D0F2C3B648354D57EC2B_element_156\"}]}"
+        },
+        "headers": {
+          "Accept": [
+            "application/json"
+          ],
+          "Content-Type": [
+            "application/json; charset=UTF-8"
+          ],
+          "User-Agent": [
+            "selenium/4.12.0 (ruby macosx)"
+          ],
+          "Content-Length": [
+            "168"
+          ],
+          "Accept-Encoding": [
+            "gzip;q=1.0,deflate;q=0.6,identity;q=0.3"
+          ]
+        }
+      },
+      "response": {
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "headers": {
+          "Content-Length": [
+            "15"
+          ],
+          "Content-Type": [
+            "application/json; charset=utf-8"
+          ],
+          "Cache-Control": [
+            "no-cache"
+          ]
+        },
+        "body": {
+          "encoding": "UTF-8",
+          "string": "{\"value\":false}"
+        }
+      },
+      "recorded_at": "Sat, 16 Sep 2023 00:13:38 GMT"
+    }
+  ],
+  "recorded_with": "VCR 6.2.0"
+}
