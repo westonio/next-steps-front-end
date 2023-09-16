@@ -1,5 +1,5 @@
 class SearchResultsController < ApplicationController
-  
+
   def index
     begin
       location_added?
@@ -8,7 +8,14 @@ class SearchResultsController < ApplicationController
       redirect_to root_path
       flash[:danger] = e.message
     end
-    @results = search_results
+    @results = SearchFacade.new(params)
+    @location = params[:location]
+  end
+  
+  def show
+    # @search_results in a View page
+    @results = SearchFacade.new(params)
+    @category = params[:id]
   end
 
   private
