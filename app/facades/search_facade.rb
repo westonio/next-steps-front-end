@@ -16,13 +16,13 @@ class SearchFacade
     @location = params[:location]
     @urgent_care = get_results("urgent+care") if params[:urgent_care] == "1"
     @crisis_hotline = get_results("crisis+hotline") if params[:crisis_hotline] == "1"
-    @shelter_tonight = get_results("shelter+tonight") if params[:shelter_tonight] == "1"
+    @shelter_tonight = get_results("shelter") if params[:shelter_tonight] == "1"
     @food = get_results("food") if params[:food] == "1"
     @substance_use = get_results("substance+use") if params[:substance_use] == "1"
     @medicaid = get_results("medicaid") if params[:medicaid] == "1"
     @mental_health_care = get_results("mental+health+care") if params[:mental_health_care] == "1"
     @housing = get_results("housing") if params[:housing] == "1"
-    @addiction_management = get_results("addiction+management") if params[:addiction_management] == "1"
+    @addiction_management = get_results("addiction") if params[:addiction_management] == "1"
     @employment = get_results("employment") if params[:employment] == "1"
     @group_therapy = get_results("group+therapy") if params[:group_therapy] == "1"
   end

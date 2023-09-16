@@ -92,7 +92,7 @@
         "uri": "http://127.0.0.1:9515/session/7484db5690efd8f2006c702dc597dd4a/elements",
         "body": {
           "encoding": "UTF-8",
-          "string": "{\"using\":\"css selector\",\"value\":\"div.select-urgent-services\"}"
+          "string": "{\"using\":\"css selector\",\"value\":\"div.select-services\"}"
         },
         "headers": {
           "Accept": [
@@ -141,7 +141,7 @@
         "uri": "http://127.0.0.1:9515/session/7484db5690efd8f2006c702dc597dd4a/elements",
         "body": {
           "encoding": "UTF-8",
-          "string": "{\"using\":\"css selector\",\"value\":\"div.select-urgent-services\"}"
+          "string": "{\"using\":\"css selector\",\"value\":\"div.select-services\"}"
         },
         "headers": {
           "Accept": [
@@ -190,7 +190,7 @@
         "uri": "http://127.0.0.1:9515/session/7484db5690efd8f2006c702dc597dd4a/elements",
         "body": {
           "encoding": "UTF-8",
-          "string": "{\"using\":\"css selector\",\"value\":\"div.select-urgent-services\"}"
+          "string": "{\"using\":\"css selector\",\"value\":\"div.select-services\"}"
         },
         "headers": {
           "Accept": [
@@ -239,7 +239,7 @@
         "uri": "http://127.0.0.1:9515/session/7484db5690efd8f2006c702dc597dd4a/elements",
         "body": {
           "encoding": "UTF-8",
-          "string": "{\"using\":\"css selector\",\"value\":\"div.select-urgent-services\"}"
+          "string": "{\"using\":\"css selector\",\"value\":\"div.select-services\"}"
         },
         "headers": {
           "Accept": [
@@ -288,7 +288,7 @@
         "uri": "http://127.0.0.1:9515/session/7484db5690efd8f2006c702dc597dd4a/elements",
         "body": {
           "encoding": "UTF-8",
-          "string": "{\"using\":\"css selector\",\"value\":\"div.select-urgent-services\"}"
+          "string": "{\"using\":\"css selector\",\"value\":\"div.select-services\"}"
         },
         "headers": {
           "Accept": [
@@ -337,7 +337,7 @@
         "uri": "http://127.0.0.1:9515/session/7484db5690efd8f2006c702dc597dd4a/elements",
         "body": {
           "encoding": "UTF-8",
-          "string": "{\"using\":\"css selector\",\"value\":\"div.select-urgent-services\"}"
+          "string": "{\"using\":\"css selector\",\"value\":\"div.select-services\"}"
         },
         "headers": {
           "Accept": [
@@ -386,7 +386,7 @@
         "uri": "http://127.0.0.1:9515/session/7484db5690efd8f2006c702dc597dd4a/elements",
         "body": {
           "encoding": "UTF-8",
-          "string": "{\"using\":\"css selector\",\"value\":\"div.select-urgent-services\"}"
+          "string": "{\"using\":\"css selector\",\"value\":\"div.select-services\"}"
         },
         "headers": {
           "Accept": [
@@ -472,7 +472,7 @@
         "uri": "http://127.0.0.1:9515/session/7484db5690efd8f2006c702dc597dd4a/elements",
         "body": {
           "encoding": "UTF-8",
-          "string": "{\"using\":\"css selector\",\"value\":\"div.select-urgent-services\"}"
+          "string": "{\"using\":\"css selector\",\"value\":\"div.select-services\"}"
         },
         "headers": {
           "Accept": [

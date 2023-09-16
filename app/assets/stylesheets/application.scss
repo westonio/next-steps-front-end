@@ -10,7 +10,7 @@ body {
 	display: inline-block;
 	margin-left: 30px;
 }
-#app-topper h3, .select-urgent-services h4 {
+#app-topper h3, .select-services h4 {
 	font-style: italic;
 }
 
@@ -19,7 +19,7 @@ body {
 	margin-left: 60px;
 }
 
-.select-urgent-services {
+.select-services {
 	margin: 50px 0 0 50px;
 	color: white;
 	width: fit-content;
@@ -29,31 +29,32 @@ body {
 	background-color: rgb(213, 0, 0);
 }
 
-#location, #urgent-button {
+#location, #get-help-button {
 	color: black;
 }
 
-#urgent-button {
+#get-help-button {
 	padding: 10px 20px;
 	border-radius: 5px;
 	margin-right: 30px;
+	margin-bottom: 25px;
 	color: white;
 	background-color: rgb(27, 173, 46);
 	box-shadow: 3px 3px 6px black;
 	float:right;
 }
 
-#urgent-button:hover {
+#get-help-button:hover {
 	background-color: rgb(164, 164, 167);
 	color: black;
 	transition: opacity 0.3s;
 }
 
-.select-urgent-services p {
+.select-services p {
 	margin-top: 20px;
 }
 
-.select-urgent-services h4 {
+.select-services h4 {
 	margin-bottom: 20px;
 }
 
@@ -82,22 +83,4 @@ body {
 	font-style: italic;
 	display: flex;
 	margin: 10px 0 0 50px;
-}
-
-.select-non-urgent-services {
-	margin: 50px 0 0 50px;
-	color: white;
-	width: fit-content;
-	padding: 20px;
-	border: solid 3px rgb(110, 141, 195);
-	border-radius: 20px;
-	background-color: rgb(110, 141, 195);
-}
-
-.select-non-urgent-services p {
-	margin-top: 20px;
-}
-
-.select-non-urgent-services h4 {
-	margin-bottom: 20px;
 }

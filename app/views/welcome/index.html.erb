@@ -7,7 +7,7 @@
 <div class="motivational-sentence"><%= render partial: 'shared/motivational_sentence' %></div>
 
 <div class="display-flex">
-  <div class="select-urgent-services">
+  <div class="select-services">
     <h4>I need urgent help now!</h4>
     
     <%= form_with url: search_results_path, method: :get, local: true do |form| %>
@@ -40,34 +40,32 @@
       <br/>
       <%= form.check_box :substance_use %>
       <%= form.label :substance_use, 'Substance Use' %>
-      <br/>
-      </div>
+      <br/><br/><br/>
 
-      <div class="select-non-urgent-services">
-        <h4>I would like assistance with:</h4>
+        <h4>I would like non-urgent assistance with:</h4>
       
-        <p>What do you need long-term support with? (Check all that apply):</p>
-        
-        <%= form.check_box :medicaid %>
-        <%= form.label :medicaid, 'Medicaid' %>
-        <br/>
-        <%= form.check_box :mental_health_care %>
-        <%= form.label :mental_health_care, 'Mental Health Care' %>
-        <br/>
-        <%= form.check_box :housing %>
-        <%= form.label :housing, 'Housing' %>
-        <br/>
-        <%= form.check_box :addiction_management %>
-        <%= form.label :addiction_management, 'Addiction Management' %>
-        <br/>
-        <%= form.check_box :employment %>
-        <%= form.label :employment, 'Employment' %>
-        <br/>
-        <%= form.check_box :group_thearpy %>
-        <%= form.label :group_thearpy, 'Group Help' %>
-        <br/>
-    
-        <%= form.submit 'Get Help!', id: "urgent-button" %>
-      </div>
-    <% end %>
+      <p>What do you need long-term support with? (Check all that apply):</p>
+      
+      <%= form.check_box :medicaid %>
+      <%= form.label :medicaid, 'Medicaid' %>
+      <br/>
+      <%= form.check_box :mental_health_care %>
+      <%= form.label :mental_health_care, 'Mental Health Care' %>
+      <br/>
+      <%= form.check_box :housing %>
+      <%= form.label :housing, 'Housing' %>
+      <br/>
+      <%= form.check_box :addiction_management %>
+      <%= form.label :addiction_management, 'Addiction Management' %>
+      <br/>
+      <%= form.check_box :employment %>
+      <%= form.label :employment, 'Employment' %>
+      <br/>
+      <%= form.check_box :group_therapy %>
+      <%= form.label :group_therapy, 'Group Help' %>
+      <br/>
+  
+      <%= form.submit 'Get Help!', id: "get-help-button" %>
+    </div>
+  <% end %>
 </div>

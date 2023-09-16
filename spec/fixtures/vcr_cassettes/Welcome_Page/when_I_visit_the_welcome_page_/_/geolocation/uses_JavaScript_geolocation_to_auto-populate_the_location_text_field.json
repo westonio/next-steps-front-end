@@ -129,7 +129,7 @@
         "uri": "http://127.0.0.1:9515/session/4277ad610a6e63f9880d1405ffb2bbe7/elements",
         "body": {
           "encoding": "UTF-8",
-          "string": "{\"using\":\"css selector\",\"value\":\"div.select-urgent-services\"}"
+          "string": "{\"using\":\"css selector\",\"value\":\"div.select-services\"}"
         },
         "headers": {
           "Accept": [
@@ -790,7 +790,7 @@
         "uri": "http://127.0.0.1:4444/session/4eda8ee4-43ba-45c4-8d51-bba6dbe1ff90/elements",
         "body": {
           "encoding": "UTF-8",
-          "string": "{\"using\":\"css selector\",\"value\":\"div.select-urgent-services\"}"
+          "string": "{\"using\":\"css selector\",\"value\":\"div.select-services\"}"
         },
         "headers": {
           "Accept": [
