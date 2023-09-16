@@ -3,7 +3,7 @@ Rails.application.routes.draw do
 
   # Register and Login
   namespace :register do
-    get '/user', to: 'users#new'
+    # get '/user', to: 'users#new'
     get '/provider', to: 'providers#new'
   end
   get '/signin', to: 'session#new'
@@ -12,6 +12,6 @@ Rails.application.routes.draw do
   resources :search_results, only: :index
 
   # User features
-  resources :users, only: [:index, :new]
+  resources :users, only: [:index, :new, :create]
 
 end
