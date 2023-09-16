@@ -1,0 +1,1522 @@
+{
+  "http_interactions": [
+    {
+      "request": {
+        "method": "get",
+        "uri": "http://127.0.0.1:64064/__identify__",
+        "body": {
+          "encoding": "US-ASCII",
+          "string": ""
+        },
+        "headers": {
+          "Accept-Encoding": [
+            "gzip;q=1.0,deflate;q=0.6,identity;q=0.3"
+          ],
+          "Accept": [
+            "*/*"
+          ],
+          "User-Agent": [
+            "Ruby"
+          ]
+        }
+      },
+      "response": {
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "headers": {
+          "Content-Length": [
+            "5"
+          ]
+        },
+        "body": {
+          "encoding": "UTF-8",
+          "string": "17480"
+        }
+      },
+      "recorded_at": "Sat, 16 Sep 2023 00:31:03 GMT"
+    },
+    {
+      "request": {
+        "method": "get",
+        "uri": "http://127.0.0.1:64064/__identify__",
+        "body": {
+          "encoding": "US-ASCII",
+          "string": ""
+        },
+        "headers": {
+          "Accept-Encoding": [
+            "gzip;q=1.0,deflate;q=0.6,identity;q=0.3"
+          ],
+          "Accept": [
+            "*/*"
+          ],
+          "User-Agent": [
+            "Ruby"
+          ]
+        }
+      },
+      "response": {
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "headers": {
+          "Content-Length": [
+            "5"
+          ]
+        },
+        "body": {
+          "encoding": "UTF-8",
+          "string": "17480"
+        }
+      },
+      "recorded_at": "Sat, 16 Sep 2023 00:31:03 GMT"
+    },
+    {
+      "request": {
+        "method": "post",
+        "uri": "http://127.0.0.1:9515/session",
+        "body": {
+          "encoding": "UTF-8",
+          "string": "{\"capabilities\":{\"alwaysMatch\":{\"browserName\":\"chrome\",\"goog:chromeOptions\":{\"binary\":\"/Applications/Google Chrome.app/Contents/MacOS/Google Chrome\"}}}}"
+        },
+        "headers": {
+          "Accept": [
+            "application/json"
+          ],
+          "Content-Type": [
+            "application/json; charset=UTF-8"
+          ],
+          "User-Agent": [
+            "selenium/4.12.0 (ruby macosx)"
+          ],
+          "Content-Length": [
+            "152"
+          ],
+          "Accept-Encoding": [
+            "gzip;q=1.0,deflate;q=0.6,identity;q=0.3"
+          ]
+        }
+      },
+      "response": {
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "headers": {
+          "Content-Length": [
+            "896"
+          ],
+          "Content-Type": [
+            "application/json; charset=utf-8"
+          ],
+          "Cache-Control": [
+            "no-cache"
+          ]
+        },
+        "body": {
+          "encoding": "UTF-8",
+          "string": "{\"value\":{\"capabilities\":{\"acceptInsecureCerts\":false,\"browserName\":\"chrome\",\"browserVersion\":\"116.0.5845.187\",\"chrome\":{\"chromedriverVersion\":\"116.0.5845.96 (1a391816688002153ef791ffe60d9e899a71a037-refs/branch-heads/5845@{#1382})\",\"userDataDir\":\"/var/folders/gm/rw83h4z15fl8v9767w0183gw0000gn/T/.org.chromium.Chromium.PFyo3a\"},\"fedcm:accounts\":true,\"goog:chromeOptions\":{\"debuggerAddress\":\"localhost:64076\"},\"networkConnectionEnabled\":false,\"pageLoadStrategy\":\"normal\",\"platformName\":\"mac os x\",\"proxy\":{},\"setWindowRect\":true,\"strictFileInteractability\":false,\"timeouts\":{\"implicit\":0,\"pageLoad\":300000,\"script\":30000},\"unhandledPromptBehavior\":\"dismiss and notify\",\"webauthn:extension:credBlob\":true,\"webauthn:extension:largeBlob\":true,\"webauthn:extension:minPinLength\":true,\"webauthn:extension:prf\":true,\"webauthn:virtualAuthenticators\":true},\"sessionId\":\"4277ad610a6e63f9880d1405ffb2bbe7\"}}"
+        }
+      },
+      "recorded_at": "Sat, 16 Sep 2023 00:31:05 GMT"
+    },
+    {
+      "request": {
+        "method": "post",
+        "uri": "http://127.0.0.1:9515/session/4277ad610a6e63f9880d1405ffb2bbe7/elements",
+        "body": {
+          "encoding": "UTF-8",
+          "string": "{\"using\":\"css selector\",\"value\":\"div.select-urgent-services\"}"
+        },
+        "headers": {
+          "Accept": [
+            "application/json"
+          ],
+          "Content-Type": [
+            "application/json; charset=UTF-8"
+          ],
+          "User-Agent": [
+            "selenium/4.12.0 (ruby macosx)"
+          ],
+          "Content-Length": [
+            "61"
+          ],
+          "Accept-Encoding": [
+            "gzip;q=1.0,deflate;q=0.6,identity;q=0.3"
+          ]
+        }
+      },
+      "response": {
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "headers": {
+          "Content-Length": [
+            "12"
+          ],
+          "Content-Type": [
+            "application/json; charset=utf-8"
+          ],
+          "Cache-Control": [
+            "no-cache"
+          ]
+        },
+        "body": {
+          "encoding": "UTF-8",
+          "string": "{\"value\":[]}"
+        }
+      },
+      "recorded_at": "Sat, 16 Sep 2023 00:31:05 GMT"
+    },
+    {
+      "request": {
+        "method": "get",
+        "uri": "http://127.0.0.1:64178/__identify__",
+        "body": {
+          "encoding": "US-ASCII",
+          "string": ""
+        },
+        "headers": {
+          "Accept-Encoding": [
+            "gzip;q=1.0,deflate;q=0.6,identity;q=0.3"
+          ],
+          "Accept": [
+            "*/*"
+          ],
+          "User-Agent": [
+            "Ruby"
+          ]
+        }
+      },
+      "response": {
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "headers": {
+          "Content-Length": [
+            "5"
+          ]
+        },
+        "body": {
+          "encoding": "UTF-8",
+          "string": "17460"
+        }
+      },
+      "recorded_at": "Sat, 16 Sep 2023 00:31:28 GMT"
+    },
+    {
+      "request": {
+        "method": "get",
+        "uri": "http://127.0.0.1:64178/__identify__",
+        "body": {
+          "encoding": "US-ASCII",
+          "string": ""
+        },
+        "headers": {
+          "Accept-Encoding": [
+            "gzip;q=1.0,deflate;q=0.6,identity;q=0.3"
+          ],
+          "Accept": [
+            "*/*"
+          ],
+          "User-Agent": [
+            "Ruby"
+          ]
+        }
+      },
+      "response": {
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "headers": {
+          "Content-Length": [
+            "5"
+          ]
+        },
+        "body": {
+          "encoding": "UTF-8",
+          "string": "17460"
+        }
+      },
+      "recorded_at": "Sat, 16 Sep 2023 00:31:28 GMT"
+    },
+    {
+      "request": {
+        "method": "post",
+        "uri": "http://127.0.0.1:9515/session/4277ad610a6e63f9880d1405ffb2bbe7/elements",
+        "body": {
+          "encoding": "UTF-8",
+          "string": "{\"using\":\"xpath\",\"value\":\".//a[./@href][((((./@id = 'Find Location') or contains(normalize-space(string(.)), 'Find Location')) or contains(./@title, 'Find Location')) or .//img[contains(./@alt, 'Find Location')])] | .//input[((((./@type = 'submit') or (./@type = 'reset')) or (./@type = 'image')) or (./@type = 'button'))][(((((./@id = 'Find Location') or (./@name = 'Find Location')) or contains(./@value, 'Find Location')) or contains(./@title, 'Find Location')) or (./@id = //label[contains(normalize-space(string(.)), 'Find Location')]/@for))] | .//label[contains(normalize-space(string(.)), 'Find Location')]//*[((./self::input and ((((./@type = 'submit') or (./@type = 'reset')) or (./@type = 'image')) or (./@type = 'button'))) or ./self::button)] | .//input[(./@type = 'image')][contains(./@alt, 'Find Location')] | .//label[contains(normalize-space(string(.)), 'Find Location')]//*[((./self::input and ((((./@type = 'submit') or (./@type = 'reset')) or (./@type = 'image')) or (./@type = 'button'))) or ./self::button)] | .//button[(((((((./@id = 'Find Location') or (./@name = 'Find Location')) or contains(./@value, 'Find Location')) or contains(./@title, 'Find Location')) or (./@id = //label[contains(normalize-space(string(.)), 'Find Location')]/@for)) or contains(normalize-space(string(.)), 'Find Location')) or .//img[contains(./@alt, 'Find Location')])] | .//label[contains(normalize-space(string(.)), 'Find Location')]//*[((./self::input and ((((./@type = 'submit') or (./@type = 'reset')) or (./@type = 'image')) or (./@type = 'button'))) or ./self::button)] | .//input[(./@type = 'image')][contains(./@alt, 'Find Location')] | .//label[contains(normalize-space(string(.)), 'Find Location')]//*[((./self::input and ((((./@type = 'submit') or (./@type = 'reset')) or (./@type = 'image')) or (./@type = 'button'))) or ./self::button)]\"}"
+        },
+        "headers": {
+          "Accept": [
+            "application/json"
+          ],
+          "Content-Type": [
+            "application/json; charset=UTF-8"
+          ],
+          "User-Agent": [
+            "selenium/4.12.0 (ruby macosx)"
+          ],
+          "Content-Length": [
+            "1854"
+          ],
+          "Accept-Encoding": [
+            "gzip;q=1.0,deflate;q=0.6,identity;q=0.3"
+          ]
+        }
+      },
+      "response": {
+        "status": {
+          "code": 404,
+          "message": "Not Found"
+        },
+        "headers": {
+          "Content-Length": [
+            "1231"
+          ],
+          "Content-Type": [
+            "application/json; charset=utf-8"
+          ],
+          "Cache-Control": [
+            "no-cache"
+          ]
+        },
+        "body": {
+          "encoding": "UTF-8",
+          "string": "{\"value\":{\"error\":\"invalid session id\",\"message\":\"invalid session id\",\"stacktrace\":\"0   chromedriver                        0x0000000102eca65c chromedriver + 4318812\\n1   chromedriver                        0x0000000102ec2d00 chromedriver + 4287744\\n2   chromedriver                        0x0000000102af4644 chromedriver + 296516\\n3   chromedriver                        0x0000000102b25940 chromedriver + 497984\\n4   chromedriver                        0x0000000102b4f63c chromedriver + 669244\\n5   chromedriver                        0x0000000102b4ecb4 chromedriver + 666804\\n6   chromedriver                        0x0000000102ac20c0 chromedriver + 90304\\n7   chromedriver                        0x0000000102e8ac40 chromedriver + 4058176\\n8   chromedriver                        0x0000000102e8f160 chromedriver + 4075872\\n9   chromedriver                        0x0000000102e52e68 chromedriver + 3829352\\n10  chromedriver                        0x0000000102e8fc4c chromedriver + 4078668\\n11  chromedriver                        0x0000000102e67f08 chromedriver + 3915528\\n12  chromedriver                        0x0000000102ac0ad8 chromedriver + 84696\\n13  dyld                                0x000000018cd87f28 start + 2236\\n\"}}"
+        }
+      },
+      "recorded_at": "Sat, 16 Sep 2023 00:31:29 GMT"
+    },
+    {
+      "request": {
+        "method": "get",
+        "uri": "http://127.0.0.1:64288/__identify__",
+        "body": {
+          "encoding": "US-ASCII",
+          "string": ""
+        },
+        "headers": {
+          "Accept-Encoding": [
+            "gzip;q=1.0,deflate;q=0.6,identity;q=0.3"
+          ],
+          "Accept": [
+            "*/*"
+          ],
+          "User-Agent": [
+            "Ruby"
+          ]
+        }
+      },
+      "response": {
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "headers": {
+          "Content-Length": [
+            "5"
+          ]
+        },
+        "body": {
+          "encoding": "UTF-8",
+          "string": "17460"
+        }
+      },
+      "recorded_at": "Sat, 16 Sep 2023 00:31:54 GMT"
+    },
+    {
+      "request": {
+        "method": "post",
+        "uri": "http://127.0.0.1:4444/session",
+        "body": {
+          "encoding": "UTF-8",
+          "string": "{\"capabilities\":{\"alwaysMatch\":{\"acceptInsecureCerts\":true,\"browserName\":\"firefox\",\"moz:firefoxOptions\":{\"binary\":\"/Users/allenrussell/.cache/selenium/firefox/mac-arm64/117.0.1/Firefox.app/Contents/MacOS/firefox\"},\"moz:debuggerAddress\":true}}}"
+        },
+        "headers": {
+          "Accept": [
+            "application/json"
+          ],
+          "Content-Type": [
+            "application/json; charset=UTF-8"
+          ],
+          "User-Agent": [
+            "selenium/4.12.0 (ruby macosx)"
+          ],
+          "Content-Length": [
+            "243"
+          ],
+          "Accept-Encoding": [
+            "gzip;q=1.0,deflate;q=0.6,identity;q=0.3"
+          ]
+        }
+      },
+      "response": {
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "headers": {
+          "Content-Type": [
+            "application/json; charset=utf-8"
+          ],
+          "Cache-Control": [
+            "no-cache"
+          ],
+          "Content-Length": [
+            "752"
+          ],
+          "Date": [
+            "Sat, 16 Sep 2023 00:31:55 GMT"
+          ]
+        },
+        "body": {
+          "encoding": "UTF-8",
+          "string": "{\"value\":{\"sessionId\":\"4eda8ee4-43ba-45c4-8d51-bba6dbe1ff90\",\"capabilities\":{\"acceptInsecureCerts\":true,\"browserName\":\"firefox\",\"browserVersion\":\"117.0.1\",\"moz:accessibilityChecks\":false,\"moz:buildID\":\"20230912013654\",\"moz:debuggerAddress\":\"127.0.0.1:9222\",\"moz:geckodriverVersion\":\"0.33.0\",\"moz:headless\":false,\"moz:platformVersion\":\"22.5.0\",\"moz:processID\":12147,\"moz:profile\":\"/var/folders/gm/rw83h4z15fl8v9767w0183gw0000gn/T/rust_mozprofilekGIR0L\",\"moz:shutdownTimeout\":60000,\"moz:webdriverClick\":true,\"moz:windowless\":false,\"pageLoadStrategy\":\"normal\",\"platformName\":\"mac\",\"proxy\":{},\"setWindowRect\":true,\"strictFileInteractability\":false,\"timeouts\":{\"implicit\":0,\"pageLoad\":300000,\"script\":30000},\"unhandledPromptBehavior\":\"dismiss and notify\"}}}"
+        }
+      },
+      "recorded_at": "Sat, 16 Sep 2023 00:31:57 GMT"
+    },
+    {
+      "request": {
+        "method": "post",
+        "uri": "http://127.0.0.1:4444/session/4eda8ee4-43ba-45c4-8d51-bba6dbe1ff90/url",
+        "body": {
+          "encoding": "UTF-8",
+          "string": "{\"url\":\"http://127.0.0.1:64288/\"}"
+        },
+        "headers": {
+          "Accept": [
+            "application/json"
+          ],
+          "Content-Type": [
+            "application/json; charset=UTF-8"
+          ],
+          "User-Agent": [
+            "selenium/4.12.0 (ruby macosx)"
+          ],
+          "Content-Length": [
+            "33"
+          ],
+          "Accept-Encoding": [
+            "gzip;q=1.0,deflate;q=0.6,identity;q=0.3"
+          ]
+        }
+      },
+      "response": {
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "headers": {
+          "Content-Type": [
+            "application/json; charset=utf-8"
+          ],
+          "Cache-Control": [
+            "no-cache"
+          ],
+          "Content-Length": [
+            "14"
+          ],
+          "Date": [
+            "Sat, 16 Sep 2023 00:31:57 GMT"
+          ]
+        },
+        "body": {
+          "encoding": "UTF-8",
+          "string": "{\"value\":null}"
+        }
+      },
+      "recorded_at": "Sat, 16 Sep 2023 00:31:58 GMT"
+    },
+    {
+      "request": {
+        "method": "post",
+        "uri": "http://127.0.0.1:4444/session/4eda8ee4-43ba-45c4-8d51-bba6dbe1ff90/url",
+        "body": {
+          "encoding": "UTF-8",
+          "string": "{\"url\":\"http://127.0.0.1:64288/\"}"
+        },
+        "headers": {
+          "Accept": [
+            "application/json"
+          ],
+          "Content-Type": [
+            "application/json; charset=UTF-8"
+          ],
+          "User-Agent": [
+            "selenium/4.12.0 (ruby macosx)"
+          ],
+          "Content-Length": [
+            "33"
+          ],
+          "Accept-Encoding": [
+            "gzip;q=1.0,deflate;q=0.6,identity;q=0.3"
+          ]
+        }
+      },
+      "response": {
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "headers": {
+          "Content-Type": [
+            "application/json; charset=utf-8"
+          ],
+          "Cache-Control": [
+            "no-cache"
+          ],
+          "Content-Length": [
+            "14"
+          ],
+          "Date": [
+            "Sat, 16 Sep 2023 00:31:57 GMT"
+          ]
+        },
+        "body": {
+          "encoding": "UTF-8",
+          "string": "{\"value\":null}"
+        }
+      },
+      "recorded_at": "Sat, 16 Sep 2023 00:31:58 GMT"
+    },
+    {
+      "request": {
+        "method": "get",
+        "uri": "http://127.0.0.1:64288/__identify__",
+        "body": {
+          "encoding": "US-ASCII",
+          "string": ""
+        },
+        "headers": {
+          "Accept-Encoding": [
+            "gzip;q=1.0,deflate;q=0.6,identity;q=0.3"
+          ],
+          "Accept": [
+            "*/*"
+          ],
+          "User-Agent": [
+            "Ruby"
+          ]
+        }
+      },
+      "response": {
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "headers": {
+          "Content-Length": [
+            "5"
+          ]
+        },
+        "body": {
+          "encoding": "UTF-8",
+          "string": "17460"
+        }
+      },
+      "recorded_at": "Sat, 16 Sep 2023 00:31:58 GMT"
+    },
+    {
+      "request": {
+        "method": "get",
+        "uri": "http://127.0.0.1:64288/__identify__",
+        "body": {
+          "encoding": "US-ASCII",
+          "string": ""
+        },
+        "headers": {
+          "Accept-Encoding": [
+            "gzip;q=1.0,deflate;q=0.6,identity;q=0.3"
+          ],
+          "Accept": [
+            "*/*"
+          ],
+          "User-Agent": [
+            "Ruby"
+          ]
+        }
+      },
+      "response": {
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "headers": {
+          "Content-Length": [
+            "5"
+          ]
+        },
+        "body": {
+          "encoding": "UTF-8",
+          "string": "17460"
+        }
+      },
+      "recorded_at": "Sat, 16 Sep 2023 00:31:58 GMT"
+    },
+    {
+      "request": {
+        "method": "get",
+        "uri": "http://127.0.0.1:64441/__identify__",
+        "body": {
+          "encoding": "US-ASCII",
+          "string": ""
+        },
+        "headers": {
+          "Accept-Encoding": [
+            "gzip;q=1.0,deflate;q=0.6,identity;q=0.3"
+          ],
+          "Accept": [
+            "*/*"
+          ],
+          "User-Agent": [
+            "Ruby"
+          ]
+        }
+      },
+      "response": {
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "headers": {
+          "Content-Length": [
+            "5"
+          ]
+        },
+        "body": {
+          "encoding": "UTF-8",
+          "string": "17460"
+        }
+      },
+      "recorded_at": "Sat, 16 Sep 2023 00:32:18 GMT"
+    },
+    {
+      "request": {
+        "method": "get",
+        "uri": "http://127.0.0.1:64441/__identify__",
+        "body": {
+          "encoding": "US-ASCII",
+          "string": ""
+        },
+        "headers": {
+          "Accept-Encoding": [
+            "gzip;q=1.0,deflate;q=0.6,identity;q=0.3"
+          ],
+          "Accept": [
+            "*/*"
+          ],
+          "User-Agent": [
+            "Ruby"
+          ]
+        }
+      },
+      "response": {
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "headers": {
+          "Content-Length": [
+            "5"
+          ]
+        },
+        "body": {
+          "encoding": "UTF-8",
+          "string": "17460"
+        }
+      },
+      "recorded_at": "Sat, 16 Sep 2023 00:32:18 GMT"
+    },
+    {
+      "request": {
+        "method": "get",
+        "uri": "http://127.0.0.1:64658/__identify__",
+        "body": {
+          "encoding": "US-ASCII",
+          "string": ""
+        },
+        "headers": {
+          "Accept-Encoding": [
+            "gzip;q=1.0,deflate;q=0.6,identity;q=0.3"
+          ],
+          "Accept": [
+            "*/*"
+          ],
+          "User-Agent": [
+            "Ruby"
+          ]
+        }
+      },
+      "response": {
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "headers": {
+          "Content-Length": [
+            "5"
+          ]
+        },
+        "body": {
+          "encoding": "UTF-8",
+          "string": "17460"
+        }
+      },
+      "recorded_at": "Sat, 16 Sep 2023 00:33:08 GMT"
+    },
+    {
+      "request": {
+        "method": "get",
+        "uri": "http://127.0.0.1:64658/__identify__",
+        "body": {
+          "encoding": "US-ASCII",
+          "string": ""
+        },
+        "headers": {
+          "Accept-Encoding": [
+            "gzip;q=1.0,deflate;q=0.6,identity;q=0.3"
+          ],
+          "Accept": [
+            "*/*"
+          ],
+          "User-Agent": [
+            "Ruby"
+          ]
+        }
+      },
+      "response": {
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "headers": {
+          "Content-Length": [
+            "5"
+          ]
+        },
+        "body": {
+          "encoding": "UTF-8",
+          "string": "17460"
+        }
+      },
+      "recorded_at": "Sat, 16 Sep 2023 00:33:08 GMT"
+    },
+    {
+      "request": {
+        "method": "get",
+        "uri": "http://127.0.0.1:64658/__identify__",
+        "body": {
+          "encoding": "US-ASCII",
+          "string": ""
+        },
+        "headers": {
+          "Accept-Encoding": [
+            "gzip;q=1.0,deflate;q=0.6,identity;q=0.3"
+          ],
+          "Accept": [
+            "*/*"
+          ],
+          "User-Agent": [
+            "Ruby"
+          ]
+        }
+      },
+      "response": {
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "headers": {
+          "Content-Length": [
+            "5"
+          ]
+        },
+        "body": {
+          "encoding": "UTF-8",
+          "string": "17460"
+        }
+      },
+      "recorded_at": "Sat, 16 Sep 2023 00:33:08 GMT"
+    },
+    {
+      "request": {
+        "method": "get",
+        "uri": "http://127.0.0.1:64754/__identify__",
+        "body": {
+          "encoding": "US-ASCII",
+          "string": ""
+        },
+        "headers": {
+          "Accept-Encoding": [
+            "gzip;q=1.0,deflate;q=0.6,identity;q=0.3"
+          ],
+          "Accept": [
+            "*/*"
+          ],
+          "User-Agent": [
+            "Ruby"
+          ]
+        }
+      },
+      "response": {
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "headers": {
+          "Content-Length": [
+            "5"
+          ]
+        },
+        "body": {
+          "encoding": "UTF-8",
+          "string": "17480"
+        }
+      },
+      "recorded_at": "Sat, 16 Sep 2023 00:33:28 GMT"
+    },
+    {
+      "request": {
+        "method": "post",
+        "uri": "http://127.0.0.1:4444/session/4eda8ee4-43ba-45c4-8d51-bba6dbe1ff90/elements",
+        "body": {
+          "encoding": "UTF-8",
+          "string": "{\"using\":\"css selector\",\"value\":\"div.select-urgent-services\"}"
+        },
+        "headers": {
+          "Accept": [
+            "application/json"
+          ],
+          "Content-Type": [
+            "application/json; charset=UTF-8"
+          ],
+          "User-Agent": [
+            "selenium/4.12.0 (ruby macosx)"
+          ],
+          "Content-Length": [
+            "61"
+          ],
+          "Accept-Encoding": [
+            "gzip;q=1.0,deflate;q=0.6,identity;q=0.3"
+          ]
+        }
+      },
+      "response": {
+        "status": {
+          "code": 404,
+          "message": "Not Found"
+        },
+        "headers": {
+          "Content-Type": [
+            "application/json; charset=utf-8"
+          ],
+          "Cache-Control": [
+            "no-cache"
+          ],
+          "Content-Length": [
+            "123"
+          ],
+          "Date": [
+            "Sat, 16 Sep 2023 00:33:28 GMT"
+          ]
+        },
+        "body": {
+          "encoding": "UTF-8",
+          "string": "{\"value\":{\"error\":\"invalid session id\",\"message\":\"Tried to run command without establishing a connection\",\"stacktrace\":\"\"}}"
+        }
+      },
+      "recorded_at": "Sat, 16 Sep 2023 00:33:28 GMT"
+    },
+    {
+      "request": {
+        "method": "get",
+        "uri": "http://127.0.0.1:64845/__identify__",
+        "body": {
+          "encoding": "US-ASCII",
+          "string": ""
+        },
+        "headers": {
+          "Accept-Encoding": [
+            "gzip;q=1.0,deflate;q=0.6,identity;q=0.3"
+          ],
+          "Accept": [
+            "*/*"
+          ],
+          "User-Agent": [
+            "Ruby"
+          ]
+        }
+      },
+      "response": {
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "headers": {
+          "Content-Length": [
+            "5"
+          ]
+        },
+        "body": {
+          "encoding": "UTF-8",
+          "string": "17460"
+        }
+      },
+      "recorded_at": "Sat, 16 Sep 2023 00:33:49 GMT"
+    },
+    {
+      "request": {
+        "method": "get",
+        "uri": "http://127.0.0.1:65011/__identify__",
+        "body": {
+          "encoding": "US-ASCII",
+          "string": ""
+        },
+        "headers": {
+          "Accept-Encoding": [
+            "gzip;q=1.0,deflate;q=0.6,identity;q=0.3"
+          ],
+          "Accept": [
+            "*/*"
+          ],
+          "User-Agent": [
+            "Ruby"
+          ]
+        }
+      },
+      "response": {
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "headers": {
+          "Content-Length": [
+            "5"
+          ]
+        },
+        "body": {
+          "encoding": "UTF-8",
+          "string": "17460"
+        }
+      },
+      "recorded_at": "Sat, 16 Sep 2023 00:34:28 GMT"
+    },
+    {
+      "request": {
+        "method": "get",
+        "uri": "http://127.0.0.1:65171/__identify__",
+        "body": {
+          "encoding": "US-ASCII",
+          "string": ""
+        },
+        "headers": {
+          "Accept-Encoding": [
+            "gzip;q=1.0,deflate;q=0.6,identity;q=0.3"
+          ],
+          "Accept": [
+            "*/*"
+          ],
+          "User-Agent": [
+            "Ruby"
+          ]
+        }
+      },
+      "response": {
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "headers": {
+          "Content-Length": [
+            "5"
+          ]
+        },
+        "body": {
+          "encoding": "UTF-8",
+          "string": "17500"
+        }
+      },
+      "recorded_at": "Sat, 16 Sep 2023 00:35:06 GMT"
+    },
+    {
+      "request": {
+        "method": "get",
+        "uri": "http://127.0.0.1:65243/__identify__",
+        "body": {
+          "encoding": "US-ASCII",
+          "string": ""
+        },
+        "headers": {
+          "Accept-Encoding": [
+            "gzip;q=1.0,deflate;q=0.6,identity;q=0.3"
+          ],
+          "Accept": [
+            "*/*"
+          ],
+          "User-Agent": [
+            "Ruby"
+          ]
+        }
+      },
+      "response": {
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "headers": {
+          "Content-Length": [
+            "5"
+          ]
+        },
+        "body": {
+          "encoding": "UTF-8",
+          "string": "17500"
+        }
+      },
+      "recorded_at": "Sat, 16 Sep 2023 00:35:23 GMT"
+    },
+    {
+      "request": {
+        "method": "get",
+        "uri": "http://127.0.0.1:65243/__identify__",
+        "body": {
+          "encoding": "US-ASCII",
+          "string": ""
+        },
+        "headers": {
+          "Accept-Encoding": [
+            "gzip;q=1.0,deflate;q=0.6,identity;q=0.3"
+          ],
+          "Accept": [
+            "*/*"
+          ],
+          "User-Agent": [
+            "Ruby"
+          ]
+        }
+      },
+      "response": {
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "headers": {
+          "Content-Length": [
+            "5"
+          ]
+        },
+        "body": {
+          "encoding": "UTF-8",
+          "string": "17500"
+        }
+      },
+      "recorded_at": "Sat, 16 Sep 2023 00:35:23 GMT"
+    },
+    {
+      "request": {
+        "method": "get",
+        "uri": "http://127.0.0.1:49173/__identify__",
+        "body": {
+          "encoding": "US-ASCII",
+          "string": ""
+        },
+        "headers": {
+          "Accept-Encoding": [
+            "gzip;q=1.0,deflate;q=0.6,identity;q=0.3"
+          ],
+          "Accept": [
+            "*/*"
+          ],
+          "User-Agent": [
+            "Ruby"
+          ]
+        }
+      },
+      "response": {
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "headers": {
+          "Content-Length": [
+            "5"
+          ]
+        },
+        "body": {
+          "encoding": "UTF-8",
+          "string": "17480"
+        }
+      },
+      "recorded_at": "Sat, 16 Sep 2023 00:36:40 GMT"
+    },
+    {
+      "request": {
+        "method": "get",
+        "uri": "http://127.0.0.1:49173/__identify__",
+        "body": {
+          "encoding": "US-ASCII",
+          "string": ""
+        },
+        "headers": {
+          "Accept-Encoding": [
+            "gzip;q=1.0,deflate;q=0.6,identity;q=0.3"
+          ],
+          "Accept": [
+            "*/*"
+          ],
+          "User-Agent": [
+            "Ruby"
+          ]
+        }
+      },
+      "response": {
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "headers": {
+          "Content-Length": [
+            "5"
+          ]
+        },
+        "body": {
+          "encoding": "UTF-8",
+          "string": "17480"
+        }
+      },
+      "recorded_at": "Sat, 16 Sep 2023 00:36:40 GMT"
+    },
+    {
+      "request": {
+        "method": "get",
+        "uri": "http://127.0.0.1:49406/__identify__",
+        "body": {
+          "encoding": "US-ASCII",
+          "string": ""
+        },
+        "headers": {
+          "Accept-Encoding": [
+            "gzip;q=1.0,deflate;q=0.6,identity;q=0.3"
+          ],
+          "Accept": [
+            "*/*"
+          ],
+          "User-Agent": [
+            "Ruby"
+          ]
+        }
+      },
+      "response": {
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "headers": {
+          "Content-Length": [
+            "5"
+          ]
+        },
+        "body": {
+          "encoding": "UTF-8",
+          "string": "17460"
+        }
+      },
+      "recorded_at": "Sat, 16 Sep 2023 00:37:34 GMT"
+    },
+    {
+      "request": {
+        "method": "get",
+        "uri": "http://127.0.0.1:49740/__identify__",
+        "body": {
+          "encoding": "US-ASCII",
+          "string": ""
+        },
+        "headers": {
+          "Accept-Encoding": [
+            "gzip;q=1.0,deflate;q=0.6,identity;q=0.3"
+          ],
+          "Accept": [
+            "*/*"
+          ],
+          "User-Agent": [
+            "Ruby"
+          ]
+        }
+      },
+      "response": {
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "headers": {
+          "Content-Length": [
+            "5"
+          ]
+        },
+        "body": {
+          "encoding": "UTF-8",
+          "string": "17500"
+        }
+      },
+      "recorded_at": "Sat, 16 Sep 2023 00:38:56 GMT"
+    },
+    {
+      "request": {
+        "method": "delete",
+        "uri": "http://127.0.0.1:9515/session/4277ad610a6e63f9880d1405ffb2bbe7",
+        "body": {
+          "encoding": "US-ASCII",
+          "string": ""
+        },
+        "headers": {
+          "Accept": [
+            "application/json"
+          ],
+          "Content-Type": [
+            "application/json; charset=UTF-8"
+          ],
+          "User-Agent": [
+            "selenium/4.12.0 (ruby macosx)"
+          ],
+          "Accept-Encoding": [
+            "gzip;q=1.0,deflate;q=0.6,identity;q=0.3"
+          ]
+        }
+      },
+      "response": {
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "headers": {
+          "Content-Length": [
+            "14"
+          ],
+          "Content-Type": [
+            "application/json; charset=utf-8"
+          ],
+          "Cache-Control": [
+            "no-cache"
+          ]
+        },
+        "body": {
+          "encoding": "UTF-8",
+          "string": "{\"value\":null}"
+        }
+      },
+      "recorded_at": "Sat, 16 Sep 2023 00:38:57 GMT"
+    },
+    {
+      "request": {
+        "method": "get",
+        "uri": "http://127.0.0.1:9515/shutdown",
+        "body": {
+          "encoding": "US-ASCII",
+          "string": ""
+        },
+        "headers": {
+          "Accept": [
+            "application/json"
+          ],
+          "Content-Type": [
+            "application/json; charset=UTF-8"
+          ],
+          "User-Agent": [
+            "selenium/4.12.0 (ruby macosx)"
+          ],
+          "Accept-Encoding": [
+            "gzip;q=1.0,deflate;q=0.6,identity;q=0.3"
+          ]
+        }
+      },
+      "response": {
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "headers": {
+          "Content-Length": [
+            "40"
+          ],
+          "Content-Type": [
+            "application/json; charset=utf-8"
+          ]
+        },
+        "body": {
+          "encoding": "UTF-8",
+          "string": "{\"sessionId\":\"\",\"status\":0,\"value\":null}"
+        }
+      },
+      "recorded_at": "Sat, 16 Sep 2023 00:38:57 GMT"
+    },
+    {
+      "request": {
+        "method": "get",
+        "uri": "http://127.0.0.1:49978/__identify__",
+        "body": {
+          "encoding": "US-ASCII",
+          "string": ""
+        },
+        "headers": {
+          "Accept-Encoding": [
+            "gzip;q=1.0,deflate;q=0.6,identity;q=0.3"
+          ],
+          "Accept": [
+            "*/*"
+          ],
+          "User-Agent": [
+            "Ruby"
+          ]
+        }
+      },
+      "response": {
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "headers": {
+          "Content-Length": [
+            "5"
+          ]
+        },
+        "body": {
+          "encoding": "UTF-8",
+          "string": "17480"
+        }
+      },
+      "recorded_at": "Sat, 16 Sep 2023 00:39:53 GMT"
+    },
+    {
+      "request": {
+        "method": "get",
+        "uri": "http://127.0.0.1:49978/__identify__",
+        "body": {
+          "encoding": "US-ASCII",
+          "string": ""
+        },
+        "headers": {
+          "Accept-Encoding": [
+            "gzip;q=1.0,deflate;q=0.6,identity;q=0.3"
+          ],
+          "Accept": [
+            "*/*"
+          ],
+          "User-Agent": [
+            "Ruby"
+          ]
+        }
+      },
+      "response": {
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "headers": {
+          "Content-Length": [
+            "5"
+          ]
+        },
+        "body": {
+          "encoding": "UTF-8",
+          "string": "17480"
+        }
+      },
+      "recorded_at": "Sat, 16 Sep 2023 00:39:53 GMT"
+    },
+    {
+      "request": {
+        "method": "get",
+        "uri": "http://127.0.0.1:50375/__identify__",
+        "body": {
+          "encoding": "US-ASCII",
+          "string": ""
+        },
+        "headers": {
+          "Accept-Encoding": [
+            "gzip;q=1.0,deflate;q=0.6,identity;q=0.3"
+          ],
+          "Accept": [
+            "*/*"
+          ],
+          "User-Agent": [
+            "Ruby"
+          ]
+        }
+      },
+      "response": {
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "headers": {
+          "Content-Length": [
+            "5"
+          ]
+        },
+        "body": {
+          "encoding": "UTF-8",
+          "string": "17480"
+        }
+      },
+      "recorded_at": "Sat, 16 Sep 2023 00:41:28 GMT"
+    },
+    {
+      "request": {
+        "method": "get",
+        "uri": "http://127.0.0.1:50473/__identify__",
+        "body": {
+          "encoding": "US-ASCII",
+          "string": ""
+        },
+        "headers": {
+          "Accept-Encoding": [
+            "gzip;q=1.0,deflate;q=0.6,identity;q=0.3"
+          ],
+          "Accept": [
+            "*/*"
+          ],
+          "User-Agent": [
+            "Ruby"
+          ]
+        }
+      },
+      "response": {
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "headers": {
+          "Content-Length": [
+            "5"
+          ]
+        },
+        "body": {
+          "encoding": "UTF-8",
+          "string": "17460"
+        }
+      },
+      "recorded_at": "Sat, 16 Sep 2023 00:41:50 GMT"
+    },
+    {
+      "request": {
+        "method": "get",
+        "uri": "http://127.0.0.1:50514/__identify__",
+        "body": {
+          "encoding": "US-ASCII",
+          "string": ""
+        },
+        "headers": {
+          "Accept-Encoding": [
+            "gzip;q=1.0,deflate;q=0.6,identity;q=0.3"
+          ],
+          "Accept": [
+            "*/*"
+          ],
+          "User-Agent": [
+            "Ruby"
+          ]
+        }
+      },
+      "response": {
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "headers": {
+          "Content-Length": [
+            "5"
+          ]
+        },
+        "body": {
+          "encoding": "UTF-8",
+          "string": "17460"
+        }
+      },
+      "recorded_at": "Sat, 16 Sep 2023 00:41:58 GMT"
+    },
+    {
+      "request": {
+        "method": "get",
+        "uri": "http://127.0.0.1:50560/__identify__",
+        "body": {
+          "encoding": "US-ASCII",
+          "string": ""
+        },
+        "headers": {
+          "Accept-Encoding": [
+            "gzip;q=1.0,deflate;q=0.6,identity;q=0.3"
+          ],
+          "Accept": [
+            "*/*"
+          ],
+          "User-Agent": [
+            "Ruby"
+          ]
+        }
+      },
+      "response": {
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "headers": {
+          "Content-Length": [
+            "5"
+          ]
+        },
+        "body": {
+          "encoding": "UTF-8",
+          "string": "17480"
+        }
+      },
+      "recorded_at": "Sat, 16 Sep 2023 00:42:07 GMT"
+    },
+    {
+      "request": {
+        "method": "get",
+        "uri": "http://127.0.0.1:50931/__identify__",
+        "body": {
+          "encoding": "US-ASCII",
+          "string": ""
+        },
+        "headers": {
+          "Accept-Encoding": [
+            "gzip;q=1.0,deflate;q=0.6,identity;q=0.3"
+          ],
+          "Accept": [
+            "*/*"
+          ],
+          "User-Agent": [
+            "Ruby"
+          ]
+        }
+      },
+      "response": {
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "headers": {
+          "Content-Length": [
+            "5"
+          ]
+        },
+        "body": {
+          "encoding": "UTF-8",
+          "string": "17460"
+        }
+      },
+      "recorded_at": "Sat, 16 Sep 2023 00:43:38 GMT"
+    }
+  ],
+  "recorded_with": "VCR 6.2.0"
+}
