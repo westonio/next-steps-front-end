@@ -1,0 +1,10 @@
+<h2>Create a New User Account</h2>
+<p>Do you already have an account?  <%= link_to "Click here to sign in", users_path %></p>
+<p>
+  <%= form_with(model: @user, url: users_path, method: :post, local: true) do |form| %>
+    <%= form.label :username, "Choose a username" %> <%= form.text_field :username, size: "30" %><br />
+    <%= form.label :password, "Enter a password" %> <%= form.text_field :password, size: "30" %><br />
+    <%= form.label :password_verify, "Confirm the password" %> <%= form.text_field :password_verify, size: "30" %><br />
+    <%= form.submit "Create Account" %>
+  <% end %>
+</p>
