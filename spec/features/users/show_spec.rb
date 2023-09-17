@@ -13,15 +13,15 @@ RSpec.describe 'User Dashboard page', :vcr do
   describe "As a logged in user" do
     it "when I visit my dashboard '/users/:id', I should see my username, a link to change my password, and a 'Favorite Providers' section." do
       user = User.create!(username: "my_username", password: "my_password")
-      visit new_login_path
+      visit users_login_path
       fill_in "Username", with: user.username
       fill_in "Password", with: user.password
       click_button "Login"
 
       expect(current_path).to eq user_path(id: user.id)
       expect(page).to have_content("#{user.username}")
-      expect(page).to have_content("Change your password")
-      expect(page).to have_content("Favorite Providers")
+      expect(page).to have_content("Change password")
+      expect(page).to have_content("My Favorite Providers")
     end
   end
 end
