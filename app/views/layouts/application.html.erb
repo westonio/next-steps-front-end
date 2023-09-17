@@ -1,66 +1,74 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>NextStepsFrontEnd</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <%= csrf_meta_tags %>
-    <%= csp_meta_tag %>
-
-    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
-    <%= javascript_importmap_tags %>
-  </head>
-
-  <body>
-    <div id="app-topper">
-      <h1>Next Steps</h1>
-      <h3>Help is near!</h3>
-      <nav class="navbar ">
-          <div class="container-fluid">
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                <span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
-              </button>
+    <head>
+        <title>NextStepsFrontEnd</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <%= csrf_meta_tags %> <%= csp_meta_tag %> <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %> <%= javascript_importmap_tags %>
+    </head>
+    <body>
+        <div id="app-topper">
+            <h1>Next Steps</h1>
+            <h3>Help is near!</h3>
+            <nav class="navbar">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                            <span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
+                        </button>
+                    </div>
+                    <div class="collapse navbar-collapse" id="myNavbar">
+                        <ul class="nav navbar-nav">
+                            <li class="active"><%= link_to 'Home', root_path %></li>
+                        </ul>
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><%= link_to 'Create user account', new_user_path %></li>
+                            <li><%= link_to 'Create provider account', register_provider_path %></li>
+                            <li><%= link_to 'Sign in', signin_path %></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <% if flash.any? %> <% flash.each do |type, msg| %> <% if type == "success" %>
+            <div class="alert alert-success" role="alert">
+                <%= msg.html_safe %>
             </div>
-
-            <div class="collapse navbar-collapse" id="myNavbar">
-              <ul class="nav navbar-nav">
-                <li class="active"><%= link_to 'Home', root_path %></li>
-              </ul> 
-              
-              <ul class="nav navbar-nav navbar-right">
-                <li><%= link_to 'Create user account', new_user_path %></li>
-                <li><%= link_to 'Create provider account', register_provider_path %></li>
-                <li><%= link_to 'Sign in', signin_path %></li>
-              </ul>            
-            </div>  
-          </div>  
-        </nav>
-      </div>
-    </div>
-
-    <% if flash.any?  %>
-      <% flash.each do |type, msg| %>
-        <% if type == "success" %>
-          <div class="alert alert-success" role="alert">
-             <%= msg.html_safe %>
-          </div>
-        <% elsif type == "info" %>
-          <div class="alert alert-info" role="alert">
-            <%= msg.html_safe %>
-          </div>
-        <% elsif type == "warning" %>
-          <div class="alert alert-warning" role="alert">
-             <%= msg.html_safe %>
-          </div>
-        <% elsif type == "danger" %>
-          <div class="alert alert-danger" role="alert">
-             <%= msg.html_safe %>
-          </div>
-        <% end %>
-      <% end %>
-    <% end %> 
-    
-    <%= yield %>
-    
-  </body>
+            <% elsif type == "info" %>
+            <div class="alert alert-info" role="alert">
+                <%= msg.html_safe %>
+            </div>
+            <% elsif type == "warning" %>
+            <div class="alert alert-warning" role="alert">
+                <%= msg.html_safe %>
+            </div>
+            <% elsif type == "danger" %>
+            <div class="alert alert-danger" role="alert">
+                <%= msg.html_safe %>
+            </div>
+            <% end %> <% end %> <% end %>
+        </div>
+        <%= yield %>
+        <footer>
+            <div id="app-footer">
+              <nav class="navbar">
+                  <div class="container-fluid">
+                      <div class="navbar-header">
+                          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                              <span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
+                          </button>
+                      </div>
+                      <div class="collapse navbar-collapse" id="myNavbar">
+                          <ul class="nav navbar-nav">
+                              <li class="active"><%= link_to 'Home', root_path %></li>
+                          </ul>
+                          <ul class="nav navbar-nav navbar-right">
+                              <li><%= link_to 'Create user account', new_user_path %></li>
+                              <li><%= link_to 'Create provider account', register_provider_path %></li>
+                              <li><%= link_to 'Sign in', signin_path %></li>
+                          </ul>
+                      </div>
+                  </div>
+              </nav>
+            </div>
+        </footer>
+    </body>
 </html>
