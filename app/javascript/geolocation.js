@@ -21,10 +21,13 @@ document.addEventListener('DOMContentLoaded', function() {
       if (results && results.length > 0) {
      
         const address = results[0].name;
-
+        
         const locationField = document.getElementById('location');
-        if (locationField) {
+        const hiddenLocationField = document.getElementById('hidden-location')
+
+        if (locationField && hiddenLocationField) {
           locationField.value = address;
+          hiddenLocationField.value = address;
         }
       } else {
         console.error('No results found');

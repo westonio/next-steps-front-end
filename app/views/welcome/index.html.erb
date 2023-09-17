@@ -1,4 +1,6 @@
 <%= javascript_include_tag "geolocation.js" %>
+<%= javascript_include_tag "concurrent_location_entry.js" %>
+
 <!-- Leaflet library -->
 <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
 <!-- Leaflet Geocoder -->
@@ -6,40 +8,81 @@
 
 <div class="motivational-sentence"><%= render partial: 'shared/motivational_sentence' %></div>
 
-<div class="select-urgent-services">
-  <h4>I need urgent help now!</h4>
-  
-  <%= form_with url: search_results_path, method: :get, local: true do |form| %>
-    <%= form.label :location, 'Enter your City, State, and/or Zip Code' %><br/>
-    <div class="display-flex">
-      <%= form.text_field :location, size: "40" %> 
+<div class="display-flex">
+  <div class="select-services">
     
-      <div class="geolocation-button">
-        <button id="geolocation-button"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
-          <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"/>
-          <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/></svg>
-          Find Location
-        </button>
+    <%= form_with url: search_results_path, method: :get, local: true do |form| %>
+      <%= form.label :location, 'Enter your City, State, and/or Zip Code' %><br/>
+      <div class="display-flex">
+        <%= form.text_field :location, size: "40", id: "location" %> 
+      
+        <div class="geolocation-button">
+          <button id="geolocation-button"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
+            <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"/>
+            <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/></svg>
+            Find Location
+          </button>
+        </div>
       </div>
+      <br/><br/>
+      <h4>I need urgent help now!</h4>
+      <p>What do you need most help with today? (Check all that apply):</p>
+      
+      <%= form.check_box :urgent_care %>
+      <%= form.label :urgent_care, 'Urgent Care' %>
+      <br/>
+      <%= form.check_box :crisis_hotline %>
+      <%= form.label :crisis_hotline, 'Crisis Hotline' %>
+      <br/>
+      <%= form.check_box :shelter_tonight %>
+      <%= form.label :shelter_tonight, 'Shelter for Tonight' %>
+      <br/>
+      <%= form.check_box :food %>
+      <%= form.label :food, 'Food' %>
+      <br/>
+      <%= form.check_box :substance_use %>
+      <%= form.label :substance_use, 'Substance Use' %>
+      <br/><br/><br/>
+
+        <h4>I would like non-urgent assistance with:</h4>
+      
+      <p>What do you need long-term support with? (Check all that apply):</p>
+      
+      <%= form.check_box :medicaid %>
+      <%= form.label :medicaid, 'Medicaid' %>
+      <br/>
+      <%= form.check_box :mental_health_care %>
+      <%= form.label :mental_health_care, 'Mental Health Care' %>
+      <br/>
+      <%= form.check_box :housing %>
+      <%= form.label :housing, 'Housing' %>
+      <br/>
+      <%= form.check_box :addiction_management %>
+      <%= form.label :addiction_management, 'Addiction Management' %>
+      <br/>
+      <%= form.check_box :employment %>
+      <%= form.label :employment, 'Employment' %>
+      <br/>
+      <%= form.check_box :group_therapy %>
+      <%= form.label :group_therapy, 'Group Help' %>
+      <br/>
+  
+      <%= form.submit 'Get Help!', id: "get-help-button" %>
     </div>
-    <br/>
-    <p>What do you need most help with today? (Check all that apply):</p>
-    
-    <%= form.check_box :urgent_care %>
-    <%= form.label :urgent_care, 'Urgent Care' %>
-    <br/>
-    <%= form.check_box :crisis_hotline %>
-    <%= form.label :crisis_hotline, 'Crisis Hotline' %>
-    <br/>
-    <%= form.check_box :shelter_tonight %>
-    <%= form.label :shelter_tonight, 'Shelter for Tonight' %>
-    <br/>
-    <%= form.check_box :food %>
-    <%= form.label :food, 'Food' %>
-    <br/>
-    <%= form.check_box :substance_use %>
-    <%= form.label :substance_use, 'Substance Use' %>
-    <br/>
-    <%= form.submit 'Get Help!', id: "urgent-button" %>
+  <% end %>
+</div>
+
+<div class="search-bar">
+  <h3 class="search-section-label">Find Other Resources:</h3>
+  <%= form_with url: search_resources_path, method: :get, local: true do |form| %>
+    <div class="input-group">
+
+      <%= form.text_field :search, placeholder: "Enter your search here", id: "form-control" %>
+      <%= form.hidden_field :hidden_location, id: "hidden-location" %>
+
+      <span class="input-group-btn">
+        <button class="btn btn-primary" type="submit">Search</button>
+      </span>
+    </div>
   <% end %>
 </div>

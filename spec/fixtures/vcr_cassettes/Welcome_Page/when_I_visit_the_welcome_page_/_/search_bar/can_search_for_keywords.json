@@ -1,0 +1,90 @@
+{
+  "http_interactions": [
+    {
+      "request": {
+        "method": "get",
+        "uri": "https://ancient-reaches-38594-79ad833137d5.herokuapp.com/api/v0/search?keyword=Family&location=",
+        "body": {
+          "encoding": "US-ASCII",
+          "string": ""
+        },
+        "headers": {
+          "User-Agent": [
+            "Faraday v2.7.11"
+          ],
+          "Accept-Encoding": [
+            "gzip;q=1.0,deflate;q=0.6,identity;q=0.3"
+          ],
+          "Accept": [
+            "*/*"
+          ]
+        }
+      },
+      "response": {
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "headers": {
+          "Server": [
+            "Cowboy"
+          ],
+          "Date": [
+            "Sat, 16 Sep 2023 22:40:53 GMT"
+          ],
+          "Connection": [
+            "keep-alive"
+          ],
+          "X-Frame-Options": [
+            "SAMEORIGIN"
+          ],
+          "X-Xss-Protection": [
+            "0"
+          ],
+          "X-Content-Type-Options": [
+            "nosniff"
+          ],
+          "X-Download-Options": [
+            "noopen"
+          ],
+          "X-Permitted-Cross-Domain-Policies": [
+            "none"
+          ],
+          "Referrer-Policy": [
+            "strict-origin-when-cross-origin"
+          ],
+          "Content-Type": [
+            "application/json; charset=utf-8"
+          ],
+          "Vary": [
+            "Accept"
+          ],
+          "Etag": [
+            "W/\"fb94fa380a52a66fc343f91a62960578\""
+          ],
+          "Cache-Control": [
+            "max-age=0, private, must-revalidate"
+          ],
+          "X-Request-Id": [
+            "6506f5c4-b6e0-464d-bbda-ee150d3e5320"
+          ],
+          "X-Runtime": [
+            "0.453747"
+          ],
+          "Transfer-Encoding": [
+            "chunked"
+          ],
+          "Via": [
+            "1.1 vegur"
+          ]
+        },
+        "body": {
+          "encoding": "UTF-8",
+          "string": "{\"data\":[{\"id\":\"211virgini-277100\",\"type\":\"filtered_provider\",\"attributes\":{\"category\":\"Family\",\"provider_name\":\"PARENT EDUCATION AND SUPPORT SERVICES - LEESBURG, YOUTH AND FAMILY SUPPORT SERVICES PROGRAM, LOUDOUN COUNTY DEPARTMENT OF FAMILY SERVICES\",\"street\":\"45201 Research Place\",\"city\":\"Ashburn\",\"state\":\"VA\",\"lat\":\"39.050477\",\"lon\":\"-77.435422\",\"description\":\"The Youth and Family Support Services Program assists families with youth between the ages of 13-17 experiencing challenging peer and family relationships and life crises by strengthening parental and family relationships through prevention, education, and supportive case management services.\\n \\n\"}},{\"id\":\"211virgini-190084\",\"type\":\"filtered_provider\",\"attributes\":{\"category\":\"Family\",\"provider_name\":\"FAMILY PLANNING - LEESBURG, LOUDOUN COUNTY HEALTH DEPARTMENT\",\"street\":\"102 Heritage Way, Ne\",\"city\":\"Leesburg\",\"state\":\"VA\",\"lat\":\"39.114412\",\"lon\":\"-77.540576\",\"description\":\"Provides family planning services including physical examinations, pap smears, pregnancy testing and other laboratory testing services, and birth control methods.\\r\\n\"}},{\"id\":\"211virgini-189605\",\"type\":\"filtered_provider\",\"attributes\":{\"category\":\"Family\",\"provider_name\":\"EMERGENCY SHELTER - LEESBURG, LOUDOUN YOUTH SHELTER, LOUDOUN COUNTY DEPARTMENT OF FAMILY SERVICES \",\"street\":\"16450 Meadowview Court, Se\",\"city\":\"Leesburg\",\"state\":\"VA\",\"lat\":\"39.078053\",\"lon\":\"-77.550220\",\"description\":\"The Loudoun County Youth Shelter provides short-term emergency shelter for young people, ages 12-17, who cannot live at home.\\n \\n\"}},{\"id\":\"211virgini-206595\",\"type\":\"filtered_provider\",\"attributes\":{\"category\":\"Family\",\"provider_name\":\"MILITARY FAMILY ASSISTANCE - STERLING, OPERATION HOMEFRONT\",\"street\":\"45975 Nokes Blvd\",\"city\":\"Sterling\",\"state\":\"VA\",\"lat\":\"39.022181\",\"lon\":\"-77.408958\",\"description\":\"Operation Homefront is a national 501(c)(3) nonprofit have provided programs that offer: RELIEF (through Critical Financial Assistance and transitional housing programs), RESILIENCY (through permanent housing and caregiver support services) and RECURRING FAMILY SUPPORT programs and services throughout the year that help military families overcome the short-term bumps in the road so they don't become long-term chronic problems. Pprograms include: \\n  SHORT-TERM CRITICAL FINANCIAL ASSISTANCE (RELIEF) \\n   \\n   Critical Financial Assistance* for food, utilities, home repairs, rent/mortgage payments, etc. \\n   Rent-free transitional housing for wounded service members \\n   Transitional Homes for Veterans \\n   \\n  LONG-TERM STABILITY (RESILIENCY) \\n   \\n   Mortgage-free homes awarded across the U.S. \\n   Veteran Caregiver Support program \\n   \\n  RECURRING FAMILY SUPPORT \\n   \\n   Baby showers to help new military moms welcome the newest member of the family \\n   Homefront Celebrations to recognize military spouses \\n   Holiday programs to provide meals and toys \\n   Backpacks filled with school supplies for military kids \\n   \\n  *Critical Financial Assistance is in the form of checks paid directly to mortgage lenders, auto mechanics, contractors, hospitals, doctors, and other providers.\\n \\n\"}},{\"id\":\"211virgini-192029\",\"type\":\"filtered_provider\",\"attributes\":{\"category\":\"Family\",\"provider_name\":\"PREGNANCY SERVICES - LANSDOWNE, MOSAIC VIRGINIA PREGNANCY RESOURCE CENTER\",\"street\":\"19415 Deerfield Avenue, Suite 109\",\"city\":\"Lansdowne\",\"state\":\"VA\",\"lat\":\"39.079404\",\"lon\":\"-77.477507\",\"description\":\"Provides free, confidential pregnancy testing and pregnancy confirmation ultrasound and free STI testing and treatment. Offers pregnancy options counseling including information about abortion and alternatives. Provides peer counseling on relationships, sexually-transmitted infections (STDs), and support after a pregnancy continuation/termination choice. Offers referrals to community services and educational resources on decision making, budgeting, pregnancy, sexual health, parenting and more. Pro choice.\\n \\n\"}},{\"id\":\"211virgini-273907\",\"type\":\"filtered_provider\",\"attributes\":{\"category\":\"Family\",\"provider_name\":\"PREGNANCY TESTING - RESTON, HERNDON-RESTON DISTRICT HEALTH DEPARTMENT\",\"street\":\"1850 Cameron Glen Drive\",\"city\":\"Reston\",\"state\":\"VA\",\"lat\":\"38.965527\",\"lon\":\"-77.358758\",\"description\":\"Pregnancy testing, counseling and referral is available. There is a fee for pregnancy testing.\\n \\n\"}},{\"id\":\"211virgini-273665\",\"type\":\"filtered_provider\",\"attributes\":{\"category\":\"Family\",\"provider_name\":\"PARENT EDUCATION - STERLING, INMED PARTNERSHIPS FOR CHILDREN\",\"street\":\"21630 Ridgetop Circle\",\"city\":\"Sterling\",\"state\":\"VA\",\"lat\":\"39.027138\",\"lon\":\"-77.408402\",\"description\":\"Spanish-language educational and support groups, covering topics such as perinatal health, parenting, family violence prevention and financial literacy.\\n \\n\"}},{\"id\":\"211virgini-189586\",\"type\":\"filtered_provider\",\"attributes\":{\"category\":\"Family\",\"provider_name\":\"FOSTER CARE - LEESBURG, LOUDOUN COUNTY DEPARTMENT OF FAMILY SERVICES\",\"street\":\"102 Heritage Way Ne, Suite 103\",\"city\":\"Leesburg\",\"state\":\"VA\",\"lat\":\"39.114412\",\"lon\":\"-77.540576\",\"description\":\"Provides foster care placement in approved homes/ facilities for children in Department of Family Services custody. Offers counseling for children's families with the goal of permanency planning. Provides training for those interested in becoming foster families.\\n \\n\"}},{\"id\":\"211virgini-189608\",\"type\":\"filtered_provider\",\"attributes\":{\"category\":\"Family\",\"provider_name\":\"ADULT PROTECTIVE SERVICES - LEESBURG, LOUDOUN COUNTY DEPARTMENT OF FAMILY SERVICES\",\"street\":\"102 Heritage Way Ne, Suite 103\",\"city\":\"Leesburg\",\"state\":\"VA\",\"lat\":\"39.114412\",\"lon\":\"-77.540576\",\"description\":\"Investigates complaints of abuse, exploitation or neglect of elderly (60 years of age and older) and disabled individuals aged 18 to 59. Staff may be reached weekdays through APS Intake (703-777-0437) and through the state 24-hour hotline (888-832-3858). May also call Virginia Department of Family Services Adult Protective Services Division.\"}},{\"id\":\"211virgini-189588\",\"type\":\"filtered_provider\",\"attributes\":{\"category\":\"Family\",\"provider_name\":\"ADULT SERVICES - LEESBURG, LOUDOUN COUNTY DEPARTMENT OF FAMILY SERVICES\",\"street\":\"102 Heritage Way Ne, Suite 103\",\"city\":\"Leesburg\",\"state\":\"VA\",\"lat\":\"39.114412\",\"lon\":\"-77.540576\",\"description\":\"Offers services to older adults and/or individuals over 18 with disabilities. Services include counseling; Medicaid pre-admission screening for nursing homes, adult care residences and in-home personal care; housing alternatives counseling; home-based care advocacy; companion services; and liaison with community resources and agencies. Transportation provided only under limited conditions.\\n \\n\"}}]}"
+        }
+      },
+      "recorded_at": "Sat, 16 Sep 2023 22:40:53 GMT"
+    }
+  ],
+  "recorded_with": "VCR 6.2.0"
+}
