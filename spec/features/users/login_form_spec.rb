@@ -72,6 +72,19 @@ RSpec.describe 'User Login page', :vcr do
       expect(page).to have_link("Sign out")
     end
 
+    it "When I am logged in and click the 'View my Dashboard' link, I am taken to my Dashboard page" do
+      visit users_login_path
+      user = User.create!(username: 'my_username', password: 'my_password')
+      fill_in "username", with: user.username
+      fill_in "password", with: user.password
+      click_button "Login"
+
+      visit root_path
+      click_link("View my Dashboard", match: :first)
+
+      expect(current_path).to eq user_path(user.id)
+    end
+    
     it "When I am logged in and click the 'Sign out' link, I am redirected to the home page where I see the original links and I no longer see a link to 'Log out'.  There is also a message that I have successfully logged out" do
       visit users_login_path
       @user = User.create!(username: 'my_username', password: 'my_password')
@@ -93,6 +106,7 @@ RSpec.describe 'User Login page', :vcr do
       expect(page).to have_link("Sign in")
       expect(page).to_not have_link("View my Dashboard")
       expect(page).to_not have_link("Sign out")
+      expect(page).to have_content("You have successfully logged out")
     end
   end
 end
