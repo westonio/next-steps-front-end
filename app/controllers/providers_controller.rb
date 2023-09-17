@@ -1,7 +1,5 @@
 class ProvidersController < ApplicationController
   def show
-    require 'pry'; binding.pry
-    @results = NextStepsService.provider_details(params[:id])
-    
+    @provider = NextStepsService.provider_details(params[:id], params[:category])
   end
 end
