@@ -27,8 +27,19 @@ class UsersController < ApplicationController
     end
   end
 
+  def login_form
+  end
+
   def login
-    # require 'pry'; binding.pry
+    user = User.find_by(username: params[:username])
+    if user && user.authenticate(params[:password])
+      session[:user_id] = user.id
+      flash[:success] = "Logged in successfully"
+      redirect_to user_path(user.id)
+    else
+      flash[:warning] = "Invalid credentials. Please try again."
+      render :login_form
+    end
   end
   
   private
@@ -47,12 +58,8 @@ class UsersController < ApplicationController
     end
   end
 
-  def current_user
-    @_current_user ||= User.find(session[:user_id]) if session[:user_id]
-  end
-
   def logged_in?
-    !!current_user
+    !!@current_user
   end
 
 end
