@@ -6,7 +6,7 @@ Rails.application.routes.draw do
     # get '/user', to: 'users#new'
     get '/provider', to: 'providers#new'
   end
-  get '/signin', to: 'session#new'
+  # get '/signin', to: 'session#new'
 
   # Search
   resources :search_results, only: [:index, :show]
