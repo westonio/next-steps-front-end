@@ -209,5 +209,32 @@ RSpec.describe 'Welcome Page', :vcr do
         end
       end
     end
+
+    # National Helplines
+    describe "national helplines" do
+      it "has a list of national numbers and text lines" do
+        within('div.national-helplines') do
+          expect(page).to have_content("Help is a phone call away:")
+          expect(page).to have_content("If you or someone you love are experience a medical emergency, please call 911")
+          expect(page).to have_content("Want to talk to someone about resources? Call 211 for help")
+          expect(page).to have_content("National Suicide Prevention Lifeline: 988")
+          expect(page).to have_content("SAMHSA's National Helpline: 1-800-662-HELP")
+          expect(page).to have_content("Text the Crisis Text Line: 741741")
+          expect(page).to have_content("National Child Abuse Hotline: 1-800-4-A-Child")
+          expect(page).to have_content("National Domestic Violence Hotline: 1-800-799-SAFE")
+          expect(page).to have_content("National Domestic Violence Text: \"LOVEIS\" (22522)")
+          expect(page).to have_content("National Eating Disorders Association Helpline: 1-800-931-2237")
+          expect(page).to have_content("Rape Abuse and Incest National Helpline: 1-800-656-HOPE")
+          expect(page).to have_content("LGBT National Hotline: 1-888-843-4564")
+          expect(page).to have_content("The Trevor Project (24/7 for LGBTQ young people): 1-866-488-7386")
+          expect(page).to have_content("The Trans Lifeline: 1-877-565-8860")
+          expect(page).to have_content("The Trevor Project Text \"START\" to: 678678")
+          expect(page).to have_content("National Runaway Safeline: 1-800-RUNAWAY")
+          expect(page).to have_content("Veterans Crisis Line: 1-800-273-TALK")
+          expect(page).to have_content("Veterans Crisis Text: 838255")
+          expect(page).to have_content("National Alliance on Mental Illness (NAMI) Helpline: 1-800-950-NAMI")
+        end
+      end
+    end
   end
 end
