@@ -24,7 +24,7 @@ RSpec.describe 'Welcome Page', :vcr do
           expect(page).to have_link('Home', href: '/')
           expect(page).to have_link('Create user account', href: new_user_path)
           expect(page).to have_link('Create provider account', href: '/register/provider')
-          expect(page).to have_link('Sign in', href: '/signin')
+          expect(page).to have_link('Sign in', href: users_login_path)
         end
       end
     end
@@ -35,7 +35,7 @@ RSpec.describe 'Welcome Page', :vcr do
           expect(page).to have_link('Home', href: '/')
           expect(page).to have_link('Create user account', href: new_user_path)
           expect(page).to have_link('Create provider account', href: '/register/provider')
-          expect(page).to have_link('Sign in', href: '/signin')
+          expect(page).to have_link('Sign in', href: users_login_path)
         end
       end
     end
