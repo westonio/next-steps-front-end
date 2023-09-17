@@ -7,7 +7,6 @@ RSpec.describe "Providers Show page", :vcr do
         id = "211colorad-a0h4T000003fVncQAE"
         visit provider_path(id)
 
-        save_and_open_page
         expect(page).to have_content("NEXTCARE URGENT CARE")
         expect(page).to have_content("4590 W 121st Ave, Broomfield, CO 80020")
         expect(page).to have_content("Provides urgent care services")

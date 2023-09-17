@@ -25,10 +25,10 @@ class ProviderDetails
     @zip = data[:attributes][:zipcode]
     @lat = data[:attributes][:lat]
     @lon = data[:attributes][:lon]
-    @description = data[:attributes][:description]
+    @description = data[:attributes][:description].gsub(/<\/?p>/, '')
     @website = data[:attributes][:website]
     @phone = data[:attributes][:phone]
-    @fees = data[:attributes][:fees]
+    @fees = data[:attributes][:fees].gsub(/<\/?p>/, '')
     @schedule = data[:attributes][:schedule]
     @category = keyword
   end
