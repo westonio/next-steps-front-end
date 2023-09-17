@@ -5,7 +5,7 @@ RSpec.describe "Category Index", :vcr do
     describe "Will return search results based on selected categories" do
       it "If Urgent Care and Food are selected, only those categories will be displayed" do
         visit root_path
-        within("div.select-urgent-services") do
+        within("div.select-services") do
           fill_in 'Enter your City, State, and/or Zip Code', with: 'Denver, Colorado'
           check('Urgent Care')
           check('Food')
