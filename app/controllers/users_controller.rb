@@ -1,6 +1,4 @@
 class UsersController < ApplicationController
-  # before_action :require_login, only: [:show]
-  
   def new
   end
 
@@ -50,16 +48,6 @@ class UsersController < ApplicationController
   
   def user_params_valid?
     !user_params[:username].empty? && !user_params[:password].empty? && user_params[:password] == params[:password_verify]
-  end
-
-  def require_login
-    unless logged_in?
-      redirect_to users_login_path, warning: "You must be logged in to access this page."
-    end
-  end
-
-  def logged_in?
-    !!@current_user
   end
 
 end
