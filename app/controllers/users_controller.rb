@@ -39,6 +39,10 @@ class UsersController < ApplicationController
       redirect_to users_login_path
     end
   end
+
+  def edit
+    @user = current_user
+  end
   
   private
 
