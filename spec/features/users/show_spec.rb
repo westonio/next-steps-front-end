@@ -56,7 +56,7 @@ RSpec.describe 'User Dashboard page', :vcr do
         click_button "Update password"
 
         expect(current_path).to eq edit_user_path(@user.id)
-        expect(page).to have_content("Invalid credentials.  Please try again.")
+        expect(page).to have_content("Invalid credentials. Please try again")
       end
     end
   end
