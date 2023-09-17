@@ -1,0 +1,12 @@
+<h2>Provider Details</h2>
+<p>
+  <b>Category:</b> <%= @provider.category %><br />
+  <b>Name:</b> <%= @provider.provider_name %><br />
+  <b>Description:</b> <%= @provider.description %><br />
+  <b>Address:</b> <a href="https://www.google.com/maps?q=<%= @provider.provider_name %>,<%= @provider.street %>,<%= @provider.city %>,<%= @provider.state %>,<%= @provider.zip %>", target="_blank"><%= @provider.street %>, <%= @provider.city %>, <%= @provider.state %> <%= @provider.zip %></a><br />
+  <b>Website:</b> <%= link_to @provider.website, "#{@provider.website}" %><br />
+  <b>Phone:</b> <%= @provider.phone %><br />
+  <b>Fees:</b> <%= @provider.fees %><br />
+  <b>Schedule:</b> <%= @provider.schedule %><br />
+  <b>Geolocation:</b> <%= @provider.lat %> | <%= @provider.lon %>
+</p>

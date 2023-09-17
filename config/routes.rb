@@ -12,6 +12,10 @@ Rails.application.routes.draw do
   resources :search_results, only: [:index, :show]
   resources :search_resources, only: [:index]
 
+  # Providers
+  resources :providers, only: [:show]
+
   # User features
   resources :users, only: [:index, :show, :new, :create]
+
 end
