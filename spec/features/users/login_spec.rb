@@ -6,18 +6,37 @@ RSpec.describe 'User Login page', :vcr do
       
       before do
         visit users_login_path
+        @user = User.create!(username: 'my_username', password: 'my_password')
       end
 
       it "I see a place to enter my username and password" do
-        #
+        expect(page).to have_field("username")
+        expect(page).to have_field("password")
+        expect(page).to have_button("Log In")
       end
 
       it "If I enter a valid username and password, I am directed to my Dashboard page '/users/:id'" do
-        #
+        fill_in "username", with: @user.username
+        fill_in "password", with: @user.password
+        click_button "Log In"
+
+        expect(current_path).to eq user_path(@user.id)
       end
 
       it "SAD PATH:  If I enter an invalid username or password, I stay on the same page and see a warning message that my credentials are invalid" do
-        #
+        fill_in "username", with: "wrong_username"
+        fill_in "password", with: @user.password
+        click_button "Log In"
+
+        expect(current_path).to eq user_path(users_login_path)
+        expect(page).to have_content("Invalid credentials.  Please try again.")
+
+        fill_in "username", with: @user.username
+        fill_in "password", with: "wrong_password"
+        click_button "Log In"
+
+        expect(current_path).to eq user_path(users_login_path)
+        expect(page).to have_content("Invalid credentials.  Please try again.")
       end
     end
   end
