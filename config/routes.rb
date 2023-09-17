@@ -17,8 +17,8 @@ Rails.application.routes.draw do
 
   # User features
   get "/users/login", to: "users#login_form"
-  post "users/login", to: "users#login"
+  post "/users/login", to: "users#login"
+  get "/users/logout", to: "users#logout"
   resources :users, only: [:index, :show, :new, :create]
   
-
 end
