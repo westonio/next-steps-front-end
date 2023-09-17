@@ -7,7 +7,7 @@ RSpec.describe 'User Dashboard page', :vcr do
       visit user_path(registered_user.id)
 
       expect(current_path).to eq users_login_path
-      expect(page).to have_content("You are not authorized to access this page.")
+      expect(page).to have_content("You must be logged in to access this page.")
     end
   end
   describe "As a logged in user" do
