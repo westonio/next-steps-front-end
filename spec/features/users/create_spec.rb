@@ -9,7 +9,7 @@ RSpec.describe 'User Registration page', :vcr do
     describe "When I visit the user registation page '/users/create'" do
       it "I see a link to sign in if I already have an account." do
         expect(page).to have_content("Do you already have an account? Click here to sign in")
-        expect(page).to have_link("Click here to sign in", href: users_path)
+        expect(page).to have_link("Click here to sign in", href: users_login_path)
       end
       
       it "I see text boxes to create a username, choose a password, and to confirm the password" do
