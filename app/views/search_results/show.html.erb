@@ -5,7 +5,7 @@
   <div class="results-container">
     <% @results.urgent_care.each do |provider| %>
       <div class="result-item">
-        <b>Provider name:</b> <%= provider.provider_name %><br>
+        <b>Provider name:</b> <%= link_to provider.provider_name, provider_path(id: provider.id, category: @category), class: "provider-details-#{provider.id}" %><br>
         <b>Address:</b> <%= provider.street %><br>
         <b>City:</b> <%= provider.city %><br>
         <b>Description:</b> <%= provider.description[0, 100] %>...
