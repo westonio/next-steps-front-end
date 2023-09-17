@@ -1,1 +1,13 @@
 <h2>User login</h2>
+<p>
+  Do you need to create an account? <%= link_to "Click Here to create a user account", new_user_path %>  to save your favorite providers and track your Next Steps progress.
+</p>
+<%= form_with(url: users_login_path, method: :post, local: true) do |form| %>
+  <%= form.label :username, "Username" %>
+  <%= form.text_field :username, placeholder: "Enter your username" %>
+  
+  <%= form.label :password, "Password" %>
+  <%= form.text_field :password, placeholder: "Enter your password" %>
+
+  <%= form.submit "Login" %>
+<% end %>
