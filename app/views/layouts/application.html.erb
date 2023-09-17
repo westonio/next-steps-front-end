@@ -23,30 +23,36 @@
                         <ul class="nav navbar-nav navbar-right">
                             <li><%= link_to 'Create user account', new_user_path %></li>
                             <li><%= link_to 'Create provider account', register_provider_path %></li>
-                            <li><%= link_to 'Sign in', signin_path %></li>
+                            <li><%= link_to 'Sign in', users_login_path %></li>
                         </ul>
                     </div>
                 </div>
             </nav>
-            <% if flash.any? %> <% flash.each do |type, msg| %> <% if type == "success" %>
-            <div class="alert alert-success" role="alert">
-                <%= msg.html_safe %>
-            </div>
-            <% elsif type == "info" %>
-            <div class="alert alert-info" role="alert">
-                <%= msg.html_safe %>
-            </div>
-            <% elsif type == "warning" %>
-            <div class="alert alert-warning" role="alert">
-                <%= msg.html_safe %>
-            </div>
-            <% elsif type == "danger" %>
-            <div class="alert alert-danger" role="alert">
-                <%= msg.html_safe %>
-            </div>
-            <% end %> <% end %> <% end %>
         </div>
+        <% if flash.any? %> 
+            <% flash.each do |type, msg| %>
+                <% if type == "success" %>
+                    <div class="alert alert-success" role="alert">
+                        <%= msg.html_safe %>
+                    </div>
+                <% elsif type == "info" %>
+                    <div class="alert alert-info" role="alert">
+                        <%= msg.html_safe %>
+                    </div>
+                <% elsif type == "warning" %>
+                    <div class="alert alert-warning" role="alert">
+                        <%= msg.html_safe %>
+                    </div>
+                <% elsif type == "danger" %>
+                    <div class="alert alert-danger" role="alert">
+                        <%= msg.html_safe %>
+                    </div>
+                <% end %>
+            <% end %>
+        <% end %>
+
         <%= yield %>
+
         <footer>
             <div id="app-footer">
               <nav class="navbar">
@@ -63,7 +69,7 @@
                           <ul class="nav navbar-nav navbar-right">
                               <li><%= link_to 'Create user account', new_user_path %></li>
                               <li><%= link_to 'Create provider account', register_provider_path %></li>
-                              <li><%= link_to 'Sign in', signin_path %></li>
+                              <li><%= link_to 'Sign in', users_login_path %></li>
                           </ul>
                       </div>
                   </div>
