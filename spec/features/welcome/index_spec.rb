@@ -22,7 +22,7 @@ RSpec.describe 'Welcome Page', :vcr do
       it 'links to Home, Create an Account, Sign In' do
         within('.navbar') do
           expect(page).to have_link('Home', href: '/')
-          expect(page).to have_link('Create user account', href: '/register/user')
+          expect(page).to have_link('Create user account', href: new_user_path)
           expect(page).to have_link('Create provider account', href: '/register/provider')
           expect(page).to have_link('Sign in', href: '/signin')
         end
