@@ -4,6 +4,7 @@
 
 body {
 	background-color: #ededeb;
+	margin-bottom: 50px;
 	margin: 10px 30px;
 }
 
@@ -11,7 +12,7 @@ body {
 	display: inline-block;
 	margin-left: 30px;
 }
-#app-topper h3, .select-urgent-services h4 {
+#app-topper h3, .select-services h4 {
 	font-style: italic;
 }
 
@@ -20,7 +21,7 @@ body {
 	margin-left: 60px;
 }
 
-.select-urgent-services {
+.select-services {
 	margin: 50px 0 0 50px;
 	color: white;
 	width: fit-content;
@@ -30,15 +31,32 @@ body {
 	background-color: rgb(213, 0, 0);
 }
 
-#location, #urgent-button {
+#location, #get-help-button {
 	color: black;
 }
 
-.select-urgent-services p {
+#get-help-button {
+	padding: 10px 20px;
+	border-radius: 5px;
+	margin-right: 30px;
+	margin-bottom: 25px;
+	color: white;
+	background-color: rgb(27, 173, 46);
+	box-shadow: 3px 3px 6px black;
+	float:right;
+}
+
+#get-help-button:hover {
+	background-color: rgb(164, 164, 167);
+	color: black;
+	transition: opacity 0.3s;
+}
+
+.select-services p {
 	margin-top: 20px;
 }
 
-.select-urgent-services h4 {
+.select-services h4 {
 	margin-bottom: 20px;
 }
 
@@ -87,3 +105,27 @@ body {
 	margin: 10px 0 0 50px;
 }
 
+.search-bar {
+	margin-bottom: 50px;
+	margin-left: 50px;
+}
+
+.input-group {
+	display: flex;
+	margin: 10px;
+}
+
+.btn-primary {
+	background-color: rgb(110, 141, 195);
+	width: 100px;
+	box-shadow: 3px 3px 6px black;
+}
+
+#form-control {
+	width: 33%;
+	padding: 5px;
+}
+
+.search-section-label {
+	padding: 10px;
+}
