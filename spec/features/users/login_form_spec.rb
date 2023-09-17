@@ -40,4 +40,23 @@ RSpec.describe 'User Login page', :vcr do
       end
     end
   end
+  describe "As a logged in user" do
+    it "I no longer see the links for 'Create user account', 'Create provider account', or 'Sign-in'.  Instead, I see only a link to 'Log out'" do
+      visit root_path
+
+      expect(page).to have_link("Create user account")
+      expect(page).to have_link("Create provider account")
+      expect(page).to have_link("Sign in")
+      
+      visit users_login_path
+      @user = User.create!(username: 'my_username', password: 'my_password')
+      fill_in "username", with: @user.username
+      fill_in "password", with: @user.password
+      click_button "Login"
+      
+      expect(page).to_not have_link("Create user account")
+      expect(page).to_not have_link("Create provider account")
+      expect(page).to_not have_link("Sign in")
+    end
+  end
 end
