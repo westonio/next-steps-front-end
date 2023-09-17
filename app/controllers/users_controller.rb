@@ -19,7 +19,7 @@ class UsersController < ApplicationController
   
     if user_params_valid? && @user.save
       flash[:success] = "User created successfully"
-      session[:user_id] = @user.id
+      c
       redirect_to user_path(@user)
     else
       flash[:warning] = "Invalid entries, please try again"
