@@ -21,6 +21,12 @@ body {
 	margin-left: 60px;
 }
 
+#seaching-indicator {
+	color: black;
+	// margin: 10px;
+	display: flex;
+}
+
 .select-services {
 	margin: 50px 0 0 50px;
 	color: white;
@@ -28,7 +34,7 @@ body {
 	padding: 20px;
 	border: solid 3px rgb(188, 4, 4);
 	border-radius: 20px;
-	background-color: rgb(213, 0, 0);
+	background: linear-gradient(to bottom, rgb(188, 4, 4) 50%,rgb(110, 141, 195) 50%);
 }
 
 #location, #get-help-button {
