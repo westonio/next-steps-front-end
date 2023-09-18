@@ -3,10 +3,10 @@ Rails.application.routes.draw do
 
   # Register and Login
   namespace :register do
-    # get '/user', to: 'users#new'
-    get '/provider', to: 'providers#new'
+    resources :providers
+    get "/provider/login", to: "providers#login_form"
+    post "/provider/login", to: "providers#login"
   end
-  # get '/signin', to: 'session#new'
 
   # Search
   resources :search_results, only: [:index, :show]

@@ -1,0 +1,13 @@
+<h2>Provider login</h2>
+<p>
+  Do you need to create an account? <%= link_to "Click Here to create a provider account", new_register_provider_path %>  to save your favorite providers and track your Next Steps progress.
+</p>
+<%= form_with(url: register_provider_login_path, method: :post, local: true) do |form| %>
+  <%= form.label :username, "Username" %>
+  <%= form.text_field :username, placeholder: "Enter your username" %>
+  <br />
+  <%= form.label :password, "Password" %>
+  <%= form.password_field :password, placeholder: "Enter your password" %>
+  <br />
+  <%= form.submit "Login" %>
+<% end %>
