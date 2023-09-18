@@ -10,4 +10,7 @@
   <%= form.text_field :password, placeholder: "Enter your password" %>
   <br />
   <%= form.submit "Login" %>
+
 <% end %>
+
+  <%= button_to "Log in with Google", '/auth/google_oauth2',  data: { "turbo": false } %>

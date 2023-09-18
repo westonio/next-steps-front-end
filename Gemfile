@@ -48,6 +48,9 @@ gem "bootstrap-sass"
 
 gem "faraday"
 
+gem 'omniauth'
+gem 'omniauth-google-oauth2'
+gem 'omniauth-rails_csrf_protection'
 # Use Sass to process CSS
 # gem "sassc-rails"
 
