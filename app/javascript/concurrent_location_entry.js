@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function() {
   const hiddenLocationField = document.getElementById('hidden-location');
 
   locationField.addEventListener('input', function() {
-    console.log('Input event triggered');
+    console.log('Address copied to hidden field');
     hiddenLocationField.value = this.value;
   });
 });
