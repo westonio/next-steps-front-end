@@ -9,7 +9,6 @@ class UsersController < ApplicationController
       flash[:warning] = "You must be logged in to access this page."
       redirect_to users_login_path
     end
-    # require 'pry'; binding.pry
   end  
 
   def create
@@ -65,6 +64,12 @@ class UsersController < ApplicationController
       flash[:danger] = "Invalid credentials.  Please try again."
       redirect_to edit_user_path(params[:id])
     end
+
+  def logout
+    @user = nil
+    session[:user_id] = nil
+    flash[:success] = "You have successfully logged out"
+    redirect_to root_path
   end
   
   private

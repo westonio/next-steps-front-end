@@ -9,25 +9,7 @@
         <div id="app-topper">
             <h1>Next Steps</h1>
             <h3>Help is near!</h3>
-            <nav class="navbar">
-                <div class="container-fluid">
-                    <div class="navbar-header">
-                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                            <span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
-                        </button>
-                    </div>
-                    <div class="collapse navbar-collapse" id="myNavbar">
-                        <ul class="nav navbar-nav">
-                            <li class="active"><%= link_to 'Home', root_path %></li>
-                        </ul>
-                        <ul class="nav navbar-nav navbar-right">
-                            <li><%= link_to 'Create user account', new_user_path %></li>
-                            <li><%= link_to 'Create provider account', register_provider_path %></li>
-                            <li><%= link_to 'Sign in', users_login_path %></li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
+            <%= render 'shared/navbar' %>
         </div>
         <% if flash.any? %> 
             <% flash.each do |type, msg| %>
@@ -55,25 +37,7 @@
 
         <footer>
             <div id="app-footer">
-              <nav class="navbar">
-                  <div class="container-fluid">
-                      <div class="navbar-header">
-                          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                              <span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
-                          </button>
-                      </div>
-                      <div class="collapse navbar-collapse" id="myNavbar">
-                          <ul class="nav navbar-nav">
-                              <li class="active"><%= link_to 'Home', root_path %></li>
-                          </ul>
-                          <ul class="nav navbar-nav navbar-right">
-                              <li><%= link_to 'Create user account', new_user_path %></li>
-                              <li><%= link_to 'Create provider account', register_provider_path %></li>
-                              <li><%= link_to 'Sign in', users_login_path %></li>
-                          </ul>
-                      </div>
-                  </div>
-              </nav>
+              <%= render 'shared/navbar' %>
             </div>
         </footer>
     </body>
