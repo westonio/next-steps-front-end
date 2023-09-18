@@ -20,7 +20,7 @@ Rails.application.routes.draw do
   get "/users/login", to: "users#login_form"
 
   post "users/login", to: "users#login"
-  resources :users, only: [:index, :show, :new, :create, :edit, :update]
+  resources :users, only: [:index, :show, :new, :create, :edit, :update, :destroy]
 
   post "/users/login", to: "users#login"
   get "/logout", to: "users#logout", as: "users_logout"

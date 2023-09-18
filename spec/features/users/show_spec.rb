@@ -27,6 +27,10 @@ RSpec.describe 'User Dashboard page', :vcr do
       expect(page).to have_content("My Favorite Providers")
     end
 
+    it "When I visit my dashboard '/users/:id', I should also se  a link to delete my account" do
+      expect(page).to have_button("Delete my account")
+    end
+
     context "Password change:  When I click the change password link, " do
       
       before do
@@ -57,6 +61,39 @@ RSpec.describe 'User Dashboard page', :vcr do
 
         expect(current_path).to eq edit_user_path(@user.id)
         expect(page).to have_content("Invalid credentials. Please try again")
+      end
+    end
+
+    context "Account deletion" do
+
+      before do
+        click_button "Delete my account"
+      end
+
+      it "When I click the link to delete my account, I am redirected to the Welcome page '/' and I see a message that my account has been deleted." do
+        expect(current_path).to eq root_path
+        expect(page).to have_content("Your account has been successfully deleted.")
+      end
+
+      it "After deleting my account, I no longer have access to my Dashboard /users/:id'." do
+        visit user_path(@user.id)
+
+        expect(current_path).to eq users_login_path
+        expect(page).to have_content("You must be logged in to access this page.")
+      end
+
+      it "EDGE CASE:  Visitors should not have access to this page" do
+        visit user_path(@user.id, method: :delete)
+
+        expect(current_path).to eq users_login_path
+        expect(page).to have_content("You must be logged in to access this page.")
+      end
+
+      it "EDGE CASE:  Visitors should not have access delete other accounts" do
+        visit user_path(99999999999, method: :delete)
+
+        expect(current_path).to eq users_login_path
+        expect(page).to have_content("You must be logged in to access this page.")
       end
     end
   end
