@@ -64,6 +64,7 @@ class UsersController < ApplicationController
       flash[:danger] = "Invalid credentials.  Please try again."
       redirect_to edit_user_path(params[:id])
     end
+  end
 
   def logout
     @user = nil
