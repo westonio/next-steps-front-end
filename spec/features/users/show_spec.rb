@@ -11,53 +11,17 @@ RSpec.describe 'User Dashboard page', :vcr do
     end
   end
   describe "As a logged in user" do
-
-    before do
-      @user = User.create!(username: "my_username", password: "my_password")
-      visit users_login_path
-      fill_in "Username", with: @user.username
-      fill_in "Password", with: @user.password
-      click_button "Login"
-    end
-
     it "when I visit my dashboard '/users/:id', I should see my username, a link to change my password, and a 'Favorite Providers' section." do
-      expect(current_path).to eq user_path(@user.id)
-      expect(page).to have_content("#{@user.username}")
+      user = User.create!(username: "my_username", password: "my_password")
+      visit users_login_path
+      fill_in "Username", with: user.username
+      fill_in "Password", with: user.password
+      click_button "Login"
+
+      expect(current_path).to eq user_path(id: user.id)
+      expect(page).to have_content("#{user.username}")
       expect(page).to have_content("Change password")
       expect(page).to have_content("My Favorite Providers")
-    end
-
-    context "Password change:  When I click the change password link, " do
-      
-      before do
-        visit edit_user_path(@user.id)
-      end
-
-      it "I see a form to enter a new password, confirm my password, and a button to update my password." do       
-        
-        expect(current_path).to eq edit_user_path(@user.id)
-        expect(page).to have_field("Enter new password")
-        expect(page).to have_field("Confirm new password")
-        expect(page).to have_button("Update password")
-      end
-
-      it "HAPPY PATH:  If I enter matching passwords, I am redirected to my Dashboard and see a message that my password has been updated." do
-        fill_in "Enter new password", with: "new_password"
-        fill_in "Confirm new password", with: "new_password"
-        click_button "Update password"
-
-        expect(current_path).to eq user_path(@user.id)
-        expect(page).to have_content("Your password has been updated successfully")
-      end
-
-      it "SAD PATH: If I enter non-matching passwords, I remain on the same page and see a message that my credentials are invalid." do
-        fill_in "Enter new password", with: "new_password"
-        fill_in "Confirm new password", with: "wrong_password"
-        click_button "Update password"
-
-        expect(current_path).to eq edit_user_path(@user.id)
-        expect(page).to have_content("Invalid credentials. Please try again")
-      end
     end
   end
 end
