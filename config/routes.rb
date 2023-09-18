@@ -18,7 +18,12 @@ Rails.application.routes.draw do
   get '/auth/google_oauth2/callback', to: 'sessions#omniauth'
 
   get "/users/login", to: "users#login_form"
+
   post "users/login", to: "users#login"
+  resources :users, only: [:index, :show, :new, :create, :edit, :update]
+
+  post "/users/login", to: "users#login"
+  get "/logout", to: "users#logout", as: "users_logout"
   resources :users, only: [:index, :show, :new, :create]
   
 end

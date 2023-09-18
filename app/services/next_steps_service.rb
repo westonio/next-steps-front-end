@@ -20,7 +20,6 @@ class NextStepsService
     response = conn.get(url)
     response_json = JSON.parse(response.body, symbolize_names: true)[:data]
     ProviderDetails.new(response_json, category) 
- 
   end
   
   def self.conn

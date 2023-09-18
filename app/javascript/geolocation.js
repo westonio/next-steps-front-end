@@ -9,7 +9,9 @@ document.addEventListener('DOMContentLoaded', function() {
     geolocationButton.addEventListener('click', (event) => {
       event.preventDefault()
       navigator.geolocation.getCurrentPosition(success, error, options);
+      document.getElementById('searching-indicator').classList.remove('hidden');
     });
+    
 
   function success(pos) {
     const crd = pos.coords;
@@ -28,18 +30,20 @@ document.addEventListener('DOMContentLoaded', function() {
         if (locationField && hiddenLocationField) {
           locationField.value = address;
           hiddenLocationField.value = address;
+          document.getElementById('searching-indicator').classList.add('hidden');
         }
+        
       } else {
         console.error('No results found');
       }
     });
-
+    
     console.log("Your current position is:");
     console.log(`Latitude : ${crd.latitude}`);
     console.log(`Longitude: ${crd.longitude}`);
     console.log(`More or less ${crd.accuracy} meters.`);
   }
-
+  
   function error(err) {
     console.warn(`ERROR(${err.code}): ${err.message}`);
   }
