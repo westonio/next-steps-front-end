@@ -9,7 +9,7 @@ RSpec.describe User, type: :model do
   end
 
   describe 'Instance Methods' do
-    it 'crreates a new user with response from OAuth provider' do
+    it 'creates a new user with response from OAuth provider' do
       response = {"provider"=>"google_oauth2",
                   "uid"=>"117787023446397549870",
                   "info"=>
