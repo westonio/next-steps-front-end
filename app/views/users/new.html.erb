@@ -1,10 +1,14 @@
-<h2>Create a New User Account</h2>
-<p>Do you already have an account?  <%= link_to "Click here to sign in", users_login_path %></p>
-<p>
-  <%= form_with(model: @user, url: users_path, method: :post, local: true) do |form| %>
-    <%= form.label :username, "Choose a username" %> <%= form.text_field :username, size: "30" %><br />
-    <%= form.label :password, "Enter a password" %> <%= form.password_field :password, size: "30" %><br />
-    <%= form.label :password_verify, "Confirm the password" %> <%= form.password_field :password_verify, size: "30" %><br />
-    <%= form.submit "Create Account" %>
-  <% end %>
-</p>
+<div class="create-new-user">
+  <h2>Create a New User Account</h2>
+  <p>Do you already have an account?  <%= link_to "Click here to sign in", users_login_path %></p>
+  <p>
+    <%= form_with(model: @user, url: users_path, method: :post, local: true) do |form| %>
+      <%= form.label :username, "Choose a username" %> <%= form.text_field :username, size: "30" %><br />
+      <%= form.label :password, "Enter a password" %> <%= form.password_field :password, size: "30" %><br />
+      <%= form.label :password_verify, "Confirm the password" %> <%= form.password_field :password_verify, size: "30" %><br />
+      <%= form.submit "Create Account" %>
+    <% end %>
+  </p>
+  <p>Or create an account using Google:</p>
+  <%= link_to image_tag('btn_google_signin_dark_normal_web.png'), '/auth/google_oauth2',  data: { "turbo": false } %>
+</div>
