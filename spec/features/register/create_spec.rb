@@ -21,24 +21,37 @@ RSpec.describe "Provider Registration Page", :vcr do
         expect(page).to have_field("password_verify")
         expect(page).to have_content("Organization name")
         expect(page).to have_field("name")
+        expect(page).to have_content("Street")
+        expect(page).to have_field("street")
+        expect(page).to have_content("City")
+        expect(page).to have_field("city")
+        expect(page).to have_content("State")
+        expect(page).to have_field("state")
+        expect(page).to have_content("Zipcode")
+        expect(page).to have_field("zipcode")
         expect(page).to have_content("Contact phone")
         expect(page).to have_field("phone")
-        expect(page).to have_content("Email")
-        expect(page).to have_field("email")
         expect(page).to have_content("Description of services")
         expect(page).to have_field("description")
         expect(page).to have_button("Create Account")
       end
 
       it "HAPPY PATH:  If I fill in a valid username and passwords and information then I am directed to a Dashboard page '/register/providers/id'" do
+        params = {"username"=>"my_username", "password"=>"my_password", "password_verify"=>"my_password", "name"=>"Housing Option", "street"=>"123 Street Street", "city"=>"Townsville", "state"=>"UI", "zipcode"=>"11111", "phone"=>"3334445555", "description"=>"I have housing"}
 
-        
+        stub_request(:post, 'https://ancient-reaches-38594-79ad833137d5.herokuapp.com/api/v0//api/v0/providers')
+          .with(body: params)
+          .to_return(status: 302, headers: { 'Location' => "https://next-steps-front-end-4778e35e4143.herokuapp.com/register/providers/1" })
+
         fill_in "username", with: "my_username"
         fill_in "password", with: "my_password"
         fill_in "password_verify", with: "my_password"
         fill_in "name", with: "Housing Option"
-        fill_in "phone", with: "3333333333"
-        fill_in "email", with: "test@gmail.com"
+        fill_in "street", with: "123 Street Street"
+        fill_in "city", with: "Townsville"
+        fill_in "state", with: "UI"
+        fill_in "zipcode", with: "11111"
+        fill_in "phone", with: "3334445555"
         fill_in "description", with: "I have housing"
 
         click_button "Create Account"
@@ -46,22 +59,25 @@ RSpec.describe "Provider Registration Page", :vcr do
         expect(page).to have_content("Provider Dashboard")
       end
 
-      before do
+      # before do
 
-      end
+      # end
 
       xit "SAD PATH:  If I fail to fill in a username , I remain on the same page and see an error message, 'Invalid entries, please try again'" do
         # fill_in "username", with: "my_username"
         fill_in "password", with: "my_password"
         fill_in "password_verify", with: "my_password"
         fill_in "name", with: "Housing Option"
-        fill_in "phone", with: "3333333333"
-        fill_in "email", with: "test@gmail.com"
+        fill_in "street", with: "123 Street Street"
+        fill_in "city", with: "Townsville"
+        fill_in "state", with: "UI"
+        fill_in "zipcode", with: "11111"
+        fill_in "phone", with: "3334445555"
         fill_in "description", with: "I have housing"
 
         click_button "Create Account"
 
-        expect(current_path).to eq(new_user_path)
+        expect(current_path).to eq(new_register_provider_path)
         expect(page).to have_content("Invalid entries, please try again")
       end
       
@@ -70,26 +86,32 @@ RSpec.describe "Provider Registration Page", :vcr do
         # fill_in "password", with: "my_password"
         fill_in "password_verify", with: "my_password"
         fill_in "name", with: "Housing Option"
-        fill_in "phone", with: "3333333333"
-        fill_in "email", with: "test@gmail.com"
+        fill_in "street", with: "123 Street Street"
+        fill_in "city", with: "Townsville"
+        fill_in "state", with: "UI"
+        fill_in "zipcode", with: "11111"
+        fill_in "phone", with: "3334445555"
         fill_in "description", with: "I have housing"
 
         click_button "Create Account"
   
-        expect(current_path).to eq(new_user_path)
+        expect(current_path).to eq(new_register_provider_path)
         expect(page).to have_content("Invalid entries, please try again")
 
         fill_in "username", with: "my_username"
         fill_in "password", with: "my_password"
         # fill_in "password_verify", with: "my_password"
         fill_in "name", with: "Housing Option"
-        fill_in "phone", with: "3333333333"
-        fill_in "email", with: "test@gmail.com"
+        fill_in "street", with: "123 Street Street"
+        fill_in "city", with: "Townsville"
+        fill_in "state", with: "UI"
+        fill_in "zipcode", with: "11111"
+        fill_in "phone", with: "3334445555"
         fill_in "description", with: "I have housing"
 
         click_button "Create Account"
   
-        expect(current_path).to eq(new_user_path)
+        expect(current_path).to eq(new_register_provider_path)
         expect(page).to have_content("Invalid entries, please try again")
       end
 
@@ -98,13 +120,16 @@ RSpec.describe "Provider Registration Page", :vcr do
         fill_in "password", with: "my_password"
         fill_in "password_verify", with: "not_my_password"
         fill_in "name", with: "Housing Option"
-        fill_in "phone", with: "3333333333"
-        fill_in "email", with: "test@gmail.com"
+        fill_in "street", with: "123 Street Street"
+        fill_in "city", with: "Townsville"
+        fill_in "state", with: "UI"
+        fill_in "zipcode", with: "11111"
+        fill_in "phone", with: "3334445555"
         fill_in "description", with: "I have housing"
 
         click_button "Create Account"
   
-        expect(current_path).to eq(new_user_path)
+        expect(current_path).to eq(new_register_provider_path)
         expect(page).to have_content("Invalid entries, please try again")
       end
 
@@ -113,13 +138,88 @@ RSpec.describe "Provider Registration Page", :vcr do
         fill_in "password", with: "my_password"
         fill_in "password_verify", with: "my_password"
         # fill_in "name", with: "Housing Option"
-        fill_in "phone", with: "3333333333"
-        fill_in "email", with: "test@gmail.com"
+        fill_in "street", with: "123 Street Street"
+        fill_in "city", with: "Townsville"
+        fill_in "state", with: "UI"
+        fill_in "zipcode", with: "11111"
+        fill_in "phone", with: "3334445555"
         fill_in "description", with: "I have housing"
 
         click_button "Create Account"
   
-        expect(current_path).to eq(new_user_path)
+        expect(current_path).to eq(new_register_provider_path)
+        expect(page).to have_content("Invalid entries, please try again")
+      end
+
+      xit "SAD PATH: If I do not fill in my street it errors" do
+        fill_in "username", with: "my_username"
+        fill_in "password", with: "my_password"
+        fill_in "password_verify", with: "my_password"
+        fill_in "name", with: "Housing Option"
+        # fill_in "street", with: "123 Street Street"
+        fill_in "city", with: "Townsville"
+        fill_in "state", with: "UI"
+        fill_in "zipcode", with: "11111"
+        fill_in "phone", with: "3334445555"
+        fill_in "description", with: "I have housing"
+
+        click_button "Create Account"
+  
+        expect(current_path).to eq(new_register_provider_path)
+        expect(page).to have_content("Invalid entries, please try again")
+      end
+
+      xit "SAD PATH: If I do not fill in my city it errors" do
+        fill_in "username", with: "my_username"
+        fill_in "password", with: "my_password"
+        fill_in "password_verify", with: "my_password"
+        fill_in "name", with: "Housing Option"
+        fill_in "street", with: "123 Street Street"
+        # fill_in "city", with: "Townsville"
+        fill_in "state", with: "UI"
+        fill_in "zipcode", with: "11111"
+        fill_in "phone", with: "3334445555"
+        fill_in "description", with: "I have housing"
+
+        click_button "Create Account"
+  
+        expect(current_path).to eq(new_register_provider_path)
+        expect(page).to have_content("Invalid entries, please try again")
+      end
+
+      xit "SAD PATH: If I do not fill in my state it errors" do
+        fill_in "username", with: "my_username"
+        fill_in "password", with: "my_password"
+        fill_in "password_verify", with: "my_password"
+        fill_in "name", with: "Housing Option"
+        fill_in "street", with: "123 Street Street"
+        fill_in "city", with: "Townsville"
+        # fill_in "state", with: "UI"
+        fill_in "zipcode", with: "11111"
+        fill_in "phone", with: "3334445555"
+        fill_in "description", with: "I have housing"
+
+        click_button "Create Account"
+  
+        expect(current_path).to eq(new_register_provider_path)
+        expect(page).to have_content("Invalid entries, please try again")
+      end
+
+      xit "SAD PATH: If I do not fill in my zipcode it errors" do
+        fill_in "username", with: "my_username"
+        fill_in "password", with: "my_password"
+        fill_in "password_verify", with: "my_password"
+        fill_in "name", with: "Housing Option"
+        fill_in "street", with: "123 Street Street"
+        fill_in "city", with: "Townsville"
+        fill_in "state", with: "UI"
+        # fill_in "zipcode", with: "11111"
+        fill_in "phone", with: "3334445555"
+        fill_in "description", with: "I have housing"
+
+        click_button "Create Account"
+  
+        expect(current_path).to eq(new_register_provider_path)
         expect(page).to have_content("Invalid entries, please try again")
       end
 
@@ -128,43 +228,34 @@ RSpec.describe "Provider Registration Page", :vcr do
         fill_in "password", with: "my_password"
         fill_in "password_verify", with: "my_password"
         fill_in "name", with: "Housing Option"
-        # fill_in "phone", with: "3333333333"
-        fill_in "email", with: "test@gmail.com"
+        fill_in "street", with: "123 Street Street"
+        fill_in "city", with: "Townsville"
+        fill_in "state", with: "UI"
+        fill_in "zipcode", with: "11111"
+        # fill_in "phone", with: "3334445555"
         fill_in "description", with: "I have housing"
 
         click_button "Create Account"
   
-        expect(current_path).to eq(new_user_path)
-        expect(page).to have_content("Invalid entries, please try again")
-      end
-
-      xit "SAD PATH: If I do not fill in my email it errors" do
-        fill_in "username", with: "my_username"
-        fill_in "password", with: "my_password"
-        fill_in "password_verify", with: "my_password"
-        fill_in "name", with: "Housing Option"
-        fill_in "phone", with: "3333333333"
-        # fill_in "email", with: "test@gmail.com"
-        fill_in "description", with: "I have housing"
-
-        click_button "Create Account"
-  
-        expect(current_path).to eq(new_user_path)
+        expect(current_path).to eq(new_register_provider_path)
         expect(page).to have_content("Invalid entries, please try again")
       end
 
       xit "SAD PATH: If I do not fill in my description it errors" do
-        fill_in "username", with: "my_username"
+        ffill_in "username", with: "my_username"
         fill_in "password", with: "my_password"
         fill_in "password_verify", with: "my_password"
         fill_in "name", with: "Housing Option"
-        fill_in "phone", with: "3333333333"
-        fill_in "email", with: "test@gmail.com"
+        fill_in "street", with: "123 Street Street"
+        fill_in "city", with: "Townsville"
+        fill_in "state", with: "UI"
+        fill_in "zipcode", with: "11111"
+        fill_in "phone", with: "3334445555"
         # fill_in "description", with: "I have housing"
 
         click_button "Create Account"
   
-        expect(current_path).to eq(new_user_path)
+        expect(current_path).to eq(new_register_provider_path)
         expect(page).to have_content("Invalid entries, please try again")
       end
     end

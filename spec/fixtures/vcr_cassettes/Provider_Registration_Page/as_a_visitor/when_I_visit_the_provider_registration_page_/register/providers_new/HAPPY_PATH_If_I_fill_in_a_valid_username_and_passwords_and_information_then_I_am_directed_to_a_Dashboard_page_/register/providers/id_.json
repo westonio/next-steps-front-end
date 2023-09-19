@@ -2,15 +2,18 @@
   "http_interactions": [
     {
       "request": {
-        "method": "get",
-        "uri": "https://ancient-reaches-38594-79ad833137d5.herokuapp.com/api/v0/search",
+        "method": "post",
+        "uri": "https://ancient-reaches-38594-79ad833137d5.herokuapp.com/api/v0/providers",
         "body": {
-          "encoding": "US-ASCII",
-          "string": ""
+          "encoding": "UTF-8",
+          "string": "{\"username\":\"my_username\",\"password\":\"my_password\",\"password_verify\":\"my_password\",\"name\":\"Housing Option\",\"street\":\"123 Street Street\",\"city\":\"Townsville\",\"state\":\"UI\",\"zipcode\":\"11111\",\"phone\":\"3334445555\",\"description\":\"I have housing\"}"
         },
         "headers": {
           "User-Agent": [
             "Faraday v2.7.11"
+          ],
+          "Content-Type": [
+            "application/json"
           ],
           "Accept-Encoding": [
             "gzip;q=1.0,deflate;q=0.6,identity;q=0.3"
@@ -22,15 +25,15 @@
       },
       "response": {
         "status": {
-          "code": 400,
-          "message": "Bad Request"
+          "code": 422,
+          "message": "Unprocessable Entity"
         },
         "headers": {
           "Server": [
             "Cowboy"
           ],
           "Date": [
-            "Thu, 14 Sep 2023 23:18:20 GMT"
+            "Tue, 19 Sep 2023 19:02:01 GMT"
           ],
           "Connection": [
             "keep-alive"
@@ -63,10 +66,10 @@
             "no-cache"
           ],
           "X-Request-Id": [
-            "d0c8191c-873a-49e0-acc7-ffdac77275cd"
+            "6521311c-fac8-4819-aba8-abe4249a2182"
           ],
           "X-Runtime": [
-            "0.198379"
+            "0.054913"
           ],
           "Transfer-Encoding": [
             "chunked"
@@ -80,7 +83,7 @@
           "string": "{\"errors\":[{\"detail\":\"Invalid Parameters\"}]}"
         }
       },
-      "recorded_at": "Thu, 14 Sep 2023 23:18:21 GMT"
+      "recorded_at": "Tue, 19 Sep 2023 19:02:01 GMT"
     }
   ],
   "recorded_with": "VCR 6.2.0"

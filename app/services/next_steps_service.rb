@@ -22,18 +22,10 @@ class NextStepsService
     ProviderDetails.new(response_json, category) 
   end
 
-  def self.provider_login(username, password)
-    response = conn.post("provider_login") do |req|
-      req.body = { username: username, password: password }
-    end
-
-    response_json = JSON.parse(response.body, symbolize_names: true) 
-    ProviderLogin.new(response_json)
-  end
-
   def self.post_provider(params)
-    response = conn.post("provider") do |req|
-      req.body = { params: params }
+    response = conn.post("providers") do |req|
+      req.body = params.to_json 
+      req.headers['Content-Type'] = 'application/json'
     end
 
     keyword = params[:name]
