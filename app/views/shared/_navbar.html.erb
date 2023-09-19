@@ -1,24 +1,23 @@
-<nav class="navbar">
+
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
   <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
-      </button>
-    </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav">
-        <li class="active"><%= link_to 'Home', root_path %></li>
-      </ul>
-      <ul class="nav navbar-nav navbar-right">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#headerMenu" aria-controls="headerMenu" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="headerMenu">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="<%= root_path %>">Home</a>
+        </li>
         <% if !session[:user_id] %>
-          <li><%= link_to 'Create user account', new_user_path %></li>
-          <li><%= link_to 'Create provider account', register_provider_path %></li>
-          <li><%= link_to 'Sign in', users_login_path %></li>
+          <li class="nav-item"><%= link_to 'Create user account', new_user_path, class: "nav-link" %></li>
+          <li class="nav-item"><%= link_to 'Create provider account', register_provider_path, class: "nav-link" %></li>
+          <li class="nav-item"><%= link_to 'Sign in', users_login_path, class: "nav-link" %></li>
         <% else %>
-          <li><%= link_to 'View my Dashboard', user_path(current_user) %></li>
-          <li><%= link_to 'Sign out', users_logout_path %></li>
+          <li class="nav-item"><%= link_to 'View my Dashboard', user_path(current_user), class: "nav-link" %></li>
+          <li class="nav-item"><%= link_to 'Sign out', users_logout_path, class: "nav-link" %></li>
         <% end %>
-     </ul>
+      </ul>
     </div>
   </div>
 </nav>
