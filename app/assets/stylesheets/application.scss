@@ -167,10 +167,16 @@ body {
 	border-radius: 20px;
 }
 
-#google-oauth img {
-	height: 35px;
+#g-oauth-button {
 	margin-bottom: 10px;
 	margin-left: 10px;
+	width: fit-content;
+}
+
+#g-oauth-button img {
+	margin-bottom:3px; 
+	margin-right:5px;
+	width: 20px;
 }
 
 #user-login-form, #create-user-form {
@@ -180,4 +186,9 @@ body {
 #create-user-form {
 	margin-top: 15px;
 	margin-bottom: 15px;
+}
+
+#g-oauth-link button:hover {
+
+	box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.199);
 }

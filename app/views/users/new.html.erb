@@ -9,8 +9,13 @@
       <%= form.submit "Create Account" %>
     <% end %>
   </div>
-  <div id="google-oauth">
-    <p>Or create an account using Google:</p>
-    <%= link_to image_tag('btn_google_signin_dark_normal_web.png'), '/auth/google_oauth2',  data: { "turbo": false } %>
+    <div id="google-oauth">
+      <p>Or create an account using your existing Google account:</p>
+      <a  href="/auth/google_oauth2" id="g-oauth-link">
+        <button type="button" class="btn btn-md" id="g-oauth-button">
+          <img  alt="Google sign-in" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/512px-Google_%22G%22_Logo.svg.png" />
+          Create account using Google
+          </button>
+      </a>
   </div>
 </div>
