@@ -44,7 +44,7 @@ gem "bootsnap", require: false
 
 #bootstrap
 gem "sassc-rails"
-gem "bootstrap-sass"
+# gem "bootstrap-sass"
 
 gem "faraday"
 
