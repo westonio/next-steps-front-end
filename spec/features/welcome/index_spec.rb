@@ -30,14 +30,16 @@ RSpec.describe 'Welcome Page', :vcr do
     end
 
     describe "Footer / Navigation Bar" do
-      it "has links to Home, Create an Account, Sign In" do
-        within('div#app-footer') do
-          expect(page).to have_link('Home', href: '/')
-          expect(page).to have_link('Create user account', href: new_user_path)
-          expect(page).to have_link('Create provider account', href: '/register/provider')
-          expect(page).to have_link('Sign in', href: users_login_path)
-        end
-      end
+
+      # Removed by branch:  fix_hamburger_menu
+      # it "has links to Home, Create an Account, Sign In" do
+      #   within('div#app-footer') do
+      #     expect(page).to have_link('Home', href: '/')
+      #     expect(page).to have_link('Create user account', href: new_user_path)
+      #     expect(page).to have_link('Create provider account', href: '/register/provider')
+      #     expect(page).to have_link('Sign in', href: users_login_path)
+      #   end
+      # end
     end
 
     describe 'Urgent Services' do
