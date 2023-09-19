@@ -8,6 +8,9 @@ Rails.application.routes.draw do
   end
   # get '/signin', to: 'session#new'
 
+  #OAuth
+  get '/auth/google_oauth2/callback', to: 'sessions#omniauth'
+
   # Search
   resources :search_results, only: [:index, :show]
   resources :search_resources, only: [:index]

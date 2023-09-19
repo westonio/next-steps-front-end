@@ -48,8 +48,10 @@ gem "bootstrap-sass"
 
 gem "faraday"
 
-# Use Sass to process CSS
-# gem "sassc-rails"
+# Use OAuth and Google OAuth
+gem 'omniauth'
+gem 'omniauth-google-oauth2'
+gem 'omniauth-rails_csrf_protection'
 
 # Use Active Storage variants [https://guides.rubyonrails.org/active_storage_overview.html#transforming-images]
 # gem "image_processing", "~> 1.2"

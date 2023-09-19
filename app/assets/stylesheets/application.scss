@@ -156,3 +156,28 @@ body {
   background-color: red;
   color: white;
 }
+
+.user-login, .create-new-user {
+	width: fit-content;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 25px;
+	border: 1px solid rgb(110, 141, 195);
+	background-color: white;
+	border-radius: 20px;
+}
+
+#google-oauth img {
+	height: 35px;
+	margin-bottom: 10px;
+	margin-left: 10px;
+}
+
+#user-login-form, #create-user-form {
+	margin-left: 10px;
+}
+
+#create-user-form {
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
