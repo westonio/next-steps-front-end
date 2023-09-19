@@ -30,10 +30,18 @@ class NextStepsService
     response_json = JSON.parse(response.body, symbolize_names: true) 
     ProviderLogin.new(response_json)
   end
-  
+
+  def self.post_provider(params)
+    response = conn.post("provider") do |req|
+      req.body = { params: params }
+    end
+
+    keyword = params[:name]
+    response_json = JSON.parse(response.body, symbolize_names: true)
+    ProviderDetails.new(response_json, keyword)
+  end
   
   def self.conn
     Faraday.new(url: "https://ancient-reaches-38594-79ad833137d5.herokuapp.com/api/v0/")
   end
-
 end

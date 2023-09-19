@@ -1,0 +1,14 @@
+<h2>Create a New Provider Account</h2>
+<p>Do you already have an account?  <%= link_to "Click here to sign in", register_provider_login_path %></p>
+<p>
+  <%= form_with(model: @provider, url: register_providers_path, method: :post, local: true) do |form| %>
+    <%= form.label :username, "Choose a username" %> <%= form.text_field :username, size: "30" %><br />
+    <%= form.label :password, "Enter a password" %> <%= form.password_field :password, size: "30" %><br />
+    <%= form.label :password_verify, "Confirm the password" %> <%= form.password_field :password_verify, size: "30" %><br />
+    <%= form.label :name, "Organization name" %> <%= form.text_field :name, size: "30" %><br/>
+    <%= form.label :phone, "Contact phone" %> <%= form.text_field :phone, size: "30" %><br/>
+    <%= form.label :email, "Email" %> <%= form.text_field :email, size: "30" %><br/>
+    <%= form.label :description, "Description of services" %> <%= form.text_field :description, size: "30" %><br/>
+    <%= form.submit "Create Account" %>
+  <% end %>
+</p>
