@@ -23,11 +23,14 @@ class NextStepsService
   end
 
   def self.provider_login(username, password)
-    response = conn.get("/provider_login&#{username}&#{password}")
+    response = conn.post("provider_login") do |req|
+      req.body = { username: username, password: password }
+    end
 
-    response_json = JSON.parse(response.body, symbolize_names: true) unless response.body == ""
+    response_json = JSON.parse(response.body, symbolize_names: true) 
     ProviderLogin.new(response_json)
   end
+  
   
   def self.conn
     Faraday.new(url: "https://ancient-reaches-38594-79ad833137d5.herokuapp.com/api/v0/")

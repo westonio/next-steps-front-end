@@ -1,7 +1,8 @@
 class ProviderLogin
+  attr_reader :id, :response
 
   def initialize(data)
-    require 'pry';binding.pry
-    
+    @response = data[:message]
+    @id = data[:id]
   end
 end

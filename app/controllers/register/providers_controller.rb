@@ -3,12 +3,16 @@ class Register::ProvidersController < ApplicationController
 
   def login_form; end
 
+  def show
+
+  end
+
   def login
     username = params[:username]
     password = params[:password]
     provider = ProviderLoginFacade.get_provider_login(username, password)
 
-    if provider.response.valid
+    if provider.response == "valid user"
       session[:provider_id] = provider.id
       flash[:success] = "Logged in successfully"
       redirect_to register_provider_path(provider.id)

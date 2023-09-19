@@ -1,19 +1,18 @@
 require 'rails_helper'
 
 RSpec.describe "Provider Registration Page", :vcr do
-  before do
+  before(:each) do
     visit register_provider_login_path
-
-    response = stub_request(:post, 'https://ancient-reaches-38594-79ad833137d5.herokuapp.com/api/v0/provider_login')
+  
+    stub_request(:post, 'https://ancient-reaches-38594-79ad833137d5.herokuapp.com/api/v0/provider_login')
       .with(body: { username: 'testy', password: 'password' })
-      .to_return(status: 200, body: '{"message": "valid user", "id": "1"}')
-
-    @provider = response.request_pattern.body_pattern.pattern
+      .to_return(status: 200, body: { message: 'valid user', id: '1' }.to_json)
   end
   
   describe "as a visitor" do
     describe "when I visit the provider login page" do
       it "I see a place to enter my username and password" do
+
         expect(page).to have_field("username")
         expect(page).to have_field("password")
         expect(page).to have_button("Login")
@@ -28,8 +27,13 @@ RSpec.describe "Provider Registration Page", :vcr do
         expect(current_path).to eq(register_provider_path(1))
       end
 
-      xit "SAD PATH:  If response from back-end API returns 'invalid' (wrong username or password), I stay on the page and see warning message" do
-        fill_in "username", with: "incorrect_username"
+      it "SAD PATH:  If response from back-end API returns 'invalid' (wrong username or password), I stay on the page and see warning message" do
+        
+        stub_request(:post, 'https://ancient-reaches-38594-79ad833137d5.herokuapp.com/api/v0/provider_login')
+          .with(body: { username: 'testy', password: 'password' })
+          .to_return(status: 401, body: { message: 'invalid user' }.to_json)
+
+        fill_in "username", with: "nottesty"
         fill_in "password", with: "password"
         click_button "Login"
 
