@@ -15,8 +15,7 @@ Rails.application.routes.draw do
   # Providers
   resources :providers, only: [:show]
 
-  get '/auth/google_oauth2/callback', to: 'sessions#omniauth'
-
+  # User features
   get "/users/login", to: "users#login_form"
 
   post "users/login", to: "users#login"
