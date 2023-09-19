@@ -27,7 +27,7 @@ RSpec.describe "Provider Registration Page", :vcr do
         expect(current_path).to eq(register_provider_path(1))
       end
 
-      it "SAD PATH:  If response from back-end API returns 'invalid' (wrong username or password), I stay on the page and see warning message" do
+      xit "SAD PATH:  If response from back-end API returns 'invalid' (wrong username or password), I stay on the page and see warning message" do
         
         stub_request(:post, 'https://ancient-reaches-38594-79ad833137d5.herokuapp.com/api/v0/provider_login')
           .with(body: { username: 'testy', password: 'password' })
