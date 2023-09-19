@@ -22,15 +22,10 @@ class NextStepsService
     ProviderDetails.new(response_json, category) 
   end
 
-  def self.post_provider(params)
-    response = conn.post("providers") do |req|
-      req.body = params.to_json 
-      req.headers['Content-Type'] = 'application/json'
-    end
-
-    keyword = params[:name]
+  def self.post_provider(provider_info)
+    response = conn.post("providers", params: { provider: provider_info }) 
+require 'pry';binding.pry
     response_json = JSON.parse(response.body, symbolize_names: true)
-    ProviderDetails.new(response_json, keyword)
   end
   
   def self.conn

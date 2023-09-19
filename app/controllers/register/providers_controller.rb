@@ -9,8 +9,8 @@ class Register::ProvidersController < ApplicationController
 
   def create
     provider = ProviderFacade.save_provider(provider_params)
-  
-    if provider_params_valid? && provider.response == "saved"
+ 
+    if provider_params_valid? 
       flash[:success] = "Provider created successfully"
       session[:provider_id] = provider.id
       redirect_to register_provider_path(provider.id)
@@ -39,11 +39,11 @@ class Register::ProvidersController < ApplicationController
   private
 
   def provider_params
-    params.permit(:username, :password, :password_verify, :name, :phone, :email, :description)
+    params.permit(:name, :phone, :street, :city, :state, :zipcode, :fees, :schedule, :description)
   end
 
     
   def provider_params_valid?
-    !provider_params[:username].empty? && !provider_params[:password].empty? && (provider_params[:password] == params[:password_verify]) && !provider_params[:name].empty? && !provider_params[:phone].empty? && !provider_params[:email].empty? && !provider_params[:description].empty?
+    !provider_params[:name].empty? && !provider_params[:phone].empty? && !provider_params[:street].empty? && !provider_params[:city] && !provider_params[:state] && !provider_params[:zipcode] && !provider_params[:fees] && !provider_params[:schedule] && !provider_params[:description].empty?
   end
 end
