@@ -3,9 +3,16 @@
   <h2>User login</h2>
 
   <div id="google-oauth">
-    <%= link_to image_tag('btn_google_signin_dark_normal_web.png'), '/auth/google_oauth2',  data: { "turbo": false } %>
+      <a  href="/auth/google_oauth2" id="g-oauth-link">
+        <button type="button" class="btn btn-md" id="g-oauth-button">
+          <img  alt="Google sign-in" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/512px-Google_%22G%22_Logo.svg.png" />
+          Sign in with Google
+          </button>
+      </a>
     <p> Or enter your details: </p>
   </div>
+
+
 
   <%= form_with(url: users_login_path, method: :post, id: "user-login-form", local: true) do |form| %>
     <%= form.label :username, "Username" %>
