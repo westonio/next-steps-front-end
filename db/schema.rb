@@ -23,7 +23,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_09_19_184307) do
     t.string "provider"
     t.integer "role", default: 0
     t.string "provider_id"
-    t.integer "status"
+    t.integer "status", default: 1
   end
 
 end

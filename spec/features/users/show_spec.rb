@@ -98,12 +98,30 @@ RSpec.describe 'User Dashboard page', :vcr do
     end
   end
 
-  describe "user or agent selection on the create user account page" do
-    it "has a field to select 'user' or 'agent' from a dropdown menu" do
-      visit new_user_path
-      within('div.create-new-user') do
-        expect(page).to have_content("Select Account Type")
-      end
-    end
+  # User vs Agent Show Page
+  it "displays a link to 'Add My Service' only if the user is an agent && approved" do
+    user = User.create!(username: "pal", password: "password", role: "agent", status: "approved")
+
+    visit users_login_path
+
+    fill_in "username", with: user.username
+    fill_in "password", with: user.password
+    click_button "Login"
+    
+    expect(page).to have_current_path(user_path(user))
+    expect(page).to have_content("Add My Service")
+  end
+
+  it "displays 'My Favorite Providers' if the current user is a 'user' and not 'agent'" do
+    user = User.create!(username: "pal", password: "password", role: "user", status: "approved")
+
+    visit users_login_path
+
+    fill_in "username", with: user.username
+    fill_in "password", with: user.password
+    click_button "Login"
+    
+    expect(page).to have_current_path(user_path(user))
+    expect(page).to have_content("My Favorite Providers")
   end
 end
