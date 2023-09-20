@@ -10,11 +10,10 @@ class Register::ProvidersController < ApplicationController
   def create
     provider = ProviderFacade.save_provider(provider_params)
  
-    if provider_params_valid? 
+    if provider && provider_params_valid? 
       flash[:success] = "Provider created successfully"
       session[:provider_id] = provider.id
       redirect_to register_provider_path(provider.id)
-
     else
       flash[:warning] = "Invalid entries, please try again"
       redirect_to new_register_provider_path
@@ -39,7 +38,7 @@ class Register::ProvidersController < ApplicationController
   private
 
   def provider_params
-    params.permit(:name, :phone, :street, :city, :state, :zipcode, :fees, :schedule, :description)
+    params.permit(:name, :description, :street, :city, :state, :zipcode, :phone, :fees, :schedule)
   end
 
     

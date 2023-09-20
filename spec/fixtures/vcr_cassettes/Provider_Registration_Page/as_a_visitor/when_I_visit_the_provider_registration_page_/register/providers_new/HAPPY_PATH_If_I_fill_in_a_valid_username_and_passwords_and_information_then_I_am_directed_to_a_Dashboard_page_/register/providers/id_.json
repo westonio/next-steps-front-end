@@ -3,17 +3,17 @@
     {
       "request": {
         "method": "post",
-        "uri": "https://ancient-reaches-38594-79ad833137d5.herokuapp.com/api/v0/providers",
+        "uri": "https://ancient-reaches-38594-79ad833137d5.herokuapp.com/api/v0/providers.json",
         "body": {
           "encoding": "UTF-8",
-          "string": "{\"username\":\"my_username\",\"password\":\"my_password\",\"password_verify\":\"my_password\",\"name\":\"Housing Option\",\"street\":\"123 Street Street\",\"city\":\"Townsville\",\"state\":\"UI\",\"zipcode\":\"11111\",\"phone\":\"3334445555\",\"description\":\"I have housing\"}"
+          "string": "city=Townsville&description=I+have+housing&fees=10&name=Housing+Option&phone=3334445555&schedule=24%2F7&state=AZ&street=123+Street+Street&zipcode=11111"
         },
         "headers": {
           "User-Agent": [
             "Faraday v2.7.11"
           ],
           "Content-Type": [
-            "application/json"
+            "application/x-www-form-urlencoded"
           ],
           "Accept-Encoding": [
             "gzip;q=1.0,deflate;q=0.6,identity;q=0.3"
@@ -25,112 +25,30 @@
       },
       "response": {
         "status": {
-          "code": 422,
-          "message": "Unprocessable Entity"
+          "code": 400,
+          "message": "Bad Request"
         },
         "headers": {
           "Server": [
             "Cowboy"
           ],
           "Date": [
-            "Tue, 19 Sep 2023 19:02:01 GMT"
-          ],
-          "Connection": [
-            "keep-alive"
-          ],
-          "X-Frame-Options": [
-            "SAMEORIGIN"
-          ],
-          "X-Xss-Protection": [
-            "0"
-          ],
-          "X-Content-Type-Options": [
-            "nosniff"
-          ],
-          "X-Download-Options": [
-            "noopen"
-          ],
-          "X-Permitted-Cross-Domain-Policies": [
-            "none"
-          ],
-          "Referrer-Policy": [
-            "strict-origin-when-cross-origin"
-          ],
-          "Content-Type": [
-            "application/json; charset=utf-8"
-          ],
-          "Vary": [
-            "Accept"
-          ],
-          "Cache-Control": [
-            "no-cache"
-          ],
-          "X-Request-Id": [
-            "6521311c-fac8-4819-aba8-abe4249a2182"
-          ],
-          "X-Runtime": [
-            "0.054913"
-          ],
-          "Transfer-Encoding": [
-            "chunked"
-          ],
-          "Via": [
-            "1.1 vegur"
-          ]
-        },
-        "body": {
-          "encoding": "UTF-8",
-          "string": "{\"errors\":[{\"detail\":\"Invalid Parameters\"}]}"
-        }
-      },
-      "recorded_at": "Tue, 19 Sep 2023 19:02:01 GMT"
-    },
-    {
-      "request": {
-        "method": "get",
-        "uri": "https://ancient-reaches-38594-79ad833137d5.herokuapp.com/api/v0/providers",
-        "body": {
-          "encoding": "US-ASCII",
-          "string": ""
-        },
-        "headers": {
-          "User-Agent": [
-            "Faraday v2.7.11"
-          ],
-          "Accept-Encoding": [
-            "gzip;q=1.0,deflate;q=0.6,identity;q=0.3"
-          ],
-          "Accept": [
-            "*/*"
-          ]
-        }
-      },
-      "response": {
-        "status": {
-          "code": 404,
-          "message": "Not Found"
-        },
-        "headers": {
-          "Server": [
-            "Cowboy"
-          ],
-          "Date": [
-            "Tue, 19 Sep 2023 21:40:02 GMT"
+            "Tue, 19 Sep 2023 23:57:43 GMT"
           ],
           "Connection": [
             "keep-alive"
           ],
           "Content-Type": [
-            "text/html; charset=UTF-8"
+            "application/json; charset=UTF-8"
           ],
           "X-Request-Id": [
-            "a3a1de22-662b-49a9-bd86-6ba06b48dcbf"
+            "7f82dbef-7aac-4386-a002-e810965cb0de"
           ],
           "X-Runtime": [
-            "0.001166"
+            "0.002177"
           ],
           "Content-Length": [
-            "0"
+            "36"
           ],
           "Via": [
             "1.1 vegur"
@@ -138,10 +56,10 @@
         },
         "body": {
           "encoding": "UTF-8",
-          "string": ""
+          "string": "{\"status\":400,\"error\":\"Bad Request\"}"
         }
       },
-      "recorded_at": "Tue, 19 Sep 2023 21:40:02 GMT"
+      "recorded_at": "Tue, 19 Sep 2023 23:57:43 GMT"
     }
   ],
   "recorded_with": "VCR 6.2.0"

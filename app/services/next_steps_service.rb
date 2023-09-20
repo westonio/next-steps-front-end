@@ -23,9 +23,9 @@ class NextStepsService
   end
 
   def self.post_provider(provider_info)
-    response = conn.post("providers", params: { provider: provider_info }) 
-require 'pry';binding.pry
-    response_json = JSON.parse(response.body, symbolize_names: true)
+    response = conn.post("providers", provider_info)
+   
+    JSON.parse(response.body, symbolize_names: true)
   end
   
   def self.conn
