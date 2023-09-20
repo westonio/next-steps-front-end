@@ -4,8 +4,6 @@ Rails.application.routes.draw do
   # Register and Login
   namespace :register do
     resources :providers
-    get "/provider/login", to: "providers#login_form"
-    post "/provider/login", to: "providers#login"
   end
 
   #OAuth
