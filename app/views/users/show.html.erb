@@ -1,4 +1,9 @@
 <h2>User Dashboard</h2>
 <p>Your Username:  <%= @user.username %></p>
-<p>[<%= link_to "Change password", edit_user_path(@user.id) %>]</p>
+<p>[ <%= link_to "Change password", edit_user_path(@user.id) %> ]</p>
+<%= form_for @user, url: user_path(@user), method: :delete, html: { class: 'delete-form' } do |f| %>
+  <%= f.button "Delete my account", class: 'delete-button' %>
+<% end %>
+
+
 <h3>My Favorite Providers</h3>
