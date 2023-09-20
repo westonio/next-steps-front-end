@@ -1,23 +1,49 @@
-/* Set the base font size to 16 pixels (1em) for better accessibility */
+html {
+	font-size: 16px;
+}
+
 body {
 	font-size: 1em;
 	background-color: #FDF7E2;
-	margin-bottom: 3.125em; /* 50px in em units */
-	margin: 0.625em 1.875em; /* 10px 30px in em units */
+	margin: 0.625em 1.875em 3.125em 1.875em; /* 10px 30px 50px 30px in em units */
+  position: relative;
 }
 
-#app-topper h1, #app-topper h2, #app-topper h3 {
-	display: inline-block;
+#app-topper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#app-topper h1, 
+#app-topper h2, 
+#app-topper h3 {
 	margin-left: 1.875em; /* 30px in em units */
 }
 
-#app-topper h3, .select-services h4 {
+#app-topper h3, 
+.select-services h4 {
 	font-style: italic;
 }
 
 .alert {
 	width: auto; /* Let the content dictate the width */
 	margin-left: 3.75em; /* 60px in em units */
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 1em 3.75em; /* Adjust padding as needed */
+}
+
+.select-services {
+  margin: 3.125em 0 0 3.125em; /* 50px 0 0 50px in em units */
+  color: white;
+  width: auto; /* Allow content to dictate width */
+  padding: 1.25em; /* 20px in em units */
+  border: solid 0.1875em #C80909; /* 3px in em units */
+  border-radius: 1.25em; /* 20px in em units */
+  background: #C80909;
 }
 
 #seaching-indicator {
@@ -120,13 +146,13 @@ body {
 }
 
 .btn-primary {
-	background-color: rgb(110, 141, 195);
+	background-color: #486DAD;
 	width: 6.25em; /* 100px in em units */
 	box-shadow: 0.1875em 0.1875em 0.375em black;
 }
 
 #form-control {
-	width: 2.0625em; /* 33px in em units */
+	width: 13%; /* 33px in em units */
 	padding: 0.3125em; /* 5px in em units */
 }
 
@@ -147,5 +173,5 @@ body {
 
 #app-footer {
 	margin-top: 3.125em; /* 50px in em units */
-	border-top: 0.125em lightblue solid; /* 2px lightblue solid */
+	border-top: 0.125em black solid; /* 2px lightblue solid */
 }
