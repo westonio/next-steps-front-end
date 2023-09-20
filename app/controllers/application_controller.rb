@@ -1,5 +1,5 @@
 class ApplicationController < ActionController::Base
-  helper_method :current_user
+  helper_method :current_user, :current_admin?, :current_agent?
 
   def current_user
     @_current_user ||= User.find(session[:user_id]) if session[:user_id]
@@ -9,7 +9,7 @@ class ApplicationController < ActionController::Base
     current_user && current_user.admin?
   end
 
-  def current_provider?
-    current_user && current_user.provider?
+  def current_agent?
+    current_user && current_user.agent?
   end
 end
