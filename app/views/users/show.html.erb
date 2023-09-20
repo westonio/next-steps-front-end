@@ -1,24 +1,15 @@
-<% if current_user %>
 <h2>User Dashboard</h2>
-<p>Your Username:  <%= @user.username %></p>
-<p>[ <%= link_to "Change password", edit_user_path(@user.id) %> ]</p>
-<%= form_for @user, url: user_path(@user), method: :delete, html: { class: 'delete-form' } do |f| %>
+<p>Your Username:  <%= current_user.username %></p>
+<p>[ <%= link_to "Change password", edit_user_path(current_user) %> ]</p>
+<%= form_for current_user, url: user_path(current_user), method: :delete, html: { class: 'delete-form' } do |f| %>
   <%= f.button "Delete my account", class: 'delete-button' %>
 <% end %>
+<br/>
 
-
-<h3>My Favorite Providers</h3>
-
+<% if current_agent? && approved? %>
+  <p><%= link_to 'Add My Service', register_provider_path %></p>
+<% elsif current_user && !current_agent? %>
+  <h3>My Favorite Providers</h3>
 <% end %>
 
-<% if current_agent? %>
-  <h2>Agent Dashboard</h2>
-  <p>Your Username:  <%= @user.username %></p>
-  <p>[ <%= link_to "Change password", edit_user_path(@user.id) %> ]</p>
-  <%= form_for @user, url: user_path(@user), method: :delete, html: { class: 'delete-form' } do |f| %>
-    <%= f.button "Delete my account", class: 'delete-button' %>
-
-
-   <li class="nav-item">Click here to add your service: <%= link_to 'Add My Service', register_provider_path, class: "nav-link" %></li>
-<% end %>
 

@@ -6,7 +6,8 @@ class User < ApplicationRecord
 
   has_secure_password
 
-  enum role: %w[user agent admin]
+  enum role: { user: 0, agent: 1, admin: 2}
+  enum status: { pending: 0, approved: 1, rejected: 2 }
 
   def self.from_omniauth(response)
     User.find_or_create_by(uid: response["uid"], provider: response["provider"]) do |u|

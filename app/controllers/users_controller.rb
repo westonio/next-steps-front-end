@@ -13,8 +13,15 @@ class UsersController < ApplicationController
 
   def create
     @user = User.new(user_params)
-  
-    if user_params_valid? && @user.save
+    @user.role = params[:role]
+
+    if user_params_valid? && agent? && @user.save
+      @user.status = 'pending'
+      flash[:success] = "Your account has been created pending approval"
+      session[:user_id] = @user.id
+      redirect_to user_path(@user)
+
+    elsif user_params_valid? && @user.save
       flash[:success] = "User created successfully"
       session[:user_id] = @user.id
       redirect_to user_path(@user)
@@ -90,6 +97,10 @@ class UsersController < ApplicationController
   
   def user_params_valid?
     !user_params[:username].empty? && !user_params[:password].empty? && user_params[:password] == params[:password_verify]
+  end
+
+  def agent?
+    params[:role] == "agent"
   end
 
 end

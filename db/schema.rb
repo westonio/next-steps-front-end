@@ -19,9 +19,11 @@ ActiveRecord::Schema[7.0].define(version: 2023_09_19_184307) do
     t.string "password_digest"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.integer "role", default: 0
     t.string "uid"
     t.string "provider"
+    t.integer "role", default: 0
+    t.string "provider_id"
+    t.integer "status"
   end
 
 end

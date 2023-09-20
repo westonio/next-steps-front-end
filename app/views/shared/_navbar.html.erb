@@ -11,7 +11,6 @@
         </li>
         <% if !session[:user_id] %>
           <li class="nav-item"><%= link_to 'Create user account', new_user_path, class: "nav-link" %></li>
-          <li class="nav-item"><%= link_to 'Create provider account', register_provider_path, class: "nav-link" %></li>
           <li class="nav-item"><%= link_to 'Sign in', users_login_path, class: "nav-link" %></li>
         <% else %>
           <li class="nav-item"><%= link_to 'View my Dashboard', user_path(current_user), class: "nav-link" %></li>

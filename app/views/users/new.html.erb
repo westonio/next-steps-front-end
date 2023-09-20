@@ -3,6 +3,9 @@
   <h2>Create a New User Account</h2>
   <div id="create-user-form">
     <%= form_with(model: @user, url: users_path, method: :post, local: true) do |form| %>
+    
+      <%= form.label :role, "Select Account Type" %> <%= form.select :role, User.roles.keys[0..1], size: "30" %><br />
+
       <%= form.label :username, "Choose a username" %> <%= form.text_field :username, size: "30" %><br />
       <%= form.label :password, "Enter a password" %> <%= form.password_field :password, size: "30" %><br />
       <%= form.label :password_verify, "Confirm the password" %> <%= form.password_field :password_verify, size: "30" %><br />

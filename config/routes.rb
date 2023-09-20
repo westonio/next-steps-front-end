@@ -16,9 +16,10 @@ Rails.application.routes.draw do
   # Providers
   resources :providers, only: [:show]
 
-  # Agent features
-  get "/agent/login", to: "agents#login_form"
-  post "/agent/login", to: "agents#login"
+  # # Agent features
+  # get "/agent/login", to: "agents#login_form"
+  # post "/agent/login", to: "agents#login"
+  resources :agents
 
   # User features
   get "/users/login", to: "users#login_form"

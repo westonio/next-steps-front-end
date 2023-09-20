@@ -97,4 +97,13 @@ RSpec.describe 'User Dashboard page', :vcr do
       end
     end
   end
+
+  describe "user or agent selection on the create user account page" do
+    it "has a field to select 'user' or 'agent' from a dropdown menu" do
+      visit new_user_path
+      within('div.create-new-user') do
+        expect(page).to have_content("Select Account Type")
+      end
+    end
+  end
 end
