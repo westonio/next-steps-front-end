@@ -17,11 +17,9 @@ class UsersController < ApplicationController
     @user.status = 'pending' if agent?
 
     if user_params_valid? && agent? && @user.save
-      
       flash[:success] = "Account created with advanced features pending approval"
       session[:user_id] = @user.id
       redirect_to user_path(@user)
-
     elsif user_params_valid? && @user.save
       flash[:success] = "User created successfully"
       session[:user_id] = @user.id
@@ -103,5 +101,4 @@ class UsersController < ApplicationController
   def agent?
     params[:role] == "agent"
   end
-
 end

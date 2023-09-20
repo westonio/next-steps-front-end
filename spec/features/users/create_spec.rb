@@ -69,6 +69,7 @@ RSpec.describe 'User Registration page', :vcr do
         expect(page).to have_content("Invalid entries, please try again")
       end
 
+      # Selector for User or Agent
       it "has a field to select 'user' or 'agent' from a dropdown menu" do
         within('div.create-new-user') do
           expect(page).to have_content("Select Account Type")

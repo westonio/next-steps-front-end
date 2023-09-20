@@ -45,7 +45,7 @@ RSpec.describe 'User Login page', :vcr do
     it "I no longer see the links for 'Create user account', 'Create provider account', or 'Sign in'.  Instead see links to 'View my Dashboard' and 'Log out'." do
       visit root_path
 
-      expect(page).to have_link("Create user account")
+      expect(page).to have_link("Create an account")
       # expect(page).to have_link("Create provider account")
       expect(page).to have_link("Sign in")
       expect(page).to_not have_link("View my Dashboard")
@@ -57,7 +57,7 @@ RSpec.describe 'User Login page', :vcr do
       fill_in "password", with: @user.password
       click_button "Login"
       
-      expect(page).to_not have_link("Create user account")
+      expect(page).to_not have_link("Create an account")
       # expect(page).to_not have_link("Create provider account")
       expect(page).to_not have_link("Sign in")
       expect(page).to have_link("View my Dashboard")
@@ -65,7 +65,7 @@ RSpec.describe 'User Login page', :vcr do
 
       visit root_path
       
-      expect(page).to_not have_link("Create user account")
+      expect(page).to_not have_link("Create an account")
       # expect(page).to_not have_link("Create provider account")
       expect(page).to_not have_link("Sign in")
       expect(page).to have_link("View my Dashboard")
@@ -92,7 +92,7 @@ RSpec.describe 'User Login page', :vcr do
       fill_in "password", with: @user.password
       click_button "Login"
 
-      expect(page).to_not have_link("Create user account")
+      expect(page).to_not have_link("Create an account")
       # expect(page).to_not have_link("Create provider account")
       expect(page).to_not have_link("Sign in")
       expect(page).to have_link("View my Dashboard")
@@ -101,7 +101,7 @@ RSpec.describe 'User Login page', :vcr do
       click_link("Sign out", match: :first)
 
       expect(current_path).to eq root_path
-      expect(page).to have_link("Create user account")
+      expect(page).to have_link("Create an account")
       # expect(page).to have_link("Create provider account")
       expect(page).to have_link("Sign in")
       expect(page).to_not have_link("View my Dashboard")
