@@ -78,11 +78,4 @@ class UsersController < ApplicationController
   def user_params_valid?
      user_params[:password] == params[:password_verify]
   end
-
-  def check_session_timeout
-    if session_expired?
-      redirect_to '/logout?timeout=true'
-      flash[:timeout] = "Session expired"
-    end
-  end
 end

@@ -27,6 +27,13 @@ module SessionsHelper
     reset_session
   end
 
+  def check_session_timeout
+    if session_expired?
+      redirect_to '/logout?timeout=true'
+      flash[:timeout] = "Session expired"
+    end
+  end
+
   def session_expired?
     session[:last_activity].present? && Time.now - session[:last_activity].to_time > inactivity_timeout
   end
