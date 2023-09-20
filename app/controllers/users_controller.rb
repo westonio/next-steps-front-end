@@ -3,11 +3,13 @@ class UsersController < ApplicationController
   end
 
   def show
-    @user = User.find_by(id: params[:id])
-    
-    if @user.nil? || current_user != @user
-      flash[:warning] = "You must be logged in to access this page."
+    begin
+      @user = User.find_by(id: params[:id])
+      raise "You must be logged in to access this page." unless valid_session_and_user?
+      check_session_timeout
+    rescue StandardError => e
       redirect_to users_login_path
+      flash[:warning] = e.message
     end
   end  
 
@@ -16,7 +18,7 @@ class UsersController < ApplicationController
   
     if user_params_valid? && @user.save
       flash[:success] = "User created successfully"
-      session[:user_id] = @user.id
+      login(@user)
       redirect_to user_path(@user)
     else
       flash[:warning] = "Invalid entries, please try again"
@@ -25,15 +27,12 @@ class UsersController < ApplicationController
   end
 
   def edit
-    if !session[:user_id]
+    if !logged_in? || !correct_user?
       flash[:warning] = "You must be logged in to access this page."
       redirect_to users_login_path
     else
       @user = User.find(params[:id])
-      if @user.nil? || current_user != @user
-        flash[:warning] = "You must be logged in to access this page."
-        redirect_to users_login_path
-      end
+      check_session_timeout
     end
   end
   
@@ -52,36 +51,24 @@ class UsersController < ApplicationController
   end
 
   def destroy
-    @user = User.find_by(id: params[:id])
-    @user.destroy
-    session[:user_id] = nil
-    flash[:success] = "Your account has been successfully deleted."
-    redirect_to root_path
+    if !logged_in? || !correct_user?
+      flash[:warning] = "You must be logged in to access this page."
+      redirect_to users_login_path
+    elsif !session_expired?
+      user = User.find_by(id: params[:id])
+      user.destroy
+      session[:user_id] = nil
+      flash[:success] = "Your account has been successfully deleted."
+      redirect_to root_path
+    else
+      check_session_timeout 
+    end
   end
   
   
   def login_form
   end
 
-  def login
-    user = User.find_by(username: params[:username])
-    if user && user.authenticate(params[:password])
-      session[:user_id] = user.id
-      flash[:success] = "Logged in successfully"
-      redirect_to user_path(user.id)
-    else
-      flash[:warning] = "Invalid credentials. Please try again."
-      redirect_to users_login_path
-    end
-  end
-  
-  def logout
-    @user = nil
-    session[:user_id] = nil
-    flash[:success] = "You have successfully logged out"
-    redirect_to root_path
-  end
-  
   private
 
   def user_params
@@ -89,7 +76,13 @@ class UsersController < ApplicationController
   end
   
   def user_params_valid?
-    !user_params[:username].empty? && !user_params[:password].empty? && user_params[:password] == params[:password_verify]
+     user_params[:password] == params[:password_verify]
   end
 
+  def check_session_timeout
+    if session_expired?
+      redirect_to '/logout?timeout=true'
+      flash[:timeout] = "Session expired"
+    end
+  end
 end
