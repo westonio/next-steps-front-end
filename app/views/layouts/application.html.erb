@@ -1,51 +1,62 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>NextStepsFrontEnd</title>
-        <meta name="viewport" content="width=device-width,initial-scale=1" />
-        <%= csrf_meta_tags %> <%= csp_meta_tag %> <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %> <%= javascript_importmap_tags %>
-    </head>
-    <body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>The Next Steps to resources like food, housing, health, and crisis services</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    <%= javascript_importmap_tags %>
+    
+    <style>
+        /* Add CSS styles here */
+        body {
+            text-align: left; /* Align text to the left */
+        }
+        /* You can also style specific elements */
+        header {
+            text-align: left; /* Align header text to the left */
+        }
+        main {
+            text-align: left; /* Align main content text to the left */
+        }
+        /* Adjust other styles as needed */
+    </style>
+</head>
+<body>
+    <header>
         <div id="app-topper">
-            <h1>Next Steps</h1>
-            <h3>Help is near!</h3>
+            <h1>Next Steps</h1><br>
+            <h2>Help is near!</h2>
             <%= render 'shared/navbar' %>
         </div>
-        <% if flash.any? %> 
-            <% flash.each do |type, msg| %>
-                <% if type == "success" %>
-                    <div class="alert alert-success" role="alert">
-                        <%= msg.html_safe %>
-                    </div>
-                <% elsif type == "info" %>
-                    <div class="alert alert-info" role="alert">
-                        <%= msg.html_safe %>
-                    </div>
-                <% elsif type == "warning" %>
-                    <div class="alert alert-warning" role="alert">
-                        <%= msg.html_safe %>
-                    </div>
-                <% elsif type == "danger" %>
-                    <div class="alert alert-danger" role="alert">
+    </header>
+    
+    <main>
+        <% if flash.any? %>
+            <div role="alert">
+                <% flash.each do |type, msg| %>
+                    <div class="alert alert-<%= type %>" aria-live="polite">
                         <%= msg.html_safe %>
                     </div>
                 <% end %>
-            <% end %>
-
+            </div>
             <script>
-            // Automatically refresh the page after flash message
+                // Automatically refresh the page after a flash message
                 setTimeout(function() {
-                window.location.reload();
+                    window.location.reload();
                 }, 3000); // 3000 milliseconds = 3 seconds
             </script>
         <% end %>
 
         <%= yield %>
+    </main>
 
-        <footer>
-            <div id="app-footer">
-              <%= render 'shared/navbar' %>
-            </div>
-        </footer>
-    </body>
+    <footer>
+        <div id="app-footer">
+            <%= render 'shared/navbar' %>
+        </div>
+    </footer>
+</body>
 </html>
