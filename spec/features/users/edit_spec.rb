@@ -28,6 +28,7 @@ RSpec.describe 'User Edit page', :vcr do
       fill_in "Password", with: user1.password
       click_button "Login"
       visit edit_user_path(user2.id)
+      expect(page).to have_content("You must be logged in to access this page.")
     end
   end
 end
