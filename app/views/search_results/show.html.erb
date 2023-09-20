@@ -1,14 +1,17 @@
 <h2>Search Results for <%= @category %></h2>
 
-  <h3>Urgent Care results</h3>
-
-  <div class="results-container">
-    <% @results.urgent_care.each do |provider| %>
-      <div class="result-item">
-        <b>Provider name:</b> <%= link_to provider.provider_name, provider_path(id: provider.id, category: @category), class: "provider-details-#{provider.id}" %><br>
-        <b>Address:</b> <%= provider.street %><br>
-        <b>City:</b> <%= provider.city %><br>
-        <b>Description:</b> <%= provider.description[0, 100] %>...
-      </div>
-    <% end %>
-  </div>
+  <% @results.each do |category, results| %>
+  <% if results.any? %>
+    <h3><%= category.to_s.humanize %> results</h3>
+    <div class="results-container">
+      <% results.each do |provider| %>
+        <div class="result-item">
+          <b> Provider name:</b> <%= link_to provider.provider_name, provider_path(provider.id, category: category) %><br>
+          <b>Address:</b> <%= provider.street %><br>
+          <b>City:</b> <%= provider.city %><br>
+          <b>Description:</b> <%= provider.description %>
+        </div>
+      <% end %>
+    </div>
+  <% end %>
+<% end %>

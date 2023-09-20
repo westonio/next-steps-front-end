@@ -1,6 +1,6 @@
 class SearchResourcesController < ApplicationController
   def index
-    @results = SearchFacade.new(params)
+    @results = SearchFacade.new(params).search_results
     @location = params[:hidden_location]
     
     begin

@@ -506,6 +506,428 @@
         }
       },
       "recorded_at": "Sat, 16 Sep 2023 22:40:46 GMT"
+    },
+    {
+      "request": {
+        "method": "get",
+        "uri": "https://ancient-reaches-38594-79ad833137d5.herokuapp.com/api/v0/search?keyword=urgent%20care&location=Denver",
+        "body": {
+          "encoding": "US-ASCII",
+          "string": ""
+        },
+        "headers": {
+          "User-Agent": [
+            "Faraday v2.7.11"
+          ],
+          "Accept-Encoding": [
+            "gzip;q=1.0,deflate;q=0.6,identity;q=0.3"
+          ],
+          "Accept": [
+            "*/*"
+          ]
+        }
+      },
+      "response": {
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "headers": {
+          "Server": [
+            "Cowboy"
+          ],
+          "Date": [
+            "Wed, 20 Sep 2023 17:19:48 GMT"
+          ],
+          "Connection": [
+            "keep-alive"
+          ],
+          "X-Frame-Options": [
+            "SAMEORIGIN"
+          ],
+          "X-Xss-Protection": [
+            "0"
+          ],
+          "X-Content-Type-Options": [
+            "nosniff"
+          ],
+          "X-Download-Options": [
+            "noopen"
+          ],
+          "X-Permitted-Cross-Domain-Policies": [
+            "none"
+          ],
+          "Referrer-Policy": [
+            "strict-origin-when-cross-origin"
+          ],
+          "Content-Type": [
+            "application/json; charset=utf-8"
+          ],
+          "Vary": [
+            "Accept"
+          ],
+          "Etag": [
+            "W/\"d14553a8ff8d29368383a49608603097\""
+          ],
+          "Cache-Control": [
+            "max-age=0, private, must-revalidate"
+          ],
+          "X-Request-Id": [
+            "4aaa0a6f-7855-4fc1-8d6c-257835194f0a"
+          ],
+          "X-Runtime": [
+            "1.125331"
+          ],
+          "Transfer-Encoding": [
+            "chunked"
+          ],
+          "Via": [
+            "1.1 vegur"
+          ]
+        },
+        "body": {
+          "encoding": "UTF-8",
+          "string": "{\"data\":[{\"id\":\"211colorad-a0h4T000003fVnWQAU\",\"type\":\"filtered_provider\",\"attributes\":{\"category\":\"urgent care\",\"provider_name\":\"MEDICAL CARE\",\"street\":\"17121 S Golden St Rd\",\"city\":\"Golden\",\"state\":\"CO\",\"lat\":\"39.733820\",\"lon\":\"-105.175970\",\"description\":\"Assists with:Common illnessesMinor injuriesPhysicalsPediatricsX-raysLab servicesImmunizations\"}},{\"id\":\"211colorad-a0h4T0000017LiLQAU\",\"type\":\"filtered_provider\",\"attributes\":{\"category\":\"urgent care\",\"provider_name\":\"MEDICAL CARE\",\"street\":\"7595 W Colfax Ave\",\"city\":\"Lakewood\",\"state\":\"CO\",\"lat\":\"39.740390\",\"lon\":\"-105.080920\",\"description\":\"Assists with:Common illnessesMinor injuriesPhysicalsPediatricsX-raysLab servicesImmunizations\"}},{\"id\":\"211colorad-a0h4T000003fVnbQAE\",\"type\":\"filtered_provider\",\"attributes\":{\"category\":\"urgent care\",\"provider_name\":\"MEDICAL CARE\",\"street\":\"9720 Grant St\",\"city\":\"Thornton\",\"state\":\"CO\",\"lat\":\"39.867370\",\"lon\":\"-104.983520\",\"description\":\"Assists with:Common illnessesMinor injuriesPhysicalsPediatricsX-raysLab servicesImmunizations\"}},{\"id\":\"211colorad-a0h4T000003fVnXQAU\",\"type\":\"filtered_provider\",\"attributes\":{\"category\":\"urgent care\",\"provider_name\":\"MEDICAL CARE\",\"street\":\"18890 E Hampden Ave\",\"city\":\"Aurora\",\"state\":\"CO\",\"lat\":\"39.652141\",\"lon\":\"-104.768338\",\"description\":\"Assists with:Common illnessesMinor injuriesPhysicalsPediatricsX-raysLab servicesImmunizations\"}},{\"id\":\"211colorad-a0h4T000003fVncQAE\",\"type\":\"filtered_provider\",\"attributes\":{\"category\":\"urgent care\",\"provider_name\":\"MEDICAL CARE\",\"street\":\"4590 W 121st Ave\",\"city\":\"Broomfield\",\"state\":\"CO\",\"lat\":\"39.914928\",\"lon\":\"-105.045780\",\"description\":\"Assists with:Common illnessesMinor injuriesPhysicalsPediatricsX-raysLab servicesImmunizations\"}},{\"id\":\"211colorad-a0h4T000003fVngQAE\",\"type\":\"filtered_provider\",\"attributes\":{\"category\":\"urgent care\",\"provider_name\":\"MEDICAL CARE\",\"street\":\"7380 W 52nd Ave\",\"city\":\"Arvada\",\"state\":\"CO\",\"lat\":\"39.788840\",\"lon\":\"-105.078550\",\"description\":\"Assists with:Common illnessesMinor injuriesPhysicalsPediatricsX-raysLab servicesImmunizations\"}},{\"id\":\"211colorad-a0h4T000003faIPQAY\",\"type\":\"filtered_provider\",\"attributes\":{\"category\":\"urgent care\",\"provider_name\":\"ADULT URGENT CARE\",\"street\":\"1545 California St\",\"city\":\"Denver\",\"state\":\"CO\",\"lat\":\"39.744610\",\"lon\":\"-104.992910\",\"description\":\"Provides medical services for non-emergent illnesses and injuries.\"}},{\"id\":\"211colorad-a0h4T000003faIUQAY\",\"type\":\"filtered_provider\",\"attributes\":{\"category\":\"urgent care\",\"provider_name\":\"ADULT URGENT CARE\",\"street\":\"1339 S Federal Blvd\",\"city\":\"Denver\",\"state\":\"CO\",\"lat\":\"39.692477\",\"lon\":\"-105.025769\",\"description\":\"Provides medical services for non-emergent illnesses and injuries.\"}},{\"id\":\"211colorad-a0h4T000002tzkbQAA\",\"type\":\"filtered_provider\",\"attributes\":{\"category\":\"urgent care\",\"provider_name\":\"PEDIATRIC EMERGENCY AND URGENT CARE\",\"street\":\"777 Bannock St\",\"city\":\"Denver\",\"state\":\"CO\",\"lat\":\"39.728285\",\"lon\":\"-104.990525\",\"description\":\"Provides emergency and urgent medical care for children and youth. Pediatric sub-specialties also include:Trauma careInpatient unitRadiologySurgeryAnesthesiology\"}},{\"id\":\"211colorad-a0h4T000002u0lsQAA\",\"type\":\"filtered_provider\",\"attributes\":{\"category\":\"urgent care\",\"provider_name\":\"ADULT URGENT CARE\",\"street\":\"777 Bannock St\",\"city\":\"Denver\",\"state\":\"CO\",\"lat\":\"39.728285\",\"lon\":\"-104.990525\",\"description\":\"Provides medical services for non-emergent illnesses and injuries.\"}}]}"
+        }
+      },
+      "recorded_at": "Wed, 20 Sep 2023 17:19:48 GMT"
+    },
+    {
+      "request": {
+        "method": "get",
+        "uri": "https://ancient-reaches-38594-79ad833137d5.herokuapp.com/api/v0/search?keyword=urgent%20care&location=Denver",
+        "body": {
+          "encoding": "US-ASCII",
+          "string": ""
+        },
+        "headers": {
+          "User-Agent": [
+            "Faraday v2.7.11"
+          ],
+          "Accept-Encoding": [
+            "gzip;q=1.0,deflate;q=0.6,identity;q=0.3"
+          ],
+          "Accept": [
+            "*/*"
+          ]
+        }
+      },
+      "response": {
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "headers": {
+          "Server": [
+            "Cowboy"
+          ],
+          "Date": [
+            "Wed, 20 Sep 2023 17:20:54 GMT"
+          ],
+          "Connection": [
+            "keep-alive"
+          ],
+          "X-Frame-Options": [
+            "SAMEORIGIN"
+          ],
+          "X-Xss-Protection": [
+            "0"
+          ],
+          "X-Content-Type-Options": [
+            "nosniff"
+          ],
+          "X-Download-Options": [
+            "noopen"
+          ],
+          "X-Permitted-Cross-Domain-Policies": [
+            "none"
+          ],
+          "Referrer-Policy": [
+            "strict-origin-when-cross-origin"
+          ],
+          "Content-Type": [
+            "application/json; charset=utf-8"
+          ],
+          "Vary": [
+            "Accept"
+          ],
+          "Etag": [
+            "W/\"d14553a8ff8d29368383a49608603097\""
+          ],
+          "Cache-Control": [
+            "max-age=0, private, must-revalidate"
+          ],
+          "X-Request-Id": [
+            "8ae0a485-b928-4d42-ab73-7f021d7976fc"
+          ],
+          "X-Runtime": [
+            "0.421056"
+          ],
+          "Transfer-Encoding": [
+            "chunked"
+          ],
+          "Via": [
+            "1.1 vegur"
+          ]
+        },
+        "body": {
+          "encoding": "UTF-8",
+          "string": "{\"data\":[{\"id\":\"211colorad-a0h4T000003fVnWQAU\",\"type\":\"filtered_provider\",\"attributes\":{\"category\":\"urgent care\",\"provider_name\":\"MEDICAL CARE\",\"street\":\"17121 S Golden St Rd\",\"city\":\"Golden\",\"state\":\"CO\",\"lat\":\"39.733820\",\"lon\":\"-105.175970\",\"description\":\"Assists with:Common illnessesMinor injuriesPhysicalsPediatricsX-raysLab servicesImmunizations\"}},{\"id\":\"211colorad-a0h4T0000017LiLQAU\",\"type\":\"filtered_provider\",\"attributes\":{\"category\":\"urgent care\",\"provider_name\":\"MEDICAL CARE\",\"street\":\"7595 W Colfax Ave\",\"city\":\"Lakewood\",\"state\":\"CO\",\"lat\":\"39.740390\",\"lon\":\"-105.080920\",\"description\":\"Assists with:Common illnessesMinor injuriesPhysicalsPediatricsX-raysLab servicesImmunizations\"}},{\"id\":\"211colorad-a0h4T000003fVnbQAE\",\"type\":\"filtered_provider\",\"attributes\":{\"category\":\"urgent care\",\"provider_name\":\"MEDICAL CARE\",\"street\":\"9720 Grant St\",\"city\":\"Thornton\",\"state\":\"CO\",\"lat\":\"39.867370\",\"lon\":\"-104.983520\",\"description\":\"Assists with:Common illnessesMinor injuriesPhysicalsPediatricsX-raysLab servicesImmunizations\"}},{\"id\":\"211colorad-a0h4T000003fVnXQAU\",\"type\":\"filtered_provider\",\"attributes\":{\"category\":\"urgent care\",\"provider_name\":\"MEDICAL CARE\",\"street\":\"18890 E Hampden Ave\",\"city\":\"Aurora\",\"state\":\"CO\",\"lat\":\"39.652141\",\"lon\":\"-104.768338\",\"description\":\"Assists with:Common illnessesMinor injuriesPhysicalsPediatricsX-raysLab servicesImmunizations\"}},{\"id\":\"211colorad-a0h4T000003fVncQAE\",\"type\":\"filtered_provider\",\"attributes\":{\"category\":\"urgent care\",\"provider_name\":\"MEDICAL CARE\",\"street\":\"4590 W 121st Ave\",\"city\":\"Broomfield\",\"state\":\"CO\",\"lat\":\"39.914928\",\"lon\":\"-105.045780\",\"description\":\"Assists with:Common illnessesMinor injuriesPhysicalsPediatricsX-raysLab servicesImmunizations\"}},{\"id\":\"211colorad-a0h4T000003fVngQAE\",\"type\":\"filtered_provider\",\"attributes\":{\"category\":\"urgent care\",\"provider_name\":\"MEDICAL CARE\",\"street\":\"7380 W 52nd Ave\",\"city\":\"Arvada\",\"state\":\"CO\",\"lat\":\"39.788840\",\"lon\":\"-105.078550\",\"description\":\"Assists with:Common illnessesMinor injuriesPhysicalsPediatricsX-raysLab servicesImmunizations\"}},{\"id\":\"211colorad-a0h4T000003faIPQAY\",\"type\":\"filtered_provider\",\"attributes\":{\"category\":\"urgent care\",\"provider_name\":\"ADULT URGENT CARE\",\"street\":\"1545 California St\",\"city\":\"Denver\",\"state\":\"CO\",\"lat\":\"39.744610\",\"lon\":\"-104.992910\",\"description\":\"Provides medical services for non-emergent illnesses and injuries.\"}},{\"id\":\"211colorad-a0h4T000003faIUQAY\",\"type\":\"filtered_provider\",\"attributes\":{\"category\":\"urgent care\",\"provider_name\":\"ADULT URGENT CARE\",\"street\":\"1339 S Federal Blvd\",\"city\":\"Denver\",\"state\":\"CO\",\"lat\":\"39.692477\",\"lon\":\"-105.025769\",\"description\":\"Provides medical services for non-emergent illnesses and injuries.\"}},{\"id\":\"211colorad-a0h4T000002tzkbQAA\",\"type\":\"filtered_provider\",\"attributes\":{\"category\":\"urgent care\",\"provider_name\":\"PEDIATRIC EMERGENCY AND URGENT CARE\",\"street\":\"777 Bannock St\",\"city\":\"Denver\",\"state\":\"CO\",\"lat\":\"39.728285\",\"lon\":\"-104.990525\",\"description\":\"Provides emergency and urgent medical care for children and youth. Pediatric sub-specialties also include:Trauma careInpatient unitRadiologySurgeryAnesthesiology\"}},{\"id\":\"211colorad-a0h4T000002u0lsQAA\",\"type\":\"filtered_provider\",\"attributes\":{\"category\":\"urgent care\",\"provider_name\":\"ADULT URGENT CARE\",\"street\":\"777 Bannock St\",\"city\":\"Denver\",\"state\":\"CO\",\"lat\":\"39.728285\",\"lon\":\"-104.990525\",\"description\":\"Provides medical services for non-emergent illnesses and injuries.\"}}]}"
+        }
+      },
+      "recorded_at": "Wed, 20 Sep 2023 17:20:55 GMT"
+    },
+    {
+      "request": {
+        "method": "get",
+        "uri": "https://ancient-reaches-38594-79ad833137d5.herokuapp.com/api/v0/search?keyword=urgent%20care&location=Denver",
+        "body": {
+          "encoding": "US-ASCII",
+          "string": ""
+        },
+        "headers": {
+          "User-Agent": [
+            "Faraday v2.7.11"
+          ],
+          "Accept-Encoding": [
+            "gzip;q=1.0,deflate;q=0.6,identity;q=0.3"
+          ],
+          "Accept": [
+            "*/*"
+          ]
+        }
+      },
+      "response": {
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "headers": {
+          "Server": [
+            "Cowboy"
+          ],
+          "Date": [
+            "Wed, 20 Sep 2023 17:21:54 GMT"
+          ],
+          "Connection": [
+            "keep-alive"
+          ],
+          "X-Frame-Options": [
+            "SAMEORIGIN"
+          ],
+          "X-Xss-Protection": [
+            "0"
+          ],
+          "X-Content-Type-Options": [
+            "nosniff"
+          ],
+          "X-Download-Options": [
+            "noopen"
+          ],
+          "X-Permitted-Cross-Domain-Policies": [
+            "none"
+          ],
+          "Referrer-Policy": [
+            "strict-origin-when-cross-origin"
+          ],
+          "Content-Type": [
+            "application/json; charset=utf-8"
+          ],
+          "Vary": [
+            "Accept"
+          ],
+          "Etag": [
+            "W/\"d14553a8ff8d29368383a49608603097\""
+          ],
+          "Cache-Control": [
+            "max-age=0, private, must-revalidate"
+          ],
+          "X-Request-Id": [
+            "7e6b312e-ec5f-421a-876f-217d6c778ccb"
+          ],
+          "X-Runtime": [
+            "0.486422"
+          ],
+          "Transfer-Encoding": [
+            "chunked"
+          ],
+          "Via": [
+            "1.1 vegur"
+          ]
+        },
+        "body": {
+          "encoding": "UTF-8",
+          "string": "{\"data\":[{\"id\":\"211colorad-a0h4T000003fVnWQAU\",\"type\":\"filtered_provider\",\"attributes\":{\"category\":\"urgent care\",\"provider_name\":\"MEDICAL CARE\",\"street\":\"17121 S Golden St Rd\",\"city\":\"Golden\",\"state\":\"CO\",\"lat\":\"39.733820\",\"lon\":\"-105.175970\",\"description\":\"Assists with:Common illnessesMinor injuriesPhysicalsPediatricsX-raysLab servicesImmunizations\"}},{\"id\":\"211colorad-a0h4T0000017LiLQAU\",\"type\":\"filtered_provider\",\"attributes\":{\"category\":\"urgent care\",\"provider_name\":\"MEDICAL CARE\",\"street\":\"7595 W Colfax Ave\",\"city\":\"Lakewood\",\"state\":\"CO\",\"lat\":\"39.740390\",\"lon\":\"-105.080920\",\"description\":\"Assists with:Common illnessesMinor injuriesPhysicalsPediatricsX-raysLab servicesImmunizations\"}},{\"id\":\"211colorad-a0h4T000003fVnbQAE\",\"type\":\"filtered_provider\",\"attributes\":{\"category\":\"urgent care\",\"provider_name\":\"MEDICAL CARE\",\"street\":\"9720 Grant St\",\"city\":\"Thornton\",\"state\":\"CO\",\"lat\":\"39.867370\",\"lon\":\"-104.983520\",\"description\":\"Assists with:Common illnessesMinor injuriesPhysicalsPediatricsX-raysLab servicesImmunizations\"}},{\"id\":\"211colorad-a0h4T000003fVnXQAU\",\"type\":\"filtered_provider\",\"attributes\":{\"category\":\"urgent care\",\"provider_name\":\"MEDICAL CARE\",\"street\":\"18890 E Hampden Ave\",\"city\":\"Aurora\",\"state\":\"CO\",\"lat\":\"39.652141\",\"lon\":\"-104.768338\",\"description\":\"Assists with:Common illnessesMinor injuriesPhysicalsPediatricsX-raysLab servicesImmunizations\"}},{\"id\":\"211colorad-a0h4T000003fVncQAE\",\"type\":\"filtered_provider\",\"attributes\":{\"category\":\"urgent care\",\"provider_name\":\"MEDICAL CARE\",\"street\":\"4590 W 121st Ave\",\"city\":\"Broomfield\",\"state\":\"CO\",\"lat\":\"39.914928\",\"lon\":\"-105.045780\",\"description\":\"Assists with:Common illnessesMinor injuriesPhysicalsPediatricsX-raysLab servicesImmunizations\"}},{\"id\":\"211colorad-a0h4T000003fVngQAE\",\"type\":\"filtered_provider\",\"attributes\":{\"category\":\"urgent care\",\"provider_name\":\"MEDICAL CARE\",\"street\":\"7380 W 52nd Ave\",\"city\":\"Arvada\",\"state\":\"CO\",\"lat\":\"39.788840\",\"lon\":\"-105.078550\",\"description\":\"Assists with:Common illnessesMinor injuriesPhysicalsPediatricsX-raysLab servicesImmunizations\"}},{\"id\":\"211colorad-a0h4T000003faIPQAY\",\"type\":\"filtered_provider\",\"attributes\":{\"category\":\"urgent care\",\"provider_name\":\"ADULT URGENT CARE\",\"street\":\"1545 California St\",\"city\":\"Denver\",\"state\":\"CO\",\"lat\":\"39.744610\",\"lon\":\"-104.992910\",\"description\":\"Provides medical services for non-emergent illnesses and injuries.\"}},{\"id\":\"211colorad-a0h4T000003faIUQAY\",\"type\":\"filtered_provider\",\"attributes\":{\"category\":\"urgent care\",\"provider_name\":\"ADULT URGENT CARE\",\"street\":\"1339 S Federal Blvd\",\"city\":\"Denver\",\"state\":\"CO\",\"lat\":\"39.692477\",\"lon\":\"-105.025769\",\"description\":\"Provides medical services for non-emergent illnesses and injuries.\"}},{\"id\":\"211colorad-a0h4T000002tzkbQAA\",\"type\":\"filtered_provider\",\"attributes\":{\"category\":\"urgent care\",\"provider_name\":\"PEDIATRIC EMERGENCY AND URGENT CARE\",\"street\":\"777 Bannock St\",\"city\":\"Denver\",\"state\":\"CO\",\"lat\":\"39.728285\",\"lon\":\"-104.990525\",\"description\":\"Provides emergency and urgent medical care for children and youth. Pediatric sub-specialties also include:Trauma careInpatient unitRadiologySurgeryAnesthesiology\"}},{\"id\":\"211colorad-a0h4T000002u0lsQAA\",\"type\":\"filtered_provider\",\"attributes\":{\"category\":\"urgent care\",\"provider_name\":\"ADULT URGENT CARE\",\"street\":\"777 Bannock St\",\"city\":\"Denver\",\"state\":\"CO\",\"lat\":\"39.728285\",\"lon\":\"-104.990525\",\"description\":\"Provides medical services for non-emergent illnesses and injuries.\"}}]}"
+        }
+      },
+      "recorded_at": "Wed, 20 Sep 2023 17:21:54 GMT"
+    },
+    {
+      "request": {
+        "method": "get",
+        "uri": "https://ancient-reaches-38594-79ad833137d5.herokuapp.com/api/v0/search?keyword=urgent%20care&location=Denver",
+        "body": {
+          "encoding": "US-ASCII",
+          "string": ""
+        },
+        "headers": {
+          "User-Agent": [
+            "Faraday v2.7.11"
+          ],
+          "Accept-Encoding": [
+            "gzip;q=1.0,deflate;q=0.6,identity;q=0.3"
+          ],
+          "Accept": [
+            "*/*"
+          ]
+        }
+      },
+      "response": {
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "headers": {
+          "Server": [
+            "Cowboy"
+          ],
+          "Date": [
+            "Wed, 20 Sep 2023 17:22:21 GMT"
+          ],
+          "Connection": [
+            "keep-alive"
+          ],
+          "X-Frame-Options": [
+            "SAMEORIGIN"
+          ],
+          "X-Xss-Protection": [
+            "0"
+          ],
+          "X-Content-Type-Options": [
+            "nosniff"
+          ],
+          "X-Download-Options": [
+            "noopen"
+          ],
+          "X-Permitted-Cross-Domain-Policies": [
+            "none"
+          ],
+          "Referrer-Policy": [
+            "strict-origin-when-cross-origin"
+          ],
+          "Content-Type": [
+            "application/json; charset=utf-8"
+          ],
+          "Vary": [
+            "Accept"
+          ],
+          "Etag": [
+            "W/\"d14553a8ff8d29368383a49608603097\""
+          ],
+          "Cache-Control": [
+            "max-age=0, private, must-revalidate"
+          ],
+          "X-Request-Id": [
+            "56b3a003-fbc0-4a82-8ab5-d131760c9bec"
+          ],
+          "X-Runtime": [
+            "0.388159"
+          ],
+          "Transfer-Encoding": [
+            "chunked"
+          ],
+          "Via": [
+            "1.1 vegur"
+          ]
+        },
+        "body": {
+          "encoding": "UTF-8",
+          "string": "{\"data\":[{\"id\":\"211colorad-a0h4T000003fVnWQAU\",\"type\":\"filtered_provider\",\"attributes\":{\"category\":\"urgent care\",\"provider_name\":\"MEDICAL CARE\",\"street\":\"17121 S Golden St Rd\",\"city\":\"Golden\",\"state\":\"CO\",\"lat\":\"39.733820\",\"lon\":\"-105.175970\",\"description\":\"Assists with:Common illnessesMinor injuriesPhysicalsPediatricsX-raysLab servicesImmunizations\"}},{\"id\":\"211colorad-a0h4T0000017LiLQAU\",\"type\":\"filtered_provider\",\"attributes\":{\"category\":\"urgent care\",\"provider_name\":\"MEDICAL CARE\",\"street\":\"7595 W Colfax Ave\",\"city\":\"Lakewood\",\"state\":\"CO\",\"lat\":\"39.740390\",\"lon\":\"-105.080920\",\"description\":\"Assists with:Common illnessesMinor injuriesPhysicalsPediatricsX-raysLab servicesImmunizations\"}},{\"id\":\"211colorad-a0h4T000003fVnbQAE\",\"type\":\"filtered_provider\",\"attributes\":{\"category\":\"urgent care\",\"provider_name\":\"MEDICAL CARE\",\"street\":\"9720 Grant St\",\"city\":\"Thornton\",\"state\":\"CO\",\"lat\":\"39.867370\",\"lon\":\"-104.983520\",\"description\":\"Assists with:Common illnessesMinor injuriesPhysicalsPediatricsX-raysLab servicesImmunizations\"}},{\"id\":\"211colorad-a0h4T000003fVnXQAU\",\"type\":\"filtered_provider\",\"attributes\":{\"category\":\"urgent care\",\"provider_name\":\"MEDICAL CARE\",\"street\":\"18890 E Hampden Ave\",\"city\":\"Aurora\",\"state\":\"CO\",\"lat\":\"39.652141\",\"lon\":\"-104.768338\",\"description\":\"Assists with:Common illnessesMinor injuriesPhysicalsPediatricsX-raysLab servicesImmunizations\"}},{\"id\":\"211colorad-a0h4T000003fVncQAE\",\"type\":\"filtered_provider\",\"attributes\":{\"category\":\"urgent care\",\"provider_name\":\"MEDICAL CARE\",\"street\":\"4590 W 121st Ave\",\"city\":\"Broomfield\",\"state\":\"CO\",\"lat\":\"39.914928\",\"lon\":\"-105.045780\",\"description\":\"Assists with:Common illnessesMinor injuriesPhysicalsPediatricsX-raysLab servicesImmunizations\"}},{\"id\":\"211colorad-a0h4T000003fVngQAE\",\"type\":\"filtered_provider\",\"attributes\":{\"category\":\"urgent care\",\"provider_name\":\"MEDICAL CARE\",\"street\":\"7380 W 52nd Ave\",\"city\":\"Arvada\",\"state\":\"CO\",\"lat\":\"39.788840\",\"lon\":\"-105.078550\",\"description\":\"Assists with:Common illnessesMinor injuriesPhysicalsPediatricsX-raysLab servicesImmunizations\"}},{\"id\":\"211colorad-a0h4T000003faIPQAY\",\"type\":\"filtered_provider\",\"attributes\":{\"category\":\"urgent care\",\"provider_name\":\"ADULT URGENT CARE\",\"street\":\"1545 California St\",\"city\":\"Denver\",\"state\":\"CO\",\"lat\":\"39.744610\",\"lon\":\"-104.992910\",\"description\":\"Provides medical services for non-emergent illnesses and injuries.\"}},{\"id\":\"211colorad-a0h4T000003faIUQAY\",\"type\":\"filtered_provider\",\"attributes\":{\"category\":\"urgent care\",\"provider_name\":\"ADULT URGENT CARE\",\"street\":\"1339 S Federal Blvd\",\"city\":\"Denver\",\"state\":\"CO\",\"lat\":\"39.692477\",\"lon\":\"-105.025769\",\"description\":\"Provides medical services for non-emergent illnesses and injuries.\"}},{\"id\":\"211colorad-a0h4T000002tzkbQAA\",\"type\":\"filtered_provider\",\"attributes\":{\"category\":\"urgent care\",\"provider_name\":\"PEDIATRIC EMERGENCY AND URGENT CARE\",\"street\":\"777 Bannock St\",\"city\":\"Denver\",\"state\":\"CO\",\"lat\":\"39.728285\",\"lon\":\"-104.990525\",\"description\":\"Provides emergency and urgent medical care for children and youth. Pediatric sub-specialties also include:Trauma careInpatient unitRadiologySurgeryAnesthesiology\"}},{\"id\":\"211colorad-a0h4T000002u0lsQAA\",\"type\":\"filtered_provider\",\"attributes\":{\"category\":\"urgent care\",\"provider_name\":\"ADULT URGENT CARE\",\"street\":\"777 Bannock St\",\"city\":\"Denver\",\"state\":\"CO\",\"lat\":\"39.728285\",\"lon\":\"-104.990525\",\"description\":\"Provides medical services for non-emergent illnesses and injuries.\"}}]}"
+        }
+      },
+      "recorded_at": "Wed, 20 Sep 2023 17:22:21 GMT"
+    },
+    {
+      "request": {
+        "method": "get",
+        "uri": "https://ancient-reaches-38594-79ad833137d5.herokuapp.com/api/v0/search?keyword=urgent_care&location=Denver",
+        "body": {
+          "encoding": "US-ASCII",
+          "string": ""
+        },
+        "headers": {
+          "User-Agent": [
+            "Faraday v2.7.11"
+          ],
+          "Accept-Encoding": [
+            "gzip;q=1.0,deflate;q=0.6,identity;q=0.3"
+          ],
+          "Accept": [
+            "*/*"
+          ]
+        }
+      },
+      "response": {
+        "status": {
+          "code": 400,
+          "message": "Bad Request"
+        },
+        "headers": {
+          "Server": [
+            "Cowboy"
+          ],
+          "Date": [
+            "Wed, 20 Sep 2023 18:01:14 GMT"
+          ],
+          "Connection": [
+            "keep-alive"
+          ],
+          "X-Frame-Options": [
+            "SAMEORIGIN"
+          ],
+          "X-Xss-Protection": [
+            "0"
+          ],
+          "X-Content-Type-Options": [
+            "nosniff"
+          ],
+          "X-Download-Options": [
+            "noopen"
+          ],
+          "X-Permitted-Cross-Domain-Policies": [
+            "none"
+          ],
+          "Referrer-Policy": [
+            "strict-origin-when-cross-origin"
+          ],
+          "Content-Type": [
+            "application/json; charset=utf-8"
+          ],
+          "Vary": [
+            "Accept"
+          ],
+          "Cache-Control": [
+            "no-cache"
+          ],
+          "X-Request-Id": [
+            "c3a7084a-70d0-49d1-8756-84a5e00555b4"
+          ],
+          "X-Runtime": [
+            "0.366802"
+          ],
+          "Transfer-Encoding": [
+            "chunked"
+          ],
+          "Via": [
+            "1.1 vegur"
+          ]
+        },
+        "body": {
+          "encoding": "UTF-8",
+          "string": "{\"errors\":[{\"detail\":\"Invalid Parameters\"}]}"
+        }
+      },
+      "recorded_at": "Wed, 20 Sep 2023 18:01:15 GMT"
     }
   ],
   "recorded_with": "VCR 6.2.0"
