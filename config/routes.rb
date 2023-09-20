@@ -8,6 +8,9 @@ Rails.application.routes.draw do
     post "/provider/login", to: "providers#login"
   end
 
+  #OAuth
+  get '/auth/google_oauth2/callback', to: 'sessions#omniauth'
+
   # Search
   resources :search_results, only: [:index, :show]
   resources :search_resources, only: [:index]
@@ -19,7 +22,7 @@ Rails.application.routes.draw do
   get "/users/login", to: "users#login_form"
 
   post "users/login", to: "users#login"
-  resources :users, only: [:index, :show, :new, :create, :edit, :update]
+  resources :users, only: [:index, :show, :new, :create, :edit, :update, :destroy]
 
   post "/users/login", to: "users#login"
   get "/logout", to: "users#logout", as: "users_logout"

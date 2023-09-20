@@ -21,12 +21,6 @@ class NextStepsService
     response_json = JSON.parse(response.body, symbolize_names: true)[:data]
     ProviderDetails.new(response_json, category) 
   end
-
-  def self.post_provider(provider_info)
-    response = conn.post("providers", provider_info)
-   
-    JSON.parse(response.body, symbolize_names: true)
-  end
   
   def self.conn
     Faraday.new(url: "https://ancient-reaches-38594-79ad833137d5.herokuapp.com/api/v0/")

@@ -1,6 +1,5 @@
 // Custom bootstrap variables must be set or imported *before* bootstrap.
-@import "bootstrap-sprockets";
-@import "bootstrap";
+
 
 body {
 	background-color: #ededeb;
@@ -150,4 +149,45 @@ body {
 #app-footer {
 	margin-top: 50px;
 	border-top: 2px lightblue solid
+}
+
+.delete-button {
+  background-color: red;
+  color: white;
+}
+
+.user-login, .create-new-user {
+	width: fit-content;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 25px;
+	border: 1px solid rgb(110, 141, 195);
+	background-color: white;
+	border-radius: 20px;
+}
+
+#g-oauth-button {
+	margin-bottom: 10px;
+	margin-left: 10px;
+	width: fit-content;
+}
+
+#g-oauth-button img {
+	margin-bottom:3px; 
+	margin-right:5px;
+	width: 20px;
+}
+
+#user-login-form, #create-user-form {
+	margin-left: 10px;
+}
+
+#create-user-form {
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+#g-oauth-link button:hover {
+
+	box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.199);
 }

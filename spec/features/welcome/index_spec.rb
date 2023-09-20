@@ -23,18 +23,6 @@ RSpec.describe 'Welcome Page', :vcr do
         within('div#app-topper') do
           expect(page).to have_link('Home', href: '/')
           expect(page).to have_link('Create user account', href: new_user_path)
-          expect(page).to have_link('Create provider account', href: new_register_provider_path)
-          expect(page).to have_link('Sign in', href: users_login_path)
-        end
-      end
-    end
-
-    describe "Footer / Navigation Bar" do
-      it "has links to Home, Create an Account, Sign In" do
-        within('div#app-footer') do
-          expect(page).to have_link('Home', href: '/')
-          expect(page).to have_link('Create user account', href: new_user_path)
-          expect(page).to have_link('Create provider account', href: new_register_provider_path)
           expect(page).to have_link('Sign in', href: users_login_path)
         end
       end

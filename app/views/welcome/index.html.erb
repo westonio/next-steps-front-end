@@ -14,7 +14,7 @@
     
     <%= form_with url: search_results_path, method: :get, local: true do |form| %>
       <%= form.label :location, 'Enter your City, State, and/or Zip Code' %><br/>
-      <div id="searching-indicator" class="hidden"><p>Loading Address...</p></div>
+
       <div class="display-flex">
         <%= form.text_field :location, size: "40", id: "location" %> 
       
