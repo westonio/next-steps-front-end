@@ -1,6 +1,5 @@
 // Custom bootstrap variables must be set or imported *before* bootstrap.
 
-
 body {
 	background-color: #ededeb;
 	margin-bottom: 50px;
@@ -170,6 +169,7 @@ body {
 	margin-bottom: 10px;
 	margin-left: 10px;
 	width: fit-content;
+	border: solid 1px rgb(110, 141, 195);
 }
 
 #g-oauth-button img {
@@ -188,6 +188,5 @@ body {
 }
 
 #g-oauth-link button:hover {
-
 	box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.199);
 }
