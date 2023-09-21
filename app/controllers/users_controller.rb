@@ -3,13 +3,11 @@ class UsersController < ApplicationController
   end
 
   def show
-    begin
-      @user = User.find_by(id: params[:id])
-      raise "You must be logged in to access this page." unless valid_session_and_user?
-      check_session_timeout
-    rescue StandardError => e
+    @user = User.find_by(id: params[:id])
+    
+    if @user.nil? || current_user != @user
+      flash[:warning] = "You must be logged in to access this page."
       redirect_to users_login_path
-      flash[:warning] = e.message
     end
   end  
 
@@ -24,7 +22,7 @@ class UsersController < ApplicationController
       redirect_to user_path(@user)
     elsif user_params_valid? && @user.save
       flash[:success] = "User created successfully"
-      login(@user)
+      session[:user_id] = @user.id
       redirect_to user_path(@user)
     else
       flash[:warning] = "Invalid entries, please try again"
@@ -33,12 +31,15 @@ class UsersController < ApplicationController
   end
 
   def edit
-    if !logged_in? || !correct_user?
+    if !session[:user_id]
       flash[:warning] = "You must be logged in to access this page."
       redirect_to users_login_path
     else
       @user = User.find(params[:id])
-      check_session_timeout
+      if @user.nil? || current_user != @user
+        flash[:warning] = "You must be logged in to access this page."
+        redirect_to users_login_path
+      end
     end
   end
   
@@ -57,18 +58,11 @@ class UsersController < ApplicationController
   end
 
   def destroy
-    if !logged_in? || !correct_user?
-      flash[:warning] = "You must be logged in to access this page."
-      redirect_to users_login_path
-    elsif !session_expired?
-      user = User.find_by(id: params[:id])
-      user.destroy
-      session[:user_id] = nil
-      flash[:success] = "Your account has been successfully deleted."
-      redirect_to root_path
-    else
-      check_session_timeout 
-    end
+    @user = User.find_by(id: params[:id])
+    @user.destroy
+    session[:user_id] = nil
+    flash[:success] = "Your account has been successfully deleted."
+    redirect_to root_path
   end
   
   
@@ -109,7 +103,7 @@ class UsersController < ApplicationController
   end
   
   def user_params_valid?
-     user_params[:password] == params[:password_verify]
+    !user_params[:username].empty? && !user_params[:password].empty? && user_params[:password] == params[:password_verify]
   end
 
   def agent?
