@@ -1,0 +1,46 @@
+<div>
+  <h2>Admin Dashboard</h2>
+  <p>Your Username:  <%= current_user.username %></p>
+  <p>[ <%= link_to "Change password", edit_user_path(current_user) %> ]</p>
+  <%= form_for current_user, url: user_path(current_user), method: :delete, html: { class: 'delete-form' } do |f| %>
+    <%= f.button "Delete my account", class: 'delete-button' %>
+  <% end %>
+  <br />
+</div>
+
+<div class="separator"></div>
+<div class="user-accounts">
+  <h3>User Accounts</h3>
+    <% @user.each do |user| %>
+      <% if user.role == 'user' %>
+        <p>Username: <%= user.username %></p>
+        <p>Status: <%= user.status %></p>
+      <% end %>
+    <% end %> 
+</div>
+
+<div class="separator"></div>
+<div class="approved-agents">
+  <h3>Approved Agents</h3>
+    <% @user.each do |user| %>
+      <% if user.status == 'approved' && user.role == 'agent' %>
+        <p>Username: <%= user.username %></p>
+        <p>Status: <%= user.status %></p>
+      <% end %>
+    <% end %>
+</div>
+
+<div class="separator"></div>
+<div class="pending-agents">
+  <h3>Pending Agents</h3>
+    <% @user.each do |user| %>
+      <% if user.status == 'pending' && user.role == 'agent' %>
+        <p>Username: <%= user.username %></p>
+        <p>Status: <%= user.status %></p>
+
+        <%= button_to "Approve Agent", approve_admin_dashboard_path(user), method: :put, class: 'approve-button' %><br />
+        <%= button_to "Reject Agent", reject_admin_dashboard_path(user), method: :put, class: 'reject-button' %><br />
+        
+      <% end %>
+    <% end %>
+</div>

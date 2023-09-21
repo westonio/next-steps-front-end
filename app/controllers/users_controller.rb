@@ -71,7 +71,11 @@ class UsersController < ApplicationController
 
   def login
     user = User.find_by(username: params[:username])
-    if user && user.authenticate(params[:password])
+  if user && admin? && user.authenticate(params[:password]) 
+    session[:user_id] = user.id
+    flash[:success] = "Logged in successfully"
+    redirect_to admin_dashboard_index_path
+  elsif user && user.authenticate(params[:password])
       session[:user_id] = user.id
       flash[:success] = "Logged in successfully"
       redirect_to user_path(user.id)
@@ -100,5 +104,9 @@ class UsersController < ApplicationController
 
   def agent?
     params[:role] == "agent"
+  end
+
+  def admin?
+    params[:role] == "admin"
   end
 end

@@ -6,6 +6,15 @@ Rails.application.routes.draw do
     resources :providers
   end
 
+  namespace :admin do
+    resources :dashboard, only: [:index] do
+      member do
+        put 'approve'
+        put 'reject'
+      end
+    end
+  end
+
   #OAuth
   get '/auth/google_oauth2/callback', to: 'sessions#omniauth'
 
@@ -16,16 +25,11 @@ Rails.application.routes.draw do
   # Providers
   resources :providers, only: [:show]
 
-  # # Agent features
-  # get "/agent/login", to: "agents#login_form"
-  # post "/agent/login", to: "agents#login"
-  resources :agents
-
   # User features
   get "/users/login", to: "users#login_form"
 
   post "users/login", to: "users#login"
-  resources :users, only: [:index, :show, :new, :create, :edit, :update, :destroy]
+  resources :users
 
   post "/users/login", to: "users#login"
   get "/logout", to: "users#logout", as: "users_logout"
