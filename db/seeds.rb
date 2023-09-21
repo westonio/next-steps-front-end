@@ -5,3 +5,51 @@
 #
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)
+
+# Admin Users Manual Login
+admin_user = User.create!(
+  username: "admin",
+  password: "adminpassword",
+  role: "admin",
+  status: "approved"
+)
+
+
+# Users
+user1 = User.create!(
+  username: "fred",
+  password: "password",
+  role: "user",
+  status: "approved"
+)
+puts "user1 created"
+user2 = User.create!(
+  username: "frank",
+  password: "password",
+  role: "user",
+  status: "approved"
+)
+puts "user2 created"
+agent1 = User.create!(
+  username: "frida",
+  password: "password",
+  role: "agent",
+  status: "pending",
+  description: "I have 2 rooms available for previous offenders"
+)
+puts "agent1 created"
+agent2 = User.create!(
+  username: "frangelica",
+  password: "password",
+  role: "agent",
+  status: "pending",
+  description: "I own a group home and accept vouchers"
+)
+puts "agent2 created"
+
+# Admin Users Google OAuth Login
+google_admin1 = User.create!(
+  username: "allenrusselldev@gmail.com",
+  role: "admin",
+  status: "approved"
+)

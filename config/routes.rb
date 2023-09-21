@@ -3,7 +3,16 @@ Rails.application.routes.draw do
 
   # Register and Login
   namespace :register do
-    get '/provider', to: 'providers#new'
+    resources :providers
+  end
+
+  namespace :admin do
+    resources :dashboard, only: [:index] do
+      member do
+        patch 'approve'
+        patch 'reject'
+      end
+    end
   end
 
   #OAuth

@@ -1,5 +1,6 @@
+
 <div class="user-login">
-  <p>Need to create an account? <%= link_to "Click Here to create a user account", new_user_path %></p>
+  <p>Need to create an account? <%= link_to "Click Here to create an account", new_user_path %></p>
   <h2>User login</h2>
 
   <div id="google-oauth">
@@ -11,8 +12,6 @@
       </a>
     <p> Or enter your details: </p>
   </div>
-
-
 
   <%= form_with(url: users_login_path, method: :post, id: "user-login-form", local: true) do |form| %>
     <%= form.label :username, "Username" %>

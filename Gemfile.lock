@@ -307,6 +307,8 @@ DEPENDENCIES
   bootsnap
   capybara
   debug
+  factory_bot_rails
+  faker
   faraday
   importmap-rails
   jbuilder

@@ -6,7 +6,17 @@ RSpec.describe 'User Login page', :vcr do
       
       before do
         visit users_login_path
+        @admin_user = User.create(username: "admin", password: "adminpassword", role: "admin", status: "approved")
         @user = User.create!(username: 'my_username', password: 'my_password')
+      end
+
+      it "If user is 'admin' they are logged in as admin" do
+        fill_in "username", with: @admin_user.username
+        fill_in "password", with: @admin_user.password
+        click_button "Login"
+
+        expect(page).to have_content("Logged in as an admin")
+        expect(page).to have_current_path(admin_dashboard_index_path)
       end
 
       it "I see a place to enter my username and password" do
@@ -45,8 +55,7 @@ RSpec.describe 'User Login page', :vcr do
     it "I no longer see the links for 'Create user account', 'Create provider account', or 'Sign in'.  Instead see links to 'View my Dashboard' and 'Log out'." do
       visit root_path
 
-      expect(page).to have_link("Create user account")
-      expect(page).to have_link("Create provider account")
+      expect(page).to have_link("Create an account")
       expect(page).to have_link("Sign in")
       expect(page).to_not have_link("View my Dashboard")
       expect(page).to_not have_link("Sign out")
@@ -57,16 +66,14 @@ RSpec.describe 'User Login page', :vcr do
       fill_in "password", with: @user.password
       click_button "Login"
       
-      expect(page).to_not have_link("Create user account")
-      expect(page).to_not have_link("Create provider account")
+      expect(page).to_not have_link("Create an account")
       expect(page).to_not have_link("Sign in")
       expect(page).to have_link("View my Dashboard")
       expect(page).to have_link("Sign out")
 
       visit root_path
       
-      expect(page).to_not have_link("Create user account")
-      expect(page).to_not have_link("Create provider account")
+      expect(page).to_not have_link("Create an account")
       expect(page).to_not have_link("Sign in")
       expect(page).to have_link("View my Dashboard")
       expect(page).to have_link("Sign out")
@@ -92,8 +99,7 @@ RSpec.describe 'User Login page', :vcr do
       fill_in "password", with: @user.password
       click_button "Login"
 
-      expect(page).to_not have_link("Create user account")
-      expect(page).to_not have_link("Create provider account")
+      expect(page).to_not have_link("Create an account")
       expect(page).to_not have_link("Sign in")
       expect(page).to have_link("View my Dashboard")
       expect(page).to have_link("Sign out")
@@ -101,8 +107,7 @@ RSpec.describe 'User Login page', :vcr do
       click_link("Sign out", match: :first)
 
       expect(current_path).to eq users_login_path
-      expect(page).to have_link("Create user account")
-      expect(page).to have_link("Create provider account")
+      expect(page).to have_link("Create an account")
       expect(page).to have_link("Sign in")
       expect(page).to_not have_link("View my Dashboard")
       expect(page).to_not have_link("Sign out")
