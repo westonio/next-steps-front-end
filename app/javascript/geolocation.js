@@ -9,6 +9,7 @@ document.addEventListener('DOMContentLoaded', function() {
     geolocationButton.addEventListener('click', (event) => {
       event.preventDefault()
       navigator.geolocation.getCurrentPosition(success, error, options);
+      document.getElementById('searching-indicator').classList.remove('hidden');
     });
     
 
@@ -24,11 +25,10 @@ document.addEventListener('DOMContentLoaded', function() {
         const address = results[0].name;
         
         const locationField = document.getElementById('location');
-        const hiddenLocationField = document.getElementById('hidden-location')
 
-        if (locationField && hiddenLocationField) {
+        if (locationField) {
           locationField.value = address;
-          hiddenLocationField.value = address;
+          document.getElementById('searching-indicator').classList.add('hidden');
         }
         
       } else {
