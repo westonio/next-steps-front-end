@@ -20,18 +20,15 @@ Rails.application.routes.draw do
 
   # Search
   resources :search_results, only: [:index, :show]
-  resources :search_resources, only: [:index]
-
+  
   # Providers
   resources :providers, only: [:show]
 
   # User features
   get "/users/login", to: "users#login_form"
-  post "users/login", to: "users#login"
-  
-  resources :users
 
-  get "/logout", to: "users#logout", as: "users_logout"
-  resources :users, only: [:index, :show, :new, :create]
-  
+  post "/users/login", to: "sessions#new"
+  get "/logout", to: "sessions#logout", as: "users_logout"
+
+  resources :users, only: [:index, :show, :new, :create, :edit, :update, :destroy]
 end

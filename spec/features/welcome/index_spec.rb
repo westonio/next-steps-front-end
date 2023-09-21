@@ -40,12 +40,12 @@ RSpec.describe 'Welcome Page', :vcr do
         end
       end
 
-      it 'has a checkbox for: Urgent Care, Crisis Hotline, Shelter For Tonight, Food, and Susbstance Use' do
+      it 'has a checkbox for: Urgent Care, Crisis Hotline, Temporary Shelter, Food, and Susbstance Use' do
         within('div.select-services') do
           expect(page).to have_content('What do you need most help with today? (Check all that apply):')
           expect(page).to have_field('Urgent Care', checked: false)
           expect(page).to have_field('Crisis Hotline', checked: false)
-          expect(page).to have_field('Shelter for Tonight', checked: false)
+          expect(page).to have_field('Temporary Shelter', checked: false)
           expect(page).to have_field('Food', checked: false)
           expect(page).to have_field('Substance Use', checked: false)
         end
@@ -100,9 +100,9 @@ RSpec.describe 'Welcome Page', :vcr do
         end
         
         expect(current_path).to eq(search_results_path)
-        expect(page).to have_content("Urgent Care results")
+        expect(page).to have_content("Urgent care results")
         expect(page).to_not have_content("Crisis Hotline results")
-        expect(page).to_not have_content("Shelter for Tonight results")
+        expect(page).to_not have_content("Temporary Shelter results")
         expect(page).to have_content("Food results")
         expect(page).to_not have_content("Substance Use results")
       end
@@ -197,16 +197,18 @@ RSpec.describe 'Welcome Page', :vcr do
     end
 
     # Search Bar
-    describe "search bar" do
-      it "has a search bar for general search" do
-        within('div.search-bar') do
-          expect(page).to have_content("Find Other Resources:")
-          expect(page).to have_field("search")
-          expect(page).to have_field(placeholder: "Enter your search here")
-          expect(page).to have_button("Search")
-        end
-      end
-    end
+
+    # Removed in branch "17-search-results-2-link-to-see-more-results"
+    # describe "search bar" do
+    #   it "has a search bar for general search" do
+    #     within('div.search-bar') do
+    #       expect(page).to have_content("Find Other Resources:")
+    #       expect(page).to have_field("search")
+    #       expect(page).to have_field(placeholder: "Enter your search here")
+    #       expect(page).to have_button("Search")
+    #     end
+    #   end
+    # end
 
     # National Helplines
     describe "national helplines" do

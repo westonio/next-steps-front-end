@@ -3,7 +3,7 @@
     {
       "request": {
         "method": "get",
-        "uri": "https://ancient-reaches-38594-79ad833137d5.herokuapp.com/api/v0/search?keyword=&location=Denver,%20Colorado",
+        "uri": "https://ancient-reaches-38594-79ad833137d5.herokuapp.com/api/v0/provider_details/211colorad-a0h4T000003fVncQAE",
         "body": {
           "encoding": "US-ASCII",
           "string": ""
@@ -22,15 +22,15 @@
       },
       "response": {
         "status": {
-          "code": 400,
-          "message": "Bad Request"
+          "code": 200,
+          "message": "OK"
         },
         "headers": {
           "Server": [
             "Cowboy"
           ],
           "Date": [
-            "Tue, 19 Sep 2023 19:02:09 GMT"
+            "Thu, 21 Sep 2023 17:02:41 GMT"
           ],
           "Connection": [
             "keep-alive"
@@ -59,14 +59,17 @@
           "Vary": [
             "Accept"
           ],
+          "Etag": [
+            "W/\"dd74c6633ec611b20ac3010a0f68890c\""
+          ],
           "Cache-Control": [
-            "no-cache"
+            "max-age=0, private, must-revalidate"
           ],
           "X-Request-Id": [
-            "66f8fa1a-2cbc-48e4-a329-d4fb1cdfdbb5"
+            "05d48946-3640-4c90-880f-664e4816cb11"
           ],
           "X-Runtime": [
-            "0.166652"
+            "0.214986"
           ],
           "Transfer-Encoding": [
             "chunked"
@@ -77,10 +80,10 @@
         },
         "body": {
           "encoding": "UTF-8",
-          "string": "{\"errors\":[{\"detail\":\"Invalid Parameters\"}]}"
+          "string": "{\"data\":{\"id\":\"211colorad-0014T000004o6I3QAI\",\"type\":\"detailed_provider\",\"attributes\":{\"id\":\"211colorad-0014T000004o6I3QAI\",\"name\":\"NEXTCARE URGENT CARE\",\"description\":\"\\u003cp\\u003eProvides urgent care services.\\u003c/p\\u003e\",\"street\":\"4590 W 121st Ave\",\"street2\":null,\"city\":\"Broomfield\",\"state\":\"CO\",\"zipcode\":\"80020\",\"lat\":\"39.915035\",\"lon\":\"-105.045715\",\"website\":\"http://nextcare.com\",\"phone\":\"(888) 381-4858 (Customer Service\",\"fees\":\"\\u003cp\\u003eMedical Care Fees, call for current fees.\\u003c/p\\u003e\",\"schedule\":\"Monday - Friday, 8 a.m. - 8 p.m.; Saturday, Sunday, 9 a.m. - 4 p.m.\"}}}"
         }
       },
-      "recorded_at": "Tue, 19 Sep 2023 19:02:10 GMT"
+      "recorded_at": "Thu, 21 Sep 2023 17:02:42 GMT"
     }
   ],
   "recorded_with": "VCR 6.2.0"

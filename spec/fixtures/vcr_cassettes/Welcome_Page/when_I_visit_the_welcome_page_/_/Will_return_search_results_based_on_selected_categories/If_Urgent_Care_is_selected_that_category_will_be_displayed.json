@@ -3,7 +3,7 @@
     {
       "request": {
         "method": "get",
-        "uri": "https://ancient-reaches-38594-79ad833137d5.herokuapp.com/api/v0/search?keyword=urgent%20care&location=Denver,%20Colorado",
+        "uri": "https://ancient-reaches-38594-79ad833137d5.herokuapp.com/api/v0/search?keyword=Urgent%20Care&location=Denver,%20Colorado",
         "body": {
           "encoding": "US-ASCII",
           "string": ""
@@ -30,7 +30,7 @@
             "Cowboy"
           ],
           "Date": [
-            "Tue, 19 Sep 2023 19:02:12 GMT"
+            "Fri, 15 Sep 2023 16:16:51 GMT"
           ],
           "Connection": [
             "keep-alive"
@@ -60,16 +60,16 @@
             "Accept"
           ],
           "Etag": [
-            "W/\"2e8296867379d333e31d0739a547fe45\""
+            "W/\"b0162ac4a389bf36f52f1797dc9fb7ed\""
           ],
           "Cache-Control": [
             "max-age=0, private, must-revalidate"
           ],
           "X-Request-Id": [
-            "812afed3-6ebe-49b5-9e82-930762b9529b"
+            "14b656e0-ccaa-4567-9fdd-92753413b6a5"
           ],
           "X-Runtime": [
-            "0.452298"
+            "0.506295"
           ],
           "Transfer-Encoding": [
             "chunked"
@@ -80,15 +80,15 @@
         },
         "body": {
           "encoding": "UTF-8",
-          "string": "{\"data\":[{\"id\":\"211colorad-a0h4T000003fVnXQAU\",\"type\":\"filtered_provider\",\"attributes\":{\"category\":\"urgent care\",\"provider_name\":\"MEDICAL CARE\",\"street\":\"18890 E Hampden Ave\",\"city\":\"Aurora\",\"state\":\"CO\",\"lat\":\"39.652141\",\"lon\":\"-104.768338\",\"description\":\"Assists with:Common illnessesMinor injuriesPhysicalsPediatricsX-raysLab servicesImmunizations\"}},{\"id\":\"211colorad-a0h4T000003fVncQAE\",\"type\":\"filtered_provider\",\"attributes\":{\"category\":\"urgent care\",\"provider_name\":\"MEDICAL CARE\",\"street\":\"4590 W 121st Ave\",\"city\":\"Broomfield\",\"state\":\"CO\",\"lat\":\"39.914928\",\"lon\":\"-105.045780\",\"description\":\"Assists with:Common illnessesMinor injuriesPhysicalsPediatricsX-raysLab servicesImmunizations\"}},{\"id\":\"211colorad-a0h4T0000017LiLQAU\",\"type\":\"filtered_provider\",\"attributes\":{\"category\":\"urgent care\",\"provider_name\":\"MEDICAL CARE\",\"street\":\"7595 W Colfax Ave\",\"city\":\"Lakewood\",\"state\":\"CO\",\"lat\":\"39.740390\",\"lon\":\"-105.080920\",\"description\":\"Assists with:Common illnessesMinor injuriesPhysicalsPediatricsX-raysLab servicesImmunizations\"}},{\"id\":\"211colorad-a0h4T000003fVnWQAU\",\"type\":\"filtered_provider\",\"attributes\":{\"category\":\"urgent care\",\"provider_name\":\"MEDICAL CARE\",\"street\":\"17121 S Golden St Rd\",\"city\":\"Golden\",\"state\":\"CO\",\"lat\":\"39.733820\",\"lon\":\"-105.175970\",\"description\":\"Assists with:Common illnessesMinor injuriesPhysicalsPediatricsX-raysLab servicesImmunizations\"}},{\"id\":\"211colorad-a0h4T000003fVngQAE\",\"type\":\"filtered_provider\",\"attributes\":{\"category\":\"urgent care\",\"provider_name\":\"MEDICAL CARE\",\"street\":\"7380 W 52nd Ave\",\"city\":\"Arvada\",\"state\":\"CO\",\"lat\":\"39.788840\",\"lon\":\"-105.078550\",\"description\":\"Assists with:Common illnessesMinor injuriesPhysicalsPediatricsX-raysLab servicesImmunizations\"}},{\"id\":\"211colorad-a0h4T000003fVnbQAE\",\"type\":\"filtered_provider\",\"attributes\":{\"category\":\"urgent care\",\"provider_name\":\"MEDICAL CARE\",\"street\":\"9720 Grant St\",\"city\":\"Thornton\",\"state\":\"CO\",\"lat\":\"39.867370\",\"lon\":\"-104.983520\",\"description\":\"Assists with:Common illnessesMinor injuriesPhysicalsPediatricsX-raysLab servicesImmunizations\"}},{\"id\":\"211colorad-a0h4T000003faIPQAY\",\"type\":\"filtered_provider\",\"attributes\":{\"category\":\"urgent care\",\"provider_name\":\"ADULT URGENT CARE\",\"street\":\"1545 California St\",\"city\":\"Denver\",\"state\":\"CO\",\"lat\":\"39.744610\",\"lon\":\"-104.992910\",\"description\":\"Provides medical services for non-emergent illnesses and injuries.\"}},{\"id\":\"211colorad-a0h4T000003faIUQAY\",\"type\":\"filtered_provider\",\"attributes\":{\"category\":\"urgent care\",\"provider_name\":\"ADULT URGENT CARE\",\"street\":\"1339 S Federal Blvd\",\"city\":\"Denver\",\"state\":\"CO\",\"lat\":\"39.692477\",\"lon\":\"-105.025769\",\"description\":\"Provides medical services for non-emergent illnesses and injuries.\"}},{\"id\":\"211colorad-a0h4T000002tzkbQAA\",\"type\":\"filtered_provider\",\"attributes\":{\"category\":\"urgent care\",\"provider_name\":\"PEDIATRIC EMERGENCY AND URGENT CARE\",\"street\":\"777 Bannock St\",\"city\":\"Denver\",\"state\":\"CO\",\"lat\":\"39.728285\",\"lon\":\"-104.990525\",\"description\":\"Provides emergency and urgent medical care for children and youth. Pediatric sub-specialties also include:Trauma careInpatient unitRadiologySurgeryAnesthesiology\"}},{\"id\":\"211colorad-a0h4T000003faIQQAY\",\"type\":\"filtered_provider\",\"attributes\":{\"category\":\"urgent care\",\"provider_name\":\"ADULT URGENT CARE\",\"street\":\"660 N Bannock St\",\"city\":\"Denver\",\"state\":\"CO\",\"lat\":\"39.726470\",\"lon\":\"-104.990250\",\"description\":\"Provides medical services for non-emergent illnesses and injuries.\"}}]}"
+          "string": "{\"data\":[{\"id\":\"211colorad-a0h4T0000017LiLQAU\",\"type\":\"data\",\"attributes\":{\"category\":\"urgent care\",\"provider_name\":\"MEDICAL CARE\",\"street\":\"7595 W Colfax Ave\",\"city\":\"Lakewood\",\"state\":\"CO\",\"lat\":\"39.740390\",\"lon\":\"-105.080920\",\"description\":\"Assists with:Common illnessesMinor injuriesPhysicalsPediatricsX-raysLab servicesImmunizations\"}},{\"id\":\"211colorad-a0h4T000003fVnWQAU\",\"type\":\"data\",\"attributes\":{\"category\":\"urgent care\",\"provider_name\":\"MEDICAL CARE\",\"street\":\"17121 S Golden St Rd\",\"city\":\"Golden\",\"state\":\"CO\",\"lat\":\"39.733820\",\"lon\":\"-105.175970\",\"description\":\"Assists with:Common illnessesMinor injuriesPhysicalsPediatricsX-raysLab servicesImmunizations\"}},{\"id\":\"211colorad-a0h4T000003fVngQAE\",\"type\":\"data\",\"attributes\":{\"category\":\"urgent care\",\"provider_name\":\"MEDICAL CARE\",\"street\":\"7380 W 52nd Ave\",\"city\":\"Arvada\",\"state\":\"CO\",\"lat\":\"39.788840\",\"lon\":\"-105.078550\",\"description\":\"Assists with:Common illnessesMinor injuriesPhysicalsPediatricsX-raysLab servicesImmunizations\"}},{\"id\":\"211colorad-a0h4T000003fVnbQAE\",\"type\":\"data\",\"attributes\":{\"category\":\"urgent care\",\"provider_name\":\"MEDICAL CARE\",\"street\":\"9720 Grant St\",\"city\":\"Thornton\",\"state\":\"CO\",\"lat\":\"39.867370\",\"lon\":\"-104.983520\",\"description\":\"Assists with:Common illnessesMinor injuriesPhysicalsPediatricsX-raysLab servicesImmunizations\"}},{\"id\":\"211colorad-a0h4T000003fVnXQAU\",\"type\":\"data\",\"attributes\":{\"category\":\"urgent care\",\"provider_name\":\"MEDICAL CARE\",\"street\":\"18890 E Hampden Ave\",\"city\":\"Aurora\",\"state\":\"CO\",\"lat\":\"39.652141\",\"lon\":\"-104.768338\",\"description\":\"Assists with:Common illnessesMinor injuriesPhysicalsPediatricsX-raysLab servicesImmunizations\"}},{\"id\":\"211colorad-a0h4T000003fVncQAE\",\"type\":\"data\",\"attributes\":{\"category\":\"urgent care\",\"provider_name\":\"MEDICAL CARE\",\"street\":\"4590 W 121st Ave\",\"city\":\"Broomfield\",\"state\":\"CO\",\"lat\":\"39.914928\",\"lon\":\"-105.045780\",\"description\":\"Assists with:Common illnessesMinor injuriesPhysicalsPediatricsX-raysLab servicesImmunizations\"}},{\"id\":\"211colorad-a0h4T000003faIPQAY\",\"type\":\"data\",\"attributes\":{\"category\":\"urgent care\",\"provider_name\":\"ADULT URGENT CARE\",\"street\":\"1545 California St\",\"city\":\"Denver\",\"state\":\"CO\",\"lat\":\"39.744610\",\"lon\":\"-104.992910\",\"description\":\"Provides medical services for non-emergent illnesses and injuries.\"}},{\"id\":\"211colorad-a0h4T000003faIUQAY\",\"type\":\"data\",\"attributes\":{\"category\":\"urgent care\",\"provider_name\":\"ADULT URGENT CARE\",\"street\":\"1339 S Federal Blvd\",\"city\":\"Denver\",\"state\":\"CO\",\"lat\":\"39.692477\",\"lon\":\"-105.025769\",\"description\":\"Provides medical services for non-emergent illnesses and injuries.\"}},{\"id\":\"211colorad-a0h4T000002tzkbQAA\",\"type\":\"data\",\"attributes\":{\"category\":\"urgent care\",\"provider_name\":\"PEDIATRIC EMERGENCY AND URGENT CARE\",\"street\":\"777 Bannock St\",\"city\":\"Denver\",\"state\":\"CO\",\"lat\":\"39.728285\",\"lon\":\"-104.990525\",\"description\":\"Provides emergency and urgent medical care for children and youth. Pediatric sub-specialties also include:Trauma careInpatient unitRadiologySurgeryAnesthesiology\"}},{\"id\":\"211colorad-a0h4T000002u0lsQAA\",\"type\":\"data\",\"attributes\":{\"category\":\"urgent care\",\"provider_name\":\"ADULT URGENT CARE\",\"street\":\"777 Bannock St\",\"city\":\"Denver\",\"state\":\"CO\",\"lat\":\"39.728285\",\"lon\":\"-104.990525\",\"description\":\"Provides medical services for non-emergent illnesses and injuries.\"}}]}"
         }
       },
-      "recorded_at": "Tue, 19 Sep 2023 19:02:12 GMT"
+      "recorded_at": "Fri, 15 Sep 2023 16:16:52 GMT"
     },
     {
       "request": {
         "method": "get",
-        "uri": "https://ancient-reaches-38594-79ad833137d5.herokuapp.com/api/v0/search?keyword=food&location=Denver,%20Colorado",
+        "uri": "https://ancient-reaches-38594-79ad833137d5.herokuapp.com/api/v0/search?keyword=Food&location=Denver,%20Colorado",
         "body": {
           "encoding": "US-ASCII",
           "string": ""
@@ -115,7 +115,7 @@
             "Cowboy"
           ],
           "Date": [
-            "Tue, 19 Sep 2023 19:02:12 GMT"
+            "Fri, 15 Sep 2023 16:16:54 GMT"
           ],
           "Connection": [
             "keep-alive"
@@ -145,16 +145,16 @@
             "Accept"
           ],
           "Etag": [
-            "W/\"efdec745b41de1684900a102f6657f81\""
+            "W/\"a2ca737307964ef2046fad136b28da9e\""
           ],
           "Cache-Control": [
             "max-age=0, private, must-revalidate"
           ],
           "X-Request-Id": [
-            "4087354f-3df7-452f-8a6c-8a740778497d"
+            "b32b1c7c-a751-4a7d-966a-63147a9166cb"
           ],
           "X-Runtime": [
-            "0.358752"
+            "0.524556"
           ],
           "Transfer-Encoding": [
             "chunked"
@@ -165,10 +165,1336 @@
         },
         "body": {
           "encoding": "UTF-8",
-          "string": "{\"data\":[{\"id\":\"211colorad-a0h4T000002tzoaQAA\",\"type\":\"filtered_provider\",\"attributes\":{\"category\":\"food\",\"provider_name\":\"FOOD PANTRY\",\"street\":\"3810 Pecos St\",\"city\":\"Denver\",\"state\":\"CO\",\"lat\":\"39.769590\",\"lon\":\"-105.006320\",\"description\":\"Distributes fresh and nonperishable food items.Also provides:Diapers (please provide a copy of child\\u0026#39;s birth certificate)Pet food (1st week of the month, between 10 a.m. - 12 p.m. only)SNAP assistance (1st week of the month)\"}},{\"id\":\"211colorad-a0h4T000002u0dHQAQ\",\"type\":\"filtered_provider\",\"attributes\":{\"category\":\"food\",\"provider_name\":\"FOOD PANTRY\",\"street\":\"4747 W Colfax Ave\",\"city\":\"Denver\",\"state\":\"CO\",\"lat\":\"39.740701\",\"lon\":\"-105.048319\",\"description\":\"Distributes fresh and nonperishable food items. Individuals can access the food pantry weekly, no appointment necessary.\"}},{\"id\":\"211colorad-a0h4T000002u0MLQAY\",\"type\":\"filtered_provider\",\"attributes\":{\"category\":\"food\",\"provider_name\":\"FOOD BANK\",\"street\":\"19401 E Chenango Dr\",\"city\":\"Centennial\",\"state\":\"CO\",\"lat\":\"39.627000\",\"lon\":\"-104.763000\",\"description\":\"Provides a bi-monthly drive-up community food pantry.\"}},{\"id\":\"211colorad-a0h4T000002tzhgQAA\",\"type\":\"filtered_provider\",\"attributes\":{\"category\":\"food\",\"provider_name\":\"EMERGENCY FOOD\",\"street\":\"8555 W 57th Ave\",\"city\":\"Arvada\",\"state\":\"CO\",\"lat\":\"39.800678\",\"lon\":\"-105.093109\",\"description\":\"Provides emergency food to individuals and families. Each client selects a supply of food based on household size. Families and individuals may use this program when needed.\"}},{\"id\":\"211colorad-a0h4T000003fZa1QAE\",\"type\":\"filtered_provider\",\"attributes\":{\"category\":\"food\",\"provider_name\":\"THE EMERGENCY FOOD ASSISTANCE PROGRAM\",\"street\":\"3801 W Ohio Ave\",\"city\":\"Denver\",\"state\":\"CO\",\"lat\":\"39.702170\",\"lon\":\"-105.037810\",\"description\":\"Provides supplemental foods to individuals who meet the income qualifications or participate in other public assistance programs including:Shelf-stable groceriesMeatProduceFood assortments may vary.\"}},{\"id\":\"211colorad-a0h4T000002u73qQAA\",\"type\":\"filtered_provider\",\"attributes\":{\"category\":\"food\",\"provider_name\":\"COMMODITY SUPPLEMENTAL FOOD PROGRAM AND TEFAP\",\"street\":\"7111 E 56th Ave\",\"city\":\"Commerce City\",\"state\":\"CO\",\"lat\":\"39.798904\",\"lon\":\"-104.905566\",\"description\":\"Provides a monthly box of shelf-stable groceries, plus a block of refrigerated cheese, to individuals aged 60 or older who meet income qualifications. \\r\\nFood boxes are available to pick up every 3rd Saturday from 9 a.m. - 12 p.m.  - 10700 E 45th Ave, Denver, CO\"}},{\"id\":\"211colorad-a0h4T000002u7BAQAY\",\"type\":\"filtered_provider\",\"attributes\":{\"category\":\"food\",\"provider_name\":\"THE EMERGENCY FOOD ASSISTANCE PROGRAM\",\"street\":\"5306 N Lincoln St\",\"city\":\"Denver\",\"state\":\"CO\",\"lat\":\"39.793000\",\"lon\":\"-104.986000\",\"description\":\"Provides supplemental foods to individuals who meet the income qualifications or participate in other public assistance programs including:Shelf-stable groceriesMeatProduceFood assortments may vary.\"}},{\"id\":\"211colorad-a0h4T000003fZPsQAM\",\"type\":\"filtered_provider\",\"attributes\":{\"category\":\"food\",\"provider_name\":\"THE EMERGENCY FOOD ASSISTANCE PROGRAM\",\"street\":\"7111 E 56th Ave\",\"city\":\"Commerce City\",\"state\":\"CO\",\"lat\":\"39.798904\",\"lon\":\"-104.905566\",\"description\":\"Provides supplemental foods to individuals who meet the income qualifications or participate in other public assistance programs including:Shelf-stable groceriesMeatProduceFood assortments may vary.\"}},{\"id\":\"211colorad-a0h4T00000Xvrw1QAB\",\"type\":\"filtered_provider\",\"attributes\":{\"category\":\"food\",\"provider_name\":\"FOOD PANTRY\",\"street\":\"3990 W 74th\",\"city\":\"Westminster\",\"state\":\"CO\",\"lat\":\"39.830890\",\"lon\":\"-105.039680\",\"description\":\"Offers a food pantry that provides a prepacked box of non-perishable items including:Frozen meatFresh veggies (when available)BreadThe following is also available:Specialty items for the community\\u0026#39;s culturally relevant food including: Rye flourCanned chillsDatesRosemary Pet foodDiapersHygiene productsHomeless kitsClients can receive a food box once a month. Provides enough food for four days.\"}},{\"id\":\"211colorad-a0h4T000002tzgtQAA\",\"type\":\"filtered_provider\",\"attributes\":{\"category\":\"food\",\"provider_name\":\"FOOD ASSISTANCE\",\"street\":\"7111 E 56th Ave\",\"city\":\"Commerce City\",\"state\":\"CO\",\"lat\":\"39.798904\",\"lon\":\"-104.905566\",\"description\":\"Provides weekly food assistance to Colorado residents.\"}}]}"
+          "string": "{\"data\":[{\"id\":\"211colorad-a0h4T000002tzoaQAA\",\"type\":\"data\",\"attributes\":{\"category\":\"food\",\"provider_name\":\"FOOD PANTRY\",\"street\":\"3810 Pecos St\",\"city\":\"Denver\",\"state\":\"CO\",\"lat\":\"39.769590\",\"lon\":\"-105.006320\",\"description\":\"Distributes fresh and nonperishable food items.Also provides:Diapers (please provide a copy of child\\u0026#39;s birth certificate)Pet food (1st week of the month, between 10 a.m. - 12 p.m. only)SNAP assistance (1st week of the month)\"}},{\"id\":\"211colorad-a0h4T000002u0MLQAY\",\"type\":\"data\",\"attributes\":{\"category\":\"food\",\"provider_name\":\"FOOD BANK\",\"street\":\"19401 E Chenango Dr\",\"city\":\"Centennial\",\"state\":\"CO\",\"lat\":\"39.627000\",\"lon\":\"-104.763000\",\"description\":\"Provides a bi-monthly drive-up community food pantry.\"}},{\"id\":\"211colorad-a0h4T000002u0dHQAQ\",\"type\":\"data\",\"attributes\":{\"category\":\"food\",\"provider_name\":\"FOOD PANTRY\",\"street\":\"4747 W Colfax Ave\",\"city\":\"Denver\",\"state\":\"CO\",\"lat\":\"39.740701\",\"lon\":\"-105.048319\",\"description\":\"Distributes fresh and nonperishable food items. Individuals can access the food pantry weekly, no appointment necessary.\"}},{\"id\":\"211colorad-a0h4T000002tzhgQAA\",\"type\":\"data\",\"attributes\":{\"category\":\"food\",\"provider_name\":\"EMERGENCY FOOD\",\"street\":\"8555 W 57th Ave\",\"city\":\"Arvada\",\"state\":\"CO\",\"lat\":\"39.800678\",\"lon\":\"-105.093109\",\"description\":\"Provides emergency food to individuals and families. Each client selects a supply of food based on household size. Families and individuals may use this program when needed.\"}},{\"id\":\"211colorad-a0h4T000003fZa1QAE\",\"type\":\"data\",\"attributes\":{\"category\":\"food\",\"provider_name\":\"THE EMERGENCY FOOD ASSISTANCE PROGRAM\",\"street\":\"3801 W Ohio Ave\",\"city\":\"Denver\",\"state\":\"CO\",\"lat\":\"39.702170\",\"lon\":\"-105.037810\",\"description\":\"Provides supplemental foods to individuals who meet the income qualifications or participate in other public assistance programs including:Shelf-stable groceriesMeatProduceFood assortments may vary.\"}},{\"id\":\"211colorad-a0h4T000002u73qQAA\",\"type\":\"data\",\"attributes\":{\"category\":\"food\",\"provider_name\":\"COMMODITY SUPPLEMENTAL FOOD PROGRAM AND TEFAP\",\"street\":\"7111 E 56th Ave\",\"city\":\"Commerce City\",\"state\":\"CO\",\"lat\":\"39.798904\",\"lon\":\"-104.905566\",\"description\":\"Provides a monthly box of shelf-stable groceries, plus a block of refrigerated cheese, to individuals aged 60 or older who meet income qualifications. \\r\\nFood boxes are available to pick up every 3rd Saturday from 9 a.m. - 12 p.m.  - 10700 E 45th Ave, Denver, CO\"}},{\"id\":\"211colorad-a0h4T000003fZPsQAM\",\"type\":\"data\",\"attributes\":{\"category\":\"food\",\"provider_name\":\"THE EMERGENCY FOOD ASSISTANCE PROGRAM\",\"street\":\"7111 E 56th Ave\",\"city\":\"Commerce City\",\"state\":\"CO\",\"lat\":\"39.798904\",\"lon\":\"-104.905566\",\"description\":\"Provides supplemental foods to individuals who meet the income qualifications or participate in other public assistance programs including:Shelf-stable groceriesMeatProduceFood assortments may vary.\"}},{\"id\":\"211colorad-a0h4T000002u7BAQAY\",\"type\":\"data\",\"attributes\":{\"category\":\"food\",\"provider_name\":\"THE EMERGENCY FOOD ASSISTANCE PROGRAM\",\"street\":\"5306 N Lincoln St\",\"city\":\"Denver\",\"state\":\"CO\",\"lat\":\"39.793000\",\"lon\":\"-104.986000\",\"description\":\"Provides supplemental foods to individuals who meet the income qualifications or participate in other public assistance programs including:Shelf-stable groceriesMeatProduceFood assortments may vary.\"}},{\"id\":\"211colorad-a0h4T00000Xvrw1QAB\",\"type\":\"data\",\"attributes\":{\"category\":\"food\",\"provider_name\":\"FOOD PANTRY\",\"street\":\"3990 W 74th\",\"city\":\"Westminster\",\"state\":\"CO\",\"lat\":\"39.830890\",\"lon\":\"-105.039680\",\"description\":\"Offers a food pantry that provides a prepacked box of non-perishable items including:Frozen meatFresh veggies (when available)BreadThe following is also available:Specialty items for the community\\u0026#39;s culturally relevant food including: Rye flourCanned chillsDatesRosemary Pet foodDiapersHygiene productsHomeless kitsClients can receive a food box once a month. Provides enough food for four days.\"}},{\"id\":\"211colorad-a0h4T000002tzq7QAA\",\"type\":\"data\",\"attributes\":{\"category\":\"food\",\"provider_name\":\"FOOD PANTRY\",\"street\":\"8990 York St\",\"city\":\"Thornton\",\"state\":\"CO\",\"lat\":\"39.857071\",\"lon\":\"-104.954528\",\"description\":\"Offers a 5-day supply of food for residents living in the service area. Residents may visit once a month, every month for USDA commodities.\"}}]}"
         }
       },
-      "recorded_at": "Tue, 19 Sep 2023 19:02:13 GMT"
+      "recorded_at": "Fri, 15 Sep 2023 16:16:54 GMT"
+    },
+    {
+      "request": {
+        "method": "post",
+        "uri": "http://127.0.0.1:4444/session/42e9cfbb-e0ed-4c77-880e-8aa86b527241/url",
+        "body": {
+          "encoding": "UTF-8",
+          "string": "{\"url\":\"http://127.0.0.1:64404/\"}"
+        },
+        "headers": {
+          "Accept": [
+            "application/json"
+          ],
+          "Content-Type": [
+            "application/json; charset=UTF-8"
+          ],
+          "User-Agent": [
+            "selenium/4.12.0 (ruby macosx)"
+          ],
+          "Content-Length": [
+            "33"
+          ],
+          "Accept-Encoding": [
+            "gzip;q=1.0,deflate;q=0.6,identity;q=0.3"
+          ]
+        }
+      },
+      "response": {
+        "status": {
+          "code": 404,
+          "message": "Not Found"
+        },
+        "headers": {
+          "Content-Type": [
+            "application/json; charset=utf-8"
+          ],
+          "Cache-Control": [
+            "no-cache"
+          ],
+          "Content-Length": [
+            "123"
+          ],
+          "Date": [
+            "Fri, 15 Sep 2023 23:26:25 GMT"
+          ]
+        },
+        "body": {
+          "encoding": "UTF-8",
+          "string": "{\"value\":{\"error\":\"invalid session id\",\"message\":\"Tried to run command without establishing a connection\",\"stacktrace\":\"\"}}"
+        }
+      },
+      "recorded_at": "Fri, 15 Sep 2023 23:26:25 GMT"
+    },
+    {
+      "request": {
+        "method": "post",
+        "uri": "http://127.0.0.1:9516/session/8778b28e69ebd3212dee4126bd13ad90/url",
+        "body": {
+          "encoding": "UTF-8",
+          "string": "{\"url\":\"http://127.0.0.1:59774/\"}"
+        },
+        "headers": {
+          "Accept": [
+            "application/json"
+          ],
+          "Content-Type": [
+            "application/json; charset=UTF-8"
+          ],
+          "User-Agent": [
+            "selenium/4.12.0 (ruby macosx)"
+          ],
+          "Content-Length": [
+            "33"
+          ],
+          "Accept-Encoding": [
+            "gzip;q=1.0,deflate;q=0.6,identity;q=0.3"
+          ]
+        }
+      },
+      "response": {
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "headers": {
+          "Content-Length": [
+            "14"
+          ],
+          "Content-Type": [
+            "application/json; charset=utf-8"
+          ],
+          "Cache-Control": [
+            "no-cache"
+          ]
+        },
+        "body": {
+          "encoding": "UTF-8",
+          "string": "{\"value\":null}"
+        }
+      },
+      "recorded_at": "Sat, 16 Sep 2023 00:13:38 GMT"
+    },
+    {
+      "request": {
+        "method": "post",
+        "uri": "http://127.0.0.1:9516/session/8778b28e69ebd3212dee4126bd13ad90/elements",
+        "body": {
+          "encoding": "UTF-8",
+          "string": "{\"using\":\"css selector\",\"value\":\"div.select-services\"}"
+        },
+        "headers": {
+          "Accept": [
+            "application/json"
+          ],
+          "Content-Type": [
+            "application/json; charset=UTF-8"
+          ],
+          "User-Agent": [
+            "selenium/4.12.0 (ruby macosx)"
+          ],
+          "Content-Length": [
+            "61"
+          ],
+          "Accept-Encoding": [
+            "gzip;q=1.0,deflate;q=0.6,identity;q=0.3"
+          ]
+        }
+      },
+      "response": {
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "headers": {
+          "Content-Length": [
+            "98"
+          ],
+          "Content-Type": [
+            "application/json; charset=utf-8"
+          ],
+          "Cache-Control": [
+            "no-cache"
+          ]
+        },
+        "body": {
+          "encoding": "UTF-8",
+          "string": "{\"value\":[{\"element-6066-11e4-a52e-4f735466cecf\":\"28388A9179573E088F201ABB842D9F60_element_328\"}]}"
+        }
+      },
+      "recorded_at": "Sat, 16 Sep 2023 00:13:38 GMT"
+    },
+    {
+      "request": {
+        "method": "post",
+        "uri": "http://127.0.0.1:9516/session/8778b28e69ebd3212dee4126bd13ad90/execute/sync",
+        "body": {
+          "encoding": "UTF-8",
+          "string": "{\"script\":\"/* isDisplayed */return ((function(){function d(t,e,n){function r(t){var e=x(t);if(0<e.height&&0<e.width)return!0;if(\\\"PATH\\\"==t.tagName.toUpperCase()&&(0<e.height||0<e.width)){var n=window.getComputedStyle(t)[\\\"stroke-width\\\"];return!!n&&0<parseInt(n,10)}return\\\"hidden\\\"!=window.getComputedStyle(t).overflow&&Array.prototype.slice.call(t.childNodes).some(function(t){return t.nodeType==Node.TEXT_NODE||t.nodeType==Node.ELEMENT_NODE&&r(t)})}function i(t){return C(t)==T.HIDDEN&&Array.prototype.slice.call(t.childNodes).every(function(t){return t.nodeType!=Node.ELEMENT_NODE||i(t)||!r(t)})}var o=t.tagName.toUpperCase();if(\\\"BODY\\\"==o)return!0;if(\\\"OPTION\\\"==o||\\\"OPTGROUP\\\"==o){var a=c(t,function(t){return\\\"SELECT\\\"==t.tagName.toUpperCase()});return!!a&&d(a,!0,n)}var u=s(t);if(u)return!!u.image&&0<u.rect.width&&0<u.rect.height&&d(u.image,e,n);if(\\\"INPUT\\\"==o&&\\\"hidden\\\"==t.type.toLowerCase())return!1;if(\\\"NOSCRIPT\\\"==o)return!1;var l=window.getComputedStyle(t).visibility;return\\\"collapse\\\"!=l&&\\\"hidden\\\"!=l&&(!!n(t)&&(!(!e&&0==f(t))&&(!!r(t)&&!i(t))))}function E(t){var e=x(t);return{left:e.left,right:e.left+e.width,top:e.top,bottom:e.top+e.height}}function D(t){return t.parentElement}function C(t){function e(t){function e(t){if(t==u)return!0;var e=window.getComputedStyle(t),n=e.display;return 0!=n.indexOf(\\\"inline\\\")&&\\\"contents\\\"!=n&&(\\\"absolute\\\"!=r||\\\"static\\\"!=e.position)}var r=window.getComputedStyle(t).position;if(\\\"fixed\\\"==r)return i=!0,t==u?null:u;for(var n=D(t);n&&!e(n);)n=D(n);return n}function n(t){var e=t;if(\\\"visible\\\"==d)if(t==u&&l)e=l;else if(t==l)return{x:\\\"visible\\\",y:\\\"visible\\\"};var n=window.getComputedStyle(e),r={x:n[\\\"overflow-x\\\"],y:n[\\\"overflow-y\\\"]};return t==u&&(r.x=\\\"visible\\\"==r.x?\\\"auto\\\":r.x,r.y=\\\"visible\\\"==r.y?\\\"auto\\\":r.y),r}function r(t){return t==u?{x:window.scrollX,y:window.scrollY}:{x:t.scrollLeft,y:t.scrollTop}}for(var i,o=E(t),a=t.ownerDocument,u=a.documentElement,l=a.body,d=window.getComputedStyle(u).overflow,f=e(t);f;f=e(f)){var h=n(f);if(\\\"visible\\\"!=h.x||\\\"visible\\\"!=h.y){var s=x(f);if(0==s.width||0==s.height)return T.HIDDEN;var p=o.right<s.left,c=o.bottom<s.top;if(p&&\\\"hidden\\\"==h.x||c&&\\\"hidden\\\"==h.y)return T.HIDDEN;if(p&&\\\"visible\\\"!=h.x||c&&\\\"visible\\\"!=h.y){var v=r(f),g=o.right<s.left-v.x,w=o.bottom<s.top-v.y;return g&&\\\"visible\\\"!=h.x||w&&\\\"visible\\\"!=h.x?T.HIDDEN:C(f)==T.HIDDEN?T.HIDDEN:T.SCROLL}var N=o.left>=s.left+s.width,m=o.top>=s.top+s.height;if(N&&\\\"hidden\\\"==h.x||m&&\\\"hidden\\\"==h.y)return T.HIDDEN;if(N&&\\\"visible\\\"!=h.x||m&&\\\"visible\\\"!=h.y){if(i){var y=r(f);if(o.left>=u.scrollWidth-y.x||o.right>=u.scrollHeight-y.y)return T.HIDDEN}return C(f)==T.HIDDEN?T.HIDDEN:T.SCROLL}}}return T.NONE}function o(t){var e=t.document.documentElement;return{width:e.clientWidth,height:e.clientHeight}}function p(t,e,n,r){return{left:t,top:e,width:n,height:r}}function x(t){var e,n=s(t);if(n)return n.rect;if(\\\"HTML\\\"==t.tagName.toUpperCase()){t.ownerDocument;var r=o(window);return p(0,0,r.width,r.height)}try{e=t.getBoundingClientRect()}catch(i){return p(0,0,0,0)}return p(e.left,e.top,e.right-e.left,e.bottom-e.top)}function f(t){var e=1,n=window.getComputedStyle(t).opacity;n&&(e=Number(n));var r=D(t);return r&&r.nodeType==Node.ELEMENT_NODE&&(e*=f(r)),e}function h(t){var e=t.shape.toLowerCase(),n=t.coords.split(\\\",\\\");if(\\\"rect\\\"==e&&4==n.length){var r=n[0],i=n[1];return p(r,i,n[2]-r,n[3]-i)}if(\\\"circle\\\"==e&&3==n.length){var o=n[0],a=n[1],u=n[2];return p(o-u,a-u,2*u,2*u)}if(\\\"poly\\\"==e&&2<n.length){for(var l=n[0],d=n[1],f=l,h=d,s=2;s+1<n.length;s+=2)l=Math.min(l,n[s]),f=Math.max(f,n[s]),d=Math.min(d,n[s+1]),h=Math.max(h,n[s+1]);return p(l,d,f-l,h-d)}return p(0,0,0,0)}function s(t){var e=t.tagName.toUpperCase(),n=\\\"MAP\\\"==e;if(!n&&\\\"AREA\\\"!=e)return null;var r=n?t:\\\"MAP\\\"==D(t).tagName.toUpperCase()?D(t):null,i=null,o=null;if(r&&r.name&&((i=r.ownerDocument.querySelector(\\\"*[usemap='#\\\"+r.name+\\\"']\\\"))&&(o=x(i),!n&&\\\"default\\\"!=t.shape.toLowerCase()))){var a=h(t),u=Math.min(Math.max(a.left,0),o.width),l=Math.min(Math.max(a.top,0),o.height),d=Math.min(a.width,o.width-u),f=Math.min(a.height,o.height-l);o=p(u+o.left,l+o.top,d,f)}return{image:i,rect:o||p(0,0,0,0)}}function c(t,e){for(t&&(t=D(t));t;){if(e(t))return t;t=D(t)}return null}function r(t){var e=t.parentNode;if(e&&e.shadowRoot&&t.assignedSlot!==undefined)return t.assignedSlot?t.assignedSlot.parentNode:null;if(t.getDestinationInsertionPoints){var n=t.getDestinationInsertionPoints();if(0<n.length)return n[n.length-1]}return e}var T={NONE:\\\"none\\\",HIDDEN:\\\"hidden\\\",SCROLL:\\\"scroll\\\"};return function i(t,e){function n(t){if(\\\"none\\\"==window.getComputedStyle(t).display)return!1;var e=r(t);if(\\\"function\\\"==typeof ShadowRoot&&e instanceof ShadowRoot){if(e.host.shadowRoot!==e)return!1;e=e.host}return!(!e||e.nodeType!=Node.DOCUMENT_NODE&&e.nodeType!=Node.DOCUMENT_FRAGMENT_NODE)||!(e&&e.tagName&&\\\"DETAILS\\\"==e.tagName.toUpperCase()&&!e.open&&\\\"SUMMARY\\\"!=t.tagName)&&(e&&n(e))}return d(t,!!e,n)}})()).apply(null, arguments)\",\"args\":[{\"element-6066-11e4-a52e-4f735466cecf\":\"28388A9179573E088F201ABB842D9F60_element_328\"}]}"
+        },
+        "headers": {
+          "Accept": [
+            "application/json"
+          ],
+          "Content-Type": [
+            "application/json; charset=UTF-8"
+          ],
+          "User-Agent": [
+            "selenium/4.12.0 (ruby macosx)"
+          ],
+          "Content-Length": [
+            "5092"
+          ],
+          "Accept-Encoding": [
+            "gzip;q=1.0,deflate;q=0.6,identity;q=0.3"
+          ]
+        }
+      },
+      "response": {
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "headers": {
+          "Content-Length": [
+            "14"
+          ],
+          "Content-Type": [
+            "application/json; charset=utf-8"
+          ],
+          "Cache-Control": [
+            "no-cache"
+          ]
+        },
+        "body": {
+          "encoding": "UTF-8",
+          "string": "{\"value\":true}"
+        }
+      },
+      "recorded_at": "Sat, 16 Sep 2023 00:13:38 GMT"
+    },
+    {
+      "request": {
+        "method": "post",
+        "uri": "http://127.0.0.1:9516/session/8778b28e69ebd3212dee4126bd13ad90/element/28388A9179573E088F201ABB842D9F60_element_328/elements",
+        "body": {
+          "encoding": "UTF-8",
+          "string": "{\"using\":\"xpath\",\"value\":\"./descendant::*[self::input | self::textarea][not(((((((./@type = 'submit') or (./@type = 'image')) or (./@type = 'radio')) or (./@type = 'checkbox')) or (./@type = 'hidden')) or (./@type = 'file')))][((((./@id = 'Enter your City, State, and/or Zip Code') or (./@name = 'Enter your City, State, and/or Zip Code')) or (./@placeholder = 'Enter your City, State, and/or Zip Code')) or (./@id = //label[(normalize-space(string(.)) = 'Enter your City, State, and/or Zip Code')]/@for))] | .//label[(normalize-space(string(.)) = 'Enter your City, State, and/or Zip Code')]//./descendant::*[self::input | self::textarea][not(((((((./@type = 'submit') or (./@type = 'image')) or (./@type = 'radio')) or (./@type = 'checkbox')) or (./@type = 'hidden')) or (./@type = 'file')))]\"}"
+        },
+        "headers": {
+          "Accept": [
+            "application/json"
+          ],
+          "Content-Type": [
+            "application/json; charset=UTF-8"
+          ],
+          "User-Agent": [
+            "selenium/4.12.0 (ruby macosx)"
+          ],
+          "Content-Length": [
+            "795"
+          ],
+          "Accept-Encoding": [
+            "gzip;q=1.0,deflate;q=0.6,identity;q=0.3"
+          ]
+        }
+      },
+      "response": {
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "headers": {
+          "Content-Length": [
+            "98"
+          ],
+          "Content-Type": [
+            "application/json; charset=utf-8"
+          ],
+          "Cache-Control": [
+            "no-cache"
+          ]
+        },
+        "body": {
+          "encoding": "UTF-8",
+          "string": "{\"value\":[{\"element-6066-11e4-a52e-4f735466cecf\":\"28388A9179573E088F201ABB842D9F60_element_329\"}]}"
+        }
+      },
+      "recorded_at": "Sat, 16 Sep 2023 00:13:38 GMT"
+    },
+    {
+      "request": {
+        "method": "post",
+        "uri": "http://127.0.0.1:9516/session/8778b28e69ebd3212dee4126bd13ad90/execute/sync",
+        "body": {
+          "encoding": "UTF-8",
+          "string": "{\"script\":\"/* isDisplayed */return ((function(){function d(t,e,n){function r(t){var e=x(t);if(0<e.height&&0<e.width)return!0;if(\\\"PATH\\\"==t.tagName.toUpperCase()&&(0<e.height||0<e.width)){var n=window.getComputedStyle(t)[\\\"stroke-width\\\"];return!!n&&0<parseInt(n,10)}return\\\"hidden\\\"!=window.getComputedStyle(t).overflow&&Array.prototype.slice.call(t.childNodes).some(function(t){return t.nodeType==Node.TEXT_NODE||t.nodeType==Node.ELEMENT_NODE&&r(t)})}function i(t){return C(t)==T.HIDDEN&&Array.prototype.slice.call(t.childNodes).every(function(t){return t.nodeType!=Node.ELEMENT_NODE||i(t)||!r(t)})}var o=t.tagName.toUpperCase();if(\\\"BODY\\\"==o)return!0;if(\\\"OPTION\\\"==o||\\\"OPTGROUP\\\"==o){var a=c(t,function(t){return\\\"SELECT\\\"==t.tagName.toUpperCase()});return!!a&&d(a,!0,n)}var u=s(t);if(u)return!!u.image&&0<u.rect.width&&0<u.rect.height&&d(u.image,e,n);if(\\\"INPUT\\\"==o&&\\\"hidden\\\"==t.type.toLowerCase())return!1;if(\\\"NOSCRIPT\\\"==o)return!1;var l=window.getComputedStyle(t).visibility;return\\\"collapse\\\"!=l&&\\\"hidden\\\"!=l&&(!!n(t)&&(!(!e&&0==f(t))&&(!!r(t)&&!i(t))))}function E(t){var e=x(t);return{left:e.left,right:e.left+e.width,top:e.top,bottom:e.top+e.height}}function D(t){return t.parentElement}function C(t){function e(t){function e(t){if(t==u)return!0;var e=window.getComputedStyle(t),n=e.display;return 0!=n.indexOf(\\\"inline\\\")&&\\\"contents\\\"!=n&&(\\\"absolute\\\"!=r||\\\"static\\\"!=e.position)}var r=window.getComputedStyle(t).position;if(\\\"fixed\\\"==r)return i=!0,t==u?null:u;for(var n=D(t);n&&!e(n);)n=D(n);return n}function n(t){var e=t;if(\\\"visible\\\"==d)if(t==u&&l)e=l;else if(t==l)return{x:\\\"visible\\\",y:\\\"visible\\\"};var n=window.getComputedStyle(e),r={x:n[\\\"overflow-x\\\"],y:n[\\\"overflow-y\\\"]};return t==u&&(r.x=\\\"visible\\\"==r.x?\\\"auto\\\":r.x,r.y=\\\"visible\\\"==r.y?\\\"auto\\\":r.y),r}function r(t){return t==u?{x:window.scrollX,y:window.scrollY}:{x:t.scrollLeft,y:t.scrollTop}}for(var i,o=E(t),a=t.ownerDocument,u=a.documentElement,l=a.body,d=window.getComputedStyle(u).overflow,f=e(t);f;f=e(f)){var h=n(f);if(\\\"visible\\\"!=h.x||\\\"visible\\\"!=h.y){var s=x(f);if(0==s.width||0==s.height)return T.HIDDEN;var p=o.right<s.left,c=o.bottom<s.top;if(p&&\\\"hidden\\\"==h.x||c&&\\\"hidden\\\"==h.y)return T.HIDDEN;if(p&&\\\"visible\\\"!=h.x||c&&\\\"visible\\\"!=h.y){var v=r(f),g=o.right<s.left-v.x,w=o.bottom<s.top-v.y;return g&&\\\"visible\\\"!=h.x||w&&\\\"visible\\\"!=h.x?T.HIDDEN:C(f)==T.HIDDEN?T.HIDDEN:T.SCROLL}var N=o.left>=s.left+s.width,m=o.top>=s.top+s.height;if(N&&\\\"hidden\\\"==h.x||m&&\\\"hidden\\\"==h.y)return T.HIDDEN;if(N&&\\\"visible\\\"!=h.x||m&&\\\"visible\\\"!=h.y){if(i){var y=r(f);if(o.left>=u.scrollWidth-y.x||o.right>=u.scrollHeight-y.y)return T.HIDDEN}return C(f)==T.HIDDEN?T.HIDDEN:T.SCROLL}}}return T.NONE}function o(t){var e=t.document.documentElement;return{width:e.clientWidth,height:e.clientHeight}}function p(t,e,n,r){return{left:t,top:e,width:n,height:r}}function x(t){var e,n=s(t);if(n)return n.rect;if(\\\"HTML\\\"==t.tagName.toUpperCase()){t.ownerDocument;var r=o(window);return p(0,0,r.width,r.height)}try{e=t.getBoundingClientRect()}catch(i){return p(0,0,0,0)}return p(e.left,e.top,e.right-e.left,e.bottom-e.top)}function f(t){var e=1,n=window.getComputedStyle(t).opacity;n&&(e=Number(n));var r=D(t);return r&&r.nodeType==Node.ELEMENT_NODE&&(e*=f(r)),e}function h(t){var e=t.shape.toLowerCase(),n=t.coords.split(\\\",\\\");if(\\\"rect\\\"==e&&4==n.length){var r=n[0],i=n[1];return p(r,i,n[2]-r,n[3]-i)}if(\\\"circle\\\"==e&&3==n.length){var o=n[0],a=n[1],u=n[2];return p(o-u,a-u,2*u,2*u)}if(\\\"poly\\\"==e&&2<n.length){for(var l=n[0],d=n[1],f=l,h=d,s=2;s+1<n.length;s+=2)l=Math.min(l,n[s]),f=Math.max(f,n[s]),d=Math.min(d,n[s+1]),h=Math.max(h,n[s+1]);return p(l,d,f-l,h-d)}return p(0,0,0,0)}function s(t){var e=t.tagName.toUpperCase(),n=\\\"MAP\\\"==e;if(!n&&\\\"AREA\\\"!=e)return null;var r=n?t:\\\"MAP\\\"==D(t).tagName.toUpperCase()?D(t):null,i=null,o=null;if(r&&r.name&&((i=r.ownerDocument.querySelector(\\\"*[usemap='#\\\"+r.name+\\\"']\\\"))&&(o=x(i),!n&&\\\"default\\\"!=t.shape.toLowerCase()))){var a=h(t),u=Math.min(Math.max(a.left,0),o.width),l=Math.min(Math.max(a.top,0),o.height),d=Math.min(a.width,o.width-u),f=Math.min(a.height,o.height-l);o=p(u+o.left,l+o.top,d,f)}return{image:i,rect:o||p(0,0,0,0)}}function c(t,e){for(t&&(t=D(t));t;){if(e(t))return t;t=D(t)}return null}function r(t){var e=t.parentNode;if(e&&e.shadowRoot&&t.assignedSlot!==undefined)return t.assignedSlot?t.assignedSlot.parentNode:null;if(t.getDestinationInsertionPoints){var n=t.getDestinationInsertionPoints();if(0<n.length)return n[n.length-1]}return e}var T={NONE:\\\"none\\\",HIDDEN:\\\"hidden\\\",SCROLL:\\\"scroll\\\"};return function i(t,e){function n(t){if(\\\"none\\\"==window.getComputedStyle(t).display)return!1;var e=r(t);if(\\\"function\\\"==typeof ShadowRoot&&e instanceof ShadowRoot){if(e.host.shadowRoot!==e)return!1;e=e.host}return!(!e||e.nodeType!=Node.DOCUMENT_NODE&&e.nodeType!=Node.DOCUMENT_FRAGMENT_NODE)||!(e&&e.tagName&&\\\"DETAILS\\\"==e.tagName.toUpperCase()&&!e.open&&\\\"SUMMARY\\\"!=t.tagName)&&(e&&n(e))}return d(t,!!e,n)}})()).apply(null, arguments)\",\"args\":[{\"element-6066-11e4-a52e-4f735466cecf\":\"28388A9179573E088F201ABB842D9F60_element_329\"}]}"
+        },
+        "headers": {
+          "Accept": [
+            "application/json"
+          ],
+          "Content-Type": [
+            "application/json; charset=UTF-8"
+          ],
+          "User-Agent": [
+            "selenium/4.12.0 (ruby macosx)"
+          ],
+          "Content-Length": [
+            "5092"
+          ],
+          "Accept-Encoding": [
+            "gzip;q=1.0,deflate;q=0.6,identity;q=0.3"
+          ]
+        }
+      },
+      "response": {
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "headers": {
+          "Content-Length": [
+            "14"
+          ],
+          "Content-Type": [
+            "application/json; charset=utf-8"
+          ],
+          "Cache-Control": [
+            "no-cache"
+          ]
+        },
+        "body": {
+          "encoding": "UTF-8",
+          "string": "{\"value\":true}"
+        }
+      },
+      "recorded_at": "Sat, 16 Sep 2023 00:13:38 GMT"
+    },
+    {
+      "request": {
+        "method": "post",
+        "uri": "http://127.0.0.1:9516/session/8778b28e69ebd3212dee4126bd13ad90/execute/sync",
+        "body": {
+          "encoding": "UTF-8",
+          "string": "{\"script\":\"return arguments[0].matches(':disabled, select:disabled *')\",\"args\":[{\"element-6066-11e4-a52e-4f735466cecf\":\"28388A9179573E088F201ABB842D9F60_element_329\"}]}"
+        },
+        "headers": {
+          "Accept": [
+            "application/json"
+          ],
+          "Content-Type": [
+            "application/json; charset=UTF-8"
+          ],
+          "User-Agent": [
+            "selenium/4.12.0 (ruby macosx)"
+          ],
+          "Content-Length": [
+            "168"
+          ],
+          "Accept-Encoding": [
+            "gzip;q=1.0,deflate;q=0.6,identity;q=0.3"
+          ]
+        }
+      },
+      "response": {
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "headers": {
+          "Content-Length": [
+            "15"
+          ],
+          "Content-Type": [
+            "application/json; charset=utf-8"
+          ],
+          "Cache-Control": [
+            "no-cache"
+          ]
+        },
+        "body": {
+          "encoding": "UTF-8",
+          "string": "{\"value\":false}"
+        }
+      },
+      "recorded_at": "Sat, 16 Sep 2023 00:13:38 GMT"
+    },
+    {
+      "request": {
+        "method": "post",
+        "uri": "http://127.0.0.1:9516/session/8778b28e69ebd3212dee4126bd13ad90/execute/sync",
+        "body": {
+          "encoding": "UTF-8",
+          "string": "{\"script\":\"return (function(el, names){\\n  return names.map(function(name){\\n    return el[name]\\n  });\\n})(arguments[0], arguments[1]);\\n\",\"args\":[{\"element-6066-11e4-a52e-4f735466cecf\":\"28388A9179573E088F201ABB842D9F60_element_329\"},[\"tagName\",\"type\"]]}"
+        },
+        "headers": {
+          "Accept": [
+            "application/json"
+          ],
+          "Content-Type": [
+            "application/json; charset=UTF-8"
+          ],
+          "User-Agent": [
+            "selenium/4.12.0 (ruby macosx)"
+          ],
+          "Content-Length": [
+            "255"
+          ],
+          "Accept-Encoding": [
+            "gzip;q=1.0,deflate;q=0.6,identity;q=0.3"
+          ]
+        }
+      },
+      "response": {
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "headers": {
+          "Content-Length": [
+            "26"
+          ],
+          "Content-Type": [
+            "application/json; charset=utf-8"
+          ],
+          "Cache-Control": [
+            "no-cache"
+          ]
+        },
+        "body": {
+          "encoding": "UTF-8",
+          "string": "{\"value\":[\"INPUT\",\"text\"]}"
+        }
+      },
+      "recorded_at": "Sat, 16 Sep 2023 00:13:38 GMT"
+    },
+    {
+      "request": {
+        "method": "post",
+        "uri": "http://127.0.0.1:9516/session/8778b28e69ebd3212dee4126bd13ad90/execute/sync",
+        "body": {
+          "encoding": "UTF-8",
+          "string": "{\"script\":\"arguments[0].select()\",\"args\":[{\"element-6066-11e4-a52e-4f735466cecf\":\"28388A9179573E088F201ABB842D9F60_element_329\"}]}"
+        },
+        "headers": {
+          "Accept": [
+            "application/json"
+          ],
+          "Content-Type": [
+            "application/json; charset=UTF-8"
+          ],
+          "User-Agent": [
+            "selenium/4.12.0 (ruby macosx)"
+          ],
+          "Content-Length": [
+            "130"
+          ],
+          "Accept-Encoding": [
+            "gzip;q=1.0,deflate;q=0.6,identity;q=0.3"
+          ]
+        }
+      },
+      "response": {
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "headers": {
+          "Content-Length": [
+            "14"
+          ],
+          "Content-Type": [
+            "application/json; charset=utf-8"
+          ],
+          "Cache-Control": [
+            "no-cache"
+          ]
+        },
+        "body": {
+          "encoding": "UTF-8",
+          "string": "{\"value\":null}"
+        }
+      },
+      "recorded_at": "Sat, 16 Sep 2023 00:13:38 GMT"
+    },
+    {
+      "request": {
+        "method": "post",
+        "uri": "http://127.0.0.1:9516/session/8778b28e69ebd3212dee4126bd13ad90/element/28388A9179573E088F201ABB842D9F60_element_329/value",
+        "body": {
+          "encoding": "UTF-8",
+          "string": "{\"value\":[\"D\",\"e\",\"n\",\"v\",\"e\",\"r\",\",\",\" \",\"C\",\"o\",\"l\",\"o\",\"r\",\"a\",\"d\",\"o\"],\"text\":\"Denver, Colorado\"}"
+        },
+        "headers": {
+          "Accept": [
+            "application/json"
+          ],
+          "Content-Type": [
+            "application/json; charset=UTF-8"
+          ],
+          "User-Agent": [
+            "selenium/4.12.0 (ruby macosx)"
+          ],
+          "Content-Length": [
+            "101"
+          ],
+          "Accept-Encoding": [
+            "gzip;q=1.0,deflate;q=0.6,identity;q=0.3"
+          ]
+        }
+      },
+      "response": {
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "headers": {
+          "Content-Length": [
+            "14"
+          ],
+          "Content-Type": [
+            "application/json; charset=utf-8"
+          ],
+          "Cache-Control": [
+            "no-cache"
+          ]
+        },
+        "body": {
+          "encoding": "UTF-8",
+          "string": "{\"value\":null}"
+        }
+      },
+      "recorded_at": "Sat, 16 Sep 2023 00:13:38 GMT"
+    },
+    {
+      "request": {
+        "method": "post",
+        "uri": "http://127.0.0.1:9516/session/8778b28e69ebd3212dee4126bd13ad90/element/28388A9179573E088F201ABB842D9F60_element_328/elements",
+        "body": {
+          "encoding": "UTF-8",
+          "string": "{\"using\":\"xpath\",\"value\":\"./descendant::input[(./@type = 'checkbox')][((((./@id = 'Urgent Care') or (./@name = 'Urgent Care')) or (./@placeholder = 'Urgent Care')) or (./@id = //label[(normalize-space(string(.)) = 'Urgent Care')]/@for))] | .//label[(normalize-space(string(.)) = 'Urgent Care')]//./descendant::input[(./@type = 'checkbox')]\"}"
+        },
+        "headers": {
+          "Accept": [
+            "application/json"
+          ],
+          "Content-Type": [
+            "application/json; charset=UTF-8"
+          ],
+          "User-Agent": [
+            "selenium/4.12.0 (ruby macosx)"
+          ],
+          "Content-Length": [
+            "341"
+          ],
+          "Accept-Encoding": [
+            "gzip;q=1.0,deflate;q=0.6,identity;q=0.3"
+          ]
+        }
+      },
+      "response": {
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "headers": {
+          "Content-Length": [
+            "98"
+          ],
+          "Content-Type": [
+            "application/json; charset=utf-8"
+          ],
+          "Cache-Control": [
+            "no-cache"
+          ]
+        },
+        "body": {
+          "encoding": "UTF-8",
+          "string": "{\"value\":[{\"element-6066-11e4-a52e-4f735466cecf\":\"28388A9179573E088F201ABB842D9F60_element_333\"}]}"
+        }
+      },
+      "recorded_at": "Sat, 16 Sep 2023 00:13:38 GMT"
+    },
+    {
+      "request": {
+        "method": "post",
+        "uri": "http://127.0.0.1:9516/session/8778b28e69ebd3212dee4126bd13ad90/execute/sync",
+        "body": {
+          "encoding": "UTF-8",
+          "string": "{\"script\":\"/* isDisplayed */return ((function(){function d(t,e,n){function r(t){var e=x(t);if(0<e.height&&0<e.width)return!0;if(\\\"PATH\\\"==t.tagName.toUpperCase()&&(0<e.height||0<e.width)){var n=window.getComputedStyle(t)[\\\"stroke-width\\\"];return!!n&&0<parseInt(n,10)}return\\\"hidden\\\"!=window.getComputedStyle(t).overflow&&Array.prototype.slice.call(t.childNodes).some(function(t){return t.nodeType==Node.TEXT_NODE||t.nodeType==Node.ELEMENT_NODE&&r(t)})}function i(t){return C(t)==T.HIDDEN&&Array.prototype.slice.call(t.childNodes).every(function(t){return t.nodeType!=Node.ELEMENT_NODE||i(t)||!r(t)})}var o=t.tagName.toUpperCase();if(\\\"BODY\\\"==o)return!0;if(\\\"OPTION\\\"==o||\\\"OPTGROUP\\\"==o){var a=c(t,function(t){return\\\"SELECT\\\"==t.tagName.toUpperCase()});return!!a&&d(a,!0,n)}var u=s(t);if(u)return!!u.image&&0<u.rect.width&&0<u.rect.height&&d(u.image,e,n);if(\\\"INPUT\\\"==o&&\\\"hidden\\\"==t.type.toLowerCase())return!1;if(\\\"NOSCRIPT\\\"==o)return!1;var l=window.getComputedStyle(t).visibility;return\\\"collapse\\\"!=l&&\\\"hidden\\\"!=l&&(!!n(t)&&(!(!e&&0==f(t))&&(!!r(t)&&!i(t))))}function E(t){var e=x(t);return{left:e.left,right:e.left+e.width,top:e.top,bottom:e.top+e.height}}function D(t){return t.parentElement}function C(t){function e(t){function e(t){if(t==u)return!0;var e=window.getComputedStyle(t),n=e.display;return 0!=n.indexOf(\\\"inline\\\")&&\\\"contents\\\"!=n&&(\\\"absolute\\\"!=r||\\\"static\\\"!=e.position)}var r=window.getComputedStyle(t).position;if(\\\"fixed\\\"==r)return i=!0,t==u?null:u;for(var n=D(t);n&&!e(n);)n=D(n);return n}function n(t){var e=t;if(\\\"visible\\\"==d)if(t==u&&l)e=l;else if(t==l)return{x:\\\"visible\\\",y:\\\"visible\\\"};var n=window.getComputedStyle(e),r={x:n[\\\"overflow-x\\\"],y:n[\\\"overflow-y\\\"]};return t==u&&(r.x=\\\"visible\\\"==r.x?\\\"auto\\\":r.x,r.y=\\\"visible\\\"==r.y?\\\"auto\\\":r.y),r}function r(t){return t==u?{x:window.scrollX,y:window.scrollY}:{x:t.scrollLeft,y:t.scrollTop}}for(var i,o=E(t),a=t.ownerDocument,u=a.documentElement,l=a.body,d=window.getComputedStyle(u).overflow,f=e(t);f;f=e(f)){var h=n(f);if(\\\"visible\\\"!=h.x||\\\"visible\\\"!=h.y){var s=x(f);if(0==s.width||0==s.height)return T.HIDDEN;var p=o.right<s.left,c=o.bottom<s.top;if(p&&\\\"hidden\\\"==h.x||c&&\\\"hidden\\\"==h.y)return T.HIDDEN;if(p&&\\\"visible\\\"!=h.x||c&&\\\"visible\\\"!=h.y){var v=r(f),g=o.right<s.left-v.x,w=o.bottom<s.top-v.y;return g&&\\\"visible\\\"!=h.x||w&&\\\"visible\\\"!=h.x?T.HIDDEN:C(f)==T.HIDDEN?T.HIDDEN:T.SCROLL}var N=o.left>=s.left+s.width,m=o.top>=s.top+s.height;if(N&&\\\"hidden\\\"==h.x||m&&\\\"hidden\\\"==h.y)return T.HIDDEN;if(N&&\\\"visible\\\"!=h.x||m&&\\\"visible\\\"!=h.y){if(i){var y=r(f);if(o.left>=u.scrollWidth-y.x||o.right>=u.scrollHeight-y.y)return T.HIDDEN}return C(f)==T.HIDDEN?T.HIDDEN:T.SCROLL}}}return T.NONE}function o(t){var e=t.document.documentElement;return{width:e.clientWidth,height:e.clientHeight}}function p(t,e,n,r){return{left:t,top:e,width:n,height:r}}function x(t){var e,n=s(t);if(n)return n.rect;if(\\\"HTML\\\"==t.tagName.toUpperCase()){t.ownerDocument;var r=o(window);return p(0,0,r.width,r.height)}try{e=t.getBoundingClientRect()}catch(i){return p(0,0,0,0)}return p(e.left,e.top,e.right-e.left,e.bottom-e.top)}function f(t){var e=1,n=window.getComputedStyle(t).opacity;n&&(e=Number(n));var r=D(t);return r&&r.nodeType==Node.ELEMENT_NODE&&(e*=f(r)),e}function h(t){var e=t.shape.toLowerCase(),n=t.coords.split(\\\",\\\");if(\\\"rect\\\"==e&&4==n.length){var r=n[0],i=n[1];return p(r,i,n[2]-r,n[3]-i)}if(\\\"circle\\\"==e&&3==n.length){var o=n[0],a=n[1],u=n[2];return p(o-u,a-u,2*u,2*u)}if(\\\"poly\\\"==e&&2<n.length){for(var l=n[0],d=n[1],f=l,h=d,s=2;s+1<n.length;s+=2)l=Math.min(l,n[s]),f=Math.max(f,n[s]),d=Math.min(d,n[s+1]),h=Math.max(h,n[s+1]);return p(l,d,f-l,h-d)}return p(0,0,0,0)}function s(t){var e=t.tagName.toUpperCase(),n=\\\"MAP\\\"==e;if(!n&&\\\"AREA\\\"!=e)return null;var r=n?t:\\\"MAP\\\"==D(t).tagName.toUpperCase()?D(t):null,i=null,o=null;if(r&&r.name&&((i=r.ownerDocument.querySelector(\\\"*[usemap='#\\\"+r.name+\\\"']\\\"))&&(o=x(i),!n&&\\\"default\\\"!=t.shape.toLowerCase()))){var a=h(t),u=Math.min(Math.max(a.left,0),o.width),l=Math.min(Math.max(a.top,0),o.height),d=Math.min(a.width,o.width-u),f=Math.min(a.height,o.height-l);o=p(u+o.left,l+o.top,d,f)}return{image:i,rect:o||p(0,0,0,0)}}function c(t,e){for(t&&(t=D(t));t;){if(e(t))return t;t=D(t)}return null}function r(t){var e=t.parentNode;if(e&&e.shadowRoot&&t.assignedSlot!==undefined)return t.assignedSlot?t.assignedSlot.parentNode:null;if(t.getDestinationInsertionPoints){var n=t.getDestinationInsertionPoints();if(0<n.length)return n[n.length-1]}return e}var T={NONE:\\\"none\\\",HIDDEN:\\\"hidden\\\",SCROLL:\\\"scroll\\\"};return function i(t,e){function n(t){if(\\\"none\\\"==window.getComputedStyle(t).display)return!1;var e=r(t);if(\\\"function\\\"==typeof ShadowRoot&&e instanceof ShadowRoot){if(e.host.shadowRoot!==e)return!1;e=e.host}return!(!e||e.nodeType!=Node.DOCUMENT_NODE&&e.nodeType!=Node.DOCUMENT_FRAGMENT_NODE)||!(e&&e.tagName&&\\\"DETAILS\\\"==e.tagName.toUpperCase()&&!e.open&&\\\"SUMMARY\\\"!=t.tagName)&&(e&&n(e))}return d(t,!!e,n)}})()).apply(null, arguments)\",\"args\":[{\"element-6066-11e4-a52e-4f735466cecf\":\"28388A9179573E088F201ABB842D9F60_element_333\"}]}"
+        },
+        "headers": {
+          "Accept": [
+            "application/json"
+          ],
+          "Content-Type": [
+            "application/json; charset=UTF-8"
+          ],
+          "User-Agent": [
+            "selenium/4.12.0 (ruby macosx)"
+          ],
+          "Content-Length": [
+            "5092"
+          ],
+          "Accept-Encoding": [
+            "gzip;q=1.0,deflate;q=0.6,identity;q=0.3"
+          ]
+        }
+      },
+      "response": {
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "headers": {
+          "Content-Length": [
+            "14"
+          ],
+          "Content-Type": [
+            "application/json; charset=utf-8"
+          ],
+          "Cache-Control": [
+            "no-cache"
+          ]
+        },
+        "body": {
+          "encoding": "UTF-8",
+          "string": "{\"value\":true}"
+        }
+      },
+      "recorded_at": "Sat, 16 Sep 2023 00:13:38 GMT"
+    },
+    {
+      "request": {
+        "method": "post",
+        "uri": "http://127.0.0.1:9516/session/8778b28e69ebd3212dee4126bd13ad90/execute/sync",
+        "body": {
+          "encoding": "UTF-8",
+          "string": "{\"script\":\"return arguments[0].matches(':disabled, select:disabled *')\",\"args\":[{\"element-6066-11e4-a52e-4f735466cecf\":\"28388A9179573E088F201ABB842D9F60_element_333\"}]}"
+        },
+        "headers": {
+          "Accept": [
+            "application/json"
+          ],
+          "Content-Type": [
+            "application/json; charset=UTF-8"
+          ],
+          "User-Agent": [
+            "selenium/4.12.0 (ruby macosx)"
+          ],
+          "Content-Length": [
+            "168"
+          ],
+          "Accept-Encoding": [
+            "gzip;q=1.0,deflate;q=0.6,identity;q=0.3"
+          ]
+        }
+      },
+      "response": {
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "headers": {
+          "Content-Length": [
+            "15"
+          ],
+          "Content-Type": [
+            "application/json; charset=utf-8"
+          ],
+          "Cache-Control": [
+            "no-cache"
+          ]
+        },
+        "body": {
+          "encoding": "UTF-8",
+          "string": "{\"value\":false}"
+        }
+      },
+      "recorded_at": "Sat, 16 Sep 2023 00:13:38 GMT"
+    },
+    {
+      "request": {
+        "method": "post",
+        "uri": "http://127.0.0.1:9516/session/8778b28e69ebd3212dee4126bd13ad90/execute/sync",
+        "body": {
+          "encoding": "UTF-8",
+          "string": "{\"script\":\"return (function(el, names){\\n  return names.map(function(name){\\n    return el[name]\\n  });\\n})(arguments[0], arguments[1]);\\n\",\"args\":[{\"element-6066-11e4-a52e-4f735466cecf\":\"28388A9179573E088F201ABB842D9F60_element_333\"},[\"tagName\",\"type\"]]}"
+        },
+        "headers": {
+          "Accept": [
+            "application/json"
+          ],
+          "Content-Type": [
+            "application/json; charset=UTF-8"
+          ],
+          "User-Agent": [
+            "selenium/4.12.0 (ruby macosx)"
+          ],
+          "Content-Length": [
+            "255"
+          ],
+          "Accept-Encoding": [
+            "gzip;q=1.0,deflate;q=0.6,identity;q=0.3"
+          ]
+        }
+      },
+      "response": {
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "headers": {
+          "Content-Length": [
+            "30"
+          ],
+          "Content-Type": [
+            "application/json; charset=utf-8"
+          ],
+          "Cache-Control": [
+            "no-cache"
+          ]
+        },
+        "body": {
+          "encoding": "UTF-8",
+          "string": "{\"value\":[\"INPUT\",\"checkbox\"]}"
+        }
+      },
+      "recorded_at": "Sat, 16 Sep 2023 00:13:38 GMT"
+    },
+    {
+      "request": {
+        "method": "get",
+        "uri": "http://127.0.0.1:9516/session/8778b28e69ebd3212dee4126bd13ad90/element/28388A9179573E088F201ABB842D9F60_element_333/selected",
+        "body": {
+          "encoding": "US-ASCII",
+          "string": ""
+        },
+        "headers": {
+          "Accept": [
+            "application/json"
+          ],
+          "Content-Type": [
+            "application/json; charset=UTF-8"
+          ],
+          "User-Agent": [
+            "selenium/4.12.0 (ruby macosx)"
+          ],
+          "Cache-Control": [
+            "no-cache"
+          ],
+          "Accept-Encoding": [
+            "gzip;q=1.0,deflate;q=0.6,identity;q=0.3"
+          ]
+        }
+      },
+      "response": {
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "headers": {
+          "Content-Length": [
+            "15"
+          ],
+          "Content-Type": [
+            "application/json; charset=utf-8"
+          ],
+          "Cache-Control": [
+            "no-cache"
+          ]
+        },
+        "body": {
+          "encoding": "UTF-8",
+          "string": "{\"value\":false}"
+        }
+      },
+      "recorded_at": "Sat, 16 Sep 2023 00:13:38 GMT"
+    },
+    {
+      "request": {
+        "method": "post",
+        "uri": "http://127.0.0.1:9516/session/8778b28e69ebd3212dee4126bd13ad90/element/28388A9179573E088F201ABB842D9F60_element_333/click",
+        "body": {
+          "encoding": "UTF-8",
+          "string": "{}"
+        },
+        "headers": {
+          "Accept": [
+            "application/json"
+          ],
+          "Content-Type": [
+            "application/json; charset=UTF-8"
+          ],
+          "User-Agent": [
+            "selenium/4.12.0 (ruby macosx)"
+          ],
+          "Content-Length": [
+            "2"
+          ],
+          "Accept-Encoding": [
+            "gzip;q=1.0,deflate;q=0.6,identity;q=0.3"
+          ]
+        }
+      },
+      "response": {
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "headers": {
+          "Content-Length": [
+            "14"
+          ],
+          "Content-Type": [
+            "application/json; charset=utf-8"
+          ],
+          "Cache-Control": [
+            "no-cache"
+          ]
+        },
+        "body": {
+          "encoding": "UTF-8",
+          "string": "{\"value\":null}"
+        }
+      },
+      "recorded_at": "Sat, 16 Sep 2023 00:13:39 GMT"
+    },
+    {
+      "request": {
+        "method": "post",
+        "uri": "http://127.0.0.1:9516/session/8778b28e69ebd3212dee4126bd13ad90/element/28388A9179573E088F201ABB842D9F60_element_328/elements",
+        "body": {
+          "encoding": "UTF-8",
+          "string": "{\"using\":\"xpath\",\"value\":\"./descendant::input[(./@type = 'checkbox')][((((./@id = 'Food') or (./@name = 'Food')) or (./@placeholder = 'Food')) or (./@id = //label[(normalize-space(string(.)) = 'Food')]/@for))] | .//label[(normalize-space(string(.)) = 'Food')]//./descendant::input[(./@type = 'checkbox')]\"}"
+        },
+        "headers": {
+          "Accept": [
+            "application/json"
+          ],
+          "Content-Type": [
+            "application/json; charset=UTF-8"
+          ],
+          "User-Agent": [
+            "selenium/4.12.0 (ruby macosx)"
+          ],
+          "Content-Length": [
+            "306"
+          ],
+          "Accept-Encoding": [
+            "gzip;q=1.0,deflate;q=0.6,identity;q=0.3"
+          ]
+        }
+      },
+      "response": {
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "headers": {
+          "Content-Length": [
+            "98"
+          ],
+          "Content-Type": [
+            "application/json; charset=utf-8"
+          ],
+          "Cache-Control": [
+            "no-cache"
+          ]
+        },
+        "body": {
+          "encoding": "UTF-8",
+          "string": "{\"value\":[{\"element-6066-11e4-a52e-4f735466cecf\":\"28388A9179573E088F201ABB842D9F60_element_334\"}]}"
+        }
+      },
+      "recorded_at": "Sat, 16 Sep 2023 00:13:39 GMT"
+    },
+    {
+      "request": {
+        "method": "post",
+        "uri": "http://127.0.0.1:9516/session/8778b28e69ebd3212dee4126bd13ad90/execute/sync",
+        "body": {
+          "encoding": "UTF-8",
+          "string": "{\"script\":\"/* isDisplayed */return ((function(){function d(t,e,n){function r(t){var e=x(t);if(0<e.height&&0<e.width)return!0;if(\\\"PATH\\\"==t.tagName.toUpperCase()&&(0<e.height||0<e.width)){var n=window.getComputedStyle(t)[\\\"stroke-width\\\"];return!!n&&0<parseInt(n,10)}return\\\"hidden\\\"!=window.getComputedStyle(t).overflow&&Array.prototype.slice.call(t.childNodes).some(function(t){return t.nodeType==Node.TEXT_NODE||t.nodeType==Node.ELEMENT_NODE&&r(t)})}function i(t){return C(t)==T.HIDDEN&&Array.prototype.slice.call(t.childNodes).every(function(t){return t.nodeType!=Node.ELEMENT_NODE||i(t)||!r(t)})}var o=t.tagName.toUpperCase();if(\\\"BODY\\\"==o)return!0;if(\\\"OPTION\\\"==o||\\\"OPTGROUP\\\"==o){var a=c(t,function(t){return\\\"SELECT\\\"==t.tagName.toUpperCase()});return!!a&&d(a,!0,n)}var u=s(t);if(u)return!!u.image&&0<u.rect.width&&0<u.rect.height&&d(u.image,e,n);if(\\\"INPUT\\\"==o&&\\\"hidden\\\"==t.type.toLowerCase())return!1;if(\\\"NOSCRIPT\\\"==o)return!1;var l=window.getComputedStyle(t).visibility;return\\\"collapse\\\"!=l&&\\\"hidden\\\"!=l&&(!!n(t)&&(!(!e&&0==f(t))&&(!!r(t)&&!i(t))))}function E(t){var e=x(t);return{left:e.left,right:e.left+e.width,top:e.top,bottom:e.top+e.height}}function D(t){return t.parentElement}function C(t){function e(t){function e(t){if(t==u)return!0;var e=window.getComputedStyle(t),n=e.display;return 0!=n.indexOf(\\\"inline\\\")&&\\\"contents\\\"!=n&&(\\\"absolute\\\"!=r||\\\"static\\\"!=e.position)}var r=window.getComputedStyle(t).position;if(\\\"fixed\\\"==r)return i=!0,t==u?null:u;for(var n=D(t);n&&!e(n);)n=D(n);return n}function n(t){var e=t;if(\\\"visible\\\"==d)if(t==u&&l)e=l;else if(t==l)return{x:\\\"visible\\\",y:\\\"visible\\\"};var n=window.getComputedStyle(e),r={x:n[\\\"overflow-x\\\"],y:n[\\\"overflow-y\\\"]};return t==u&&(r.x=\\\"visible\\\"==r.x?\\\"auto\\\":r.x,r.y=\\\"visible\\\"==r.y?\\\"auto\\\":r.y),r}function r(t){return t==u?{x:window.scrollX,y:window.scrollY}:{x:t.scrollLeft,y:t.scrollTop}}for(var i,o=E(t),a=t.ownerDocument,u=a.documentElement,l=a.body,d=window.getComputedStyle(u).overflow,f=e(t);f;f=e(f)){var h=n(f);if(\\\"visible\\\"!=h.x||\\\"visible\\\"!=h.y){var s=x(f);if(0==s.width||0==s.height)return T.HIDDEN;var p=o.right<s.left,c=o.bottom<s.top;if(p&&\\\"hidden\\\"==h.x||c&&\\\"hidden\\\"==h.y)return T.HIDDEN;if(p&&\\\"visible\\\"!=h.x||c&&\\\"visible\\\"!=h.y){var v=r(f),g=o.right<s.left-v.x,w=o.bottom<s.top-v.y;return g&&\\\"visible\\\"!=h.x||w&&\\\"visible\\\"!=h.x?T.HIDDEN:C(f)==T.HIDDEN?T.HIDDEN:T.SCROLL}var N=o.left>=s.left+s.width,m=o.top>=s.top+s.height;if(N&&\\\"hidden\\\"==h.x||m&&\\\"hidden\\\"==h.y)return T.HIDDEN;if(N&&\\\"visible\\\"!=h.x||m&&\\\"visible\\\"!=h.y){if(i){var y=r(f);if(o.left>=u.scrollWidth-y.x||o.right>=u.scrollHeight-y.y)return T.HIDDEN}return C(f)==T.HIDDEN?T.HIDDEN:T.SCROLL}}}return T.NONE}function o(t){var e=t.document.documentElement;return{width:e.clientWidth,height:e.clientHeight}}function p(t,e,n,r){return{left:t,top:e,width:n,height:r}}function x(t){var e,n=s(t);if(n)return n.rect;if(\\\"HTML\\\"==t.tagName.toUpperCase()){t.ownerDocument;var r=o(window);return p(0,0,r.width,r.height)}try{e=t.getBoundingClientRect()}catch(i){return p(0,0,0,0)}return p(e.left,e.top,e.right-e.left,e.bottom-e.top)}function f(t){var e=1,n=window.getComputedStyle(t).opacity;n&&(e=Number(n));var r=D(t);return r&&r.nodeType==Node.ELEMENT_NODE&&(e*=f(r)),e}function h(t){var e=t.shape.toLowerCase(),n=t.coords.split(\\\",\\\");if(\\\"rect\\\"==e&&4==n.length){var r=n[0],i=n[1];return p(r,i,n[2]-r,n[3]-i)}if(\\\"circle\\\"==e&&3==n.length){var o=n[0],a=n[1],u=n[2];return p(o-u,a-u,2*u,2*u)}if(\\\"poly\\\"==e&&2<n.length){for(var l=n[0],d=n[1],f=l,h=d,s=2;s+1<n.length;s+=2)l=Math.min(l,n[s]),f=Math.max(f,n[s]),d=Math.min(d,n[s+1]),h=Math.max(h,n[s+1]);return p(l,d,f-l,h-d)}return p(0,0,0,0)}function s(t){var e=t.tagName.toUpperCase(),n=\\\"MAP\\\"==e;if(!n&&\\\"AREA\\\"!=e)return null;var r=n?t:\\\"MAP\\\"==D(t).tagName.toUpperCase()?D(t):null,i=null,o=null;if(r&&r.name&&((i=r.ownerDocument.querySelector(\\\"*[usemap='#\\\"+r.name+\\\"']\\\"))&&(o=x(i),!n&&\\\"default\\\"!=t.shape.toLowerCase()))){var a=h(t),u=Math.min(Math.max(a.left,0),o.width),l=Math.min(Math.max(a.top,0),o.height),d=Math.min(a.width,o.width-u),f=Math.min(a.height,o.height-l);o=p(u+o.left,l+o.top,d,f)}return{image:i,rect:o||p(0,0,0,0)}}function c(t,e){for(t&&(t=D(t));t;){if(e(t))return t;t=D(t)}return null}function r(t){var e=t.parentNode;if(e&&e.shadowRoot&&t.assignedSlot!==undefined)return t.assignedSlot?t.assignedSlot.parentNode:null;if(t.getDestinationInsertionPoints){var n=t.getDestinationInsertionPoints();if(0<n.length)return n[n.length-1]}return e}var T={NONE:\\\"none\\\",HIDDEN:\\\"hidden\\\",SCROLL:\\\"scroll\\\"};return function i(t,e){function n(t){if(\\\"none\\\"==window.getComputedStyle(t).display)return!1;var e=r(t);if(\\\"function\\\"==typeof ShadowRoot&&e instanceof ShadowRoot){if(e.host.shadowRoot!==e)return!1;e=e.host}return!(!e||e.nodeType!=Node.DOCUMENT_NODE&&e.nodeType!=Node.DOCUMENT_FRAGMENT_NODE)||!(e&&e.tagName&&\\\"DETAILS\\\"==e.tagName.toUpperCase()&&!e.open&&\\\"SUMMARY\\\"!=t.tagName)&&(e&&n(e))}return d(t,!!e,n)}})()).apply(null, arguments)\",\"args\":[{\"element-6066-11e4-a52e-4f735466cecf\":\"28388A9179573E088F201ABB842D9F60_element_334\"}]}"
+        },
+        "headers": {
+          "Accept": [
+            "application/json"
+          ],
+          "Content-Type": [
+            "application/json; charset=UTF-8"
+          ],
+          "User-Agent": [
+            "selenium/4.12.0 (ruby macosx)"
+          ],
+          "Content-Length": [
+            "5092"
+          ],
+          "Accept-Encoding": [
+            "gzip;q=1.0,deflate;q=0.6,identity;q=0.3"
+          ]
+        }
+      },
+      "response": {
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "headers": {
+          "Content-Length": [
+            "14"
+          ],
+          "Content-Type": [
+            "application/json; charset=utf-8"
+          ],
+          "Cache-Control": [
+            "no-cache"
+          ]
+        },
+        "body": {
+          "encoding": "UTF-8",
+          "string": "{\"value\":true}"
+        }
+      },
+      "recorded_at": "Sat, 16 Sep 2023 00:13:39 GMT"
+    },
+    {
+      "request": {
+        "method": "post",
+        "uri": "http://127.0.0.1:9516/session/8778b28e69ebd3212dee4126bd13ad90/execute/sync",
+        "body": {
+          "encoding": "UTF-8",
+          "string": "{\"script\":\"return arguments[0].matches(':disabled, select:disabled *')\",\"args\":[{\"element-6066-11e4-a52e-4f735466cecf\":\"28388A9179573E088F201ABB842D9F60_element_334\"}]}"
+        },
+        "headers": {
+          "Accept": [
+            "application/json"
+          ],
+          "Content-Type": [
+            "application/json; charset=UTF-8"
+          ],
+          "User-Agent": [
+            "selenium/4.12.0 (ruby macosx)"
+          ],
+          "Content-Length": [
+            "168"
+          ],
+          "Accept-Encoding": [
+            "gzip;q=1.0,deflate;q=0.6,identity;q=0.3"
+          ]
+        }
+      },
+      "response": {
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "headers": {
+          "Content-Length": [
+            "15"
+          ],
+          "Content-Type": [
+            "application/json; charset=utf-8"
+          ],
+          "Cache-Control": [
+            "no-cache"
+          ]
+        },
+        "body": {
+          "encoding": "UTF-8",
+          "string": "{\"value\":false}"
+        }
+      },
+      "recorded_at": "Sat, 16 Sep 2023 00:13:39 GMT"
+    },
+    {
+      "request": {
+        "method": "post",
+        "uri": "http://127.0.0.1:9516/session/8778b28e69ebd3212dee4126bd13ad90/execute/sync",
+        "body": {
+          "encoding": "UTF-8",
+          "string": "{\"script\":\"return (function(el, names){\\n  return names.map(function(name){\\n    return el[name]\\n  });\\n})(arguments[0], arguments[1]);\\n\",\"args\":[{\"element-6066-11e4-a52e-4f735466cecf\":\"28388A9179573E088F201ABB842D9F60_element_334\"},[\"tagName\",\"type\"]]}"
+        },
+        "headers": {
+          "Accept": [
+            "application/json"
+          ],
+          "Content-Type": [
+            "application/json; charset=UTF-8"
+          ],
+          "User-Agent": [
+            "selenium/4.12.0 (ruby macosx)"
+          ],
+          "Content-Length": [
+            "255"
+          ],
+          "Accept-Encoding": [
+            "gzip;q=1.0,deflate;q=0.6,identity;q=0.3"
+          ]
+        }
+      },
+      "response": {
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "headers": {
+          "Content-Length": [
+            "30"
+          ],
+          "Content-Type": [
+            "application/json; charset=utf-8"
+          ],
+          "Cache-Control": [
+            "no-cache"
+          ]
+        },
+        "body": {
+          "encoding": "UTF-8",
+          "string": "{\"value\":[\"INPUT\",\"checkbox\"]}"
+        }
+      },
+      "recorded_at": "Sat, 16 Sep 2023 00:13:39 GMT"
+    },
+    {
+      "request": {
+        "method": "get",
+        "uri": "http://127.0.0.1:9516/session/8778b28e69ebd3212dee4126bd13ad90/element/28388A9179573E088F201ABB842D9F60_element_334/selected",
+        "body": {
+          "encoding": "US-ASCII",
+          "string": ""
+        },
+        "headers": {
+          "Accept": [
+            "application/json"
+          ],
+          "Content-Type": [
+            "application/json; charset=UTF-8"
+          ],
+          "User-Agent": [
+            "selenium/4.12.0 (ruby macosx)"
+          ],
+          "Cache-Control": [
+            "no-cache"
+          ],
+          "Accept-Encoding": [
+            "gzip;q=1.0,deflate;q=0.6,identity;q=0.3"
+          ]
+        }
+      },
+      "response": {
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "headers": {
+          "Content-Length": [
+            "15"
+          ],
+          "Content-Type": [
+            "application/json; charset=utf-8"
+          ],
+          "Cache-Control": [
+            "no-cache"
+          ]
+        },
+        "body": {
+          "encoding": "UTF-8",
+          "string": "{\"value\":false}"
+        }
+      },
+      "recorded_at": "Sat, 16 Sep 2023 00:13:39 GMT"
+    },
+    {
+      "request": {
+        "method": "post",
+        "uri": "http://127.0.0.1:9516/session/8778b28e69ebd3212dee4126bd13ad90/element/28388A9179573E088F201ABB842D9F60_element_334/click",
+        "body": {
+          "encoding": "UTF-8",
+          "string": "{}"
+        },
+        "headers": {
+          "Accept": [
+            "application/json"
+          ],
+          "Content-Type": [
+            "application/json; charset=UTF-8"
+          ],
+          "User-Agent": [
+            "selenium/4.12.0 (ruby macosx)"
+          ],
+          "Content-Length": [
+            "2"
+          ],
+          "Accept-Encoding": [
+            "gzip;q=1.0,deflate;q=0.6,identity;q=0.3"
+          ]
+        }
+      },
+      "response": {
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "headers": {
+          "Content-Length": [
+            "14"
+          ],
+          "Content-Type": [
+            "application/json; charset=utf-8"
+          ],
+          "Cache-Control": [
+            "no-cache"
+          ]
+        },
+        "body": {
+          "encoding": "UTF-8",
+          "string": "{\"value\":null}"
+        }
+      },
+      "recorded_at": "Sat, 16 Sep 2023 00:13:39 GMT"
+    },
+    {
+      "request": {
+        "method": "post",
+        "uri": "http://127.0.0.1:9516/session/8778b28e69ebd3212dee4126bd13ad90/element/28388A9179573E088F201ABB842D9F60_element_328/elements",
+        "body": {
+          "encoding": "UTF-8",
+          "string": "{\"using\":\"xpath\",\"value\":\".//input[((((./@type = 'submit') or (./@type = 'reset')) or (./@type = 'image')) or (./@type = 'button'))][(((((./@id = 'Get Help!') or (./@name = 'Get Help!')) or (./@value = 'Get Help!')) or (./@title = 'Get Help!')) or (./@id = //label[(normalize-space(string(.)) = 'Get Help!')]/@for))] | .//label[(normalize-space(string(.)) = 'Get Help!')]//*[((./self::input and ((((./@type = 'submit') or (./@type = 'reset')) or (./@type = 'image')) or (./@type = 'button'))) or ./self::button)] | .//input[(./@type = 'image')][(./@alt = 'Get Help!')] | .//label[(normalize-space(string(.)) = 'Get Help!')]//*[((./self::input and ((((./@type = 'submit') or (./@type = 'reset')) or (./@type = 'image')) or (./@type = 'button'))) or ./self::button)] | .//button[(((((((./@id = 'Get Help!') or (./@name = 'Get Help!')) or (./@value = 'Get Help!')) or (./@title = 'Get Help!')) or (./@id = //label[(normalize-space(string(.)) = 'Get Help!')]/@for)) or (normalize-space(string(.)) = 'Get Help!')) or .//img[(./@alt = 'Get Help!')])] | .//label[(normalize-space(string(.)) = 'Get Help!')]//*[((./self::input and ((((./@type = 'submit') or (./@type = 'reset')) or (./@type = 'image')) or (./@type = 'button'))) or ./self::button)] | .//input[(./@type = 'image')][(./@alt = 'Get Help!')] | .//label[(normalize-space(string(.)) = 'Get Help!')]//*[((./self::input and ((((./@type = 'submit') or (./@type = 'reset')) or (./@type = 'image')) or (./@type = 'button'))) or ./self::button)]\"}"
+        },
+        "headers": {
+          "Accept": [
+            "application/json"
+          ],
+          "Content-Type": [
+            "application/json; charset=UTF-8"
+          ],
+          "User-Agent": [
+            "selenium/4.12.0 (ruby macosx)"
+          ],
+          "Content-Length": [
+            "1494"
+          ],
+          "Accept-Encoding": [
+            "gzip;q=1.0,deflate;q=0.6,identity;q=0.3"
+          ]
+        }
+      },
+      "response": {
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "headers": {
+          "Content-Length": [
+            "98"
+          ],
+          "Content-Type": [
+            "application/json; charset=utf-8"
+          ],
+          "Cache-Control": [
+            "no-cache"
+          ]
+        },
+        "body": {
+          "encoding": "UTF-8",
+          "string": "{\"value\":[{\"element-6066-11e4-a52e-4f735466cecf\":\"28388A9179573E088F201ABB842D9F60_element_379\"}]}"
+        }
+      },
+      "recorded_at": "Sat, 16 Sep 2023 00:13:39 GMT"
+    },
+    {
+      "request": {
+        "method": "post",
+        "uri": "http://127.0.0.1:9516/session/8778b28e69ebd3212dee4126bd13ad90/execute/sync",
+        "body": {
+          "encoding": "UTF-8",
+          "string": "{\"script\":\"/* isDisplayed */return ((function(){function d(t,e,n){function r(t){var e=x(t);if(0<e.height&&0<e.width)return!0;if(\\\"PATH\\\"==t.tagName.toUpperCase()&&(0<e.height||0<e.width)){var n=window.getComputedStyle(t)[\\\"stroke-width\\\"];return!!n&&0<parseInt(n,10)}return\\\"hidden\\\"!=window.getComputedStyle(t).overflow&&Array.prototype.slice.call(t.childNodes).some(function(t){return t.nodeType==Node.TEXT_NODE||t.nodeType==Node.ELEMENT_NODE&&r(t)})}function i(t){return C(t)==T.HIDDEN&&Array.prototype.slice.call(t.childNodes).every(function(t){return t.nodeType!=Node.ELEMENT_NODE||i(t)||!r(t)})}var o=t.tagName.toUpperCase();if(\\\"BODY\\\"==o)return!0;if(\\\"OPTION\\\"==o||\\\"OPTGROUP\\\"==o){var a=c(t,function(t){return\\\"SELECT\\\"==t.tagName.toUpperCase()});return!!a&&d(a,!0,n)}var u=s(t);if(u)return!!u.image&&0<u.rect.width&&0<u.rect.height&&d(u.image,e,n);if(\\\"INPUT\\\"==o&&\\\"hidden\\\"==t.type.toLowerCase())return!1;if(\\\"NOSCRIPT\\\"==o)return!1;var l=window.getComputedStyle(t).visibility;return\\\"collapse\\\"!=l&&\\\"hidden\\\"!=l&&(!!n(t)&&(!(!e&&0==f(t))&&(!!r(t)&&!i(t))))}function E(t){var e=x(t);return{left:e.left,right:e.left+e.width,top:e.top,bottom:e.top+e.height}}function D(t){return t.parentElement}function C(t){function e(t){function e(t){if(t==u)return!0;var e=window.getComputedStyle(t),n=e.display;return 0!=n.indexOf(\\\"inline\\\")&&\\\"contents\\\"!=n&&(\\\"absolute\\\"!=r||\\\"static\\\"!=e.position)}var r=window.getComputedStyle(t).position;if(\\\"fixed\\\"==r)return i=!0,t==u?null:u;for(var n=D(t);n&&!e(n);)n=D(n);return n}function n(t){var e=t;if(\\\"visible\\\"==d)if(t==u&&l)e=l;else if(t==l)return{x:\\\"visible\\\",y:\\\"visible\\\"};var n=window.getComputedStyle(e),r={x:n[\\\"overflow-x\\\"],y:n[\\\"overflow-y\\\"]};return t==u&&(r.x=\\\"visible\\\"==r.x?\\\"auto\\\":r.x,r.y=\\\"visible\\\"==r.y?\\\"auto\\\":r.y),r}function r(t){return t==u?{x:window.scrollX,y:window.scrollY}:{x:t.scrollLeft,y:t.scrollTop}}for(var i,o=E(t),a=t.ownerDocument,u=a.documentElement,l=a.body,d=window.getComputedStyle(u).overflow,f=e(t);f;f=e(f)){var h=n(f);if(\\\"visible\\\"!=h.x||\\\"visible\\\"!=h.y){var s=x(f);if(0==s.width||0==s.height)return T.HIDDEN;var p=o.right<s.left,c=o.bottom<s.top;if(p&&\\\"hidden\\\"==h.x||c&&\\\"hidden\\\"==h.y)return T.HIDDEN;if(p&&\\\"visible\\\"!=h.x||c&&\\\"visible\\\"!=h.y){var v=r(f),g=o.right<s.left-v.x,w=o.bottom<s.top-v.y;return g&&\\\"visible\\\"!=h.x||w&&\\\"visible\\\"!=h.x?T.HIDDEN:C(f)==T.HIDDEN?T.HIDDEN:T.SCROLL}var N=o.left>=s.left+s.width,m=o.top>=s.top+s.height;if(N&&\\\"hidden\\\"==h.x||m&&\\\"hidden\\\"==h.y)return T.HIDDEN;if(N&&\\\"visible\\\"!=h.x||m&&\\\"visible\\\"!=h.y){if(i){var y=r(f);if(o.left>=u.scrollWidth-y.x||o.right>=u.scrollHeight-y.y)return T.HIDDEN}return C(f)==T.HIDDEN?T.HIDDEN:T.SCROLL}}}return T.NONE}function o(t){var e=t.document.documentElement;return{width:e.clientWidth,height:e.clientHeight}}function p(t,e,n,r){return{left:t,top:e,width:n,height:r}}function x(t){var e,n=s(t);if(n)return n.rect;if(\\\"HTML\\\"==t.tagName.toUpperCase()){t.ownerDocument;var r=o(window);return p(0,0,r.width,r.height)}try{e=t.getBoundingClientRect()}catch(i){return p(0,0,0,0)}return p(e.left,e.top,e.right-e.left,e.bottom-e.top)}function f(t){var e=1,n=window.getComputedStyle(t).opacity;n&&(e=Number(n));var r=D(t);return r&&r.nodeType==Node.ELEMENT_NODE&&(e*=f(r)),e}function h(t){var e=t.shape.toLowerCase(),n=t.coords.split(\\\",\\\");if(\\\"rect\\\"==e&&4==n.length){var r=n[0],i=n[1];return p(r,i,n[2]-r,n[3]-i)}if(\\\"circle\\\"==e&&3==n.length){var o=n[0],a=n[1],u=n[2];return p(o-u,a-u,2*u,2*u)}if(\\\"poly\\\"==e&&2<n.length){for(var l=n[0],d=n[1],f=l,h=d,s=2;s+1<n.length;s+=2)l=Math.min(l,n[s]),f=Math.max(f,n[s]),d=Math.min(d,n[s+1]),h=Math.max(h,n[s+1]);return p(l,d,f-l,h-d)}return p(0,0,0,0)}function s(t){var e=t.tagName.toUpperCase(),n=\\\"MAP\\\"==e;if(!n&&\\\"AREA\\\"!=e)return null;var r=n?t:\\\"MAP\\\"==D(t).tagName.toUpperCase()?D(t):null,i=null,o=null;if(r&&r.name&&((i=r.ownerDocument.querySelector(\\\"*[usemap='#\\\"+r.name+\\\"']\\\"))&&(o=x(i),!n&&\\\"default\\\"!=t.shape.toLowerCase()))){var a=h(t),u=Math.min(Math.max(a.left,0),o.width),l=Math.min(Math.max(a.top,0),o.height),d=Math.min(a.width,o.width-u),f=Math.min(a.height,o.height-l);o=p(u+o.left,l+o.top,d,f)}return{image:i,rect:o||p(0,0,0,0)}}function c(t,e){for(t&&(t=D(t));t;){if(e(t))return t;t=D(t)}return null}function r(t){var e=t.parentNode;if(e&&e.shadowRoot&&t.assignedSlot!==undefined)return t.assignedSlot?t.assignedSlot.parentNode:null;if(t.getDestinationInsertionPoints){var n=t.getDestinationInsertionPoints();if(0<n.length)return n[n.length-1]}return e}var T={NONE:\\\"none\\\",HIDDEN:\\\"hidden\\\",SCROLL:\\\"scroll\\\"};return function i(t,e){function n(t){if(\\\"none\\\"==window.getComputedStyle(t).display)return!1;var e=r(t);if(\\\"function\\\"==typeof ShadowRoot&&e instanceof ShadowRoot){if(e.host.shadowRoot!==e)return!1;e=e.host}return!(!e||e.nodeType!=Node.DOCUMENT_NODE&&e.nodeType!=Node.DOCUMENT_FRAGMENT_NODE)||!(e&&e.tagName&&\\\"DETAILS\\\"==e.tagName.toUpperCase()&&!e.open&&\\\"SUMMARY\\\"!=t.tagName)&&(e&&n(e))}return d(t,!!e,n)}})()).apply(null, arguments)\",\"args\":[{\"element-6066-11e4-a52e-4f735466cecf\":\"28388A9179573E088F201ABB842D9F60_element_379\"}]}"
+        },
+        "headers": {
+          "Accept": [
+            "application/json"
+          ],
+          "Content-Type": [
+            "application/json; charset=UTF-8"
+          ],
+          "User-Agent": [
+            "selenium/4.12.0 (ruby macosx)"
+          ],
+          "Content-Length": [
+            "5092"
+          ],
+          "Accept-Encoding": [
+            "gzip;q=1.0,deflate;q=0.6,identity;q=0.3"
+          ]
+        }
+      },
+      "response": {
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "headers": {
+          "Content-Length": [
+            "14"
+          ],
+          "Content-Type": [
+            "application/json; charset=utf-8"
+          ],
+          "Cache-Control": [
+            "no-cache"
+          ]
+        },
+        "body": {
+          "encoding": "UTF-8",
+          "string": "{\"value\":true}"
+        }
+      },
+      "recorded_at": "Sat, 16 Sep 2023 00:13:39 GMT"
+    },
+    {
+      "request": {
+        "method": "post",
+        "uri": "http://127.0.0.1:9516/session/8778b28e69ebd3212dee4126bd13ad90/execute/sync",
+        "body": {
+          "encoding": "UTF-8",
+          "string": "{\"script\":\"return arguments[0].matches(':disabled, select:disabled *')\",\"args\":[{\"element-6066-11e4-a52e-4f735466cecf\":\"28388A9179573E088F201ABB842D9F60_element_379\"}]}"
+        },
+        "headers": {
+          "Accept": [
+            "application/json"
+          ],
+          "Content-Type": [
+            "application/json; charset=UTF-8"
+          ],
+          "User-Agent": [
+            "selenium/4.12.0 (ruby macosx)"
+          ],
+          "Content-Length": [
+            "168"
+          ],
+          "Accept-Encoding": [
+            "gzip;q=1.0,deflate;q=0.6,identity;q=0.3"
+          ]
+        }
+      },
+      "response": {
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "headers": {
+          "Content-Length": [
+            "15"
+          ],
+          "Content-Type": [
+            "application/json; charset=utf-8"
+          ],
+          "Cache-Control": [
+            "no-cache"
+          ]
+        },
+        "body": {
+          "encoding": "UTF-8",
+          "string": "{\"value\":false}"
+        }
+      },
+      "recorded_at": "Sat, 16 Sep 2023 00:13:39 GMT"
+    },
+    {
+      "request": {
+        "method": "post",
+        "uri": "http://127.0.0.1:9516/session/8778b28e69ebd3212dee4126bd13ad90/element/28388A9179573E088F201ABB842D9F60_element_379/click",
+        "body": {
+          "encoding": "UTF-8",
+          "string": "{}"
+        },
+        "headers": {
+          "Accept": [
+            "application/json"
+          ],
+          "Content-Type": [
+            "application/json; charset=UTF-8"
+          ],
+          "User-Agent": [
+            "selenium/4.12.0 (ruby macosx)"
+          ],
+          "Content-Length": [
+            "2"
+          ],
+          "Accept-Encoding": [
+            "gzip;q=1.0,deflate;q=0.6,identity;q=0.3"
+          ]
+        }
+      },
+      "response": {
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "headers": {
+          "Content-Length": [
+            "14"
+          ],
+          "Content-Type": [
+            "application/json; charset=utf-8"
+          ],
+          "Cache-Control": [
+            "no-cache"
+          ]
+        },
+        "body": {
+          "encoding": "UTF-8",
+          "string": "{\"value\":null}"
+        }
+      },
+      "recorded_at": "Sat, 16 Sep 2023 00:13:39 GMT"
+    },
+    {
+      "request": {
+        "method": "get",
+        "uri": "http://127.0.0.1:9516/session/8778b28e69ebd3212dee4126bd13ad90/url",
+        "body": {
+          "encoding": "US-ASCII",
+          "string": ""
+        },
+        "headers": {
+          "Accept": [
+            "application/json"
+          ],
+          "Content-Type": [
+            "application/json; charset=UTF-8"
+          ],
+          "User-Agent": [
+            "selenium/4.12.0 (ruby macosx)"
+          ],
+          "Cache-Control": [
+            "no-cache"
+          ],
+          "Accept-Encoding": [
+            "gzip;q=1.0,deflate;q=0.6,identity;q=0.3"
+          ]
+        }
+      },
+      "response": {
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "headers": {
+          "Content-Length": [
+            "35"
+          ],
+          "Content-Type": [
+            "application/json; charset=utf-8"
+          ],
+          "Cache-Control": [
+            "no-cache"
+          ]
+        },
+        "body": {
+          "encoding": "UTF-8",
+          "string": "{\"value\":\"http://127.0.0.1:59774/\"}"
+        }
+      },
+      "recorded_at": "Sat, 16 Sep 2023 00:13:39 GMT"
     },
     {
       "request": {
@@ -200,7 +1526,7 @@
             "Cowboy"
           ],
           "Date": [
-            "Tue, 19 Sep 2023 19:02:13 GMT"
+            "Sat, 16 Sep 2023 22:40:49 GMT"
           ],
           "Connection": [
             "keep-alive"
@@ -233,10 +1559,10 @@
             "no-cache"
           ],
           "X-Request-Id": [
-            "350a36d9-f2da-4e5b-ad3f-a1179e2f2689"
+            "cca7cd94-0c0c-4761-9d89-1182b1968fe0"
           ],
           "X-Runtime": [
-            "0.155273"
+            "0.176925"
           ],
           "Transfer-Encoding": [
             "chunked"
@@ -250,7 +1576,7 @@
           "string": "{\"errors\":[{\"detail\":\"Invalid Parameters\"}]}"
         }
       },
-      "recorded_at": "Tue, 19 Sep 2023 19:02:13 GMT"
+      "recorded_at": "Sat, 16 Sep 2023 22:40:50 GMT"
     }
   ],
   "recorded_with": "VCR 6.2.0"
