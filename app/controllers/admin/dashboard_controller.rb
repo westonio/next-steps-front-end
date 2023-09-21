@@ -18,10 +18,4 @@ class Admin::DashboardController < Admin::BaseController
     flash[:success] = "Agent has been rejected"
     redirect_to admin_dashboard_index_path
   end
-
-  private
-
-  def user_params
-    params.permit(:username, :password, :status, :role)
-  end
 end

@@ -15,8 +15,6 @@ RSpec.describe "Admin Dashboard Page" do
     click_button "Login"
 
     visit admin_dashboard_index_path
-
-
   end
 
   describe "as an admin" do
@@ -34,6 +32,7 @@ RSpec.describe "Admin Dashboard Page" do
         expect(page).to have_content("User Accounts")
         expect(page).to have_content("Approved Agents")
         expect(page).to have_content("Pending Agents")
+        expect(page).to have_content("Rejected Agents")
     
         within('div.user-accounts') do
           expect(page).to have_content("Username: jil")
@@ -51,7 +50,7 @@ RSpec.describe "Admin Dashboard Page" do
         end
       end
 
-      it "when i click on 'Approve Agent' the agent moves to the Approved section and I see a success message" do
+      it "when i click on 'Approve Agent' the agent moves to the Approved section and I see a success message, and a button appears to reject that agent" do
      
         within('div.pending-agents') do
           expect(page).to have_content(@agent1.username)
@@ -59,8 +58,47 @@ RSpec.describe "Admin Dashboard Page" do
           expect(page).to_not have_content(@agent1.username)
         end
 
+        expect(page).to have_content("Agent has been approved")
+
         within('div.approved-agents') do
           expect(page).to have_content(@agent1.username)
+          expect(page).to have_button("Reject Agent")
+        end
+      end
+
+      it "when I click on 'Reject Agent' the agent moves to the rejected section and I see a success message, and a button appears to approve that agent" do
+
+        within('div.pending-agents') do
+          expect(page).to have_content(@agent1.username)
+          click_button("Reject Agent", match: :first)
+          expect(page).to_not have_content(@agent1.username)
+        end
+
+        expect(page).to have_content("Agent has been rejected")
+
+        within('div.rejected-agents') do
+          expect(page).to have_content(@agent1.username)
+          expect(page).to have_button("Approve Agent")
+        end
+      end
+
+      it "if there are no pending agents I see text that says 'No pending agents found'" do
+        within('div.pending-agents') do
+          click_button("Approve Agent", match: :first)
+          click_button("Approve Agent", match: :first)
+          expect(page).to have_content("No pending agents found.")
+        end
+      end
+
+      it "if there are no approved agents I see text that says 'No approved agents found'" do
+        within('div.approved-agents') do
+          expect(page).to have_content("No approved agents found.")
+        end
+      end
+
+      it "if there are no rejected agents I see text that says 'No rejected agents found'" do
+        within('div.rejected-agents') do
+          expect(page).to have_content("No rejected agents found.")
         end
       end
     end
