@@ -25,6 +25,7 @@ Link to [Back-End Microservice](https://github.com/westonio/next-steps-back-end)
 - [SimpleCov](https://github.com/simplecov-ruby/simplecov) gem for code coverage tracking
 - [ShouldaMatchers](https://github.com/thoughtbot/shoulda-matchers) gem for testing assertions
 - [VCR](https://github.com/vcr/vcr) / [Webmock](https://github.com/bblimke/webmock) to stub HTTP requests in tests to simulate API interactions
+- [Omniouth](https://github.com/omniauth/omniauth) gem for Oauth
 
 ## Project Description
 
@@ -66,21 +67,23 @@ This tool is designed to assist a wide range of professionals, including crisis 
 - Users of the app can access community resources anonymously.
 - Pre-built search queries are available to streamline the resource-finding process.
 - An option to search for resources using keyword endpoints from 211 API.  
-- The user has the option to create an account and save their search results to a list that is ordered by priority.
+- The user has the option to create an account.
+- The user can create an account and/or log in using Google OAuth.
+- The user is automatically logged out of the session after 15 minutes of inactivity.
 
 ### Provider Profiles
 - Service providers can create accounts to add information about their specific services.
 - Providers offering specialized services such as housing for justice-affected individuals, LGBTQIA+ friendly services, emergency shelter, or any service relevant to vulnerable communities can create profiles to make their services searchable.
-- Provider applications are reviewed by Admin users and can be approved or denied by Admin.
+- Admin users review provider applications and can approve or deny them.
 
 ## Usage
 
-This project is the front-end user experience that utilizes an API endpoint to create convenient search options for individuals we serve.  The endpoint takes in two parameters, "keyword" and "location".  We provide the user with some keywords built in, such as "basic needs", "shelters", "medical care", "mental health care", and others.  They can select keywords from our provided options, or utilize the search bar to search their own keyword(s).
+This project is the front-end user experience that utilizes an API endpoint to create convenient search options for the individuals we serve.  The endpoint takes in two parameters, "keyword" and "location".  We provide the user with some keywords built in, such as "basic needs", "shelters", "medical care", "mental health care", and others.  They can select keywords from our provided options, or utilize the search bar to search their own keyword(s).
 
 ### Future Iterations
 
-- Scale: Utilize cloud storage to store data for Providers and resource list saved by user.  
-- Utilize [Open AI API](https://openai.com/blog/openai-api) for generating motivational statements based on user's identified needs.
+- Scale: Utilize cloud storage to store data for Providers and resource list saved by the user.  
+- Utilize [Open AI API](https://openai.com/blog/openai-api) for generating motivational statements based on the user's identified needs.
 - Create additional pre-built search options that make finding resources easy and convenient.
 - Provider dashboard and Admin functionality.
 
