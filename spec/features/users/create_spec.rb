@@ -68,6 +68,25 @@ RSpec.describe 'User Registration page', :vcr do
         expect(current_path).to eq(new_user_path)
         expect(page).to have_content("Invalid entries, please try again")
       end
+
+      # Selector for User or Agent
+      it "has a field to select 'user' or 'agent' from a dropdown menu" do
+        within('div.create-new-user') do
+          expect(page).to have_content("Select Account Type")
+        end
+      end
+
+      it "displays a message 'account created with advanced features pending approval' after agent profile is created, and you should not see 'Add My Service'" do
+        select "agent", from: :role
+        fill_in "username", with: "my_username"
+        fill_in "password", with: "my_password"
+        fill_in "password_verify", with: "my_password"
+        click_button "Create Account"
+
+        expect(page).to have_content("Account created with advanced features pending approval")
+        expect(page).to have_content("User Dashboard")
+        expect(page).to_not have_content("Add My Service")
+      end
     end
   end
 end

@@ -1,9 +1,16 @@
 <h2>User Dashboard</h2>
-<p>Your Username:  <%= @user.username %></p>
-<p>[ <%= link_to "Change password", edit_user_path(@user.id) %> ]</p>
-<%= form_for @user, url: user_path(@user), method: :delete, html: { class: 'delete-form' } do |f| %>
+<p>Your Username:  <%= current_user.username %></p>
+<p>[ <%= link_to "Change password", edit_user_path(current_user) %> ]</p>
+<%= form_for current_user, url: user_path(current_user), method: :delete, html: { class: 'delete-form' } do |f| %>
   <%= f.button "Delete my account", class: 'delete-button' %>
+<% end %>
+<br/>
+
+<% if current_agent? && approved? %>
+  <p><%= link_to 'Add My Service', new_register_provider_path %></p>
+<% elsif current_user && !current_agent? %>
+  <h3>My Favorite Providers</h3>
+  
 <% end %>
 
 
-<h3>My Favorite Providers</h3>

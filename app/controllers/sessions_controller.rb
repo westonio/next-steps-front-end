@@ -2,8 +2,13 @@ class SessionsController < ApplicationController
 
   def omniauth
     if user = User.from_omniauth(request.env['omniauth.auth'])
-      login(user)
-      redirect_to user_path(user)
+      if user.role == "admin"
+        login(user)
+        redirect_to admin_dashboard_index_path
+      else
+        login(user)
+        redirect_to user_path(user)
+      end
     else
       flash[:warning] = "Unable to authenticate using your Google account. Please try again"
       redirect_to users_login_path
@@ -13,9 +18,15 @@ class SessionsController < ApplicationController
   def new
     user = User.find_by(username: params[:username])
     if user && user.authenticate(params[:password])
-      login(user)
-      flash[:success] = "Logged in successfully"
-      redirect_to user_path(user.id)
+      if user.role == "admin"
+        login(user)
+        flash[:success] = "Logged in as an admin"
+        redirect_to admin_dashboard_index_path
+      elsif user && user.authenticate(params[:password])
+        login(user)
+        flash[:success] = "Logged in successfully"
+        redirect_to user_path(user.id)
+      end
     else
       flash[:warning] = "Invalid credentials. Please try again."
       redirect_to users_login_path

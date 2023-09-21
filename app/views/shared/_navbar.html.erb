@@ -8,14 +8,21 @@
     <div class="collapse navbar-collapse" id="headerMenu">
       <ul class="nav navbar-nav me-auto mb-2 mb-lg-0  navbar-right">
         <li class="nav-item">
+        <% unless current_page?(root_path) %>
           <a class="nav-link active" aria-current="page" href="<%= root_path %>">Home</a>
+        <% end %>
         </li>
         <% if !session[:user_id] %>
-          <li class="nav-item"><%= link_to 'Create user account', new_user_path, class: "nav-link" %></li>
-          <li class="nav-item"><%= link_to 'Create provider account', register_provider_path, class: "nav-link" %></li>
+          <li class="nav-item"><%= link_to 'Create an account', new_user_path, class: "nav-link" %></li>
           <li class="nav-item"><%= link_to 'Sign in', users_login_path, class: "nav-link" %></li>
         <% else %>
-          <li class="nav-item"><%= link_to 'View my Dashboard', user_path(current_user), class: "nav-link" %></li>
+          
+          <% if current_admin? %>
+            <li class="nav-item"><%= link_to 'View my Dashboard', admin_dashboard_index_path, class: "nav-link" %></li>
+          <% else %>
+            <li class="nav-item"><%= link_to 'View my Dashboard', user_path(current_user), class: "nav-link" %></li>
+          <% end %>
+          
           <li class="nav-item"><%= link_to 'Sign out', users_logout_path, class: "nav-link" %></li>
           
           <script>

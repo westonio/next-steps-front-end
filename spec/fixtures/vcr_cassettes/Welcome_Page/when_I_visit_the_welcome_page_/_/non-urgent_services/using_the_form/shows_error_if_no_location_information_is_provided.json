@@ -3,91 +3,6 @@
     {
       "request": {
         "method": "get",
-        "uri": "https://ancient-reaches-38594-79ad833137d5.herokuapp.com/api/v0/search?keyword=Medicaid&location=",
-        "body": {
-          "encoding": "US-ASCII",
-          "string": ""
-        },
-        "headers": {
-          "User-Agent": [
-            "Faraday v2.7.11"
-          ],
-          "Accept-Encoding": [
-            "gzip;q=1.0,deflate;q=0.6,identity;q=0.3"
-          ],
-          "Accept": [
-            "*/*"
-          ]
-        }
-      },
-      "response": {
-        "status": {
-          "code": 200,
-          "message": "OK"
-        },
-        "headers": {
-          "Server": [
-            "Cowboy"
-          ],
-          "Date": [
-            "Thu, 21 Sep 2023 17:13:15 GMT"
-          ],
-          "Connection": [
-            "keep-alive"
-          ],
-          "X-Frame-Options": [
-            "SAMEORIGIN"
-          ],
-          "X-Xss-Protection": [
-            "0"
-          ],
-          "X-Content-Type-Options": [
-            "nosniff"
-          ],
-          "X-Download-Options": [
-            "noopen"
-          ],
-          "X-Permitted-Cross-Domain-Policies": [
-            "none"
-          ],
-          "Referrer-Policy": [
-            "strict-origin-when-cross-origin"
-          ],
-          "Content-Type": [
-            "application/json; charset=utf-8"
-          ],
-          "Vary": [
-            "Accept"
-          ],
-          "Etag": [
-            "W/\"725d7debef1ed0d47070af9f6565ec19\""
-          ],
-          "Cache-Control": [
-            "max-age=0, private, must-revalidate"
-          ],
-          "X-Request-Id": [
-            "8a86fddc-3b89-47e4-ad4a-5cc218f09790"
-          ],
-          "X-Runtime": [
-            "0.390694"
-          ],
-          "Transfer-Encoding": [
-            "chunked"
-          ],
-          "Via": [
-            "1.1 vegur"
-          ]
-        },
-        "body": {
-          "encoding": "UTF-8",
-          "string": "{\"data\":[{\"id\":\"211virgini-189602\",\"type\":\"filtered_provider\",\"attributes\":{\"category\":\"Medicaid\",\"provider_name\":\"MEDICAID AND FAMIS - LEESBURG, LOUDOUN COUNTY DEPARTMENT OF FAMILY SERVICES\",\"street\":\"102 Heritage Way Ne, Suite 103\",\"city\":\"Leesburg\",\"state\":\"VA\",\"lat\":\"39.114412\",\"lon\":\"-77.540576\",\"description\":\"Determines eligibility for Medicaid and FAMIS benefits which cover certain health care expenses. \\n  Apply by phone: \\n  833-522-5582\\n \\n\"}},{\"id\":\"211manches-47767\",\"type\":\"filtered_provider\",\"attributes\":{\"category\":\"Medicaid\",\"provider_name\":\"MEDICAID INFORMATION\",\"street\":\"Centers For Medicare \\u0026 Medicaid Services\",\"city\":\"Baltimore\",\"state\":\"MD\",\"lat\":\"39.333105\",\"lon\":\"-76.784896\",\"description\":\"Medicaid provides health coverage to low-income people and is one of the largest payers for health care in the United States.\\r\\nThe Children's Health Insurance Program (CHIP) provides federal matching funds to states to provide health coverage to children in families with incomes too high to qualify for Medicaid, but who can't afford private coverage.\\r\\nThe Basic Health Program (BHP) allows states an option to provide affordable coverage and better continuity of care for people whose income fluctuates above and below Medicaid and CHIP eligibility levels.\"}},{\"id\":\"211manches-47745\",\"type\":\"filtered_provider\",\"attributes\":{\"category\":\"Medicaid\",\"provider_name\":\"MEDICARE AND MEDICAID INFORMATION\",\"street\":\"7500 Security Boulevard\",\"city\":\"Baltimore\",\"state\":\"MD\",\"lat\":\"39.317956\",\"lon\":\"-76.763987\",\"description\":\"CMS administers the federally-funded Medicare and Medicaid Programs, which provide hospital and medical insurance for the elderly and disabled. Also administers the State Children's Health Insurance Program.\"}},{\"id\":\"211manches-47765\",\"type\":\"filtered_provider\",\"attributes\":{\"category\":\"Medicaid\",\"provider_name\":\"MEDICARE AND MEDICAID INFORMATION\",\"street\":\"Centers For Medicare \\u0026 Medicaid Services\",\"city\":\"Baltimore\",\"state\":\"MD\",\"lat\":\"39.333105\",\"lon\":\"-76.784896\",\"description\":\"CMS administers the federally-funded Medicare and Medicaid Programs, which provide hospital and medical insurance for the elderly and disabled. Also administers the State Children's Health Insurance Program.\"}},{\"id\":\"211manches-47754\",\"type\":\"filtered_provider\",\"attributes\":{\"category\":\"Medicaid\",\"provider_name\":\"MEDICARE AND MEDICAID INFORMATION\",\"street\":\"15 New Sudbury Street\",\"city\":\"Boston\",\"state\":\"MA\",\"lat\":\"42.361392\",\"lon\":\"-71.059250\",\"description\":\"CMS administers the federally-funded Medicare and Medicaid Programs, which provide hospital and medical insurance for the elderly and disabled. Also administers the State Children's Health Insurance Program.\"}},{\"id\":\"211manches-39309\",\"type\":\"filtered_provider\",\"attributes\":{\"category\":\"Medicaid\",\"provider_name\":\"HEALTH INSURANCE\",\"street\":null,\"city\":\"Concord\",\"state\":\"NH\",\"lat\":\"43.238760\",\"lon\":\"-71.511000\",\"description\":\"These Health Plans cover the same services that NH Medicaid does. The Health Plans also offer additional optional services, programs, and other extras to promote healthy behavior.\"}},{\"id\":\"211manches-51500\",\"type\":\"filtered_provider\",\"attributes\":{\"category\":\"Medicaid\",\"provider_name\":\"MEDICAID CARE MANAGEMENT (MCM) PROGRAM\",\"street\":\"2 Executive Park Drive\",\"city\":\"Bedford\",\"state\":\"NH\",\"lat\":\"42.946928\",\"lon\":\"-71.473281\",\"description\":\"Well Sense Health Plan is a not-for-profit managed care organization (MCO). We are a health plan selected by the State of New Hampshire to offer high-quality healthcare coverage to Medicaid enrollees throughout the state. We provide state-wide access to primary care physicians, specialists, behavioral health, emergency room services and hospital care for our members.\"}},{\"id\":\"211manches-51496\",\"type\":\"filtered_provider\",\"attributes\":{\"category\":\"Medicaid\",\"provider_name\":\"MEDICAID CARE MANAGEMENT (MCM) PROGRAM\",\"street\":\"1155 Elm Street\",\"city\":\"Manchester\",\"state\":\"NH\",\"lat\":\"42.994443\",\"lon\":\"-71.462527\",\"description\":\"Well Sense Health Plan is a not-for-profit managed care organization (MCO). We are a health plan selected by the State of New Hampshire to offer high-quality healthcare coverage to Medicaid enrollees throughout the state. We provide state-wide access to primary care physicians, specialists, behavioral health, emergency room services and hospital care for our members.\"}},{\"id\":\"211manches-51504\",\"type\":\"filtered_provider\",\"attributes\":{\"category\":\"Medicaid\",\"provider_name\":\"MEDICAID CARE MANAGEMENT (MCM) PROGRAM\",\"street\":\"25 Sundial Avenue\",\"city\":\"Manchester\",\"state\":\"NH\",\"lat\":\"42.972793\",\"lon\":\"-71.468565\",\"description\":\"Well Sense Health Plan is a not-for-profit managed care organization (MCO). We are a health plan selected by the State of New Hampshire to offer high-quality healthcare coverage to Medicaid enrollees throughout the state. We provide state-wide access to primary care physicians, specialists, behavioral health, emergency room services and hospital care for our members.\"}},{\"id\":\"211portlan-181814\",\"type\":\"filtered_provider\",\"attributes\":{\"category\":\"Medicaid\",\"provider_name\":\"MEDICAID.GOV\",\"street\":\"7500 Security Boulevard\",\"city\":\"Baltimore\",\"state\":\"MD\",\"lat\":\"39.317956\",\"lon\":\"-76.763987\",\"description\":\"Federal website providing information about Medicaid, the Children's Health Insurance Program (CHIP), and the Basic Health Program (BHP).\"}}]}"
-        }
-      },
-      "recorded_at": "Thu, 21 Sep 2023 17:13:15 GMT"
-    },
-    {
-      "request": {
-        "method": "get",
         "uri": "https://ancient-reaches-38594-79ad833137d5.herokuapp.com/api/v0/search?keyword=medicaid&location=",
         "body": {
           "encoding": "US-ASCII",
@@ -115,7 +30,7 @@
             "Cowboy"
           ],
           "Date": [
-            "Thu, 21 Sep 2023 21:09:40 GMT"
+            "Thu, 21 Sep 2023 21:12:47 GMT"
           ],
           "Connection": [
             "keep-alive"
@@ -151,10 +66,10 @@
             "max-age=0, private, must-revalidate"
           ],
           "X-Request-Id": [
-            "2d13adc7-b138-4994-a2be-299fd1d1a990"
+            "9de5619c-d45d-44c8-9e3b-6cf9d938350d"
           ],
           "X-Runtime": [
-            "0.420891"
+            "0.439419"
           ],
           "Transfer-Encoding": [
             "chunked"
@@ -168,7 +83,7 @@
           "string": "{\"data\":[{\"id\":\"211virgini-189602\",\"type\":\"filtered_provider\",\"attributes\":{\"category\":\"medicaid\",\"provider_name\":\"MEDICAID AND FAMIS - LEESBURG, LOUDOUN COUNTY DEPARTMENT OF FAMILY SERVICES\",\"street\":\"102 Heritage Way Ne, Suite 103\",\"city\":\"Leesburg\",\"state\":\"VA\",\"lat\":\"39.114412\",\"lon\":\"-77.540576\",\"description\":\"Determines eligibility for Medicaid and FAMIS benefits which cover certain health care expenses. \\n  Apply by phone: \\n  833-522-5582\\n \\n\"}},{\"id\":\"211manches-47767\",\"type\":\"filtered_provider\",\"attributes\":{\"category\":\"medicaid\",\"provider_name\":\"MEDICAID INFORMATION\",\"street\":\"Centers For Medicare \\u0026 Medicaid Services\",\"city\":\"Baltimore\",\"state\":\"MD\",\"lat\":\"39.333105\",\"lon\":\"-76.784896\",\"description\":\"Medicaid provides health coverage to low-income people and is one of the largest payers for health care in the United States.\\r\\nThe Children's Health Insurance Program (CHIP) provides federal matching funds to states to provide health coverage to children in families with incomes too high to qualify for Medicaid, but who can't afford private coverage.\\r\\nThe Basic Health Program (BHP) allows states an option to provide affordable coverage and better continuity of care for people whose income fluctuates above and below Medicaid and CHIP eligibility levels.\"}},{\"id\":\"211manches-47745\",\"type\":\"filtered_provider\",\"attributes\":{\"category\":\"medicaid\",\"provider_name\":\"MEDICARE AND MEDICAID INFORMATION\",\"street\":\"7500 Security Boulevard\",\"city\":\"Baltimore\",\"state\":\"MD\",\"lat\":\"39.317956\",\"lon\":\"-76.763987\",\"description\":\"CMS administers the federally-funded Medicare and Medicaid Programs, which provide hospital and medical insurance for the elderly and disabled. Also administers the State Children's Health Insurance Program.\"}},{\"id\":\"211manches-47765\",\"type\":\"filtered_provider\",\"attributes\":{\"category\":\"medicaid\",\"provider_name\":\"MEDICARE AND MEDICAID INFORMATION\",\"street\":\"Centers For Medicare \\u0026 Medicaid Services\",\"city\":\"Baltimore\",\"state\":\"MD\",\"lat\":\"39.333105\",\"lon\":\"-76.784896\",\"description\":\"CMS administers the federally-funded Medicare and Medicaid Programs, which provide hospital and medical insurance for the elderly and disabled. Also administers the State Children's Health Insurance Program.\"}},{\"id\":\"211manches-47754\",\"type\":\"filtered_provider\",\"attributes\":{\"category\":\"medicaid\",\"provider_name\":\"MEDICARE AND MEDICAID INFORMATION\",\"street\":\"15 New Sudbury Street\",\"city\":\"Boston\",\"state\":\"MA\",\"lat\":\"42.361392\",\"lon\":\"-71.059250\",\"description\":\"CMS administers the federally-funded Medicare and Medicaid Programs, which provide hospital and medical insurance for the elderly and disabled. Also administers the State Children's Health Insurance Program.\"}},{\"id\":\"211manches-39309\",\"type\":\"filtered_provider\",\"attributes\":{\"category\":\"medicaid\",\"provider_name\":\"HEALTH INSURANCE\",\"street\":null,\"city\":\"Concord\",\"state\":\"NH\",\"lat\":\"43.238760\",\"lon\":\"-71.511000\",\"description\":\"These Health Plans cover the same services that NH Medicaid does. The Health Plans also offer additional optional services, programs, and other extras to promote healthy behavior.\"}},{\"id\":\"211manches-51500\",\"type\":\"filtered_provider\",\"attributes\":{\"category\":\"medicaid\",\"provider_name\":\"MEDICAID CARE MANAGEMENT (MCM) PROGRAM\",\"street\":\"2 Executive Park Drive\",\"city\":\"Bedford\",\"state\":\"NH\",\"lat\":\"42.946928\",\"lon\":\"-71.473281\",\"description\":\"Well Sense Health Plan is a not-for-profit managed care organization (MCO). We are a health plan selected by the State of New Hampshire to offer high-quality healthcare coverage to Medicaid enrollees throughout the state. We provide state-wide access to primary care physicians, specialists, behavioral health, emergency room services and hospital care for our members.\"}},{\"id\":\"211manches-51496\",\"type\":\"filtered_provider\",\"attributes\":{\"category\":\"medicaid\",\"provider_name\":\"MEDICAID CARE MANAGEMENT (MCM) PROGRAM\",\"street\":\"1155 Elm Street\",\"city\":\"Manchester\",\"state\":\"NH\",\"lat\":\"42.994443\",\"lon\":\"-71.462527\",\"description\":\"Well Sense Health Plan is a not-for-profit managed care organization (MCO). We are a health plan selected by the State of New Hampshire to offer high-quality healthcare coverage to Medicaid enrollees throughout the state. We provide state-wide access to primary care physicians, specialists, behavioral health, emergency room services and hospital care for our members.\"}},{\"id\":\"211manches-51504\",\"type\":\"filtered_provider\",\"attributes\":{\"category\":\"medicaid\",\"provider_name\":\"MEDICAID CARE MANAGEMENT (MCM) PROGRAM\",\"street\":\"25 Sundial Avenue\",\"city\":\"Manchester\",\"state\":\"NH\",\"lat\":\"42.972793\",\"lon\":\"-71.468565\",\"description\":\"Well Sense Health Plan is a not-for-profit managed care organization (MCO). We are a health plan selected by the State of New Hampshire to offer high-quality healthcare coverage to Medicaid enrollees throughout the state. We provide state-wide access to primary care physicians, specialists, behavioral health, emergency room services and hospital care for our members.\"}},{\"id\":\"211portlan-181814\",\"type\":\"filtered_provider\",\"attributes\":{\"category\":\"medicaid\",\"provider_name\":\"MEDICAID.GOV\",\"street\":\"7500 Security Boulevard\",\"city\":\"Baltimore\",\"state\":\"MD\",\"lat\":\"39.317956\",\"lon\":\"-76.763987\",\"description\":\"Federal website providing information about Medicaid, the Children's Health Insurance Program (CHIP), and the Basic Health Program (BHP).\"}}]}"
         }
       },
-      "recorded_at": "Thu, 21 Sep 2023 21:09:41 GMT"
+      "recorded_at": "Thu, 21 Sep 2023 21:12:47 GMT"
     }
   ],
   "recorded_with": "VCR 6.2.0"

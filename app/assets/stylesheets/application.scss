@@ -163,6 +163,16 @@ body {
   color: white;
 }
 
+.approve-button {
+	background-color: green;
+  color: white;
+}
+
+.reject-button {
+	background-color: rgb(180, 180, 8);
+  color: white;
+}
+
 .user-login, .create-new-user {
 	width: fit-content;
 	margin: 60px auto 0 auto;
@@ -195,7 +205,6 @@ body {
 }
 
 #g-oauth-link button:hover {
-
 	box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.199);
 }
 
