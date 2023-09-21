@@ -13,6 +13,8 @@ Rails.application.routes.draw do
         patch 'reject'
       end
     end
+
+    get '/provider', to: 'providers#new'
   end
 
   #OAuth
@@ -34,4 +36,6 @@ Rails.application.routes.draw do
   get "/logout", to: "users#logout", as: "users_logout"
   resources :users, only: [:index, :show, :new, :create]
   
+  resources :users, only: [:index, :show, :new, :create, :edit, :update, :destroy]
+
 end
