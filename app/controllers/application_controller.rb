@@ -1,5 +1,6 @@
 class ApplicationController < ActionController::Base
   helper_method :current_user, :current_admin?, :current_agent?, :approved?, :logged_in?
+  include SessionsHelper
 
   def current_user
     @_current_user ||= User.find(session[:user_id]) if session[:user_id]
@@ -21,5 +22,4 @@ class ApplicationController < ActionController::Base
     !current_user.nil?
   end
 
-  include SessionsHelper
 end

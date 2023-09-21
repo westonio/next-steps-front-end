@@ -14,12 +14,6 @@ admin_user = User.create!(
   status: "approved"
 )
 
-# Admin Users Google OAuth Login
-admin_user2 = User.create!(
-  username: "allenrusselldev@gmail.com",
-  role: "admin",
-  status: "approved"
-)
 
 # Users
 user1 = User.create!(
@@ -28,14 +22,14 @@ user1 = User.create!(
   role: "user",
   status: "approved"
 )
-
-user1 = User.create!(
+puts "user1 created"
+user2 = User.create!(
   username: "frank",
   password: "password",
   role: "user",
   status: "approved"
 )
-
+puts "user2 created"
 agent1 = User.create!(
   username: "frida",
   password: "password",
@@ -43,11 +37,19 @@ agent1 = User.create!(
   status: "pending",
   description: "I have 2 rooms available for previous offenders"
 )
-
+puts "agent1 created"
 agent2 = User.create!(
   username: "frangelica",
   password: "password",
   role: "agent",
   status: "pending",
   description: "I own a group home and accept vouchers"
+)
+puts "agent2 created"
+
+# Admin Users Google OAuth Login
+google_admin1 = User.create!(
+  username: "allenrusselldev@gmail.com",
+  role: "admin",
+  status: "approved"
 )
