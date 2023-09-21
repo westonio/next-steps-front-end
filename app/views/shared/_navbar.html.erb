@@ -7,7 +7,9 @@
     <div class="collapse navbar-collapse" id="headerMenu">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
+        <% unless current_page?(root_path) %>
           <a class="nav-link active" aria-current="page" href="<%= root_path %>">Home</a>
+        <% end %>
         </li>
         <% if !session[:user_id] %>
           <li class="nav-item"><%= link_to 'Create an account', new_user_path, class: "nav-link" %></li>

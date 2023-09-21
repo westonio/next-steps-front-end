@@ -14,8 +14,7 @@
   </div>
 
   <%= form_with(url: users_login_path, method: :post, id: "user-login-form", local: true) do |form| %>
-    <%= form.label :role, "Select Account Type" %>
-    <%= form.select :role, User.roles.keys %>
+    
     <%= form.label :username, "Username" %>
     <%= form.text_field :username, placeholder: "Enter your username" %>
     <br />
