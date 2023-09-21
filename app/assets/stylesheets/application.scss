@@ -42,12 +42,12 @@ body {
 
 .select-services {
 	margin: 3.125em 0 0 3.125em; /* 50px 0 0 50px in em units */
-	color: white;
+	color: black;
 	width: auto; /* Allow content to dictate width */
-	padding: 1.25em; /* 20px in em units */
-	border: solid 0.1875em #C80909; /* 3px in em units */
+	padding: 1.50em; /* 20px in em units */
+	border: solid 0.1875em black; /* 3px in em units */
 	border-radius: 1.25em; /* 20px in em units */
-	background: #C80909
+	background: linear-gradient(to bottom, #E6A7A7 50%, #96A9F8 50%);
 }
 
 #location, #get-help-button {
@@ -59,8 +59,8 @@ body {
 	border-radius: 0.3125em; 
 	margin-right: 30px; 
 	margin-bottom: 25px; 
-	color: black;
-	background-color: #F5F5F5;
+	color: white;
+	background-color: #48484C;
 	box-shadow: 0.1875em 0.1875em 0.375em black; /* 3px 3px 6px in em units */
 	float: right;
 }
@@ -85,12 +85,13 @@ body {
 	width: auto;
 	border-radius: 0.3125em;
 	margin-left: 10px; 
-	background-color: #F5F5F5;
+	background-color: #48484C;
+	color: white;
 	box-shadow: 0.1875em 0.1875em 0.375em black;
 }
 
 #geolocation-button:hover {
-	background-color: rgb(164, 164, 167);
+	background-color: #48484C;
 	color: black;
 }
 

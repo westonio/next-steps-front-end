@@ -8,7 +8,7 @@ RSpec.describe ProviderDetails do
           "attributes": {
               "id": "211colorad-0014T000004o6I3QAI",
               "name": "NEXTCARE URGENT CARE",
-              "description": "<p>Provides urgent care services.</p>",
+              "description": "Provides urgent care services.",
               "street": "4590 W 121st Ave",
               "street2": nil,
               "city": "Broomfield",
@@ -18,7 +18,7 @@ RSpec.describe ProviderDetails do
               "lon": "-105.045715",
               "website": "http://nextcare.com",
               "phone": "(888) 381-4858 (Customer Service",
-              "fees": "<p>Medical Care Fees, call for current fees.</p>",
+              "fees": "Medical Care Fees, call for current fees.",
               "schedule": "Monday - Friday, 8 a.m. - 8 p.m.; Saturday, Sunday, 9 a.m. - 4 p.m."
               } 
       }
