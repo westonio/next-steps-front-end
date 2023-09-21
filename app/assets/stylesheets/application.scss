@@ -1,32 +1,24 @@
-html {
-	font-size: 16px;
-}
-
 body {
 	font-size: 1em;
 	background-color: #ffffff;
-	margin: 0.625em 1.875em 3.125em 1.875em; /* 10px 30px 50px 30px in em units */
-  position: relative;
+	font-size: calc(16px 1vw);
+	margin: 10px 30px 50px 30px; 
+  
+}
+
+.italics {
+	font-style: italic;
+}
+
+.navbar {
+	border-radius: 10px;
 }
 
 .navbar a {
 	color: black;
 }
 
-#app-topper h1, #app-topper h3 {
-	display: inline-block;
-}
 
-#app-topper h1, 
-#app-topper h2, 
-#app-topper h3 {
-	margin-left: 1.875em; /* 30px in em units */
-}
-
-#app-topper h3, 
-.select-services h4 {
-	font-style: italic;
-}
 
 .alert {
 	width: auto; /* Let the content dictate the width */
@@ -34,7 +26,7 @@ body {
 }
 
 .select-services {
-  margin: 3.125em 0 0 3.125em; /* 50px 0 0 50px in em units */
+  margin: 50px 0 0 50px; 
   color: white;
   width: auto; /* Allow content to dictate width */
   padding: 1.25em; /* 20px in em units */
@@ -63,10 +55,10 @@ body {
 }
 
 #get-help-button {
-	padding: 0.625em 1.25em; /* 10px 20px in em units */
-	border-radius: 0.3125em; /* 5px in em units */
-	margin-right: 1.875em; /* 30px in em units */
-	margin-bottom: 1.5625em; /* 25px in em units */
+	padding: 10px 20px; 
+	border-radius: 0.3125em; 
+	margin-right: 30px; 
+	margin-bottom: 25px; 
 	color: black;
 	background-color: #F5F5F5;
 	box-shadow: 0.1875em 0.1875em 0.375em black; /* 3px 3px 6px in em units */
@@ -92,7 +84,7 @@ body {
 	padding: 0.3125em; /* 5px in em units */
 	width: auto;
 	border-radius: 0.3125em;
-	margin-left: 0.625em; /* 10px in em units */
+	margin-left: 10px; 
 	background-color: #F5F5F5;
 	box-shadow: 0.1875em 0.1875em 0.375em black;
 }
@@ -115,21 +107,18 @@ body {
 	border: 0.0625em solid #ccc; /* 1px in em units */
 }
 
-@media (max-width: 48em) {
-	.result-item {
-			width: 100%;
-	}
-}
 
-.display-flex {
+
+.display-flex, #find-location-container {
 	display: flex;
 }
 
 .motivational-sentence {
+	text-align: center;
+	width: fit-content;
+	margin: auto auto 10px auto;
 	font-size: 1.625em; /* 26px in em units */
 	font-style: italic;
-	display: flex;
-	margin: 0.625em 0 0 3.125em; /* 10px 0 0 50px in em units */
 }
 
 .search-bar {
@@ -175,10 +164,9 @@ body {
 
 .user-login, .create-new-user {
 	width: fit-content;
-	margin-left: auto;
-	margin-right: auto;
+	margin: 60px auto 0 auto;
 	padding: 25px;
-	border: 1px solid #4B72B4;
+	// border: 1px solid #4B72B4;
 	background-color: white;
 	border-radius: 20px;
 }
@@ -217,4 +205,70 @@ body {
 
 #new-user-create-button:hover {
 	background-color: #354E7E;
+}
+
+
+.homepage-top, .homepage-bottom {
+	width: fit-content;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+@media (max-width: 480px) {
+	.result-item {
+			width: 100%;
+	}
+
+	 .navbar {
+		float: left;
+		z-index: 5;
+	}
+
+	.user-login, .create-new-user {
+		display: block; 
+		margin-top: 0px;
+		display:block;
+		position: relative;
+		top: 80px;
+	}
+
+	.homepage-top {
+		display:block;
+		position: relative;
+		top: 40px;
+	}
+
+	.select-services, .national-helplines {
+		margin-left: 0px;
+	}
+
+	#location {
+		width: 60%;
+	}
+
+	#geolocation-button {
+		display:inline-flex
+	}
+
+	#location {
+		width: 100%;
+	}
+
+	.geolocation-button {
+		text-align: center;
+		margin-top: 10px;
+		margin-left: -10px;
+	}
+
+	#find-location-container {
+		display: block;
+		width: fit-content;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	#get-help-button {
+		margin-top: 20px;
+		float: left;
+	}
 }
