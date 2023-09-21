@@ -37,8 +37,8 @@
       <%= form.check_box "Crisis Hotline" %>
       <%= form.label "Crisis Hotline", "Crisis Hotline" %>
       <br/>
-      <%= form.check_box "Shelter for tonight" %>
-      <%= form.label "Shelter for tonight", "Shelter for Tonight" %>
+      <%= form.check_box "Temporary Shelter" %>
+      <%= form.label "Temporary Shelter", "Temporary Shelter" %>
       <br/>
       <%= form.check_box "Food" %>
       <%= form.label "Food", "Food" %>
@@ -71,21 +71,6 @@
       <br/>
   
       <%= form.submit "Get Help!", id: "get-help-button" %>
-    </div>
-  <% end %>
-</div>
-
-<div class="search-bar">
-  <h3 class="search-section-label">Find Other Resources:</h3>
-  <%= form_with url: search_resources_path, method: :get, local: true do |form| %>
-    <div class="input-group">
-
-      <%= form.text_field :search, placeholder: "Enter your search here", id: "form-control" %>
-      <%= form.hidden_field :hidden_location, id: "hidden-location" %>
-
-      <span class="input-group-btn">
-        <button class="btn btn-primary" type="submit">Search</button>
-      </span>
     </div>
   <% end %>
 </div>
