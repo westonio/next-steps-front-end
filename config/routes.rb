@@ -3,10 +3,8 @@ Rails.application.routes.draw do
 
   # Register and Login
   namespace :register do
-    # get '/user', to: 'users#new'
     get '/provider', to: 'providers#new'
   end
-  # get '/signin', to: 'session#new'
 
   #OAuth
   get '/auth/google_oauth2/callback', to: 'sessions#omniauth'
@@ -19,11 +17,9 @@ Rails.application.routes.draw do
 
   # User features
   get "/users/login", to: "users#login_form"
-  
-  post "/users/login", to: "users#login"
-  resources :users, only: [:index, :show, :new, :create, :edit, :update, :destroy]
 
-  get "/logout", to: "users#logout", as: "users_logout"
-  resources :users, only: [:index, :show, :new, :create]
-  
+  post "/users/login", to: "sessions#new"
+  get "/logout", to: "sessions#logout", as: "users_logout"
+
+  resources :users, only: [:index, :show, :new, :create, :edit, :update, :destroy]
 end

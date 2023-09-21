@@ -1,39 +1,61 @@
-// Custom bootstrap variables must be set or imported *before* bootstrap.
-
+html {
+	font-size: 16px;
+}
 
 body {
-	background-color: #ededeb;
-	margin-bottom: 50px;
-	margin: 10px 30px;
+	font-size: 1em;
+	background-color: #ffffff;
+	margin: 0.625em 1.875em 3.125em 1.875em; /* 10px 30px 50px 30px in em units */
+  position: relative;
+}
+
+.navbar a {
+	color: black;
 }
 
 #app-topper h1, #app-topper h3 {
 	display: inline-block;
-	margin-left: 30px;
 }
-#app-topper h3, .select-services h4 {
+
+#app-topper h1, 
+#app-topper h2, 
+#app-topper h3 {
+	margin-left: 1.875em; /* 30px in em units */
+}
+
+#app-topper h3, 
+.select-services h4 {
 	font-style: italic;
 }
 
 .alert {
-	width: fit-content;
-	margin-left: 60px;
+	width: auto; /* Let the content dictate the width */
+	margin-left: 3.75em; /* 60px in em units */
+}
+
+.select-services {
+  margin: 3.125em 0 0 3.125em; /* 50px 0 0 50px in em units */
+  color: white;
+  width: auto; /* Allow content to dictate width */
+  padding: 1.25em; /* 20px in em units */
+  border: solid 0.1875em #C80909; /* 3px in em units */
+  border-radius: 1.25em; /* 20px in em units */
+  background: #C80909;
 }
 
 #seaching-indicator {
 	color: black;
-	// margin: 10px;
 	display: flex;
 }
 
 .select-services {
-	margin: 50px 0 0 50px;
+	margin: 3.125em 0 0 3.125em; /* 50px 0 0 50px in em units */
 	color: white;
-	width: fit-content;
-	padding: 20px;
-	border: solid 3px rgb(188, 4, 4);
-	border-radius: 20px;
-	background: linear-gradient(to bottom, rgb(188, 4, 4) 50%,rgb(110, 141, 195) 50%);
+	width: auto; /* Allow content to dictate width */
+	padding: 1.25em; /* 20px in em units */
+	border: solid 0.1875em #C80909; /* 3px in em units */
+	border-radius: 1.25em; /* 20px in em units */
+	background: #C80909
 }
 
 #location, #get-help-button {
@@ -41,38 +63,38 @@ body {
 }
 
 #get-help-button {
-	padding: 10px 20px;
-	border-radius: 5px;
-	margin-right: 30px;
-	margin-bottom: 25px;
-	color: white;
-	background-color: rgb(27, 173, 46);
-	box-shadow: 3px 3px 6px black;
-	float:right;
+	padding: 0.625em 1.25em; /* 10px 20px in em units */
+	border-radius: 0.3125em; /* 5px in em units */
+	margin-right: 1.875em; /* 30px in em units */
+	margin-bottom: 1.5625em; /* 25px in em units */
+	color: black;
+	background-color: #F5F5F5;
+	box-shadow: 0.1875em 0.1875em 0.375em black; /* 3px 3px 6px in em units */
+	float: right;
 }
 
 #get-help-button:hover {
-	background-color: rgb(164, 164, 167);
-	color: black;
+	background-color: #726E6E;
+	color: white;
 	transition: opacity 0.3s;
 }
 
 .select-services p {
-	margin-top: 20px;
+	margin-top: 1.25em; /* 20px in em units */
 }
 
 .select-services h4 {
-	margin-bottom: 20px;
+	margin-bottom: 1.25em; /* 20px in em units */
 }
 
 #geolocation-button {
 	display: inline-block;
-	padding: 5px;
-	width: fit-content;
-	border-radius: 5px;
-	margin-left: 10px;
-	background-color: rgb(110, 141, 195);
-	box-shadow: 3px 3px 6px black;
+	padding: 0.3125em; /* 5px in em units */
+	width: auto;
+	border-radius: 0.3125em;
+	margin-left: 0.625em; /* 10px in em units */
+	background-color: #F5F5F5;
+	box-shadow: 0.1875em 0.1875em 0.375em black;
 }
 
 #geolocation-button:hover {
@@ -81,22 +103,22 @@ body {
 }
 
 .results-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
 }
 
 .result-item {
-  width: calc(33.33% - 20px); /* 20px is the combined margin and border width */
-  padding: 10px;
-  margin: 10px;
-  border: 1px solid #ccc;
+	width: calc(33.33% - 0.625em); /* 10px in em units */
+	padding: 0.3125em; /* 5px in em units */
+	margin: 0.3125em; /* 5px in em units */
+	border: 0.0625em solid #ccc; /* 1px in em units */
 }
 
-@media (max-width: 768px) {
-  .result-item {
-    width: 100%; /* On narrow screens, make each item take up the full width */
-  }
+@media (max-width: 48em) {
+	.result-item {
+			width: 100%;
+	}
 }
 
 .display-flex {
@@ -104,55 +126,50 @@ body {
 }
 
 .motivational-sentence {
-	font-size: 26px;
+	font-size: 1.625em; /* 26px in em units */
 	font-style: italic;
 	display: flex;
-	margin: 10px 0 0 50px;
+	margin: 0.625em 0 0 3.125em; /* 10px 0 0 50px in em units */
 }
 
 .search-bar {
-	margin-bottom: 50px;
-	margin-left: 50px;
+	margin-bottom: 3.125em; /* 50px in em units */
+	margin-left: 3.125em; /* 50px in em units */
 }
 
 .input-group {
 	display: flex;
-	margin: 10px;
+	margin: 0.625em;
 }
 
 .btn-primary {
-	background-color: rgb(110, 141, 195);
-	width: 100px;
-	box-shadow: 3px 3px 6px black;
+	background-color: #486DAD;
+	width: 6.25em; /* 100px in em units */
+	box-shadow: 0.1875em 0.1875em 0.375em black;
 }
 
 #form-control {
-	width: 33%;
-	padding: 5px;
+	width: 13%; /* 33px in em units */
+	padding: 0.3125em; /* 5px in em units */
 }
 
 .search-section-label {
-	padding: 10px;
+	padding: 0.625em; /* 10px in em units */
 }
 
 .separator {
-	border-top: 2px solid black;
-	margin-top: 20px;
+	border-top: 0.125em solid black; /* 2px in em units */
+	margin-top: 1.25em; /* 20px in em units */
 }
 
 .national-helplines {
-	margin: 00px 0 0 30px;
-	width: fit-content;
-	padding: 20px;
-}
-
-#app-footer {
-	margin-top: 50px;
-	border-top: 2px lightblue solid
+	margin: 0 0 0 1.875em; /* 0 0 0 30px in em units */
+	width: auto; /* Allow content to dictate width */
+	padding: 1.25em; /* 20px in em units */
 }
 
 .delete-button {
-  background-color: red;
+  background-color: #C80909;
   color: white;
 }
 
@@ -161,7 +178,7 @@ body {
 	margin-left: auto;
 	margin-right: auto;
 	padding: 25px;
-	border: 1px solid rgb(110, 141, 195);
+	border: 1px solid #4B72B4;
 	background-color: white;
 	border-radius: 20px;
 }
@@ -170,6 +187,7 @@ body {
 	margin-bottom: 10px;
 	margin-left: 10px;
 	width: fit-content;
+	border: solid 1px #4B72B4;
 }
 
 #g-oauth-button img {
@@ -190,4 +208,13 @@ body {
 #g-oauth-link button:hover {
 
 	box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.199);
+}
+
+#new-user-create-button {
+	background-color: #4B72B4;
+	color: white;
+}
+
+#new-user-create-button:hover {
+	background-color: #354E7E;
 }

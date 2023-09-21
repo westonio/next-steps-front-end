@@ -100,7 +100,7 @@ RSpec.describe 'User Login page', :vcr do
 
       click_link("Sign out", match: :first)
 
-      expect(current_path).to eq root_path
+      expect(current_path).to eq users_login_path
       expect(page).to have_link("Create user account")
       expect(page).to have_link("Create provider account")
       expect(page).to have_link("Sign in")

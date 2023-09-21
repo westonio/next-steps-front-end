@@ -1,4 +1,3 @@
-
 <nav class="navbar navbar-expand-lg bg-body-tertiary">
   <div class="container-fluid">
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#headerMenu" aria-controls="headerMenu" aria-expanded="false" aria-label="Toggle navigation">
@@ -16,6 +15,28 @@
         <% else %>
           <li class="nav-item"><%= link_to 'View my Dashboard', user_path(current_user), class: "nav-link" %></li>
           <li class="nav-item"><%= link_to 'Sign out', users_logout_path, class: "nav-link" %></li>
+          
+          <script>
+            const inactivityTimeout = 20 * 60 * 1000; // 20 minute timeout 
+            let timeout;
+
+            // Reset the timeout whenever there is user activity.
+            const resetTimeout = () => {
+              clearTimeout(timeout);
+              timeout = setTimeout(logout, inactivityTimeout);
+            };
+
+            // Listen for user activity events.
+            document.addEventListener('mousemove', resetTimeout);
+            document.addEventListener('keypress', resetTimeout);
+
+            // Log the user out after inactivity.
+            const logout = () => {
+              window.location.href = '/logout?timeout=true';
+            };
+
+            resetTimeout();
+          </script>
         <% end %>
       </ul>
     </div>
