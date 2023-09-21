@@ -8,14 +8,15 @@ class SearchResultsController < ApplicationController
       redirect_to root_path
       flash[:danger] = e.message
     end
-
-    @results = SearchFacade.new(params)
+    @results = SearchFacade.new(params).search_results
     @location = params[:location]
   end
   
   def show
-    @results = SearchFacade.new(params)
-    @category = params[:id]
+    @location = params[:location]
+    @category = params[:category]
+    query = {"location" => @location, "category" => @category}
+    @results = SearchFacade.new(query).search_results
   end
 
   private
@@ -24,6 +25,12 @@ class SearchResultsController < ApplicationController
   end
 
   def at_least_one_checked?
-    raise "Please select at least one service" unless params[:urgent_care] == "1" || params[:crisis_hotline] == "1" || params[:shelter_tonight] == "1" || params[:food] == "1" || params[:substance_use] == "1" || params[:medicaid] == "1" || params[:mental_health_care] == "1" || params[:housing] == "1" || params[:food_banks] == "1" || params[:addiction_management] == "1" || params[:employment] == "1" || params[:group_therapy] == "1"
+    selected_services = params.except(:location).select { |_, value| value == "1" }
+  
+    if selected_services.empty?
+      raise "Please select at least one service"
+    else
+      return true
+    end
   end
 end

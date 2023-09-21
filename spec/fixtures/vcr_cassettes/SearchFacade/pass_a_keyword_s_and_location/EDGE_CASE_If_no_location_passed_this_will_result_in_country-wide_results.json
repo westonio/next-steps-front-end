@@ -3,262 +3,7 @@
     {
       "request": {
         "method": "get",
-        "uri": "https://ancient-reaches-38594-79ad833137d5.herokuapp.com/api/v0/search?keyword=healthcare&location=",
-        "body": {
-          "encoding": "US-ASCII",
-          "string": ""
-        },
-        "headers": {
-          "User-Agent": [
-            "Faraday v2.7.11"
-          ],
-          "Accept-Encoding": [
-            "gzip;q=1.0,deflate;q=0.6,identity;q=0.3"
-          ],
-          "Accept": [
-            "*/*"
-          ]
-        }
-      },
-      "response": {
-        "status": {
-          "code": 200,
-          "message": "OK"
-        },
-        "headers": {
-          "Server": [
-            "Cowboy"
-          ],
-          "Date": [
-            "Fri, 15 Sep 2023 00:59:27 GMT"
-          ],
-          "Connection": [
-            "keep-alive"
-          ],
-          "X-Frame-Options": [
-            "SAMEORIGIN"
-          ],
-          "X-Xss-Protection": [
-            "0"
-          ],
-          "X-Content-Type-Options": [
-            "nosniff"
-          ],
-          "X-Download-Options": [
-            "noopen"
-          ],
-          "X-Permitted-Cross-Domain-Policies": [
-            "none"
-          ],
-          "Referrer-Policy": [
-            "strict-origin-when-cross-origin"
-          ],
-          "Content-Type": [
-            "application/json; charset=utf-8"
-          ],
-          "Vary": [
-            "Accept"
-          ],
-          "Etag": [
-            "W/\"be6c418a58f22861077445fdef621255\""
-          ],
-          "Cache-Control": [
-            "max-age=0, private, must-revalidate"
-          ],
-          "X-Request-Id": [
-            "651eb759-585e-4f61-a4b4-206b7af3b584"
-          ],
-          "X-Runtime": [
-            "0.401638"
-          ],
-          "Transfer-Encoding": [
-            "chunked"
-          ],
-          "Via": [
-            "1.1 vegur"
-          ]
-        },
-        "body": {
-          "encoding": "ASCII-8BIT",
-          "string": "{\"data\":[{\"id\":\"211lemoyne-61545\",\"type\":\"data\",\"attributes\":{\"category\":\"healthcare\",\"provider_name\":\"INFORMATION ON SJOGREN'S SYNDROME\",\"street\":\"10701 Parkridge Boulevard, Suite 170\",\"city\":\"Reston\",\"state\":\"VA\",\"lat\":\"38.944657\",\"lon\":\"-77.314382\",\"description\":\"Provides the most up-to-date information about Sjogren's syndrome to patients and healthcare providers.\"}},{\"id\":\"211virgini-193024\",\"type\":\"data\",\"attributes\":{\"category\":\"healthcare\",\"provider_name\":\"FREE CLINIC - LEESBURG, LOUDOUN FREE CLINIC\",\"street\":\"224-a Cornwall Street\",\"city\":\"Leesburg\",\"state\":\"VA\",\"lat\":\"39.119730\",\"lon\":\"-77.567642\",\"description\":\"Loudoun Free Clinic provides healthcare services to uninsured, low-income adult Loudoun County residents who, as a result of economic or other barriers, would otherwise go without. Loudoun Free Clinic is a primary healthcare home. \\n  Services include diagnostic testing, prescription medication, and referrals to outside specialists.\\n \\n\"}},{\"id\":\"211seattle-18744-1547\",\"type\":\"data\",\"attributes\":{\"category\":\"healthcare\",\"provider_name\":\"RX OPEN OFFERED AT HEALTHCARE READY\",\"street\":\"1325 G Street Northwest\",\"city\":\"Washington\",\"state\":\"DC\",\"lat\":\"38.898729\",\"lon\":\"-77.030989\",\"description\":\"Helps patients find nearby open pharmacies in an area impacted by disaster. Maps the location of open pharmacies using Google Maps, and also shows which pharmacies are closed and those whose status is unknown.\"}},{\"id\":\"211newark-222121\",\"type\":\"data\",\"attributes\":{\"category\":\"healthcare\",\"provider_name\":\"DISASTER SERVICES FOR CRITICAL MEDICINES\",\"street\":\"1325 G Street Nw\",\"city\":\"Washington\",\"state\":\"DC\",\"lat\":\"38.898163\",\"lon\":\"-77.030180\",\"description\":\"Rx Response's planning and response activities focus on threats to the flow of medicine that could arise during or following a major natural disaster, pandemic or act of terrorism. Rx Response also monitors international disasters that may affect the delivery of critical medicines in the United States.\\r\\n \\r\\nWhile the normal bio-pharmaceutical supply chain has proven to be very resilient in disasters, Rx Response stands ready to activate whenever there is a wide-spread impact or potential impact to the supply chain. Activation is determined on a case-by-case basis with consideration given to whether a disaster triggers any of the criteria below:\\r\\n- Disaster declaration by a Governor or the President \\r\\n- Department of Homeland Security (DHS) Threat Advisory Red/Severe Classification\\r\\n- Health and well-being of a significant number of persons is materially threatened or affected \\r\\n- Local, regional, national, or global healthcare infrastructure is significantly compromised \\r\\n- Ability to provide ample bio-pharmaceuticals in sufficient quantities or in a timely fashion is challenged \\r\\n- The underlying disaster dynamics are not quickly or simply resolved (e.g. within several days or through normal business practices by individual companies) \\r\\n- Requests by the media for information on greater than normal demand or shortages within the bio-pharmaceutical supply chain \\r\\n- Other situations warranting a response as determined by the respective decision-making bodies within the represented industry groups.\"}},{\"id\":\"211newark-219883\",\"type\":\"data\",\"attributes\":{\"category\":\"healthcare\",\"provider_name\":\"RX OPEN\",\"street\":\"1325 G Street Nw\",\"city\":\"Washington\",\"state\":\"DC\",\"lat\":\"38.898163\",\"lon\":\"-77.030180\",\"description\":\"Formerly called the Pharmacy Status Reporting Tool, this powerful online tool maps the location of open pharmacies using Google Maps, and also shows which pharmacies are closed and those whose status is unknown. This tool not only helps citizens locate open pharmacies following a major emergency, it also provides this critical information to government officials who need to quickly understand an emergency's impact on public health in a disaster area.\"}},{\"id\":\"211newark-219894\",\"type\":\"data\",\"attributes\":{\"category\":\"healthcare\",\"provider_name\":\"RX ON THE RUN\",\"street\":\"1325 G Street Nw\",\"city\":\"Washington\",\"state\":\"DC\",\"lat\":\"38.898163\",\"lon\":\"-77.030180\",\"description\":\"Formerly called the Rx Response Medication Card, RX On the Run is an online tool that enables you to print a personalized medication wallet card that documents your prescriptions, dosages, and other important medical information. This card can prove invaluable if a severe public health emergency causes you to lose access to your medicine or prescription information or requires you to refill prescriptions at a pharmacy that doesn’t have a record of your current medications.\"}},{\"id\":\"211virgini-4648\",\"type\":\"data\",\"attributes\":{\"category\":\"healthcare\",\"provider_name\":\"HOME HEALTH CARE - ASHBURN, MEDICAL TEAM, THE\",\"street\":\"44335 Premier Plaza\",\"city\":\"Ashburn\",\"state\":\"VA\",\"lat\":\"39.061420\",\"lon\":\"-77.466888\",\"description\":\"Provide a a full range of home health care services.\\n \\n\"}},{\"id\":\"211gacolum-143412\",\"type\":\"data\",\"attributes\":{\"category\":\"healthcare\",\"provider_name\":\"HEALTHCARE READY\",\"street\":\"1325 G St. Nw\",\"city\":\"Washington\",\"state\":\"DC\",\"lat\":\"38.898725\",\"lon\":\"-77.030992\",\"description\":\"Healthcare Ready is a public health and healthcare preparedness and response non-profit that provides information sharing and coordination between the public and private sectors to ensure communities have access to healthcare and medicines. Assistance includes sharing emergency prescription refill guidance and operating Rx Open (a free map that displays open and closed pharmacies in areas impacted by a disaster).\"}},{\"id\":\"211atlanta-3695\",\"type\":\"data\",\"attributes\":{\"category\":\"healthcare\",\"provider_name\":\"SERVICES\",\"street\":\"1405 Clifton Rd., Ne\",\"city\":\"Atlanta\",\"state\":\"GA\",\"lat\":\"33.793675\",\"lon\":\"-84.319637\",\"description\":\"This agency enhances the lives of children through excellence in patient care, research and education. The hospital is participating in the Indigent Care Trust Fund that enable them to use funds from the DMA to provide medical services needed by the community. The services are for those who are unable to pay for their medical care and who qualify under federal poverty guidelines. For more information call 404/785-5060.\"}},{\"id\":\"211newark-224440\",\"type\":\"data\",\"attributes\":{\"category\":\"healthcare\",\"provider_name\":\"ADMINISTRATIVE ENTITIES\",\"street\":\"1551 Sawgrass Corporate Parkway\",\"city\":\"Sunrise\",\"state\":\"FL\",\"lat\":\"26.144055\",\"lon\":\"-80.340418\",\"description\":\"Administrative offices.\"}}]}"
-        }
-      },
-      "recorded_at": "Fri, 15 Sep 2023 00:59:27 GMT"
-    },
-    {
-      "request": {
-        "method": "get",
-        "uri": "https://ancient-reaches-38594-79ad833137d5.herokuapp.com/api/v0/search?keyword=food&location=",
-        "body": {
-          "encoding": "US-ASCII",
-          "string": ""
-        },
-        "headers": {
-          "User-Agent": [
-            "Faraday v2.7.11"
-          ],
-          "Accept-Encoding": [
-            "gzip;q=1.0,deflate;q=0.6,identity;q=0.3"
-          ],
-          "Accept": [
-            "*/*"
-          ]
-        }
-      },
-      "response": {
-        "status": {
-          "code": 200,
-          "message": "OK"
-        },
-        "headers": {
-          "Server": [
-            "Cowboy"
-          ],
-          "Date": [
-            "Fri, 15 Sep 2023 00:59:28 GMT"
-          ],
-          "Connection": [
-            "keep-alive"
-          ],
-          "X-Frame-Options": [
-            "SAMEORIGIN"
-          ],
-          "X-Xss-Protection": [
-            "0"
-          ],
-          "X-Content-Type-Options": [
-            "nosniff"
-          ],
-          "X-Download-Options": [
-            "noopen"
-          ],
-          "X-Permitted-Cross-Domain-Policies": [
-            "none"
-          ],
-          "Referrer-Policy": [
-            "strict-origin-when-cross-origin"
-          ],
-          "Content-Type": [
-            "application/json; charset=utf-8"
-          ],
-          "Vary": [
-            "Accept"
-          ],
-          "Etag": [
-            "W/\"824c7a76519bb7d891969cfa29b84216\""
-          ],
-          "Cache-Control": [
-            "max-age=0, private, must-revalidate"
-          ],
-          "X-Request-Id": [
-            "90bf0ed7-85fe-442c-afdb-930fb5767c98"
-          ],
-          "X-Runtime": [
-            "0.409879"
-          ],
-          "Transfer-Encoding": [
-            "chunked"
-          ],
-          "Via": [
-            "1.1 vegur"
-          ]
-        },
-        "body": {
-          "encoding": "UTF-8",
-          "string": "{\"data\":[{\"id\":\"211virgini-289034\",\"type\":\"data\",\"attributes\":{\"category\":\"food\",\"provider_name\":\"FOOD PANTRY - DULLES, DULLES SOUTH FOOD PANTRY\",\"street\":\"24757 Evergreen Mills Road\",\"city\":\"Dulles\",\"state\":\"VA\",\"lat\":\"38.951309\",\"lon\":\"-77.532197\",\"description\":\"Dulles South Food Pantry provides nutritious food, personal supplies and other services to those in need in the Dulles area and strives to promote self-sufficiency.\"}},{\"id\":\"211virgini-972\",\"type\":\"data\",\"attributes\":{\"category\":\"food\",\"provider_name\":\"MOBILE FOOD PANTRY - STERLING, LINK\",\"street\":\"Po Box 443\",\"city\":\"Sterling\",\"state\":\"VA\",\"lat\":\"39.085309\",\"lon\":\"-77.645224\",\"description\":\"LINK offers a Mobile Food Pantry, and distributes the food on the 2nd Tuesday of each month from 11AM - 1PM (or until the food runs out) in the rear parking lot of Christ the Redeemer Church (46833 Harry Byrd Hwy., Sterling).\\n \\n\"}},{\"id\":\"211virgini-3238\",\"type\":\"data\",\"attributes\":{\"category\":\"food\",\"provider_name\":\"FOOD PANTRY - STERLING, LOUDOUN REGIONAL OFFICE, CATHOLIC CHARITIES OF THE DIOCESE OF ARLINGTON\",\"street\":\"113 Executive Drive\",\"city\":\"Sterling\",\"state\":\"VA\",\"lat\":\"38.990543\",\"lon\":\"-77.444893\",\"description\":\"Consumers can obtain food once every 30 days. The amount of food received is based on the size of the family. \\n  Also a distribution site for USDA food.  Eligible participants may sign up at the Leesburg pantry and begin to receive USDA food that same day.\\n \\n\"}},{\"id\":\"211virgini-189027\",\"type\":\"data\",\"attributes\":{\"category\":\"food\",\"provider_name\":\"EMERGENCY FOOD ASSISTANCE - LEESBURG, LOUDOUN HUNGER RELIEF\",\"street\":\"750 Miller Drive, Suite A-1\",\"city\":\"Leesburg\",\"state\":\"VA\",\"lat\":\"39.082751\",\"lon\":\"-77.555068\",\"description\":\"Distributes emergency food to Loudoun County residents. Provides three day supply twice a month based upon family size, any special dietary needs, and living arrangements. Provides USDA commodities to income eligible families/households. \\n  Hours To Get Food By Appointment Only at Leesburg Pantry: \\n  Tues 8:30AM - 11:30AM\\r\\nTues 3:30PM - 5PM \\u0026 Thurs 5PM - 7PM\\r\\nWed, Fri \\u0026 Sat 9AM - 11:45AM \\n  Hours to Get Food, No appointment required service (these are first come, first served while supplies last): \\n  Sterling Community Center (120 Enterprise St. Sterling) Parking Lot (Mobile Market):  \\n  Mon 1PM - 2:30PM \\n  Sugarland Elementary School in Sterling (65 Sugarland Run Dr) Parking Lot (Mobile Market):  \\n  Thursday 10AM - 12PM\\n \\n\"}},{\"id\":\"211virgini-190982\",\"type\":\"data\",\"attributes\":{\"category\":\"food\",\"provider_name\":\"FOOD ASSISTANCE - HERNDON, SNAP MATCHING BENEFITS, HERNDON-RESTON FISH\",\"street\":\"1141 Elden Street\",\"city\":\"Herndon\",\"state\":\"VA\",\"lat\":\"38.964325\",\"lon\":\"-77.396837\",\"description\":\"FISH provides matching of SNAP benefits up to $20 per shopping session for fresh produce at the Herndon Farmers Market, Thursday mornings from June to November each year. Due to the COVID-19 crisis, and lack of volunteers, this program is suspended for the beginning of the 2022 season.\\n \\n\"}},{\"id\":\"211virgini-2698\",\"type\":\"data\",\"attributes\":{\"category\":\"food\",\"provider_name\":\"FOOD DISTRIBUTION - LEESBURG, FEED THE HUNGRY OF LOUDOUN, SALVATION ARMY OF LOUDOUN COUNTY\",\"street\":\"10 Cardinal Park Drive, Se\",\"city\":\"Leesburg\",\"state\":\"VA\",\"lat\":\"39.098072\",\"lon\":\"-77.540829\",\"description\":\"Every Friday, our Canteen travels throughout Loudoun distributing groceries to help feed the hungry in our community. \\n  1st, 3rd and 5th Fridays 10AM-11AM Leesburg Apartments 807E Plaza Street, Leesburg VA 20175  \\n  2nd and 4th Fridays Lucketts and Purcellville \\n  10AM-11AM Lucketts Highway Mobile Home Park: 14489 James Monroe Hwy Leesburg VA 20176 \\n  11AM-12PM Purcellville - Main Street Commons Apartments 119 N. 16th Street Purcellville, VA 20132 \\n \\n\"}},{\"id\":\"211virgini-189596\",\"type\":\"data\",\"attributes\":{\"category\":\"food\",\"provider_name\":\"FOOD STAMPS/SNAP - LEESBURG, LOUDOUN COUNTY DEPARTMENT OF FAMILY SERVICES\",\"street\":\"102 Heritage Way Ne, Suite 103\",\"city\":\"Leesburg\",\"state\":\"VA\",\"lat\":\"39.114412\",\"lon\":\"-77.540576\",\"description\":\"Issues food stamps/SNAP for those who meet the eligibility criteria. Program increases the food purchasing power of low-income households. Income limit depends on family size, expenses, income and resources.\\n \\n\"}},{\"id\":\"211virgini-190358\",\"type\":\"data\",\"attributes\":{\"category\":\"food\",\"provider_name\":\"EMERGENCY FOOD - STERLING, LINK\",\"street\":\"Po Box 443\",\"city\":\"Sterling\",\"state\":\"VA\",\"lat\":\"39.023047\",\"lon\":\"-77.399367\",\"description\":\"LINK provides emergency food to people living in the Herndon, Sterling and Ashburn areas of Northern, Virginia. Delivery is scheduled Tuesday-Saturday and each family is given about five day's supply of non-perishable food and a certificate to purchase perishable food per each request. LINK is unique in delivering food to the homes of clients.\\n \\n\"}},{\"id\":\"211virgini-7136\",\"type\":\"data\",\"attributes\":{\"category\":\"food\",\"provider_name\":\"MEALS - LEESBURG, FEED THE HUNGRY OF LOUDOUN, SALVATION ARMY OF LOUDOUN COUNTY\",\"street\":\"10 Cardinal Park Drive, Se\",\"city\":\"Leesburg\",\"state\":\"VA\",\"lat\":\"39.098072\",\"lon\":\"-77.540829\",\"description\":\"Every Saturday local churches and the Salvation Army of Loudoun take turns serving meals at several Loudoun locations: \\n   \\n   Potomac Green Apartments: 1300 Sanderson Drive Sterling VA 20164 from 4PM - 4:30PM \\n   Leesburg Apartments: 807E Plaza Street, NE Leesburg, VA 20176 from 4:30PM - 5PM \\n  \\n \\n\"}},{\"id\":\"211virgini-189131\",\"type\":\"data\",\"attributes\":{\"category\":\"food\",\"provider_name\":\"HOME DELIVERED MEALS - LEESBURG, LOUDOUN COUNTY AREA AGENCY ON AGING\",\"street\":\"742 Miller Drive Se\",\"city\":\"Leesburg\",\"state\":\"VA\",\"lat\":\"39.081472\",\"lon\":\"-77.554461\",\"description\":\"Provides a well-balanced meal, five days a week to homebound elderly 60+ in Loudoun County. Offers frozen meals for those outside the delivery area.\"}}]}"
-        }
-      },
-      "recorded_at": "Fri, 15 Sep 2023 00:59:28 GMT"
-    },
-    {
-      "request": {
-        "method": "get",
-        "uri": "https://ancient-reaches-38594-79ad833137d5.herokuapp.com/api/v0/search?keyword=urgent%20care&location=",
-        "body": {
-          "encoding": "US-ASCII",
-          "string": ""
-        },
-        "headers": {
-          "User-Agent": [
-            "Faraday v2.7.11"
-          ],
-          "Accept-Encoding": [
-            "gzip;q=1.0,deflate;q=0.6,identity;q=0.3"
-          ],
-          "Accept": [
-            "*/*"
-          ]
-        }
-      },
-      "response": {
-        "status": {
-          "code": 200,
-          "message": "OK"
-        },
-        "headers": {
-          "Server": [
-            "Cowboy"
-          ],
-          "Date": [
-            "Fri, 15 Sep 2023 02:12:13 GMT"
-          ],
-          "Connection": [
-            "keep-alive"
-          ],
-          "X-Frame-Options": [
-            "SAMEORIGIN"
-          ],
-          "X-Xss-Protection": [
-            "0"
-          ],
-          "X-Content-Type-Options": [
-            "nosniff"
-          ],
-          "X-Download-Options": [
-            "noopen"
-          ],
-          "X-Permitted-Cross-Domain-Policies": [
-            "none"
-          ],
-          "Referrer-Policy": [
-            "strict-origin-when-cross-origin"
-          ],
-          "Content-Type": [
-            "application/json; charset=utf-8"
-          ],
-          "Vary": [
-            "Accept"
-          ],
-          "Etag": [
-            "W/\"5b24001aa708e532eabd811bb38f60fa\""
-          ],
-          "Cache-Control": [
-            "max-age=0, private, must-revalidate"
-          ],
-          "X-Request-Id": [
-            "ed4ecfaa-ff85-4924-9753-3f820f97bfa1"
-          ],
-          "X-Runtime": [
-            "0.425598"
-          ],
-          "Transfer-Encoding": [
-            "chunked"
-          ],
-          "Via": [
-            "1.1 vegur"
-          ]
-        },
-        "body": {
-          "encoding": "UTF-8",
-          "string": "{\"data\":[{\"id\":\"211virgini-2359\",\"type\":\"data\",\"attributes\":{\"category\":\"urgent care\",\"provider_name\":\"URGENT CARE CENTER - RESTON, INOVA-GOHEALTH URGENT CARE IN NORTHERN VIRGINIA\",\"street\":\"1488 North Point Village Center\",\"city\":\"Reston\",\"state\":\"VA\",\"lat\":\"38.978200\",\"lon\":\"-77.350492\",\"description\":\"Services offered: treatment for minor illness and injury, laboratory tests and X-rays, treatment for work-related injuries and worker's compensation cases, physical exams including camp, sport, school and pre-employment, alcohol and drug testing, flu shots.\\n \\n\"}},{\"id\":\"211virgini-276841\",\"type\":\"data\",\"attributes\":{\"category\":\"urgent care\",\"provider_name\":\"URGENT CARE CENTER - CHANTILLY, DULLES SOUTH, INOVA-GOHEALTH URGENT CARE IN NORTHERN VIRGINIA\",\"street\":\"24801 Pinebrook Road\",\"city\":\"Chantilly\",\"state\":\"VA\",\"lat\":\"38.932441\",\"lon\":\"-77.529347\",\"description\":\"Services offered: treatment for minor illness and injury, X-rays, treatment for work-related injuries and worker's compensation cases, physical exams including camp, sport, school and pre-employment, audiometry and vision screening, alcohol and drug testing, flu shots.\\n \\n\"}},{\"id\":\"211virgini-287429\",\"type\":\"data\",\"attributes\":{\"category\":\"urgent care\",\"provider_name\":\"MEDICAL CARE - ASHBURN, MEDICS USA\",\"street\":\"44050 Ashburn Shopping Plaza\",\"city\":\"Ashburn\",\"state\":\"VA\",\"lat\":\"39.044768\",\"lon\":\"-77.475930\",\"description\":\"Provide both urgent care and primary care and offer completely equipped occupational health and travel care departments.\\n \\n\"}},{\"id\":\"211tulsa-67499\",\"type\":\"data\",\"attributes\":{\"category\":\"urgent care\",\"provider_name\":\"URGENT CARE LOCATOR TOOL\",\"street\":null,\"city\":null,\"state\":null,\"lat\":\"42.468091\",\"lon\":\"-49.232930\",\"description\":\"Online locator tool for urgent care locations. Includes a filter to search for pediatric urgent care.\"}},{\"id\":\"211manches-37790\",\"type\":\"data\",\"attributes\":{\"category\":\"urgent care\",\"provider_name\":\"URGENT CARE CENTERS\",\"street\":\"1279 South Willow Street\",\"city\":\"Manchester\",\"state\":\"NH\",\"lat\":\"42.958231\",\"lon\":\"-71.438935\",\"description\":\"\"}},{\"id\":\"211lima-700\",\"type\":\"data\",\"attributes\":{\"category\":\"urgent care\",\"provider_name\":\"URGENT CARE\",\"street\":\"967 Bellefontaine Ave.\",\"city\":\"Lima\",\"state\":\"OH\",\"lat\":\"40.736150\",\"lon\":\"-84.088320\",\"description\":\"Provides appropriate care for injuries or illnesses that present as minor in the opinion of the triage nurse.\"}},{\"id\":\"211lima-710\",\"type\":\"data\",\"attributes\":{\"category\":\"urgent care\",\"provider_name\":\"URGENT CARE\",\"street\":\"2195 Allentown Rd.\",\"city\":\"Lima\",\"state\":\"OH\",\"lat\":\"40.749039\",\"lon\":\"-84.149899\",\"description\":\"Provides appropriate care for injuries or illnesses that present as minor in the opinion of the triage nurse.\"}},{\"id\":\"211clevela-43340\",\"type\":\"data\",\"attributes\":{\"category\":\"urgent care\",\"provider_name\":\"URGENT CARE\",\"street\":\"3909 Orange Pl.\",\"city\":\"Orange\",\"state\":\"OH\",\"lat\":\"41.453416\",\"lon\":\"-81.489089\",\"description\":\"Provides care for urgent, non-life threatening health issues that arise suddenly, such as sore throats, earaches, allergic reactions and simple injuries.\"}},{\"id\":\"211lima-1299\",\"type\":\"data\",\"attributes\":{\"category\":\"urgent care\",\"provider_name\":\"URGENT CARE\",\"street\":\"1550 North Main Street\",\"city\":\"Lima\",\"state\":\"OH\",\"lat\":\"40.762568\",\"lon\":\"-84.104848\",\"description\":\"Provides urgent health care services for minor illnesses such as a cough, cold, sore throat, rash, flu, or fever.\"}},{\"id\":\"211manches-56618\",\"type\":\"data\",\"attributes\":{\"category\":\"urgent care\",\"provider_name\":\"WALK IN URGENT CARE\",\"street\":\"701 Central Avenue\",\"city\":\"Dover\",\"state\":\"NH\",\"lat\":\"43.208019\",\"lon\":\"-70.874699\",\"description\":\"The Urgent Care staff provides high quality comprehensive medical care for non-life threatening illness or injury. We \\\"fill the gap\\\" between your primary physician and the Emergency Department. Urgent Care provides medical attention for a large number of conditions that your primary physician may be unavailable or unable to treat, and when an Emergency Department visit is not warranted. Services are provided for the entire family.  \\r\\n\\r\\nIn order to provide timely and accurate assessment and treatment for a wide variety of illnesses and injuries, we have diagnostic capabilities that include x-ray services, EKG and point of care laboratory testing.  \\r\\n\\r\\nUrgent Care will provide services, but not limited to, the following issues:\\r\\n- Respiratory infections/illness \\r\\n- Ear complaints \\r\\n- Nasal complaints \\r\\n- Eye complaints \\r\\n- Dental complaints \\r\\n- Soft tissue infections \\r\\n- Soft tissue injuries \\r\\n- Skin complaints \\r\\n- Gastrointestinal complaints \\r\\n- Genitourinary complaints \\r\\n- Musculoskeletal complaints \\r\\n- Headache/minor head injury \\r\\n- Fever evaluation\"}}]}"
-        }
-      },
-      "recorded_at": "Fri, 15 Sep 2023 02:12:13 GMT"
-    },
-    {
-      "request": {
-        "method": "get",
-        "uri": "https://ancient-reaches-38594-79ad833137d5.herokuapp.com/api/v0/search?keyword=&location=",
+        "uri": "https://ancient-reaches-38594-79ad833137d5.herokuapp.com/api/v0/search?keyword=urgent_care&location=",
         "body": {
           "encoding": "US-ASCII",
           "string": ""
@@ -285,7 +30,7 @@
             "Cowboy"
           ],
           "Date": [
-            "Sat, 16 Sep 2023 22:40:47 GMT"
+            "Thu, 21 Sep 2023 16:24:38 GMT"
           ],
           "Connection": [
             "keep-alive"
@@ -318,10 +63,10 @@
             "no-cache"
           ],
           "X-Request-Id": [
-            "73b10865-e318-4800-a7dd-8341fb58a370"
+            "5289d31b-2ebf-4486-87cf-df0145df8290"
           ],
           "X-Runtime": [
-            "0.134471"
+            "0.425970"
           ],
           "Transfer-Encoding": [
             "chunked"
@@ -335,7 +80,177 @@
           "string": "{\"errors\":[{\"detail\":\"Invalid Parameters\"}]}"
         }
       },
-      "recorded_at": "Sat, 16 Sep 2023 22:40:47 GMT"
+      "recorded_at": "Thu, 21 Sep 2023 16:24:38 GMT"
+    },
+    {
+      "request": {
+        "method": "get",
+        "uri": "https://ancient-reaches-38594-79ad833137d5.herokuapp.com/api/v0/search?keyword=food&location=",
+        "body": {
+          "encoding": "US-ASCII",
+          "string": ""
+        },
+        "headers": {
+          "User-Agent": [
+            "Faraday v2.7.11"
+          ],
+          "Accept-Encoding": [
+            "gzip;q=1.0,deflate;q=0.6,identity;q=0.3"
+          ],
+          "Accept": [
+            "*/*"
+          ]
+        }
+      },
+      "response": {
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "headers": {
+          "Server": [
+            "Cowboy"
+          ],
+          "Date": [
+            "Thu, 21 Sep 2023 16:24:38 GMT"
+          ],
+          "Connection": [
+            "keep-alive"
+          ],
+          "X-Frame-Options": [
+            "SAMEORIGIN"
+          ],
+          "X-Xss-Protection": [
+            "0"
+          ],
+          "X-Content-Type-Options": [
+            "nosniff"
+          ],
+          "X-Download-Options": [
+            "noopen"
+          ],
+          "X-Permitted-Cross-Domain-Policies": [
+            "none"
+          ],
+          "Referrer-Policy": [
+            "strict-origin-when-cross-origin"
+          ],
+          "Content-Type": [
+            "application/json; charset=utf-8"
+          ],
+          "Vary": [
+            "Accept"
+          ],
+          "Etag": [
+            "W/\"b2101732680935bf29f93bd6214bb7c8\""
+          ],
+          "Cache-Control": [
+            "max-age=0, private, must-revalidate"
+          ],
+          "X-Request-Id": [
+            "03768993-e217-445d-9633-2441801e416d"
+          ],
+          "X-Runtime": [
+            "0.403692"
+          ],
+          "Transfer-Encoding": [
+            "chunked"
+          ],
+          "Via": [
+            "1.1 vegur"
+          ]
+        },
+        "body": {
+          "encoding": "UTF-8",
+          "string": "{\"data\":[{\"id\":\"211virgini-289034\",\"type\":\"filtered_provider\",\"attributes\":{\"category\":\"food\",\"provider_name\":\"FOOD PANTRY - DULLES, DULLES SOUTH FOOD PANTRY\",\"street\":\"24757 Evergreen Mills Road\",\"city\":\"Dulles\",\"state\":\"VA\",\"lat\":\"38.951309\",\"lon\":\"-77.532197\",\"description\":\"Dulles South Food Pantry provides nutritious food, personal supplies and other services to those in need in the Dulles area and strives to promote self-sufficiency.\"}},{\"id\":\"211virgini-972\",\"type\":\"filtered_provider\",\"attributes\":{\"category\":\"food\",\"provider_name\":\"MOBILE FOOD PANTRY - STERLING, LINK\",\"street\":\"Po Box 443\",\"city\":\"Sterling\",\"state\":\"VA\",\"lat\":\"39.023047\",\"lon\":\"-77.399367\",\"description\":\"LINK offers a Mobile Food Pantry, and distributes the food on the 2nd Tuesday of each month from 11AM - 1PM (or until the food runs out) in the rear parking lot of Christ the Redeemer Church (46833 Harry Byrd Hwy., Sterling).\\n \\n\"}},{\"id\":\"211virgini-3238\",\"type\":\"filtered_provider\",\"attributes\":{\"category\":\"food\",\"provider_name\":\"FOOD PANTRY - STERLING, LOUDOUN REGIONAL OFFICE, CATHOLIC CHARITIES OF THE DIOCESE OF ARLINGTON\",\"street\":\"113 Executive Drive\",\"city\":\"Sterling\",\"state\":\"VA\",\"lat\":\"38.990543\",\"lon\":\"-77.444893\",\"description\":\"Consumers can obtain food once every 30 days. The amount of food received is based on the size of the family. \\n  Also a distribution site for USDA food.  Eligible participants may sign up at the Leesburg pantry and begin to receive USDA food that same day.\\n \\n\"}},{\"id\":\"211virgini-189027\",\"type\":\"filtered_provider\",\"attributes\":{\"category\":\"food\",\"provider_name\":\"EMERGENCY FOOD ASSISTANCE - LEESBURG, LOUDOUN HUNGER RELIEF\",\"street\":\"750 Miller Drive, Suite A-1\",\"city\":\"Leesburg\",\"state\":\"VA\",\"lat\":\"39.082751\",\"lon\":\"-77.555068\",\"description\":\"Distributes emergency food to Loudoun County residents. Provides three day supply twice a month based upon family size, any special dietary needs, and living arrangements. Provides USDA commodities to income eligible families/households. \\n  Hours To Get Food By Appointment Only at Leesburg Pantry: \\n  Tues 8:30AM - 11:30AM\\r\\nTues 3:30PM - 5PM \\u0026 Thurs 5PM - 7PM\\r\\nWed, Fri \\u0026 Sat 9AM - 11:45AM \\n  Hours to Get Food, No appointment required service (these are first come, first served while supplies last): \\n  Sterling Community Center (120 Enterprise St. Sterling) Parking Lot (Mobile Market):  \\n  Mon 1PM - 2:30PM \\n  Sugarland Elementary School in Sterling (65 Sugarland Run Dr) Parking Lot (Mobile Market):  \\n  Thursday 10AM - 12PM\\n \\n\"}},{\"id\":\"211virgini-190982\",\"type\":\"filtered_provider\",\"attributes\":{\"category\":\"food\",\"provider_name\":\"FOOD ASSISTANCE - HERNDON, SNAP MATCHING BENEFITS, HERNDON-RESTON FISH\",\"street\":\"1141 Elden Street\",\"city\":\"Herndon\",\"state\":\"VA\",\"lat\":\"38.964325\",\"lon\":\"-77.396837\",\"description\":\"FISH provides matching of SNAP benefits up to $20 per shopping session for fresh produce at the Herndon Farmers Market, Thursday mornings from June to November each year. Due to the COVID-19 crisis, and lack of volunteers, this program is suspended for the beginning of the 2022 season.\\n \\n\"}},{\"id\":\"211virgini-2698\",\"type\":\"filtered_provider\",\"attributes\":{\"category\":\"food\",\"provider_name\":\"FOOD DISTRIBUTION - LEESBURG, FEED THE HUNGRY OF LOUDOUN, SALVATION ARMY OF LOUDOUN COUNTY\",\"street\":\"10 Cardinal Park Drive, Se\",\"city\":\"Leesburg\",\"state\":\"VA\",\"lat\":\"39.098072\",\"lon\":\"-77.540829\",\"description\":\"Every Friday, our Canteen travels throughout Loudoun distributing groceries to help feed the hungry in our community. \\n  1st, 3rd and 5th Fridays 10AM-11AM Leesburg Apartments 807E Plaza Street, Leesburg VA 20175  \\n  2nd and 4th Fridays Lucketts and Purcellville \\n  10AM-11AM Lucketts Highway Mobile Home Park: 14489 James Monroe Hwy Leesburg VA 20176 \\n  11AM-12PM Purcellville - Main Street Commons Apartments 119 N. 16th Street Purcellville, VA 20132 \\n \\n\"}},{\"id\":\"211virgini-189596\",\"type\":\"filtered_provider\",\"attributes\":{\"category\":\"food\",\"provider_name\":\"FOOD STAMPS/SNAP - LEESBURG, LOUDOUN COUNTY DEPARTMENT OF FAMILY SERVICES\",\"street\":\"102 Heritage Way Ne, Suite 103\",\"city\":\"Leesburg\",\"state\":\"VA\",\"lat\":\"39.114412\",\"lon\":\"-77.540576\",\"description\":\"Issues food stamps/SNAP for those who meet the eligibility criteria. Program increases the food purchasing power of low-income households. Income limit depends on family size, expenses, income and resources.\\n \\n\"}},{\"id\":\"211virgini-7136\",\"type\":\"filtered_provider\",\"attributes\":{\"category\":\"food\",\"provider_name\":\"MEALS - LEESBURG, FEED THE HUNGRY OF LOUDOUN, SALVATION ARMY OF LOUDOUN COUNTY\",\"street\":\"10 Cardinal Park Drive, Se\",\"city\":\"Leesburg\",\"state\":\"VA\",\"lat\":\"39.098072\",\"lon\":\"-77.540829\",\"description\":\"Every Saturday local churches and the Salvation Army of Loudoun take turns serving meals at several Loudoun locations: \\n   \\n   Potomac Green Apartments: 1300 Sanderson Drive Sterling VA 20164 from 4PM - 4:30PM \\n   Leesburg Apartments: 807E Plaza Street, NE Leesburg, VA 20176 from 4:30PM - 5PM \\n  \\n \\n\"}},{\"id\":\"211virgini-189131\",\"type\":\"filtered_provider\",\"attributes\":{\"category\":\"food\",\"provider_name\":\"HOME DELIVERED MEALS - LEESBURG, LOUDOUN COUNTY AREA AGENCY ON AGING\",\"street\":\"742 Miller Drive Se\",\"city\":\"Leesburg\",\"state\":\"VA\",\"lat\":\"39.081472\",\"lon\":\"-77.554461\",\"description\":\"Provides a well-balanced meal, five days a week to homebound elderly 60+ in Loudoun County. Offers frozen meals for those outside the delivery area.\"}},{\"id\":\"211virgini-273824\",\"type\":\"filtered_provider\",\"attributes\":{\"category\":\"food\",\"provider_name\":\"SENIOR SERVICES - SOUTH RIDING, DULLES SOUTH SENIOR ACTIVITY CENTER, LOUDOUN COUNTY DEPARTMENT OF PARKS RECREATION AND COMMUNITY SERVICES\",\"street\":\"24950 Riding Center Drive\",\"city\":\"South Riding\",\"state\":\"VA\",\"lat\":\"38.921849\",\"lon\":\"-77.525787\",\"description\":\"Provide a wide range of recreational, educational and social programs and supportive services for adults 55 years and over who are well and active. Seniors who can independently take care of their basic needs according to established participant guidelines. Adult Day Centers offer respite for caregivers by providing weekday programs and services for seniors who are unable to stay home alone. Limited transportation is available.\\n \\n\"}}]}"
+        }
+      },
+      "recorded_at": "Thu, 21 Sep 2023 16:24:39 GMT"
+    },
+    {
+      "request": {
+        "method": "get",
+        "uri": "https://ancient-reaches-38594-79ad833137d5.herokuapp.com/api/v0/search?keyword=urgent%20care&location=",
+        "body": {
+          "encoding": "US-ASCII",
+          "string": ""
+        },
+        "headers": {
+          "User-Agent": [
+            "Faraday v2.7.11"
+          ],
+          "Accept-Encoding": [
+            "gzip;q=1.0,deflate;q=0.6,identity;q=0.3"
+          ],
+          "Accept": [
+            "*/*"
+          ]
+        }
+      },
+      "response": {
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "headers": {
+          "Server": [
+            "Cowboy"
+          ],
+          "Date": [
+            "Thu, 21 Sep 2023 16:58:29 GMT"
+          ],
+          "Connection": [
+            "keep-alive"
+          ],
+          "X-Frame-Options": [
+            "SAMEORIGIN"
+          ],
+          "X-Xss-Protection": [
+            "0"
+          ],
+          "X-Content-Type-Options": [
+            "nosniff"
+          ],
+          "X-Download-Options": [
+            "noopen"
+          ],
+          "X-Permitted-Cross-Domain-Policies": [
+            "none"
+          ],
+          "Referrer-Policy": [
+            "strict-origin-when-cross-origin"
+          ],
+          "Content-Type": [
+            "application/json; charset=utf-8"
+          ],
+          "Vary": [
+            "Accept"
+          ],
+          "Etag": [
+            "W/\"c05f6b756bf13189ee5044077cae0da4\""
+          ],
+          "Cache-Control": [
+            "max-age=0, private, must-revalidate"
+          ],
+          "X-Request-Id": [
+            "3908eeea-c34e-4258-991d-18f8f4010771"
+          ],
+          "X-Runtime": [
+            "0.423219"
+          ],
+          "Transfer-Encoding": [
+            "chunked"
+          ],
+          "Via": [
+            "1.1 vegur"
+          ]
+        },
+        "body": {
+          "encoding": "UTF-8",
+          "string": "{\"data\":[{\"id\":\"211virgini-2359\",\"type\":\"filtered_provider\",\"attributes\":{\"category\":\"urgent care\",\"provider_name\":\"URGENT CARE CENTER - RESTON, INOVA-GOHEALTH URGENT CARE IN NORTHERN VIRGINIA\",\"street\":\"1488 North Point Village Center\",\"city\":\"Reston\",\"state\":\"VA\",\"lat\":\"38.978200\",\"lon\":\"-77.350492\",\"description\":\"Services offered: treatment for minor illness and injury, laboratory tests and X-rays, treatment for work-related injuries and worker's compensation cases, physical exams including camp, sport, school and pre-employment, alcohol and drug testing, flu shots.\\n \\n\"}},{\"id\":\"211virgini-276841\",\"type\":\"filtered_provider\",\"attributes\":{\"category\":\"urgent care\",\"provider_name\":\"URGENT CARE CENTER - CHANTILLY, DULLES SOUTH, INOVA-GOHEALTH URGENT CARE IN NORTHERN VIRGINIA\",\"street\":\"24801 Pinebrook Road\",\"city\":\"Chantilly\",\"state\":\"VA\",\"lat\":\"38.932441\",\"lon\":\"-77.529347\",\"description\":\"Services offered: treatment for minor illness and injury, X-rays, treatment for work-related injuries and worker's compensation cases, physical exams including camp, sport, school and pre-employment, audiometry and vision screening, alcohol and drug testing, flu shots.\\n \\n\"}},{\"id\":\"211virgini-287429\",\"type\":\"filtered_provider\",\"attributes\":{\"category\":\"urgent care\",\"provider_name\":\"MEDICAL CARE - ASHBURN, MEDICS USA\",\"street\":\"44050 Ashburn Shopping Plaza\",\"city\":\"Ashburn\",\"state\":\"VA\",\"lat\":\"39.044768\",\"lon\":\"-77.475930\",\"description\":\"Provide both urgent care and primary care and offer completely equipped occupational health and travel care departments.\\n \\n\"}},{\"id\":\"211tulsa-67499\",\"type\":\"filtered_provider\",\"attributes\":{\"category\":\"urgent care\",\"provider_name\":\"URGENT CARE LOCATOR TOOL\",\"street\":null,\"city\":null,\"state\":null,\"lat\":\"42.468091\",\"lon\":\"-49.232930\",\"description\":\"Online locator tool for urgent care locations. Includes a filter to search for pediatric urgent care.\"}},{\"id\":\"211manches-37790\",\"type\":\"filtered_provider\",\"attributes\":{\"category\":\"urgent care\",\"provider_name\":\"URGENT CARE CENTERS\",\"street\":\"1279 South Willow Street\",\"city\":\"Manchester\",\"state\":\"NH\",\"lat\":\"42.958231\",\"lon\":\"-71.438935\",\"description\":\"\"}},{\"id\":\"211lima-700\",\"type\":\"filtered_provider\",\"attributes\":{\"category\":\"urgent care\",\"provider_name\":\"URGENT CARE\",\"street\":\"967 Bellefontaine Ave.\",\"city\":\"Lima\",\"state\":\"OH\",\"lat\":\"40.736150\",\"lon\":\"-84.088320\",\"description\":\"Provides appropriate care for injuries or illnesses that present as minor in the opinion of the triage nurse.\"}},{\"id\":\"211lima-710\",\"type\":\"filtered_provider\",\"attributes\":{\"category\":\"urgent care\",\"provider_name\":\"URGENT CARE\",\"street\":\"2195 Allentown Rd.\",\"city\":\"Lima\",\"state\":\"OH\",\"lat\":\"40.749039\",\"lon\":\"-84.149899\",\"description\":\"Provides appropriate care for injuries or illnesses that present as minor in the opinion of the triage nurse.\"}},{\"id\":\"211clevela-43340\",\"type\":\"filtered_provider\",\"attributes\":{\"category\":\"urgent care\",\"provider_name\":\"URGENT CARE\",\"street\":\"3909 Orange Pl.\",\"city\":\"Orange\",\"state\":\"OH\",\"lat\":\"41.453416\",\"lon\":\"-81.489089\",\"description\":\"Provides care for urgent, non-life threatening health issues that arise suddenly, such as sore throats, earaches, allergic reactions and simple injuries.\"}},{\"id\":\"211lima-1299\",\"type\":\"filtered_provider\",\"attributes\":{\"category\":\"urgent care\",\"provider_name\":\"URGENT CARE\",\"street\":\"1550 North Main Street\",\"city\":\"Lima\",\"state\":\"OH\",\"lat\":\"40.762568\",\"lon\":\"-84.104848\",\"description\":\"Provides urgent health care services for minor illnesses such as a cough, cold, sore throat, rash, flu, or fever.\"}},{\"id\":\"211manches-56618\",\"type\":\"filtered_provider\",\"attributes\":{\"category\":\"urgent care\",\"provider_name\":\"WALK IN URGENT CARE\",\"street\":\"701 Central Avenue\",\"city\":\"Dover\",\"state\":\"NH\",\"lat\":\"43.208019\",\"lon\":\"-70.874699\",\"description\":\"The Urgent Care staff provides high quality comprehensive medical care for non-life threatening illness or injury. We \\\"fill the gap\\\" between your primary physician and the Emergency Department. Urgent Care provides medical attention for a large number of conditions that your primary physician may be unavailable or unable to treat, and when an Emergency Department visit is not warranted. Services are provided for the entire family.  \\r\\n\\r\\nIn order to provide timely and accurate assessment and treatment for a wide variety of illnesses and injuries, we have diagnostic capabilities that include x-ray services, EKG and point of care laboratory testing.  \\r\\n\\r\\nUrgent Care will provide services, but not limited to, the following issues:\\r\\n- Respiratory infections/illness \\r\\n- Ear complaints \\r\\n- Nasal complaints \\r\\n- Eye complaints \\r\\n- Dental complaints \\r\\n- Soft tissue infections \\r\\n- Soft tissue injuries \\r\\n- Skin complaints \\r\\n- Gastrointestinal complaints \\r\\n- Genitourinary complaints \\r\\n- Musculoskeletal complaints \\r\\n- Headache/minor head injury \\r\\n- Fever evaluation\"}}]}"
+        }
+      },
+      "recorded_at": "Thu, 21 Sep 2023 16:58:30 GMT"
     }
   ],
   "recorded_with": "VCR 6.2.0"
