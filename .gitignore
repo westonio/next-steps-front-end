@@ -32,3 +32,6 @@
 
 # Ignore SimpleCov
 /coverage
+
+# Ignoring all VCR fixtures
+/spec/fixtures
