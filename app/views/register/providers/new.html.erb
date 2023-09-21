@@ -1,5 +1,4 @@
-<h2>Create a New Provider Account</h2>
-<p>Do you already have an account?  <%= link_to "Click here to sign in", register_provider_login_path %></p>
+<h2>Add Your Business Profile</h2>
 <p>
   <%= form_with url: register_providers_path, method: :post, local: true do |form| %>
     <%= form.label :name, "Organization name" %> <%= form.text_field :name, size: "30" %><br/>

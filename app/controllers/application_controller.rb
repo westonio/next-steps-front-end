@@ -1,5 +1,5 @@
 class ApplicationController < ActionController::Base
-  helper_method :current_user, :current_admin?, :current_agent?, :approved?
+  helper_method :current_user, :current_admin?, :current_agent?, :approved?, :logged_in?
 
   def current_user
     @_current_user ||= User.find(session[:user_id]) if session[:user_id]
@@ -15,5 +15,9 @@ class ApplicationController < ActionController::Base
 
   def approved?
     current_user.status == 'approved'
+  end
+
+  def logged_in?
+    !current_user.nil?
   end
 end

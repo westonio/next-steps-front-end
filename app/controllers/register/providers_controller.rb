@@ -1,4 +1,6 @@
 class Register::ProvidersController < ApplicationController
+  before_action :require_login
+
   def new; end
 
   def login_form; end
@@ -44,5 +46,12 @@ class Register::ProvidersController < ApplicationController
     
   def provider_params_valid?
     !provider_params[:name].empty? && !provider_params[:phone].empty? && !provider_params[:street].empty? && !provider_params[:city] && !provider_params[:state] && !provider_params[:zipcode] && !provider_params[:fees] && !provider_params[:schedule] && !provider_params[:description].empty?
+  end
+
+  def require_login
+    unless logged_in?
+      flash[:danger] = "You must be logged in to access this page."
+      redirect_to users_login_path 
+    end
   end
 end

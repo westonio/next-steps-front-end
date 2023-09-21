@@ -7,7 +7,7 @@
 <br/>
 
 <% if current_agent? && approved? %>
-  <p><%= link_to 'Add My Service', register_provider_path %></p>
+  <p><%= link_to 'Add My Service', new_register_provider_path %></p>
 <% elsif current_user && !current_agent? %>
   <h3>My Favorite Providers</h3>
   

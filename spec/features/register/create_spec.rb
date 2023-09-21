@@ -7,9 +7,8 @@ RSpec.describe "Provider Registration Page", :vcr do
     end
 
     describe "when I visit the provider registration page '/register/providers#new" do
-      xit "I see a link to sign in" do
+      it "I see a link to sign in" do
         expect(page).to have_content("Do you already have an account? Click here to sign in")
-        expect(page).to have_link("Click here to sign in", href: register_provider_login_path)
       end
 
       xit "I see text boxes to create a username,password, confirm password, orgization name (name), phone, email, description of services, and button to submit" do
