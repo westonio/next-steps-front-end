@@ -1,10 +1,12 @@
 <nav class="navbar navbar-expand-lg bg-body-tertiary">
   <div class="container-fluid">
+    <a class="navbar-brand" href="/">Next Steps</a>
+    <a class="navbar-brand italics">Help is near!</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#headerMenu" aria-controls="headerMenu" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="headerMenu">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+      <ul class="nav navbar-nav me-auto mb-2 mb-lg-0  navbar-right">
         <li class="nav-item">
         <% unless current_page?(root_path) %>
           <a class="nav-link active" aria-current="page" href="<%= root_path %>">Home</a>
