@@ -65,7 +65,7 @@ class UsersController < ApplicationController
     redirect_to root_path
   end
   
-  def login_form; end
+  # def login_form; end
   
   private
 

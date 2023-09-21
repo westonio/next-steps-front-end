@@ -5,6 +5,8 @@
 #
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)
+
+# Admin Users Manual Login
 admin_user = User.create!(
   username: "admin",
   password: "adminpassword",
@@ -12,6 +14,14 @@ admin_user = User.create!(
   status: "approved"
 )
 
+# Admin Users Google OAuth Login
+admin_user2 = User.create!(
+  username: "allenrusselldev@gmail.com",
+  role: "admin",
+  status: "approved"
+)
+
+# Users
 user1 = User.create!(
   username: "fred",
   password: "password",

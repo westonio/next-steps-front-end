@@ -2,8 +2,13 @@ class SessionsController < ApplicationController
 
   def omniauth
     if user = User.from_omniauth(request.env['omniauth.auth'])
-      login(user)
-      redirect_to user_path(user)
+      if user.role == "admin"
+        login(user)
+        redirect_to admin_dashboard_index_path
+      else
+        login(user)
+        redirect_to user_path(user)
+      end
     else
       flash[:warning] = "Unable to authenticate using your Google account. Please try again"
       redirect_to users_login_path

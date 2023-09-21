@@ -10,9 +10,19 @@ class User < ApplicationRecord
   enum status: { pending: 0, approved: 1, rejected: 2 }
 
   def self.from_omniauth(response)
-    User.find_or_create_by(uid: response["uid"], provider: response["provider"]) do |u|
+    user = User.find_or_create_by(uid: response["uid"], provider: response["provider"]) do |u|
       u.username = response["info"]["email"]
       u.password = SecureRandom.hex(15)
     end
+  
+    # seed_admin_user = User.find_by(username: response["info"]["email"], role: "admin")
+    
+    # if seed_admin_user && response["provider"] == "google_oauth2" 
+    #   user.role = "admin"
+    #   user.save if user.changed?
+    # end
+  
+    # user
   end
+  
 end
