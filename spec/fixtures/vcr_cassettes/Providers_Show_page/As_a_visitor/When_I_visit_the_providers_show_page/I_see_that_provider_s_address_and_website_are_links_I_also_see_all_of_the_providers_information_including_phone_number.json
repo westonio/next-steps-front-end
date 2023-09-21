@@ -30,7 +30,7 @@
             "Cowboy"
           ],
           "Date": [
-            "Thu, 21 Sep 2023 17:02:41 GMT"
+            "Thu, 21 Sep 2023 19:40:17 GMT"
           ],
           "Connection": [
             "keep-alive"
@@ -66,10 +66,10 @@
             "max-age=0, private, must-revalidate"
           ],
           "X-Request-Id": [
-            "05d48946-3640-4c90-880f-664e4816cb11"
+            "b230368c-6a9f-49fc-8054-ca873c61670c"
           ],
           "X-Runtime": [
-            "0.214986"
+            "0.244692"
           ],
           "Transfer-Encoding": [
             "chunked"
@@ -83,7 +83,7 @@
           "string": "{\"data\":{\"id\":\"211colorad-0014T000004o6I3QAI\",\"type\":\"detailed_provider\",\"attributes\":{\"id\":\"211colorad-0014T000004o6I3QAI\",\"name\":\"NEXTCARE URGENT CARE\",\"description\":\"\\u003cp\\u003eProvides urgent care services.\\u003c/p\\u003e\",\"street\":\"4590 W 121st Ave\",\"street2\":null,\"city\":\"Broomfield\",\"state\":\"CO\",\"zipcode\":\"80020\",\"lat\":\"39.915035\",\"lon\":\"-105.045715\",\"website\":\"http://nextcare.com\",\"phone\":\"(888) 381-4858 (Customer Service\",\"fees\":\"\\u003cp\\u003eMedical Care Fees, call for current fees.\\u003c/p\\u003e\",\"schedule\":\"Monday - Friday, 8 a.m. - 8 p.m.; Saturday, Sunday, 9 a.m. - 4 p.m.\"}}}"
         }
       },
-      "recorded_at": "Thu, 21 Sep 2023 17:02:42 GMT"
+      "recorded_at": "Thu, 21 Sep 2023 19:40:17 GMT"
     }
   ],
   "recorded_with": "VCR 6.2.0"

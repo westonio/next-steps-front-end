@@ -65,36 +65,7 @@ class UsersController < ApplicationController
     redirect_to root_path
   end
   
-  
-  def login_form
-  end
-
-  def login
-    user = User.find_by(username: params[:username])
-  
-    if user && user.authenticate(params[:password])
-      if user.admin? 
-        session[:user_id] = user.id
-        flash[:success] = "Logged in as an admin"
-        redirect_to admin_dashboard_index_path
-      else
-        session[:user_id] = user.id
-        flash[:success] = "Logged in successfully"
-        redirect_to user_path(user.id)
-      end
-    else
-      flash[:warning] = "Invalid credentials. Please try again."
-      redirect_to users_login_path
-    end
-  end
-  
-  
-  def logout
-    @user = nil
-    session[:user_id] = nil
-    flash[:success] = "You have successfully logged out"
-    redirect_to root_path
-  end
+  def login_form; end
   
   private
 
@@ -108,9 +79,5 @@ class UsersController < ApplicationController
 
   def agent?
     params[:role] == "agent"
-  end
-
-  def admin?
-    self.username == "admin"
   end
 end
