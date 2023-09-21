@@ -30,12 +30,14 @@ agent1 = User.create!(
   username: "frida",
   password: "password",
   role: "agent",
-  status: "pending"
+  status: "pending",
+  description: "I have 2 rooms available for previous offenders"
 )
 
 agent2 = User.create!(
   username: "frangelica",
   password: "password",
   role: "agent",
-  status: "pending"
+  status: "pending",
+  description: "I own a group home and accept vouchers"
 )

@@ -3,6 +3,7 @@ class Admin::DashboardController < Admin::BaseController
 
   def index
     @user = User.all
+  
   end
 
   def approve

@@ -15,7 +15,13 @@
           <li class="nav-item"><%= link_to 'Create an account', new_user_path, class: "nav-link" %></li>
           <li class="nav-item"><%= link_to 'Sign in', users_login_path, class: "nav-link" %></li>
         <% else %>
-          <li class="nav-item"><%= link_to 'View my Dashboard', user_path(current_user), class: "nav-link" %></li>
+          
+          <% if current_admin? %>
+            <li class="nav-item"><%= link_to 'View my Dashboard', admin_dashboard_index_path, class: "nav-link" %></li>
+          <% else %>
+            <li class="nav-item"><%= link_to 'View my Dashboard', user_path(current_user), class: "nav-link" %></li>
+          <% end %>
+          
           <li class="nav-item"><%= link_to 'Sign out', users_logout_path, class: "nav-link" %></li>
         <% end %>
       </ul>

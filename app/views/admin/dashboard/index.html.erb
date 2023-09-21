@@ -35,7 +35,8 @@
 	<% if @user.any? { |user| user.status == 'pending' && user.role == 'agent' } %> <% @user.each do |user| %> <% if user.status == 'pending' && user.role == 'agent' %>
 	<p>Username: <%= user.username %></p>
 	<p>Status: <%= user.status %></p>
-
+	<p>Description: <%= user.description %></p>
+	
 	<%= button_to "Approve Agent", approve_admin_dashboard_path(user), method: :patch, class: 'approve-button' %><br />
 	<%= button_to "Reject Agent", reject_admin_dashboard_path(user), method: :patch, class: 'reject-button' %><br />
 
