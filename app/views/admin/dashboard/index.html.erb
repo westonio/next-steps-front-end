@@ -38,8 +38,8 @@
         <p>Username: <%= user.username %></p>
         <p>Status: <%= user.status %></p>
 
-        <%= button_to "Approve Agent", approve_admin_dashboard_path(user), method: :put, class: 'approve-button' %><br />
-        <%= button_to "Reject Agent", reject_admin_dashboard_path(user), method: :put, class: 'reject-button' %><br />
+        <%= button_to "Approve Agent", approve_admin_dashboard_path(user), method: :patch, class: 'approve-button' %><br />
+        <%= button_to "Reject Agent", reject_admin_dashboard_path(user), method: :patch, class: 'reject-button' %><br />
         
       <% end %>
     <% end %>

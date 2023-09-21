@@ -9,8 +9,8 @@ Rails.application.routes.draw do
   namespace :admin do
     resources :dashboard, only: [:index] do
       member do
-        put 'approve'
-        put 'reject'
+        patch 'approve'
+        patch 'reject'
       end
     end
   end
