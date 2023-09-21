@@ -1,17 +1,12 @@
-<h2>Search Results for <%= @category %></h2>
-
-  <% @results.each do |category, results| %>
-  <% if results.any? %>
-    <h3><%= category.to_s.humanize %> results</h3>
-    <div class="results-container">
-      <% results.each do |provider| %>
-        <div class="result-item">
-          <b> Provider name:</b> <%= link_to provider.provider_name, provider_path(provider.id, category: category) %><br>
-          <b>Address:</b> <%= provider.street %><br>
-          <b>City:</b> <%= provider.city %><br>
-          <b>Description:</b> <%= provider.description %>
-        </div>
-      <% end %>
-    </div>
-  <% end %>
+<% @results.each do |category, results| %>
+  <h3><%= category.to_s.humanize %> results</h3>
+  <div class="results-container">
+    <% results.each do |provider| %>
+      <div class="result-item">
+        <b>Provider name:</b> <%= link_to provider.provider_name, provider_path(provider.id, category: category) %><br>
+        <b>Address:</b> <a href="https://www.google.com/maps?q=<%= provider.provider_name %>,<%= provider.street %>,<%= provider.city %>,<%= provider.state %>", target="_blank"><%= provider.street %>, <%= provider.city %>, <%= provider.state %></a><br>
+        <b>Description:</b> <%= provider.description %>
+      </div>
+    <% end %>
+  </div>
 <% end %>

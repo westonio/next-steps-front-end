@@ -12,7 +12,6 @@ Rails.application.routes.draw do
   get '/auth/google_oauth2/callback', to: 'sessions#omniauth'
 
   # Search
-  get '/search_result/:category', to: 'search_results#show', as: 'search_result'
   resources :search_results, only: [:index, :show]
   resources :search_resources, only: [:index]
   

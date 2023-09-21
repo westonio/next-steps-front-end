@@ -15,9 +15,7 @@ class SearchResultsController < ApplicationController
   def show
     @location = params[:location]
     @category = params[:category]
-    query = {}
-    query["location"] = @location
-    query["category"] = @category
+    query = {"location" => @location, "category" => @category}
     @results = SearchFacade.new(query).search_results
   end
 
