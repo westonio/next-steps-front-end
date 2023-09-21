@@ -55,7 +55,7 @@ body {
 	padding: 1.25em; /* 20px in em units */
 	border: solid 0.1875em #C80909; /* 3px in em units */
 	border-radius: 1.25em; /* 20px in em units */
-	background: #C80909
+	background: linear-gradient(to bottom, #C80909 50%, #4163EE 50%);
 }
 
 #location, #get-help-button {
