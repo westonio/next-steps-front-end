@@ -6,7 +6,7 @@
       <%= form.label :username, "Choose a username" %> <%= form.text_field :username, size: "30" %><br />
       <%= form.label :password, "Enter a password" %> <%= form.password_field :password, size: "30" %><br />
       <%= form.label :password_verify, "Confirm the password" %> <%= form.password_field :password_verify, size: "30" %><br />
-      <%= form.submit "Create Account" %>
+      <%= form.submit "Create Account", id: "new-user-create-button" %>
     <% end %>
   </div>
     <div id="google-oauth">
