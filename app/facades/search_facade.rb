@@ -2,7 +2,6 @@ class SearchFacade
   attr_reader :search_results
 
   def initialize(params)
-    # @location = params[:location] || params[:hidden_location]
     @location = params["location"]
     @search_results = {}
     set_search_options(params)
@@ -10,13 +9,6 @@ class SearchFacade
 
   def set_search_options(params)
     @search_results = {}
-    search_keyword = params["search"]
-    
-    # If the search box is used, perform the search and set the @search_results hash
-    if search_keyword.present?
-      results = get_results(search_keyword)
-      @search_results[search_keyword] = results
-    end
 
     search_keyword = params["category"]
     

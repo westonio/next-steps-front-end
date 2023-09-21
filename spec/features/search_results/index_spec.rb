@@ -13,7 +13,7 @@ RSpec.describe "Category Index", :vcr do
         end
 
         expect(current_path).to eq(search_results_path)
-        expect(page).to have_content("Urgent Care results")
+        expect(page).to have_content("Urgent care results")
         expect(page).to_not have_content("Crisis Hotline results")
         expect(page).to_not have_content("Shelter for Tonight results")
         expect(page).to have_content("Food results")
