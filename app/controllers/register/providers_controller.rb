@@ -4,18 +4,8 @@ class Register::ProvidersController < ApplicationController
   def new; end
 
   def create
-    if provider_params_valid?
-      provider = ProviderFacade.save_provider(provider_params)
+    if !provider_params_valid?
       
-      if provider
-        flash[:success] = "Provider created successfully"
-        session[:user_id] = provider.id
-        redirect_to user_path(provider.id)
-      else
-        flash[:warning] = "Failed to create provider"
-        redirect_to new_register_provider_path
-      end
-    else
       flash[:warning] = "Invalid entries, please try again"
       redirect_to new_register_provider_path
     end

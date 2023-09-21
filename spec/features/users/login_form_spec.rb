@@ -6,7 +6,17 @@ RSpec.describe 'User Login page', :vcr do
       
       before do
         visit users_login_path
+        @admin_user = User.create(username: "admin", password: "adminpassword", role: "admin", status: "approved")
         @user = User.create!(username: 'my_username', password: 'my_password')
+      end
+
+      it "If user is 'admin' they are logged in as admin" do
+        fill_in "username", with: @admin_user.username
+        fill_in "password", with: @admin_user.password
+        click_button "Login"
+
+        expect(page).to have_content("Logged in as an admin")
+        expect(page).to have_current_path(admin_dashboard_index_path)
       end
 
       it "I see a place to enter my username and password" do

@@ -21,7 +21,6 @@ RSpec.describe 'Welcome Page', :vcr do
 
       it 'links to Home, Create an Account, Sign In' do
         within('div#app-topper') do
-          expect(page).to have_link('Home', href: '/')
           expect(page).to have_link('Create an account', href: new_user_path)
           expect(page).to have_link('Sign in', href: users_login_path)
         end

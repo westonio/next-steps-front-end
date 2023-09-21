@@ -9,7 +9,6 @@ RSpec.describe "Admin Dashboard Page" do
 
     visit users_login_path
 
-    select "admin", from: :role
     fill_in "username", with: "admin"
     fill_in "password", with: "adminpassword"
     click_button "Login"
