@@ -1,7 +1,9 @@
 # Next Steps - Project README
 # Front-End
 
-Link to [Next Steps Website](https://next-steps-front-end-4778e35e4143.herokuapp.com/)
+Link to [Next Steps Website](https://next-steps-front-end-4778e35e4143.herokuapp.com/) <br/>
+Link to [Back-End Microservice](https://github.com/westonio/next-steps-back-end)
+
 ## Table of Contents
 
 1. [Project Description](#project-description)
@@ -12,6 +14,9 @@ Link to [Next Steps Website](https://next-steps-front-end-4778e35e4143.herokuapp
 6. [Usage](#usage)
 7. [Future Iterations](#future-iterations)
 8. [Contributors](#contributors)
+9. [Setup](#setup)
+10. [Testing](#testing)
+11. [Viewing the Web App](#viewing-the-web-app)
 
 ## Setup
 - Ruby 3.2.2
@@ -23,7 +28,7 @@ Link to [Next Steps Website](https://next-steps-front-end-4778e35e4143.herokuapp
 
 ## Project Description
 
-**Next Steps** is full-stack project that leverages the [211 API](https://apiportal.211.org) along with geolocation to assist individuals in finding community resources in their vicinity.  We thought it was particularly important to create search options catered to persons who may not have the ability to navigate existing resources.  This repository contains the front-end portion of the project which utilizes the [API](https://github.com/westonio/next-steps-back-end) provided by the back-end repository.
+**Next Steps** is a full-stack project that leverages the [211 API](https://apiportal.211.org) along with geolocation to assist individuals in finding community resources in their vicinity.  We thought it was particularly important to create search options catered to persons who may not have the ability to navigate existing resources.  This repository contains the front-end portion of the project which utilizes the [API](https://github.com/westonio/next-steps-back-end) provided by the back-end repository.
 
 This project has been deployed using [Heroku](https://id.heroku.com/login), and [Circle CI](https://circleci.com/) was used for Continuous Integration.
 
@@ -35,13 +40,13 @@ The project draws inspiration from various areas, serving as a tool to support:
 - **Justice-Affected Individuals:** Offering support for individuals impacted by the justice system.
 - **People with Disabilities:** Ensuring accessibility to resources for individuals with disabilities.
 
-This tool is designed to assist a wide range of professionals, including crisis workers, first-responders, social workers, therapists, case managers, or any person looking for community resources.
+This tool is designed to assist a wide range of professionals, including crisis workers, first responders, social workers, therapists, case managers, or any person looking for community resources.
 
 ### Testimonials
 
 *"Right now, I have a list of 12 different links that I use when I research options for my clients.  I would love to have an app that has everything in one place"* - anonymous case manager
 
-*"It is challenging for people with mental health struggles to have the wherewithal to search the internet for resources they need, let alone come up with the 'next step' on their to do list.  This kind of help is great for them."* - anonymous social worker
+*"It is challenging for people with mental health struggles to have the wherewithal to search the internet for resources they need, let alone come up with the 'next step' on their to-do list.  This kind of help is great for them."* - anonymous social worker
 
 *"The hardest part of my job is to find housing for people who have criminal backgrounds.  If there was a way for housing providers to add their listings, I would be grateful"* - housing specialist
 
@@ -56,7 +61,7 @@ This tool is designed to assist a wide range of professionals, including crisis 
 *“I have PTSD and will not go to shelters, I live in my car, it's -2 deg outside, where can I park?”* => List of safe lots and emergency shelter options
 
 ## Features
-![](2023-09-14-10-49-13.png)
+
 ### User-Friendly Resource Access
 - Users of the app can access community resources anonymously.
 - Pre-built search queries are available to streamline the resource-finding process.
@@ -66,7 +71,7 @@ This tool is designed to assist a wide range of professionals, including crisis 
 ### Provider Profiles
 - Service providers can create accounts to add information about their specific services.
 - Providers offering specialized services such as housing for justice-affected individuals, LGBTQIA+ friendly services, emergency shelter, or any service relevant to vulnerable communities can create profiles to make their services searchable.
-- Provider application are reviewed by Admin users and can be approved or denied by Admin.
+- Provider applications are reviewed by Admin users and can be approved or denied by Admin.
 
 ## Usage
 
@@ -84,5 +89,29 @@ This project is the front-end user experience that utilizes an API endpoint to c
 - [Allen Russell](allenrusselldev@gmail.com) - GitHub: [@garussell](https://github.com/garussell)
 - [Weston Schutt](wtschutt@gmail.com)        - GitHub: [@westonio](https://github.com/westonio)
 - [Kaina Cockett](kainacockett@gmail.com)    - GitHub: [@kcockett](https://github.com/kcockett)
-- [Zanna Fitch](zannafitch@gmail.com)    - GitHub: [@z-fitch](https://github.com/z-fitch)
+- [Zanna Fitch](zannafitch@gmail.com)        - GitHub: [@z-fitch](https://github.com/z-fitch)
 - [Jorja Flemming](aset284@gmail.com)        - GitHub: [@jorjaf](https://github.com/jorjaf)
+
+---
+
+## Setup
+- Fork and Clone the repo
+- Navigate into the repo directory `cd next-steps-front-end`
+- Install gem packages: `bundle install`
+- Setup the database: `rails db:{drop,create,migrate,seed}`
+
+### Testing
+- After completing the above setup, run the command `bundle exec rspec`
+
+### Viewing the web app
+- Run the command `rails server`
+- In your web browser, navigate to your local host `http://localhost:3000`
+
+#### Web View
+<img width="1198" alt="Screenshot 2023-09-21 at 4 25 34 PM" src="https://github.com/westonio/next-steps-front-end/assets/117330008/b570fe0c-76d5-443c-84d8-c9ad4fa5a58e">
+<img width="1835" alt="Screenshot 2023-09-21 at 4 27 38 PM" src="https://github.com/westonio/next-steps-front-end/assets/117330008/c560b55c-a36f-4bc2-a720-c9ee2c718c10">
+
+#### Mobile View
+<img width="333" alt="Screenshot 2023-09-21 at 4 25 58 PM" src="https://github.com/westonio/next-steps-front-end/assets/117330008/8e555593-3689-4a85-b86e-1c9e7ac4fbb0">
+<img width="333" alt="Screenshot 2023-09-21 at 4 28 55 PM" src="https://github.com/westonio/next-steps-front-end/assets/117330008/59c16da5-e967-49b5-b451-c1b1f4c2f6f2">
+<img width="333" alt="Screenshot 2023-09-21 at 4 29 44 PM" src="https://github.com/westonio/next-steps-front-end/assets/117330008/907ee480-65c1-42be-87a4-1a2a9f3eaef9">
