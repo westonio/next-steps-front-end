@@ -12,8 +12,8 @@ RSpec.describe "Category Show", :vcr do
           click_button('Get Help!')
         end
         expect(current_path).to eq(search_results_path)
-        click_link("See more results")
-        expect(current_path).to eq("/search_results/Urgent%20Care")
+        first('a', text: "See more results").click
+        expect(current_path).to eq("/search_results/1")
 
         result_items = page.all('.result-item')
         expect(result_items.count).to be > 3
