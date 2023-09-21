@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe "Provider Registration Page" do
+RSpec.describe "Provider Registration Page", :vcr do
   describe "as a visitor" do
     before do 
       @user1 = User.create!(username: "jil", password: "dogsname", role: "user", status: "approved")
@@ -39,7 +39,7 @@ RSpec.describe "Provider Registration Page" do
       end
 
       # API Call
-      xit "HAPPY PATH:  If I fill in a valid username and passwords and information then I am directed to a Dashboard page '/register/providers/id'", :vcr do
+      it "HAPPY PATH:  If I fill in a valid username and passwords and information then I am directed to a Dashboard page '/register/providers/id'" do
         fill_in :name, with: "Housing Option"
         fill_in :description, with: "I have housing"
         fill_in :street, with: "123 Street Street"
@@ -51,7 +51,7 @@ RSpec.describe "Provider Registration Page" do
         fill_in :schedule, with: "24/7"
 
         click_button "Submit"
-
+save_and_open_page
         expect(page).to have_content("Provider Dashboard")
       end
 

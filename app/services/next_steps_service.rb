@@ -24,12 +24,12 @@ class NextStepsService
 
   def self.post_provider(provider_info)
     response = conn.post("providers") do |req|
-    req.headers['CONTENT_TYPE'] = 'application/json'
-    req.body = { provider: provider_info }.to_json
+      req.headers['Content-Type'] = 'application/json' 
+      req.body = { provider: provider_info }.to_json
     end
-
     JSON.parse(response.body, symbolize_names: true)
   end
+  
   
   def self.conn
     Faraday.new(url: "https://ancient-reaches-38594-79ad833137d5.herokuapp.com/api/v0/")

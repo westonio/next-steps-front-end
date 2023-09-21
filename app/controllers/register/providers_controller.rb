@@ -9,8 +9,8 @@ class Register::ProvidersController < ApplicationController
       
       if provider
         flash[:success] = "Provider created successfully"
-        session[:provider_id] = provider.id
-        redirect_to #user show page or provider show page?
+        session[:user_id] = provider.id
+        redirect_to user_path(provider.id)
       else
         flash[:warning] = "Failed to create provider"
         redirect_to new_register_provider_path
@@ -28,7 +28,7 @@ class Register::ProvidersController < ApplicationController
   end
     
   def provider_params_valid?
-    !provider_params[:name].empty? && !provider_params[:phone].empty? && !provider_params[:street].empty? && !provider_params[:city] && !provider_params[:state] && !provider_params[:zipcode] && !provider_params[:fees] && !provider_params[:schedule] && !provider_params[:description].empty?
+    !provider_params[:name].empty? && !provider_params[:phone].empty? && !provider_params[:street].empty? && !provider_params[:city].empty? && !provider_params[:state].empty? && !provider_params[:zipcode].empty? && !provider_params[:fees].empty? && !provider_params[:schedule].empty? && !provider_params[:description].empty?
   end
 
   def require_login
