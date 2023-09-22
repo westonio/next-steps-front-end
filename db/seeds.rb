@@ -47,10 +47,3 @@ agent2 = User.create!(
 )
 puts "agent2 created"
 
-# Admin Users Google OAuth Login
-google_admin1 = User.create!(
-  username: "allenrusselldev@gmail.com",
-  password: "password",
-  role: "admin",
-  status: "approved"
-)
