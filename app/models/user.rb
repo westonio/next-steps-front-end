@@ -14,15 +14,6 @@ class User < ApplicationRecord
       u.username = response["info"]["email"]
       u.password = SecureRandom.hex(15)
     end
-  
-    seed_admin_user = User.find_by(username: response["info"]["email"])
-
-    if seed_admin_user && response["provider"] == "google_oauth2" && user.username == seed_admin_user.username
-      user.role = "admin"
-      user.save if user.changed?
-    end
-  
-    user
   end
   
 end
