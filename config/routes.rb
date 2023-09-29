@@ -31,4 +31,12 @@ Rails.application.routes.draw do
   get "/logout", to: "sessions#logout", as: "users_logout"
 
   resources :users, only: [:index, :show, :new, :create, :edit, :update, :destroy]
+
+  namespace :api do
+    namespace :v0 do
+      resources :search, only: [:index]
+      resources :provider_details, only: [:show]
+      resources :providers, only: [:new, :create, :show, :update, :destroy]
+    end
+  end
 end
