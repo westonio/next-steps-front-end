@@ -23,6 +23,6 @@ class NextStepsService
   end
   
   def self.conn
-    Faraday.new(url: "https://ancient-reaches-38594-79ad833137d5.herokuapp.com/api/v0/")
+    Faraday.new(url: "http://localhost:3000/api/v0/")
   end
 end
