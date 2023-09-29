@@ -2,7 +2,7 @@
 # Monolith
 
 Link to [Next Steps Website](https://next-steps-front-end-4778e35e4143.herokuapp.com/) <br/>
-Link to [Front-end Service](https://github.com/westonio/next-steps-front-end)
+Link to [Front-end Service](https://github.com/westonio/next-steps-front-end)<br/>
 Link to [Back-End Service](https://github.com/westonio/next-steps-back-end)
 
 
