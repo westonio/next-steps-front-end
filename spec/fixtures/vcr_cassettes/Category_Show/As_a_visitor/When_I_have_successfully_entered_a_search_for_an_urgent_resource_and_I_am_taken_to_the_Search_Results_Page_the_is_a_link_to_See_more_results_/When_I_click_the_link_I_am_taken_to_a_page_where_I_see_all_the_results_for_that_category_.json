@@ -22,73 +22,37 @@
       },
       "response": {
         "status": {
-          "code": 200,
-          "message": "OK"
+          "code": 404,
+          "message": "Not Found"
         },
         "headers": {
-          "Server": [
-            "Cowboy"
-          ],
-          "Date": [
-            "Thu, 21 Sep 2023 19:40:19 GMT"
-          ],
-          "Connection": [
-            "keep-alive"
-          ],
-          "X-Frame-Options": [
-            "SAMEORIGIN"
-          ],
-          "X-Xss-Protection": [
-            "0"
-          ],
-          "X-Content-Type-Options": [
-            "nosniff"
-          ],
-          "X-Download-Options": [
-            "noopen"
-          ],
-          "X-Permitted-Cross-Domain-Policies": [
-            "none"
-          ],
-          "Referrer-Policy": [
-            "strict-origin-when-cross-origin"
-          ],
-          "Content-Type": [
-            "application/json; charset=utf-8"
-          ],
-          "Vary": [
-            "Accept"
-          ],
-          "Etag": [
-            "W/\"75fe8c2ffdd7311dc272d40c98859436\""
+          "Content-Length": [
+            "563"
           ],
           "Cache-Control": [
-            "max-age=0, private, must-revalidate"
+            "no-cache, no-store"
           ],
-          "X-Request-Id": [
-            "a936d8da-a3ba-4378-84be-fab7291ff045"
+          "Content-Type": [
+            "text/html; charset=utf-8"
           ],
-          "X-Runtime": [
-            "0.457788"
+          "Date": [
+            "2023-09-29 16:19:50.80435438 +0000 UTC"
           ],
-          "Transfer-Encoding": [
-            "chunked"
-          ],
-          "Via": [
-            "1.1 vegur"
+          "Server": [
+            "heroku-router"
           ]
         },
         "body": {
           "encoding": "UTF-8",
-          "string": "{\"data\":[{\"id\":\"211colorad-a0h4T000003fVnbQAE\",\"type\":\"filtered_provider\",\"attributes\":{\"category\":\"Urgent Care\",\"provider_name\":\"MEDICAL CARE\",\"street\":\"9720 Grant St\",\"city\":\"Thornton\",\"state\":\"CO\",\"lat\":\"39.867370\",\"lon\":\"-104.983520\",\"description\":\"Assists with:Common illnessesMinor injuriesPhysicalsPediatricsX-raysLab servicesImmunizations\"}},{\"id\":\"211colorad-a0h4T000003fVncQAE\",\"type\":\"filtered_provider\",\"attributes\":{\"category\":\"Urgent Care\",\"provider_name\":\"MEDICAL CARE\",\"street\":\"4590 W 121st Ave\",\"city\":\"Broomfield\",\"state\":\"CO\",\"lat\":\"39.914928\",\"lon\":\"-105.045780\",\"description\":\"Assists with:Common illnessesMinor injuriesPhysicalsPediatricsX-raysLab servicesImmunizations\"}},{\"id\":\"211colorad-a0h4T000003fVnXQAU\",\"type\":\"filtered_provider\",\"attributes\":{\"category\":\"Urgent Care\",\"provider_name\":\"MEDICAL CARE\",\"street\":\"18890 E Hampden Ave\",\"city\":\"Aurora\",\"state\":\"CO\",\"lat\":\"39.652141\",\"lon\":\"-104.768338\",\"description\":\"Assists with:Common illnessesMinor injuriesPhysicalsPediatricsX-raysLab servicesImmunizations\"}},{\"id\":\"211colorad-a0h4T0000017LiLQAU\",\"type\":\"filtered_provider\",\"attributes\":{\"category\":\"Urgent Care\",\"provider_name\":\"MEDICAL CARE\",\"street\":\"7595 W Colfax Ave\",\"city\":\"Lakewood\",\"state\":\"CO\",\"lat\":\"39.740390\",\"lon\":\"-105.080920\",\"description\":\"Assists with:Common illnessesMinor injuriesPhysicalsPediatricsX-raysLab servicesImmunizations\"}},{\"id\":\"211colorad-a0h4T000003fVnWQAU\",\"type\":\"filtered_provider\",\"attributes\":{\"category\":\"Urgent Care\",\"provider_name\":\"MEDICAL CARE\",\"street\":\"17121 S Golden St Rd\",\"city\":\"Golden\",\"state\":\"CO\",\"lat\":\"39.733820\",\"lon\":\"-105.175970\",\"description\":\"Assists with:Common illnessesMinor injuriesPhysicalsPediatricsX-raysLab servicesImmunizations\"}},{\"id\":\"211colorad-a0h4T000003fVngQAE\",\"type\":\"filtered_provider\",\"attributes\":{\"category\":\"Urgent Care\",\"provider_name\":\"MEDICAL CARE\",\"street\":\"7380 W 52nd Ave\",\"city\":\"Arvada\",\"state\":\"CO\",\"lat\":\"39.788840\",\"lon\":\"-105.078550\",\"description\":\"Assists with:Common illnessesMinor injuriesPhysicalsPediatricsX-raysLab servicesImmunizations\"}},{\"id\":\"211colorad-a0h4T000003faIPQAY\",\"type\":\"filtered_provider\",\"attributes\":{\"category\":\"Urgent Care\",\"provider_name\":\"ADULT URGENT CARE\",\"street\":\"1545 California St\",\"city\":\"Denver\",\"state\":\"CO\",\"lat\":\"39.744610\",\"lon\":\"-104.992910\",\"description\":\"Provides medical services for non-emergent illnesses and injuries.\"}},{\"id\":\"211colorad-a0h4T000003faIUQAY\",\"type\":\"filtered_provider\",\"attributes\":{\"category\":\"Urgent Care\",\"provider_name\":\"ADULT URGENT CARE\",\"street\":\"1339 S Federal Blvd\",\"city\":\"Denver\",\"state\":\"CO\",\"lat\":\"39.692477\",\"lon\":\"-105.025769\",\"description\":\"Provides medical services for non-emergent illnesses and injuries.\"}},{\"id\":\"211colorad-a0h4T000002tzkbQAA\",\"type\":\"filtered_provider\",\"attributes\":{\"category\":\"Urgent Care\",\"provider_name\":\"PEDIATRIC EMERGENCY AND URGENT CARE\",\"street\":\"777 Bannock St\",\"city\":\"Denver\",\"state\":\"CO\",\"lat\":\"39.728285\",\"lon\":\"-104.990525\",\"description\":\"Provides emergency and urgent medical care for children and youth. Pediatric sub-specialties also include:Trauma careInpatient unitRadiologySurgeryAnesthesiology\"}},{\"id\":\"211colorad-a0h4T000003faIQQAY\",\"type\":\"filtered_provider\",\"attributes\":{\"category\":\"Urgent Care\",\"provider_name\":\"ADULT URGENT CARE\",\"street\":\"660 N Bannock St\",\"city\":\"Denver\",\"state\":\"CO\",\"lat\":\"39.726470\",\"lon\":\"-104.990250\",\"description\":\"Provides medical services for non-emergent illnesses and injuries.\"}}]}"
+          "string": "<!DOCTYPE html>\n<html>\n  <head>\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n    <meta charset=\"utf-8\">\n    <title>Heroku | Application Error</title>\n    <style media=\"screen\">\n      html,body,iframe {\n        margin: 0;\n        padding: 0;\n      }\n      html,body {\n        height: 100%;\n        overflow: hidden;\n      }\n      iframe {\n        width: 100%;\n        height: 100%;\n        border: 0;\n      }\n    </style>\n  </head>\n  <body>\n    <iframe src=\"//www.herokucdn.com/error-pages/no-such-app.html\"></iframe>\n  </body>\n</html>\n"
         }
       },
-      "recorded_at": "Thu, 21 Sep 2023 19:40:20 GMT"
+      "recorded_at": "Fri, 29 Sep 2023 16:19:50 GMT"
     },
     {
       "request": {
         "method": "get",
-        "uri": "https://ancient-reaches-38594-79ad833137d5.herokuapp.com/api/v0/search?keyword=Food&location=Denver,%20Colorado",
+        "uri": "http://localhost:3000/api/v0/search?keyword=Urgent%20Care&location=Denver,%20Colorado",
         "body": {
           "encoding": "US-ASCII",
           "string": ""
@@ -111,15 +75,6 @@
           "message": "OK"
         },
         "headers": {
-          "Server": [
-            "Cowboy"
-          ],
-          "Date": [
-            "Thu, 21 Sep 2023 19:40:20 GMT"
-          ],
-          "Connection": [
-            "keep-alive"
-          ],
           "X-Frame-Options": [
             "SAMEORIGIN"
           ],
@@ -145,35 +100,35 @@
             "Accept"
           ],
           "Etag": [
-            "W/\"9dad5cbd64d0b8e61eb695d2e83f35b8\""
+            "W/\"817234d79e4b49c7972b0594f7064555\""
           ],
           "Cache-Control": [
             "max-age=0, private, must-revalidate"
           ],
           "X-Request-Id": [
-            "97b10f59-0548-44bf-9fb7-20ac7590baef"
+            "502459ee-a807-4d2f-b065-2f3303de572c"
           ],
           "X-Runtime": [
-            "0.360182"
+            "0.559985"
+          ],
+          "Server-Timing": [
+            "start_processing.action_controller;dur=0.26, process_action.action_controller;dur=547.98"
           ],
           "Transfer-Encoding": [
             "chunked"
-          ],
-          "Via": [
-            "1.1 vegur"
           ]
         },
         "body": {
           "encoding": "UTF-8",
-          "string": "{\"data\":[{\"id\":\"211colorad-a0h4T000002tzoaQAA\",\"type\":\"filtered_provider\",\"attributes\":{\"category\":\"Food\",\"provider_name\":\"FOOD PANTRY\",\"street\":\"3810 Pecos St\",\"city\":\"Denver\",\"state\":\"CO\",\"lat\":\"39.769590\",\"lon\":\"-105.006320\",\"description\":\"Distributes fresh and nonperishable food items.Also provides:Diapers (please provide a copy of child\\u0026#39;s birth certificate)Pet food (1st week of the month, between 10 a.m. - 12 p.m. only)SNAP assistance (1st week of the month)\"}},{\"id\":\"211colorad-a0h4T000002u0MLQAY\",\"type\":\"filtered_provider\",\"attributes\":{\"category\":\"Food\",\"provider_name\":\"FOOD BANK\",\"street\":\"19401 E Chenango Dr\",\"city\":\"Centennial\",\"state\":\"CO\",\"lat\":\"39.627000\",\"lon\":\"-104.763000\",\"description\":\"Provides a bi-monthly drive-up community food pantry.\"}},{\"id\":\"211colorad-a0h4T000002u0dHQAQ\",\"type\":\"filtered_provider\",\"attributes\":{\"category\":\"Food\",\"provider_name\":\"FOOD PANTRY\",\"street\":\"4747 W Colfax Ave\",\"city\":\"Denver\",\"state\":\"CO\",\"lat\":\"39.740701\",\"lon\":\"-105.048319\",\"description\":\"Distributes fresh and nonperishable food items. Individuals can access the food pantry weekly, no appointment necessary.\"}},{\"id\":\"211colorad-a0h4T000002tzhgQAA\",\"type\":\"filtered_provider\",\"attributes\":{\"category\":\"Food\",\"provider_name\":\"EMERGENCY FOOD\",\"street\":\"8555 W 57th Ave\",\"city\":\"Arvada\",\"state\":\"CO\",\"lat\":\"39.800678\",\"lon\":\"-105.093109\",\"description\":\"Provides emergency food to individuals and families. Each client selects a supply of food based on household size. Families and individuals may use this program when needed.\"}},{\"id\":\"211colorad-a0h4T000003fZa1QAE\",\"type\":\"filtered_provider\",\"attributes\":{\"category\":\"Food\",\"provider_name\":\"THE EMERGENCY FOOD ASSISTANCE PROGRAM\",\"street\":\"3801 W Ohio Ave\",\"city\":\"Denver\",\"state\":\"CO\",\"lat\":\"39.702170\",\"lon\":\"-105.037810\",\"description\":\"Provides supplemental foods to individuals who meet the income qualifications or participate in other public assistance programs including:Shelf-stable groceriesMeatProduceFood assortments may vary.\"}},{\"id\":\"211colorad-a0h4T000002u73qQAA\",\"type\":\"filtered_provider\",\"attributes\":{\"category\":\"Food\",\"provider_name\":\"COMMODITY SUPPLEMENTAL FOOD PROGRAM AND TEFAP\",\"street\":\"7111 E 56th Ave\",\"city\":\"Commerce City\",\"state\":\"CO\",\"lat\":\"39.798904\",\"lon\":\"-104.905566\",\"description\":\"Provides a monthly box of shelf-stable groceries, plus a block of refrigerated cheese, to individuals aged 60 or older who meet income qualifications. \\r\\nFood boxes are available to pick up every 3rd Saturday from 9 a.m. - 12 p.m.  - 10700 E 45th Ave, Denver, CO\"}},{\"id\":\"211colorad-a0h4T000002u7BAQAY\",\"type\":\"filtered_provider\",\"attributes\":{\"category\":\"Food\",\"provider_name\":\"THE EMERGENCY FOOD ASSISTANCE PROGRAM\",\"street\":\"5306 N Lincoln St\",\"city\":\"Denver\",\"state\":\"CO\",\"lat\":\"39.793000\",\"lon\":\"-104.986000\",\"description\":\"Provides supplemental foods to individuals who meet the income qualifications or participate in other public assistance programs including:Shelf-stable groceriesMeatProduceFood assortments may vary.\"}},{\"id\":\"211colorad-a0h4T000003fZPsQAM\",\"type\":\"filtered_provider\",\"attributes\":{\"category\":\"Food\",\"provider_name\":\"THE EMERGENCY FOOD ASSISTANCE PROGRAM\",\"street\":\"7111 E 56th Ave\",\"city\":\"Commerce City\",\"state\":\"CO\",\"lat\":\"39.798904\",\"lon\":\"-104.905566\",\"description\":\"Provides supplemental foods to individuals who meet the income qualifications or participate in other public assistance programs including:Shelf-stable groceriesMeatProduceFood assortments may vary.\"}},{\"id\":\"211colorad-a0h4T000002tzq7QAA\",\"type\":\"filtered_provider\",\"attributes\":{\"category\":\"Food\",\"provider_name\":\"FOOD PANTRY\",\"street\":\"8990 York St\",\"city\":\"Thornton\",\"state\":\"CO\",\"lat\":\"39.857071\",\"lon\":\"-104.954528\",\"description\":\"Offers a 5-day supply of food for residents living in the service area. Residents may visit once a month, every month for USDA commodities.\"}},{\"id\":\"211colorad-a0h4T00000Xvrw1QAB\",\"type\":\"filtered_provider\",\"attributes\":{\"category\":\"Food\",\"provider_name\":\"FOOD PANTRY\",\"street\":\"3990 W 74th\",\"city\":\"Westminster\",\"state\":\"CO\",\"lat\":\"39.830890\",\"lon\":\"-105.039680\",\"description\":\"Offers a food pantry that provides a prepacked box of non-perishable items including:Frozen meatFresh veggies (when available)BreadThe following is also available:Specialty items for the community\\u0026#39;s culturally relevant food including: Rye flourCanned chillsDatesRosemary Pet foodDiapersHygiene productsHomeless kitsClients can receive a food box once a month. Provides enough food for four days.\"}}]}"
+          "string": "{\"data\":[{\"id\":\"211colorad-a0h4T000003fVncQAE\",\"type\":\"filtered_provider\",\"attributes\":{\"category\":\"Urgent Care\",\"provider_name\":\"MEDICAL CARE\",\"street\":\"4590 W 121st Ave\",\"city\":\"Broomfield\",\"state\":\"CO\",\"lat\":\"39.914928\",\"lon\":\"-105.045780\",\"description\":\"Assists with:Common illnessesMinor injuriesPhysicalsPediatricsX-raysLab servicesImmunizations\"}},{\"id\":\"211colorad-a0h4T000003fVnbQAE\",\"type\":\"filtered_provider\",\"attributes\":{\"category\":\"Urgent Care\",\"provider_name\":\"MEDICAL CARE\",\"street\":\"9720 Grant St\",\"city\":\"Thornton\",\"state\":\"CO\",\"lat\":\"39.867370\",\"lon\":\"-104.983520\",\"description\":\"Assists with:Common illnessesMinor injuriesPhysicalsPediatricsX-raysLab servicesImmunizations\"}},{\"id\":\"211colorad-a0h4T000003fVnWQAU\",\"type\":\"filtered_provider\",\"attributes\":{\"category\":\"Urgent Care\",\"provider_name\":\"MEDICAL CARE\",\"street\":\"17121 S Golden St Rd\",\"city\":\"Golden\",\"state\":\"CO\",\"lat\":\"39.733820\",\"lon\":\"-105.175970\",\"description\":\"Assists with:Common illnessesMinor injuriesPhysicalsPediatricsX-raysLab servicesImmunizations\"}},{\"id\":\"211colorad-a0h4T000003fVngQAE\",\"type\":\"filtered_provider\",\"attributes\":{\"category\":\"Urgent Care\",\"provider_name\":\"MEDICAL CARE\",\"street\":\"7380 W 52nd Ave\",\"city\":\"Arvada\",\"state\":\"CO\",\"lat\":\"39.788840\",\"lon\":\"-105.078550\",\"description\":\"Assists with:Common illnessesMinor injuriesPhysicalsPediatricsX-raysLab servicesImmunizations\"}},{\"id\":\"211colorad-a0h4T000003fVnXQAU\",\"type\":\"filtered_provider\",\"attributes\":{\"category\":\"Urgent Care\",\"provider_name\":\"MEDICAL CARE\",\"street\":\"18890 E Hampden Ave\",\"city\":\"Aurora\",\"state\":\"CO\",\"lat\":\"39.652141\",\"lon\":\"-104.768338\",\"description\":\"Assists with:Common illnessesMinor injuriesPhysicalsPediatricsX-raysLab servicesImmunizations\"}},{\"id\":\"211colorad-a0h4T0000017LiLQAU\",\"type\":\"filtered_provider\",\"attributes\":{\"category\":\"Urgent Care\",\"provider_name\":\"MEDICAL CARE\",\"street\":\"7595 W Colfax Ave\",\"city\":\"Lakewood\",\"state\":\"CO\",\"lat\":\"39.740390\",\"lon\":\"-105.080920\",\"description\":\"Assists with:Common illnessesMinor injuriesPhysicalsPediatricsX-raysLab servicesImmunizations\"}},{\"id\":\"211colorad-a0h4T000003faIPQAY\",\"type\":\"filtered_provider\",\"attributes\":{\"category\":\"Urgent Care\",\"provider_name\":\"ADULT URGENT CARE\",\"street\":\"1545 California St\",\"city\":\"Denver\",\"state\":\"CO\",\"lat\":\"39.744610\",\"lon\":\"-104.992910\",\"description\":\"Provides medical services for non-emergent illnesses and injuries.\"}},{\"id\":\"211colorad-a0h4T000003faIUQAY\",\"type\":\"filtered_provider\",\"attributes\":{\"category\":\"Urgent Care\",\"provider_name\":\"ADULT URGENT CARE\",\"street\":\"1339 S Federal Blvd\",\"city\":\"Denver\",\"state\":\"CO\",\"lat\":\"39.692477\",\"lon\":\"-105.025769\",\"description\":\"Provides medical services for non-emergent illnesses and injuries.\"}},{\"id\":\"211colorad-a0h4T000002tzkbQAA\",\"type\":\"filtered_provider\",\"attributes\":{\"category\":\"Urgent Care\",\"provider_name\":\"PEDIATRIC EMERGENCY AND URGENT CARE\",\"street\":\"777 Bannock St\",\"city\":\"Denver\",\"state\":\"CO\",\"lat\":\"39.728285\",\"lon\":\"-104.990525\",\"description\":\"Provides emergency and urgent medical care for children and youth. Pediatric sub-specialties also include:Trauma careInpatient unitRadiologySurgeryAnesthesiology\"}},{\"id\":\"211colorad-a0h4T000003faIQQAY\",\"type\":\"filtered_provider\",\"attributes\":{\"category\":\"Urgent Care\",\"provider_name\":\"ADULT URGENT CARE\",\"street\":\"660 N Bannock St\",\"city\":\"Denver\",\"state\":\"CO\",\"lat\":\"39.726470\",\"lon\":\"-104.990250\",\"description\":\"Provides medical services for non-emergent illnesses and injuries.\"}}]}"
         }
       },
-      "recorded_at": "Thu, 21 Sep 2023 19:40:20 GMT"
+      "recorded_at": "Fri, 29 Sep 2023 16:39:55 GMT"
     },
     {
       "request": {
         "method": "get",
-        "uri": "https://ancient-reaches-38594-79ad833137d5.herokuapp.com/api/v0/search?keyword=Urgent%20Care&location=Denver,%20Colorado",
+        "uri": "http://localhost:3000/api/v0/search?keyword=Food&location=Denver,%20Colorado",
         "body": {
           "encoding": "US-ASCII",
           "string": ""
@@ -196,15 +151,6 @@
           "message": "OK"
         },
         "headers": {
-          "Server": [
-            "Cowboy"
-          ],
-          "Date": [
-            "Thu, 21 Sep 2023 19:40:21 GMT"
-          ],
-          "Connection": [
-            "keep-alive"
-          ],
           "X-Frame-Options": [
             "SAMEORIGIN"
           ],
@@ -230,30 +176,106 @@
             "Accept"
           ],
           "Etag": [
-            "W/\"75fe8c2ffdd7311dc272d40c98859436\""
+            "W/\"6a7eebcb43ad93c6f80e8d7eda7edbeb\""
           ],
           "Cache-Control": [
             "max-age=0, private, must-revalidate"
           ],
           "X-Request-Id": [
-            "5581bac2-ba48-48c4-8fb0-e22aa24389ae"
+            "222ed6e0-fe4a-478b-be46-55986a97496c"
           ],
           "X-Runtime": [
-            "0.419416"
+            "0.411280"
+          ],
+          "Server-Timing": [
+            "start_processing.action_controller;dur=0.16, process_action.action_controller;dur=401.87"
           ],
           "Transfer-Encoding": [
             "chunked"
-          ],
-          "Via": [
-            "1.1 vegur"
           ]
         },
         "body": {
           "encoding": "UTF-8",
-          "string": "{\"data\":[{\"id\":\"211colorad-a0h4T000003fVnbQAE\",\"type\":\"filtered_provider\",\"attributes\":{\"category\":\"Urgent Care\",\"provider_name\":\"MEDICAL CARE\",\"street\":\"9720 Grant St\",\"city\":\"Thornton\",\"state\":\"CO\",\"lat\":\"39.867370\",\"lon\":\"-104.983520\",\"description\":\"Assists with:Common illnessesMinor injuriesPhysicalsPediatricsX-raysLab servicesImmunizations\"}},{\"id\":\"211colorad-a0h4T000003fVncQAE\",\"type\":\"filtered_provider\",\"attributes\":{\"category\":\"Urgent Care\",\"provider_name\":\"MEDICAL CARE\",\"street\":\"4590 W 121st Ave\",\"city\":\"Broomfield\",\"state\":\"CO\",\"lat\":\"39.914928\",\"lon\":\"-105.045780\",\"description\":\"Assists with:Common illnessesMinor injuriesPhysicalsPediatricsX-raysLab servicesImmunizations\"}},{\"id\":\"211colorad-a0h4T000003fVnXQAU\",\"type\":\"filtered_provider\",\"attributes\":{\"category\":\"Urgent Care\",\"provider_name\":\"MEDICAL CARE\",\"street\":\"18890 E Hampden Ave\",\"city\":\"Aurora\",\"state\":\"CO\",\"lat\":\"39.652141\",\"lon\":\"-104.768338\",\"description\":\"Assists with:Common illnessesMinor injuriesPhysicalsPediatricsX-raysLab servicesImmunizations\"}},{\"id\":\"211colorad-a0h4T0000017LiLQAU\",\"type\":\"filtered_provider\",\"attributes\":{\"category\":\"Urgent Care\",\"provider_name\":\"MEDICAL CARE\",\"street\":\"7595 W Colfax Ave\",\"city\":\"Lakewood\",\"state\":\"CO\",\"lat\":\"39.740390\",\"lon\":\"-105.080920\",\"description\":\"Assists with:Common illnessesMinor injuriesPhysicalsPediatricsX-raysLab servicesImmunizations\"}},{\"id\":\"211colorad-a0h4T000003fVnWQAU\",\"type\":\"filtered_provider\",\"attributes\":{\"category\":\"Urgent Care\",\"provider_name\":\"MEDICAL CARE\",\"street\":\"17121 S Golden St Rd\",\"city\":\"Golden\",\"state\":\"CO\",\"lat\":\"39.733820\",\"lon\":\"-105.175970\",\"description\":\"Assists with:Common illnessesMinor injuriesPhysicalsPediatricsX-raysLab servicesImmunizations\"}},{\"id\":\"211colorad-a0h4T000003fVngQAE\",\"type\":\"filtered_provider\",\"attributes\":{\"category\":\"Urgent Care\",\"provider_name\":\"MEDICAL CARE\",\"street\":\"7380 W 52nd Ave\",\"city\":\"Arvada\",\"state\":\"CO\",\"lat\":\"39.788840\",\"lon\":\"-105.078550\",\"description\":\"Assists with:Common illnessesMinor injuriesPhysicalsPediatricsX-raysLab servicesImmunizations\"}},{\"id\":\"211colorad-a0h4T000003faIPQAY\",\"type\":\"filtered_provider\",\"attributes\":{\"category\":\"Urgent Care\",\"provider_name\":\"ADULT URGENT CARE\",\"street\":\"1545 California St\",\"city\":\"Denver\",\"state\":\"CO\",\"lat\":\"39.744610\",\"lon\":\"-104.992910\",\"description\":\"Provides medical services for non-emergent illnesses and injuries.\"}},{\"id\":\"211colorad-a0h4T000003faIUQAY\",\"type\":\"filtered_provider\",\"attributes\":{\"category\":\"Urgent Care\",\"provider_name\":\"ADULT URGENT CARE\",\"street\":\"1339 S Federal Blvd\",\"city\":\"Denver\",\"state\":\"CO\",\"lat\":\"39.692477\",\"lon\":\"-105.025769\",\"description\":\"Provides medical services for non-emergent illnesses and injuries.\"}},{\"id\":\"211colorad-a0h4T000002tzkbQAA\",\"type\":\"filtered_provider\",\"attributes\":{\"category\":\"Urgent Care\",\"provider_name\":\"PEDIATRIC EMERGENCY AND URGENT CARE\",\"street\":\"777 Bannock St\",\"city\":\"Denver\",\"state\":\"CO\",\"lat\":\"39.728285\",\"lon\":\"-104.990525\",\"description\":\"Provides emergency and urgent medical care for children and youth. Pediatric sub-specialties also include:Trauma careInpatient unitRadiologySurgeryAnesthesiology\"}},{\"id\":\"211colorad-a0h4T000003faIQQAY\",\"type\":\"filtered_provider\",\"attributes\":{\"category\":\"Urgent Care\",\"provider_name\":\"ADULT URGENT CARE\",\"street\":\"660 N Bannock St\",\"city\":\"Denver\",\"state\":\"CO\",\"lat\":\"39.726470\",\"lon\":\"-104.990250\",\"description\":\"Provides medical services for non-emergent illnesses and injuries.\"}}]}"
+          "string": "{\"data\":[{\"id\":\"211colorad-a0h4T000002tzoaQAA\",\"type\":\"filtered_provider\",\"attributes\":{\"category\":\"Food\",\"provider_name\":\"FOOD PANTRY\",\"street\":\"3810 Pecos St\",\"city\":\"Denver\",\"state\":\"CO\",\"lat\":\"39.769590\",\"lon\":\"-105.006320\",\"description\":\"Distributes fresh and nonperishable food items.Also provides:Diapers Pet food SNAP assistance\"}},{\"id\":\"211colorad-a0h4T000002u0MLQAY\",\"type\":\"filtered_provider\",\"attributes\":{\"category\":\"Food\",\"provider_name\":\"FOOD BANK\",\"street\":\"19401 E Chenango Dr\",\"city\":\"Centennial\",\"state\":\"CO\",\"lat\":\"39.627000\",\"lon\":\"-104.763000\",\"description\":\"Provides a bi-monthly drive-up community food pantry.\"}},{\"id\":\"211colorad-a0h4T000002u0dHQAQ\",\"type\":\"filtered_provider\",\"attributes\":{\"category\":\"Food\",\"provider_name\":\"FOOD PANTRY\",\"street\":\"4747 W Colfax Ave\",\"city\":\"Denver\",\"state\":\"CO\",\"lat\":\"39.740701\",\"lon\":\"-105.048319\",\"description\":\"Distributes fresh and nonperishable food items.\"}},{\"id\":\"211colorad-a0h4T000002tzhgQAA\",\"type\":\"filtered_provider\",\"attributes\":{\"category\":\"Food\",\"provider_name\":\"EMERGENCY FOOD\",\"street\":\"8555 W 57th Ave\",\"city\":\"Arvada\",\"state\":\"CO\",\"lat\":\"39.800678\",\"lon\":\"-105.093109\",\"description\":\"Provides emergency food to individuals and families. Each client selects a supply of food based on household size. Families and individuals may use this program when needed.\"}},{\"id\":\"211colorad-a0h4T000003fZa1QAE\",\"type\":\"filtered_provider\",\"attributes\":{\"category\":\"Food\",\"provider_name\":\"THE EMERGENCY FOOD ASSISTANCE PROGRAM\",\"street\":\"3801 W Ohio Ave\",\"city\":\"Denver\",\"state\":\"CO\",\"lat\":\"39.702170\",\"lon\":\"-105.037810\",\"description\":\"Provides supplemental foods to individuals who meet the income qualifications or participate in other public assistance programs including:Shelf-stable groceriesMeatProduceFood assortments may vary.\"}},{\"id\":\"211colorad-a0h4T000002u73qQAA\",\"type\":\"filtered_provider\",\"attributes\":{\"category\":\"Food\",\"provider_name\":\"COMMODITY SUPPLEMENTAL FOOD PROGRAM AND TEFAP\",\"street\":\"7111 E 56th Ave\",\"city\":\"Commerce City\",\"state\":\"CO\",\"lat\":\"39.798904\",\"lon\":\"-104.905566\",\"description\":\"Provides a monthly box of shelf-stable groceries, plus a block of refrigerated cheese, to individuals aged 60 or older who meet income qualifications. \\r\\nFood boxes are available to pick up every 3rd Saturday from 9 a.m. - 12 p.m. - 10700 E 45th Ave, Denver, CO\"}},{\"id\":\"211colorad-a0h4T000002u7BAQAY\",\"type\":\"filtered_provider\",\"attributes\":{\"category\":\"Food\",\"provider_name\":\"THE EMERGENCY FOOD ASSISTANCE PROGRAM\",\"street\":\"5306 N Lincoln St\",\"city\":\"Denver\",\"state\":\"CO\",\"lat\":\"39.793000\",\"lon\":\"-104.986000\",\"description\":\"Provides supplemental foods to individuals who meet the income qualifications or participate in other public assistance programs including:Shelf-stable groceriesMeatProduceFood assortments may vary.\"}},{\"id\":\"211colorad-a0h4T000003fZPsQAM\",\"type\":\"filtered_provider\",\"attributes\":{\"category\":\"Food\",\"provider_name\":\"THE EMERGENCY FOOD ASSISTANCE PROGRAM\",\"street\":\"7111 E 56th Ave\",\"city\":\"Commerce City\",\"state\":\"CO\",\"lat\":\"39.798904\",\"lon\":\"-104.905566\",\"description\":\"Provides supplemental foods to individuals who meet the income qualifications or participate in other public assistance programs including:Shelf-stable groceriesMeatProduceFood assortments may vary.\"}},{\"id\":\"211colorad-a0h4T000002tzgtQAA\",\"type\":\"filtered_provider\",\"attributes\":{\"category\":\"Food\",\"provider_name\":\"FOOD ASSISTANCE\",\"street\":\"7111 E 56th Ave\",\"city\":\"Commerce City\",\"state\":\"CO\",\"lat\":\"39.798904\",\"lon\":\"-104.905566\",\"description\":\"Provides weekly food assistance to Colorado residents.\"}},{\"id\":\"211colorad-a0h4T000002tzq7QAA\",\"type\":\"filtered_provider\",\"attributes\":{\"category\":\"Food\",\"provider_name\":\"FOOD PANTRY\",\"street\":\"8990 York St\",\"city\":\"Thornton\",\"state\":\"CO\",\"lat\":\"39.857071\",\"lon\":\"-104.954528\",\"description\":\"Offers a 5-day supply of food for residents living in the service area. Residents may visit once a month, every month for USDA commodities.\"}}]}"
         }
       },
-      "recorded_at": "Thu, 21 Sep 2023 19:40:21 GMT"
+      "recorded_at": "Fri, 29 Sep 2023 16:39:55 GMT"
+    },
+    {
+      "request": {
+        "method": "get",
+        "uri": "http://localhost:3000/api/v0/search?keyword=Urgent%20Care&location=Denver,%20Colorado",
+        "body": {
+          "encoding": "US-ASCII",
+          "string": ""
+        },
+        "headers": {
+          "User-Agent": [
+            "Faraday v2.7.11"
+          ],
+          "Accept-Encoding": [
+            "gzip;q=1.0,deflate;q=0.6,identity;q=0.3"
+          ],
+          "Accept": [
+            "*/*"
+          ]
+        }
+      },
+      "response": {
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "headers": {
+          "X-Frame-Options": [
+            "SAMEORIGIN"
+          ],
+          "X-Xss-Protection": [
+            "0"
+          ],
+          "X-Content-Type-Options": [
+            "nosniff"
+          ],
+          "X-Download-Options": [
+            "noopen"
+          ],
+          "X-Permitted-Cross-Domain-Policies": [
+            "none"
+          ],
+          "Referrer-Policy": [
+            "strict-origin-when-cross-origin"
+          ],
+          "Content-Type": [
+            "application/json; charset=utf-8"
+          ],
+          "Vary": [
+            "Accept"
+          ],
+          "Etag": [
+            "W/\"817234d79e4b49c7972b0594f7064555\""
+          ],
+          "Cache-Control": [
+            "max-age=0, private, must-revalidate"
+          ],
+          "X-Request-Id": [
+            "1f8af88d-92a5-4029-a210-7e7b8568a502"
+          ],
+          "X-Runtime": [
+            "0.418404"
+          ],
+          "Server-Timing": [
+            "start_processing.action_controller;dur=0.27, process_action.action_controller;dur=403.53"
+          ],
+          "Transfer-Encoding": [
+            "chunked"
+          ]
+        },
+        "body": {
+          "encoding": "UTF-8",
+          "string": "{\"data\":[{\"id\":\"211colorad-a0h4T000003fVncQAE\",\"type\":\"filtered_provider\",\"attributes\":{\"category\":\"Urgent Care\",\"provider_name\":\"MEDICAL CARE\",\"street\":\"4590 W 121st Ave\",\"city\":\"Broomfield\",\"state\":\"CO\",\"lat\":\"39.914928\",\"lon\":\"-105.045780\",\"description\":\"Assists with:Common illnessesMinor injuriesPhysicalsPediatricsX-raysLab servicesImmunizations\"}},{\"id\":\"211colorad-a0h4T000003fVnbQAE\",\"type\":\"filtered_provider\",\"attributes\":{\"category\":\"Urgent Care\",\"provider_name\":\"MEDICAL CARE\",\"street\":\"9720 Grant St\",\"city\":\"Thornton\",\"state\":\"CO\",\"lat\":\"39.867370\",\"lon\":\"-104.983520\",\"description\":\"Assists with:Common illnessesMinor injuriesPhysicalsPediatricsX-raysLab servicesImmunizations\"}},{\"id\":\"211colorad-a0h4T000003fVnWQAU\",\"type\":\"filtered_provider\",\"attributes\":{\"category\":\"Urgent Care\",\"provider_name\":\"MEDICAL CARE\",\"street\":\"17121 S Golden St Rd\",\"city\":\"Golden\",\"state\":\"CO\",\"lat\":\"39.733820\",\"lon\":\"-105.175970\",\"description\":\"Assists with:Common illnessesMinor injuriesPhysicalsPediatricsX-raysLab servicesImmunizations\"}},{\"id\":\"211colorad-a0h4T000003fVngQAE\",\"type\":\"filtered_provider\",\"attributes\":{\"category\":\"Urgent Care\",\"provider_name\":\"MEDICAL CARE\",\"street\":\"7380 W 52nd Ave\",\"city\":\"Arvada\",\"state\":\"CO\",\"lat\":\"39.788840\",\"lon\":\"-105.078550\",\"description\":\"Assists with:Common illnessesMinor injuriesPhysicalsPediatricsX-raysLab servicesImmunizations\"}},{\"id\":\"211colorad-a0h4T000003fVnXQAU\",\"type\":\"filtered_provider\",\"attributes\":{\"category\":\"Urgent Care\",\"provider_name\":\"MEDICAL CARE\",\"street\":\"18890 E Hampden Ave\",\"city\":\"Aurora\",\"state\":\"CO\",\"lat\":\"39.652141\",\"lon\":\"-104.768338\",\"description\":\"Assists with:Common illnessesMinor injuriesPhysicalsPediatricsX-raysLab servicesImmunizations\"}},{\"id\":\"211colorad-a0h4T0000017LiLQAU\",\"type\":\"filtered_provider\",\"attributes\":{\"category\":\"Urgent Care\",\"provider_name\":\"MEDICAL CARE\",\"street\":\"7595 W Colfax Ave\",\"city\":\"Lakewood\",\"state\":\"CO\",\"lat\":\"39.740390\",\"lon\":\"-105.080920\",\"description\":\"Assists with:Common illnessesMinor injuriesPhysicalsPediatricsX-raysLab servicesImmunizations\"}},{\"id\":\"211colorad-a0h4T000003faIPQAY\",\"type\":\"filtered_provider\",\"attributes\":{\"category\":\"Urgent Care\",\"provider_name\":\"ADULT URGENT CARE\",\"street\":\"1545 California St\",\"city\":\"Denver\",\"state\":\"CO\",\"lat\":\"39.744610\",\"lon\":\"-104.992910\",\"description\":\"Provides medical services for non-emergent illnesses and injuries.\"}},{\"id\":\"211colorad-a0h4T000003faIUQAY\",\"type\":\"filtered_provider\",\"attributes\":{\"category\":\"Urgent Care\",\"provider_name\":\"ADULT URGENT CARE\",\"street\":\"1339 S Federal Blvd\",\"city\":\"Denver\",\"state\":\"CO\",\"lat\":\"39.692477\",\"lon\":\"-105.025769\",\"description\":\"Provides medical services for non-emergent illnesses and injuries.\"}},{\"id\":\"211colorad-a0h4T000002tzkbQAA\",\"type\":\"filtered_provider\",\"attributes\":{\"category\":\"Urgent Care\",\"provider_name\":\"PEDIATRIC EMERGENCY AND URGENT CARE\",\"street\":\"777 Bannock St\",\"city\":\"Denver\",\"state\":\"CO\",\"lat\":\"39.728285\",\"lon\":\"-104.990525\",\"description\":\"Provides emergency and urgent medical care for children and youth. Pediatric sub-specialties also include:Trauma careInpatient unitRadiologySurgeryAnesthesiology\"}},{\"id\":\"211colorad-a0h4T000003faIQQAY\",\"type\":\"filtered_provider\",\"attributes\":{\"category\":\"Urgent Care\",\"provider_name\":\"ADULT URGENT CARE\",\"street\":\"660 N Bannock St\",\"city\":\"Denver\",\"state\":\"CO\",\"lat\":\"39.726470\",\"lon\":\"-104.990250\",\"description\":\"Provides medical services for non-emergent illnesses and injuries.\"}}]}"
+        }
+      },
+      "recorded_at": "Fri, 29 Sep 2023 16:39:56 GMT"
     }
   ],
   "recorded_with": "VCR 6.2.0"

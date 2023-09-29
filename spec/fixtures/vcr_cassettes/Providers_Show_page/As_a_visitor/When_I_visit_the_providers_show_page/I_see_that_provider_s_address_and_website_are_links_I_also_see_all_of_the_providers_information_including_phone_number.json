@@ -22,19 +22,59 @@
       },
       "response": {
         "status": {
+          "code": 404,
+          "message": "Not Found"
+        },
+        "headers": {
+          "Content-Length": [
+            "563"
+          ],
+          "Cache-Control": [
+            "no-cache, no-store"
+          ],
+          "Content-Type": [
+            "text/html; charset=utf-8"
+          ],
+          "Date": [
+            "2023-09-29 16:19:49.915935949 +0000 UTC"
+          ],
+          "Server": [
+            "heroku-router"
+          ]
+        },
+        "body": {
+          "encoding": "UTF-8",
+          "string": "<!DOCTYPE html>\n<html>\n  <head>\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n    <meta charset=\"utf-8\">\n    <title>Heroku | Application Error</title>\n    <style media=\"screen\">\n      html,body,iframe {\n        margin: 0;\n        padding: 0;\n      }\n      html,body {\n        height: 100%;\n        overflow: hidden;\n      }\n      iframe {\n        width: 100%;\n        height: 100%;\n        border: 0;\n      }\n    </style>\n  </head>\n  <body>\n    <iframe src=\"//www.herokucdn.com/error-pages/no-such-app.html\"></iframe>\n  </body>\n</html>\n"
+        }
+      },
+      "recorded_at": "Fri, 29 Sep 2023 16:19:49 GMT"
+    },
+    {
+      "request": {
+        "method": "get",
+        "uri": "http://localhost:3000/api/v0/provider_details/211colorad-a0h4T000003fVncQAE",
+        "body": {
+          "encoding": "US-ASCII",
+          "string": ""
+        },
+        "headers": {
+          "User-Agent": [
+            "Faraday v2.7.11"
+          ],
+          "Accept-Encoding": [
+            "gzip;q=1.0,deflate;q=0.6,identity;q=0.3"
+          ],
+          "Accept": [
+            "*/*"
+          ]
+        }
+      },
+      "response": {
+        "status": {
           "code": 200,
           "message": "OK"
         },
         "headers": {
-          "Server": [
-            "Cowboy"
-          ],
-          "Date": [
-            "Thu, 21 Sep 2023 19:40:17 GMT"
-          ],
-          "Connection": [
-            "keep-alive"
-          ],
           "X-Frame-Options": [
             "SAMEORIGIN"
           ],
@@ -60,30 +100,30 @@
             "Accept"
           ],
           "Etag": [
-            "W/\"dd74c6633ec611b20ac3010a0f68890c\""
+            "W/\"6f68e28522fd5dcf2c59fd052fc14beb\""
           ],
           "Cache-Control": [
             "max-age=0, private, must-revalidate"
           ],
           "X-Request-Id": [
-            "b230368c-6a9f-49fc-8054-ca873c61670c"
+            "51544119-b201-4c23-a290-a885eab4129a"
           ],
           "X-Runtime": [
-            "0.244692"
+            "0.305769"
+          ],
+          "Server-Timing": [
+            "start_processing.action_controller;dur=0.14, process_action.action_controller;dur=262.91"
           ],
           "Transfer-Encoding": [
             "chunked"
-          ],
-          "Via": [
-            "1.1 vegur"
           ]
         },
         "body": {
           "encoding": "UTF-8",
-          "string": "{\"data\":{\"id\":\"211colorad-0014T000004o6I3QAI\",\"type\":\"detailed_provider\",\"attributes\":{\"id\":\"211colorad-0014T000004o6I3QAI\",\"name\":\"NEXTCARE URGENT CARE\",\"description\":\"\\u003cp\\u003eProvides urgent care services.\\u003c/p\\u003e\",\"street\":\"4590 W 121st Ave\",\"street2\":null,\"city\":\"Broomfield\",\"state\":\"CO\",\"zipcode\":\"80020\",\"lat\":\"39.915035\",\"lon\":\"-105.045715\",\"website\":\"http://nextcare.com\",\"phone\":\"(888) 381-4858 (Customer Service\",\"fees\":\"\\u003cp\\u003eMedical Care Fees, call for current fees.\\u003c/p\\u003e\",\"schedule\":\"Monday - Friday, 8 a.m. - 8 p.m.; Saturday, Sunday, 9 a.m. - 4 p.m.\"}}}"
+          "string": "{\"data\":{\"id\":\"211colorad-0014T000004o6I3QAI\",\"type\":\"detailed_provider\",\"attributes\":{\"id\":\"211colorad-0014T000004o6I3QAI\",\"name\":\"NEXTCARE URGENT CARE\",\"description\":\"\\u003cp\\u003eProvides urgent care services.\\u003c/p\\u003e\",\"street\":\"4590 W 121st Ave\",\"street2\":\"Not Available\",\"city\":\"Broomfield\",\"state\":\"CO\",\"zipcode\":\"80020\",\"lat\":\"39.914928\",\"lon\":\"-105.045780\",\"website\":\"http://nextcare.com\",\"phone\":\"(888) 381-4858 (Customer Service\",\"fees\":\"\\u003cp\\u003eMedical Care Fees, call for current fees.\\u003c/p\\u003e\",\"schedule\":\"Monday - Friday, 8 a.m. - 8 p.m.; Saturday, Sunday, 9 a.m. - 4 p.m.\"}}}"
         }
       },
-      "recorded_at": "Thu, 21 Sep 2023 19:40:17 GMT"
+      "recorded_at": "Fri, 29 Sep 2023 16:39:53 GMT"
     }
   ],
   "recorded_with": "VCR 6.2.0"
