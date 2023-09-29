@@ -32,6 +32,7 @@ Rails.application.routes.draw do
 
   resources :users, only: [:index, :show, :new, :create, :edit, :update, :destroy]
 
+  # BE Routes
   namespace :api do
     namespace :v0 do
       resources :search, only: [:index]

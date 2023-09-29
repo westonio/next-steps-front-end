@@ -7,3 +7,4 @@ class Provider < ApplicationRecord
   validates :zipcode, presence: true, length: { is: 5 }
   validates :phone, presence: true
 end
+
